@@ -7,25 +7,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Lora:wght@400&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#1B365D;--gold:#C8922A;--blue:#5B9EC9;--lightblue:#A8C8E8;--bg:#eef0f3;--text:#333;--muted:#666;--border:rgba(0,0,0,0.1)}
+:root{--navy:#1B365D;--blue:#5B9EC9;--lightblue:#A8C8E8;--bg:#eef0f3;--text:#333;--muted:#666;--border:rgba(0,0,0,0.1)}
 body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
+
+/* LIBRARY */
 #library-view{max-width:1100px;margin:0 auto;padding:32px 20px}
 .wrapper{background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
 .header{border-bottom:2px solid var(--navy);padding-bottom:16px;margin-bottom:20px}
 .header h1{font-size:20px;font-weight:700;color:var(--navy)}
 .header p{font-family:'Lora',serif;font-size:13px;color:var(--muted);margin-top:5px}
-.api-banner{background:#f0f5fb;border:1px solid #c5d9f0;border-radius:8px;padding:14px 18px;margin-bottom:20px}
-.api-banner p{font-size:11px;color:var(--navy);margin-bottom:8px;font-weight:600}
-.api-row{display:flex;gap:8px;align-items:center}
-.api-row input{flex:1;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;outline:none}
-.api-row input:focus{border-color:var(--navy)}
-.api-row button{padding:8px 14px;border:1px solid var(--border);border-radius:6px;background:#fff;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;cursor:pointer;color:var(--navy)}
-#api-status{font-size:11px;font-weight:600}
-#api-status.valid{color:#2a7a4b}
-#api-status.invalid{color:#c0392b}
 .stats-row{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
 .stat-pill{background:var(--navy);color:#fff;font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px}
-.stat-pill span{color:var(--gold);margin-right:3px}
+.stat-pill span{color:#C8922A;margin-right:3px}
 .controls{display:flex;gap:10px;margin-bottom:12px}
 .search-wrap{flex:1;position:relative}
 .search-wrap input{width:100%;padding:8px 12px 8px 32px;border:1px solid var(--border);border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;outline:none}
@@ -40,16 +33,30 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
 .card-cat{font-size:10px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
 .card-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.45;margin-bottom:6px}
 .card-desc{font-family:'Lora',serif;font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:12px}
-.card-footer{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.card-footer{display:flex;gap:8px;align-items:center}
 .card-status{font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px}
 .status-todo{background:#f0f0f0;color:#888}
 .status-done{background:#e6f4ec;color:#2a7a4b}
-.card-img-input{flex:1;min-width:120px;padding:5px 8px;border:1px solid var(--border);border-radius:5px;font-size:10px;font-family:'Montserrat',sans-serif;outline:none;color:var(--muted)}
-.card-img-input:focus{border-color:var(--blue)}
-.write-btn{padding:6px 14px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s}
-.write-btn:hover{background:#254a7a}
-.write-btn.done{background:#2a7a4b}
+.paste-btn{padding:6px 14px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s;margin-left:auto}
+.paste-btn:hover{background:#254a7a}
+.paste-btn.done{background:#2a7a4b}
 .no-results{text-align:center;padding:48px;color:var(--muted);font-family:'Lora',serif;font-size:14px}
+
+/* PASTE VIEW */
+#paste-view{display:none;max-width:900px;margin:0 auto;padding:24px 20px}
+.paste-box{background:#fff;border-radius:10px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.07);margin-bottom:16px}
+.paste-box h2{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.paste-box p{font-family:'Lora',serif;font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.6}
+.paste-box textarea{width:100%;height:220px;padding:12px;border:1px solid var(--border);border-radius:6px;font-family:'Courier New',monospace;font-size:11px;line-height:1.6;outline:none;resize:vertical;color:#333}
+.paste-box textarea:focus{border-color:var(--navy)}
+.paste-actions{display:flex;gap:10px;margin-top:12px}
+.btn-primary{padding:10px 24px;background:var(--navy);color:#fff;border:none;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;cursor:pointer}
+.btn-primary:hover{background:#254a7a}
+.btn-ghost{padding:10px 20px;background:#fff;color:var(--navy);border:1px solid var(--border);border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;cursor:pointer}
+.btn-ghost:hover{background:#f5f5f5}
+.paste-title{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px}
+
+/* ARTICLE VIEW */
 #article-view{display:none;max-width:900px;margin:0 auto;padding:24px 20px}
 .topbar{display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#fff;border-radius:10px;padding:14px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.07);flex-wrap:wrap}
 .back-btn{padding:7px 14px;border:1px solid var(--border);border-radius:6px;background:#fff;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;cursor:pointer;color:var(--navy);white-space:nowrap}
@@ -63,15 +70,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
 .meta-bar-text{font-size:13px;color:#333;font-family:'Lora',serif;line-height:1.5}
 .meta-copy-btn{margin-top:8px;padding:5px 12px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-size:11px;font-weight:600;font-family:'Montserrat',sans-serif;cursor:pointer}
 .meta-copy-btn.copied{background:#2a7a4b}
-#state-loading,#state-error,#state-preview,#state-code{display:none}
-.loading-box{background:#fff;border-radius:10px;padding:64px 32px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
-.spinner{width:36px;height:36px;border:3px solid #e0e0e0;border-top-color:var(--navy);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.loading-box p{font-size:13px;color:var(--muted);font-family:'Lora',serif}
-.error-box{background:#fff;border-radius:10px;padding:40px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
-.error-box h3{color:#c0392b;margin-bottom:8px;font-size:15px}
-.error-box p{color:var(--muted);font-size:13px;font-family:'Lora',serif;margin-bottom:16px}
-.retry-btn{padding:9px 20px;background:var(--navy);color:#fff;border:none;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;cursor:pointer}
 #state-preview{background:#fff;border-radius:10px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.07);font-family:'Lora',Georgia,serif;font-size:16px;line-height:1.8;color:#333}
 #state-preview h1{font-family:'Montserrat',sans-serif;font-weight:700;font-size:30px;color:#1B365D;margin:0 0 24px;line-height:1.3}
 #state-preview h2{font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:#1B365D;margin:38px 0 12px}
@@ -83,32 +81,26 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
 #state-preview hr{border:none;border-top:1px solid #e4eaf2;margin:6px 0}
 #state-preview figure{margin:0 0 28px}
 #state-preview img{width:100%;height:280px;object-fit:cover;border-radius:6px;display:block}
-#state-code{background:#fff;border-radius:10px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
+#state-code{display:none;background:#fff;border-radius:10px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
 .code-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
 .code-toolbar span{font-size:12px;font-weight:600;color:var(--navy)}
 .copy-btn{padding:8px 18px;background:var(--navy);color:#fff;border:none;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;cursor:pointer}
 .copy-btn.copied{background:#2a7a4b}
 #code-content{background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;font-family:'Courier New',monospace;font-size:11px;line-height:1.6;white-space:pre-wrap;word-break:break-all;max-height:600px;overflow-y:auto;color:#333}
+.error-msg{background:#fff0f0;border:1px solid #f5c6c6;border-radius:8px;padding:14px 18px;color:#c0392b;font-size:13px;font-family:'Lora',serif;margin-bottom:14px;display:none}
 </style>
 </head>
 <body>
 
+<!-- LIBRARY -->
 <div id="library-view">
   <div class="wrapper">
     <div class="header">
       <h1>Plastic-Craft &mdash; Article Generator</h1>
-      <p>101 article ideas. Paste your API key, add an image URL, and click Write Article to generate WordPress-ready HTML.</p>
-    </div>
-    <div class="api-banner">
-      <p>Anthropic API Key &mdash; required to generate articles. Stays in this tab only, never stored anywhere.</p>
-      <div class="api-row">
-        <input type="password" id="api-key-input" placeholder="sk-ant-api03-..." autocomplete="off" oninput="checkApiKey()">
-        <button onclick="toggleKey()">Show / Hide</button>
-        <span id="api-status"></span>
-      </div>
+      <p>101 article ideas. Click "Paste Article" on any card, paste the HTML from Claude, and get your preview and WordPress-ready code instantly.</p>
     </div>
     <div class="stats-row">
-      <div class="stat-pill"><span id="total-count">101</span> Total Articles</div>
+      <div class="stat-pill"><span>101</span> Total Articles</div>
       <div class="stat-pill"><span id="done-count">0</span> Done</div>
       <div class="stat-pill"><span id="todo-count">101</span> To Do</div>
     </div>
@@ -123,9 +115,25 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
   </div>
 </div>
 
+<!-- PASTE VIEW -->
+<div id="paste-view">
+  <div class="paste-box">
+    <div class="paste-title" id="paste-article-title"></div>
+    <h2>Paste Claude's HTML Output</h2>
+    <p>Go to your Claude chat, copy the full code block from the article response, and paste it below. Then click "Render Article."</p>
+    <div id="paste-error" class="error-msg"></div>
+    <textarea id="paste-input" placeholder="Paste the full HTML code block here..."></textarea>
+    <div class="paste-actions">
+      <button class="btn-primary" onclick="renderPasted()">Render Article</button>
+      <button class="btn-ghost" onclick="goToLibrary()">&#8592; Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE VIEW -->
 <div id="article-view">
   <div class="topbar">
-    <button class="back-btn" onclick="goBack()">&#8592; Back to Prompt</button>
+    <button class="back-btn" onclick="goToPaste()">&#8592; Back to Prompt</button>
     <div class="topbar-title" id="topbar-title"></div>
     <div class="view-tabs">
       <button class="vtab active" id="btn-preview" onclick="switchTab('preview')">Preview</button>
@@ -136,19 +144,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
     <div class="meta-bar-label">SEO Meta Description &mdash; Copy into Rank Math</div>
     <div class="meta-bar-text" id="meta-bar-text"></div>
     <button class="meta-copy-btn" id="meta-copy-btn" onclick="copyMeta()">Copy Meta Description</button>
-  </div>
-  <div id="state-loading">
-    <div class="loading-box">
-      <div class="spinner"></div>
-      <p>Writing your article &mdash; this takes about 20 seconds...</p>
-    </div>
-  </div>
-  <div id="state-error">
-    <div class="error-box">
-      <h3>Something went wrong</h3>
-      <p id="error-msg">Please check your API key and try again.</p>
-      <button class="retry-btn" onclick="retryGenerate()">Try Again</button>
-    </div>
   </div>
   <div id="state-preview"></div>
   <div id="state-code">
@@ -216,7 +211,7 @@ const ARTICLES=[
   {cat:'Buying Guides',title:'How to Source Plastic for Aerospace and Defense Programs',desc:'Certifications, traceability, documentation — what qualified sourcing actually requires.'},
 ];
 
-let currentArticle=null,currentHTML='',currentMeta='',activeFilter='All';
+let currentIdx=null,currentHTML='',currentMeta='',activeFilter='All';
 const doneSet=new Set(JSON.parse(localStorage.getItem('pc_done')||'[]'));
 
 renderFilters();renderGrid();updateStats();
@@ -236,7 +231,7 @@ function renderGrid(){
   const q=document.getElementById('search-input').value.toLowerCase();
   const filtered=ARTICLES.filter(a=>{
     const matchCat=activeFilter==='All'||a.cat===activeFilter;
-    const matchQ=!q||a.title.toLowerCase().includes(q)||a.desc.toLowerCase().includes(q);
+    const matchQ=!q||a.title.toLowerCase().includes(q)||(a.desc||'').toLowerCase().includes(q);
     return matchCat&&matchQ;
   });
   const grid=document.getElementById('article-grid');
@@ -247,11 +242,10 @@ function renderGrid(){
     return `<div class="card">
       <div class="card-cat">${a.cat}</div>
       <div class="card-title">${a.title}</div>
-      <div class="card-desc">${a.desc}</div>
+      <div class="card-desc">${a.desc||''}</div>
       <div class="card-footer">
         <span class="card-status ${isDone?'status-done':'status-todo'}">${isDone?'Done':'To Do'}</span>
-        <input class="card-img-input" id="img-${idx}" type="text" placeholder="Image URL (optional)">
-        <button class="write-btn${isDone?' done':''}" onclick="startArticle(${idx})">${isDone?'Rewrite':'Write Article'}</button>
+        <button class="paste-btn${isDone?' done':''}" onclick="openPaste(${idx})">${isDone?'Update Article':'Paste Article'}</button>
       </div>
     </div>`;
   }).join('');
@@ -261,109 +255,76 @@ function updateStats(){
   document.getElementById('done-count').textContent=done;
   document.getElementById('todo-count').textContent=ARTICLES.length-done;
 }
-async function startArticle(idx){
-  const apiKey=document.getElementById('api-key-input').value.trim();
-  if(!apiKey||!apiKey.startsWith('sk-ant-')){alert('Please paste a valid Anthropic API key at the top before generating.');return;}
-  currentArticle={...ARTICLES[idx],_idx:idx};
-  const imgInput=document.getElementById('img-'+idx);
-  currentArticle._img=imgInput?imgInput.value.trim():'';
+function openPaste(idx){
+  currentIdx=idx;
+  document.getElementById('paste-article-title').textContent=ARTICLES[idx].title;
+  document.getElementById('paste-input').value='';
+  document.getElementById('paste-error').style.display='none';
   document.getElementById('library-view').style.display='none';
-  document.getElementById('article-view').style.display='block';
-  document.getElementById('topbar-title').textContent=currentArticle.title;
-  document.getElementById('meta-bar').style.display='none';
-  switchTab('preview');showState('loading');
-  await generateArticle();
+  document.getElementById('paste-view').style.display='block';
+  document.getElementById('article-view').style.display='none';
 }
-async function retryGenerate(){showState('loading');await generateArticle();}
-async function generateArticle(){
-  const apiKey=document.getElementById('api-key-input').value.trim();
-  const imgURL=currentArticle._img||'YOUR-IMAGE-URL-HERE';
-  const prompt=`You are writing a complete SEO/AEO-optimized article for plastic-craft.com.
-
-COMPANY: Plastic-Craft Products | Founded 1934 | Family-owned | West Nyack, NY 10994
-Phone: (845) 358-3010 | Email: ecom@plastic-craft.com
-Certifications: ISO 9001:2015 and AS9100D | No minimum orders | In-house fabrication
-Audience: engineers, procurement managers, purchasing specialists
-Voice: professional, authoritative, technically accurate. Third person only. No emojis.
-Colors: Navy #1B365D | Light Blue #A8C8E8 | Button Blue #5B9EC9. NO gold #C8922A.
-Fonts: Montserrat (headings) | Lora (body)
-
-ARTICLE TITLE: ${currentArticle.title}
-FOCUS: ${currentArticle.desc}
-IMAGE URL: ${imgURL}
-
-OUTPUT RULES:
-- Return ONLY raw HTML. No explanation, no preamble, no markdown.
-- First line must be EXACTLY this comment (required for parsing):
-<!-- SEO_META_DESCRIPTION: [150-160 char meta description ending with period] -->
-- Then output the full article HTML with NO html/head/body tags.
-
-REQUIRED STRUCTURE:
-1. Hero image using the IMAGE URL above (width:100%;height:280px;object-fit:cover;border-radius:6px)
-2. Trust bar — 4 flex tiles: "Family-Owned Since 1934" / "ISO 9001:2015 & AS9100D" / "No Minimum Orders" / "In-House Fabrication"
-   Style: background:#f4f8fc;border:1px solid #d0e3f2;border-radius:6px;padding:10px 16px;font-family:'Montserrat',sans-serif;font-size:12px;color:#1B365D;font-weight:600;text-align:center;flex:1;min-width:120px
-3. Intro paragraph — border-left:4px solid #A8C8E8;padding-left:20px;font-size:17px;line-height:1.85;color:#444
-4. 4-5 H2 sections — each H2 must be a real search query someone types into Google or ChatGPT
-   First sentence under each H2 must directly answer the question (AI engines pull this)
-5. At least one <ul><li> list with left blue border style per article
-6. Mid-article CTA block (navy #1B365D background, after the properties section):
-   - H3 headline, 1-2 sentences, two buttons: "Request a Quote" (/request-a-quote/) and "Browse [Material] Products" (/[material-slug]/)
-   - Button style: background:#5B9EC9;color:#fff;padding:11px 22px;border-radius:5px;text-decoration:none;font-weight:700;font-size:13px;font-family:'Montserrat',sans-serif
-7. FAQ block — eyebrow label "FREQUENTLY ASKED QUESTIONS" then 5+ H3 questions as real search queries
-   Last FAQ must be "Where can I buy [material]?" and include West Nyack NY, (845) 358-3010, ecom@plastic-craft.com
-8. Closing CTA block (navy background):
-   - H2 headline, 2-3 sentences mentioning West Nyack NY
-   - Linked phone: (845) 358-3010 and email: ecom@plastic-craft.com (link color #A8C8E8)
-   - Two buttons same style as mid-article CTA
-
-TARGET: 1,100-1,400 words. HTML list tags only — no bullet characters. ISO 9001:2015 or AS9100D mentioned naturally at least once.`;
-
-  try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:4000,messages:[{role:'user',content:prompt}]})
-    });
-    if(!res.ok){const err=await res.json().catch(()=>({}));throw new Error(err.error?.message||`API error ${res.status}`);}
-    const data=await res.json();
-    const raw=data.content?.[0]?.text||'';
-    parseAndRender(raw);
-    doneSet.add(currentArticle._idx);
-    localStorage.setItem('pc_done',JSON.stringify([...doneSet]));
-    updateStats();
-  }catch(e){
-    document.getElementById('error-msg').textContent=e.message||'Unknown error. Check your API key.';
-    showState('error');
+function goToLibrary(){
+  document.getElementById('library-view').style.display='block';
+  document.getElementById('paste-view').style.display='none';
+  document.getElementById('article-view').style.display='none';
+  renderGrid();
+}
+function goToPaste(){
+  document.getElementById('article-view').style.display='none';
+  document.getElementById('paste-view').style.display='block';
+}
+function renderPasted(){
+  const raw=document.getElementById('paste-input').value.trim();
+  if(!raw){
+    showPasteError('Please paste the HTML from Claude first.');return;
   }
-}
-function parseAndRender(raw){
-  const metaMatch=raw.match(/<!--\s*SEO_META_DESCRIPTION:\s*([\s\S]*?)\s*-->/i);
+  // Extract meta — supports both comment formats
+  const metaMatch=raw.match(/<!--\s*SEO_META_DESCRIPTION:\s*([\s\S]*?)\s*-->/i)
+    ||raw.match(/<!--\s*SEO Meta Description[^:]*:\s*([\s\S]*?)\s*-->/i);
   currentMeta=metaMatch?metaMatch[1].trim():'';
-  currentHTML=raw.replace(/<!--\s*SEO_META_DESCRIPTION:[\s\S]*?-->/i,'').trim();
+  // Strip meta comment from display HTML
+  currentHTML=raw
+    .replace(/<!--\s*SEO_META_DESCRIPTION:[\s\S]*?-->/i,'')
+    .replace(/<!--\s*SEO Meta Description[\s\S]*?-->/i,'')
+    .trim();
+
+  if(!currentHTML){showPasteError('Could not parse HTML. Make sure you pasted the full code block from Claude.');return;}
+
+  // Render
+  document.getElementById('state-preview').innerHTML=currentHTML;
+  document.getElementById('code-content').textContent=`<!-- SEO Meta Description (paste into Rank Math):\n${currentMeta}\n-->\n\n${currentHTML}`;
+
   if(currentMeta){
     document.getElementById('meta-bar-text').textContent=currentMeta;
     document.getElementById('meta-bar').style.display='block';
     document.getElementById('meta-copy-btn').textContent='Copy Meta Description';
     document.getElementById('meta-copy-btn').classList.remove('copied');
+  } else {
+    document.getElementById('meta-bar').style.display='none';
   }
-  document.getElementById('state-preview').innerHTML=currentHTML;
-  document.getElementById('code-content').textContent=`<!-- SEO Meta Description (paste into Rank Math):\n${currentMeta}\n-->\n\n${currentHTML}`;
-  showState('preview');
+
+  document.getElementById('topbar-title').textContent=currentIdx!==null?ARTICLES[currentIdx].title:'Article Preview';
+  switchTab('preview');
+  document.getElementById('paste-view').style.display='none';
+  document.getElementById('article-view').style.display='block';
+
+  // Mark done
+  if(currentIdx!==null){
+    doneSet.add(currentIdx);
+    localStorage.setItem('pc_done',JSON.stringify([...doneSet]));
+    updateStats();
+  }
 }
-function showState(s){
-  ['loading','error','preview','code'].forEach(x=>{
-    document.getElementById('state-'+x).style.display=x===s?'block':'none';
-  });
+function showPasteError(msg){
+  const el=document.getElementById('paste-error');
+  el.textContent=msg;el.style.display='block';
 }
 function switchTab(tab){
   document.getElementById('btn-preview').classList.toggle('active',tab==='preview');
   document.getElementById('btn-code').classList.toggle('active',tab==='code');
-  showState(tab==='preview'?'preview':'code');
-}
-function goBack(){
-  document.getElementById('article-view').style.display='none';
-  document.getElementById('library-view').style.display='block';
-  renderGrid();
+  document.getElementById('state-preview').style.display=tab==='preview'?'block':'none';
+  document.getElementById('state-code').style.display=tab==='code'?'block':'none';
 }
 function copyCode(){
   const code=document.getElementById('code-content').textContent;
@@ -375,17 +336,6 @@ function copyMeta(){
   navigator.clipboard.writeText(currentMeta).catch(()=>{const ta=document.createElement('textarea');ta.value=currentMeta;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);});
   const btn=document.getElementById('meta-copy-btn');btn.textContent='Copied!';btn.classList.add('copied');
   setTimeout(()=>{btn.textContent='Copy Meta Description';btn.classList.remove('copied');},2500);
-}
-function checkApiKey(){
-  const key=document.getElementById('api-key-input').value.trim();
-  const status=document.getElementById('api-status');
-  if(!key){status.textContent='';return;}
-  if(key.startsWith('sk-ant-')){status.textContent='Key looks good';status.className='valid';}
-  else{status.textContent='Should start with sk-ant-';status.className='invalid';}
-}
-function toggleKey(){
-  const input=document.getElementById('api-key-input');
-  input.type=input.type==='password'?'text':'password';
 }
 </script>
 </body>
