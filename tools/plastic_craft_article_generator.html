@@ -245,6 +245,9 @@ function renderGrid(){
       <div class="card-desc">${a.desc||''}</div>
       <div class="card-footer">
         <span class="card-status ${isDone?'status-done':'status-todo'}">${isDone?'Done':'To Do'}</span>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:10px;align-items:center;">
+        <input class="card-img-input" id="img-${idx}" type="text" placeholder="Image URL (optional)" style="flex:1;padding:5px 8px;border:1px solid rgba(0,0,0,0.1);border-radius:5px;font-size:10px;font-family:'Montserrat',sans-serif;outline:none;color:#666;">
         <button class="paste-btn${isDone?' done':''}" onclick="openPaste(${idx})">${isDone?'Update Article':'Paste Article'}</button>
       </div>
     </div>`;
@@ -256,6 +259,8 @@ function updateStats(){
   document.getElementById('todo-count').textContent=ARTICLES.length-done;
 }
 function openPaste(idx){
+  const imgInput=document.getElementById("img-"+idx);
+  window._pendingImg=imgInput?imgInput.value.trim():"";
   currentIdx=idx;
   document.getElementById('paste-article-title').textContent=ARTICLES[idx].title;
   document.getElementById('paste-input').value='';
