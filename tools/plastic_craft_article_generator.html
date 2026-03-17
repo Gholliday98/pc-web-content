@@ -4,344 +4,1236 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plastic-Craft — Article Generator</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Lora:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#1B365D;--blue:#5B9EC9;--lightblue:#A8C8E8;--bg:#eef0f3;--text:#333;--muted:#666;--border:rgba(0,0,0,0.1)}
-body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text)}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1B365D;
+  --gold: #C8922A;
+  --light-bg: #F5F5F5;
+  --text: #333333;
+  --muted: #666666;
+  --border: rgba(0,0,0,0.1);
+  --white: #ffffff;
+}
+body { font-family: 'Montserrat', sans-serif; background: #eef0f3; color: var(--text); }
 
-/* LIBRARY */
-#library-view{max-width:1100px;margin:0 auto;padding:32px 20px}
-.wrapper{background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,0.08)}
-.header{border-bottom:2px solid var(--navy);padding-bottom:16px;margin-bottom:20px}
-.header h1{font-size:20px;font-weight:700;color:var(--navy)}
-.header p{font-family:'Lora',serif;font-size:13px;color:var(--muted);margin-top:5px}
-.stats-row{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
-.stat-pill{background:var(--navy);color:#fff;font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px}
-.stat-pill span{color:#C8922A;margin-right:3px}
-.controls{display:flex;gap:10px;margin-bottom:12px}
-.search-wrap{flex:1;position:relative}
-.search-wrap input{width:100%;padding:8px 12px 8px 32px;border:1px solid var(--border);border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;outline:none}
-.search-wrap input:focus{border-color:var(--navy)}
-.search-icon{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;font-size:13px}
-.filter-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
-.ftab{padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:#fff;color:var(--muted);transition:all .15s}
-.ftab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.card{border:1px solid var(--border);border-radius:8px;padding:16px;background:#fff;transition:box-shadow .15s}
-.card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.1)}
-.card-cat{font-size:10px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
-.card-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.45;margin-bottom:6px}
-.card-desc{font-family:'Lora',serif;font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:12px}
-.card-footer{display:flex;gap:8px;align-items:center}
-.card-status{font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px}
-.status-todo{background:#f0f0f0;color:#888}
-.status-done{background:#e6f4ec;color:#2a7a4b}
-.paste-btn{padding:6px 14px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .15s;margin-left:auto}
-.paste-btn:hover{background:#254a7a}
-.paste-btn.done{background:#2a7a4b}
-.no-results{text-align:center;padding:48px;color:var(--muted);font-family:'Lora',serif;font-size:14px}
+/* ── LIBRARY ── */
+#library-view { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+.wrapper { background: white; border-radius: 12px; padding: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+.header { border-bottom: 2px solid var(--navy); padding-bottom: 16px; margin-bottom: 20px; }
+.header h1 { font-size: 20px; font-weight: 700; color: var(--navy); }
+.header p { font-family: 'Lora', serif; font-size: 13px; color: var(--muted); margin-top: 5px; }
+.stats-row { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+.stat-pill { background: var(--navy); color: white; font-size: 11px; font-weight: 600; padding: 4px 11px; border-radius: 20px; }
+.stat-pill span { color: var(--gold); margin-right: 3px; }
+.controls { display: flex; gap: 10px; margin-bottom: 12px; }
+.search-wrap { flex: 1; position: relative; }
+.search-wrap input { width: 100%; padding: 8px 12px 8px 32px; border: 1px solid var(--border); border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 12px; outline: none; }
+.search-wrap input:focus { border-color: var(--navy); }
+.search-icon { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: var(--muted); pointer-events: none; }
+.filter-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.tab { padding: 5px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; cursor: pointer; border: 1.5px solid transparent; transition: all 0.15s; background: var(--light-bg); color: var(--muted); font-family: 'Montserrat', sans-serif; }
+.tab:hover { border-color: var(--navy); color: var(--navy); }
+.tab.active { background: var(--navy); color: white; border-color: var(--navy); }
+.results-count { font-size: 11px; color: var(--muted); margin-bottom: 12px; font-family: 'Lora', serif; }
+.results-count strong { color: var(--navy); font-family: 'Montserrat', sans-serif; }
+.section-block { margin-bottom: 28px; }
+.section-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.section-heading h2 { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.7px; }
+.section-count { background: var(--gold); color: white; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
+.cat-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.article-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 14px; transition: all 0.15s; display: flex; flex-direction: column; }
+.article-card:hover { border-color: var(--navy); box-shadow: 0 2px 8px rgba(27,54,93,0.1); transform: translateY(-1px); }
+.article-card .title { font-size: 12px; font-weight: 600; color: var(--navy); line-height: 1.45; margin-bottom: 6px; }
+.article-card .desc { font-family: 'Lora', serif; font-size: 11px; color: var(--muted); line-height: 1.5; flex: 1; }
+.card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; gap: 8px; }
+.tag { font-size: 10px; font-weight: 600; font-family: 'Montserrat', sans-serif; padding: 2px 7px; border-radius: 4px; flex-shrink: 0; }
+.priority-high { background: #fff3cd; color: #856404; }
+.priority-med  { background: #d1ecf1; color: #0c5460; }
+.priority-low  { background: #f8f9fa; color: #6c757d; border: 1px solid #dee2e6; }
+.gen-btn { background: var(--navy); color: white; border: none; padding: 6px 12px; border-radius: 5px; font-size: 10px; font-weight: 700; font-family: 'Montserrat', sans-serif; cursor: pointer; transition: background 0.15s; white-space: nowrap; letter-spacing: 0.3px; }
+.gen-btn:hover { background: var(--gold); }
+.gen-btn:disabled { background: #aaa; cursor: not-allowed; }
+.img-url-wrap { margin-top: 10px; display: flex; align-items: center; gap: 6px; }
+.img-url-wrap label { font-size: 10px; font-weight: 600; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+.img-url-input { flex: 1; padding: 5px 9px; border: 1px solid var(--border); border-radius: 5px; font-size: 11px; font-family: 'Montserrat', sans-serif; color: var(--text); outline: none; min-width: 0; }
+.img-url-input:focus { border-color: var(--gold); }
+.img-url-input::placeholder { color: #bbb; }
+.no-results { text-align: center; padding: 60px; color: var(--muted); font-family: 'Lora', serif; font-size: 14px; }
+.lib-footer { margin-top: 32px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); font-family: 'Lora', serif; text-align: center; }
 
-/* PASTE VIEW */
-#paste-view{display:none;max-width:900px;margin:0 auto;padding:24px 20px}
-.paste-box{background:#fff;border-radius:10px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.07);margin-bottom:16px}
-.paste-box h2{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
-.paste-box p{font-family:'Lora',serif;font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.6}
-.paste-box textarea{width:100%;height:220px;padding:12px;border:1px solid var(--border);border-radius:6px;font-family:'Courier New',monospace;font-size:11px;line-height:1.6;outline:none;resize:vertical;color:#333}
-.paste-box textarea:focus{border-color:var(--navy)}
-.paste-actions{display:flex;gap:10px;margin-top:12px}
-.btn-primary{padding:10px 24px;background:var(--navy);color:#fff;border:none;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;cursor:pointer}
-.btn-primary:hover{background:#254a7a}
-.btn-ghost{padding:10px 20px;background:#fff;color:var(--navy);border:1px solid var(--border);border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;cursor:pointer}
-.btn-ghost:hover{background:#f5f5f5}
-.paste-title{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px}
+/* ── ARTICLE VIEW ── */
+#article-view { display: none; min-height: 100vh; background: #eef0f3; }
+.article-topbar { background: var(--navy); color: white; padding: 13px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.back-btn { background: none; border: 1.5px solid rgba(255,255,255,0.4); color: white; padding: 6px 14px; border-radius: 5px; font-size: 11px; font-weight: 600; font-family: 'Montserrat', sans-serif; cursor: pointer; transition: all 0.15s; white-space: nowrap; flex-shrink: 0; }
+.back-btn:hover { background: rgba(255,255,255,0.12); }
+.topbar-title { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.8); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tab-switcher { display: flex; background: rgba(255,255,255,0.12); border-radius: 6px; padding: 3px; flex-shrink: 0; }
+.view-tab { background: none; border: none; color: rgba(255,255,255,0.6); padding: 5px 14px; border-radius: 4px; font-size: 11px; font-weight: 600; font-family: 'Montserrat', sans-serif; cursor: pointer; transition: all 0.15s; }
+.view-tab.active { background: white; color: var(--navy); }
+.article-body { max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; }
 
-/* ARTICLE VIEW */
-#article-view{display:none;max-width:900px;margin:0 auto;padding:24px 20px}
-.topbar{display:flex;align-items:center;gap:12px;margin-bottom:16px;background:#fff;border-radius:10px;padding:14px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.07);flex-wrap:wrap}
-.back-btn{padding:7px 14px;border:1px solid var(--border);border-radius:6px;background:#fff;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;cursor:pointer;color:var(--navy);white-space:nowrap}
-.back-btn:hover{background:#f5f5f5}
-.topbar-title{flex:1;font-size:13px;font-weight:600;color:var(--navy);line-height:1.4;min-width:150px}
-.view-tabs{display:flex;gap:6px}
-.vtab{padding:7px 16px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:#fff;color:var(--muted);transition:all .15s}
-.vtab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
-.meta-bar{background:#f0f5fb;border:1px solid #c5d9f0;border-radius:8px;padding:12px 16px;margin-bottom:16px}
-.meta-bar-label{font-size:10px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
-.meta-bar-text{font-size:13px;color:#333;font-family:'Lora',serif;line-height:1.5}
-.meta-copy-btn{margin-top:8px;padding:5px 12px;background:var(--navy);color:#fff;border:none;border-radius:5px;font-size:11px;font-weight:600;font-family:'Montserrat',sans-serif;cursor:pointer}
-.meta-copy-btn.copied{background:#2a7a4b}
-#state-preview{background:#fff;border-radius:10px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.07);font-family:'Lora',Georgia,serif;font-size:16px;line-height:1.8;color:#333}
-#state-preview h1{font-family:'Montserrat',sans-serif;font-weight:700;font-size:30px;color:#1B365D;margin:0 0 24px;line-height:1.3}
-#state-preview h2{font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:#1B365D;margin:38px 0 12px}
-#state-preview h3{font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;color:#1B365D;margin:20px 0 6px}
-#state-preview p{margin:0 0 18px}
-#state-preview ul{margin:10px 0 20px;padding-left:0;list-style:none}
-#state-preview li{padding:9px 14px 9px 16px;border-left:3px solid #A8C8E8;margin-bottom:8px;background:#f4f8fc;font-size:15px;line-height:1.65}
-#state-preview strong{font-family:'Montserrat',sans-serif;font-weight:600;color:#1B365D}
-#state-preview hr{border:none;border-top:1px solid #e4eaf2;margin:6px 0}
-#state-preview figure{margin:0 0 28px}
-#state-preview img{width:100%;height:280px;object-fit:cover;border-radius:6px;display:block}
-#state-code{display:none;background:#fff;border-radius:10px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
-.code-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.code-toolbar span{font-size:12px;font-weight:600;color:var(--navy)}
-.copy-btn{padding:8px 18px;background:var(--navy);color:#fff;border:none;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;cursor:pointer}
-.copy-btn.copied{background:#2a7a4b}
-#code-content{background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;font-family:'Courier New',monospace;font-size:11px;line-height:1.6;white-space:pre-wrap;word-break:break-all;max-height:600px;overflow-y:auto;color:#333}
-.error-msg{background:#fff0f0;border:1px solid #f5c6c6;border-radius:8px;padding:14px 18px;color:#c0392b;font-size:13px;font-family:'Lora',serif;margin-bottom:14px;display:none}
+/* ── STATES ── */
+.loading-state { text-align: center; padding: 80px 20px; background: white; border-radius: 10px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+.loading-spinner { width: 36px; height: 36px; border: 3px solid #e0e0e0; border-top-color: var(--navy); border-radius: 50%; animation: spin 0.75s linear infinite; margin: 0 auto 18px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-title { font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+.loading-sub { font-family: 'Lora', serif; font-size: 13px; color: var(--muted); }
+.error-state { text-align: center; padding: 60px 20px; background: white; border-radius: 10px; }
+.error-state p { font-family: 'Lora', serif; font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+.retry-btn { background: var(--navy); color: white; border: none; padding: 9px 20px; border-radius: 5px; font-size: 12px; font-weight: 600; font-family: 'Montserrat', sans-serif; cursor: pointer; }
+
+/* ── PREVIEW ── */
+.preview-wrap { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
+.preview-img-placeholder { width: 100%; height: 280px; background: #dce4ef; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.preview-img-placeholder svg { width: 44px; height: 44px; color: #8da3be; }
+.preview-img-placeholder p { font-size: 11px; font-weight: 700; color: #8da3be; letter-spacing: 1px; text-transform: uppercase; }
+.preview-img-placeholder span { font-size: 10px; color: #aab8c8; font-family: 'Lora', serif; }
+.meta-bar { padding: 10px 40px; background: var(--light-bg); border-bottom: 1px solid var(--border); }
+.meta-bar-label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+.meta-bar-text { font-size: 12px; color: var(--text); font-family: 'Lora', serif; line-height: 1.5; }
+.preview-content { padding: 40px 48px 48px; }
+.preview-content h1 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 700; color: var(--navy); line-height: 1.3; margin-bottom: 22px; }
+.preview-content .intro-p { font-family: 'Lora', serif; font-size: 16px; line-height: 1.8; color: var(--text); border-left: 4px solid var(--gold); padding-left: 18px; margin-bottom: 30px; }
+.preview-content h2 { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin: 36px 0 12px; padding-top: 8px; border-top: 1px solid #eee; }
+.preview-content p { font-family: 'Lora', serif; font-size: 15px; line-height: 1.8; color: var(--text); margin-bottom: 14px; }
+.preview-content ul { margin: 8px 0 14px 22px; }
+.preview-content li { font-family: 'Lora', serif; font-size: 15px; line-height: 1.75; color: var(--text); margin-bottom: 6px; }
+.preview-cta { background: var(--navy); border-radius: 8px; padding: 36px 40px; margin-top: 40px; }
+.preview-cta h2 { color: white; margin-top: 0; border-top: none; padding-top: 0; font-size: 22px; }
+.preview-cta p { color: rgba(255,255,255,0.87); margin-bottom: 0; }
+.preview-cta a { display: inline-block; background: var(--gold); color: white; padding: 13px 26px; border-radius: 5px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; margin-top: 14px; }
+
+/* ── CODE VIEW ── */
+.code-wrap { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
+.code-toolbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 8px; }
+.code-toolbar-left { display: flex; flex-direction: column; gap: 2px; }
+.code-toolbar-left strong { font-size: 12px; font-weight: 700; color: var(--navy); }
+.code-toolbar-left span { font-size: 11px; color: var(--muted); font-family: 'Lora', serif; }
+.copy-btn { background: var(--navy); color: white; border: none; padding: 8px 16px; border-radius: 5px; font-size: 11px; font-weight: 700; font-family: 'Montserrat', sans-serif; cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+.copy-btn:hover { background: var(--gold); }
+.copy-btn.copied { background: #198754; }
+.code-instruction { margin: 16px 20px 0; padding: 12px 16px; background: #fff8e6; border: 1px solid #ffe08a; border-radius: 6px; font-size: 12px; color: #7a5800; font-family: 'Montserrat', sans-serif; line-height: 1.6; }
+.code-instruction strong { color: #5a3e00; }
+.code-block { padding: 20px; overflow-x: auto; max-height: 72vh; overflow-y: auto; }
+.code-block pre { font-family: 'Courier New', Courier, monospace; font-size: 12px; line-height: 1.65; color: #1a1a2e; white-space: pre; }
+
+/* ── INFO BANNER ── */
+#api-key-banner { background: #f0f5ff; border: 1.5px solid #c5d5f5; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; }
+.api-key-label { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: var(--navy); font-weight: 600; line-height: 1.6; }
 </style>
 </head>
 <body>
 
-<!-- LIBRARY -->
+<!-- ════════════════════════════════════════════
+     LIBRARY VIEW
+════════════════════════════════════════════ -->
 <div id="library-view">
-  <div class="wrapper">
-    <div class="header">
-      <h1>Plastic-Craft &mdash; Article Generator</h1>
-      <p>101 article ideas. Click "Paste Article" on any card, paste the HTML from Claude, and get your preview and WordPress-ready code instantly.</p>
+<div style="max-width:1100px;margin:0 auto;padding:32px 20px;">
+<div class="wrapper">
+
+  <div class="header">
+    <h1>Plastic-Craft — Article Generator</h1>
+    <p>101 article ideas. Click "Write Article" on any card to generate the full article and get copy-paste-ready HTML code for WordPress.</p>
+  </div>
+
+  <div id="api-key-banner">
+    <div class="api-key-label">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:1px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span>How this works: Click "Get Prompt" on any article &rarr; copy the prompt &rarr; paste it into Claude.ai &rarr; come back and paste the result to get your formatted preview and WordPress HTML code.</span>
     </div>
-    <div class="stats-row">
-      <div class="stat-pill"><span>101</span> Total Articles</div>
-      <div class="stat-pill"><span id="done-count">0</span> Done</div>
-      <div class="stat-pill"><span id="todo-count">101</span> To Do</div>
+  </div>
+
+  <div class="stats-row" id="stats-row"></div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="8.5" cy="8.5" r="5.5"/><line x1="12.5" y1="12.5" x2="18" y2="18"/>
+      </svg>
+      <input type="text" id="search" placeholder="Search articles by title or topic..." oninput="render()">
     </div>
-    <div class="controls">
-      <div class="search-wrap">
-        <span class="search-icon">&#9906;</span>
-        <input type="text" id="search-input" placeholder="Search articles..." oninput="renderGrid()">
+  </div>
+
+  <div class="filter-tabs" id="filter-tabs"></div>
+  <div id="results-count" class="results-count"></div>
+  <div id="output"></div>
+
+  <div class="lib-footer">
+    Plastic-Craft Products &mdash; plastic-craft.com &mdash; 744 West Nyack Road, West Nyack, NY 10994 &mdash; ISO 9001:2015 | AS9100D Certified
+  </div>
+
+</div>
+</div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     ARTICLE VIEW
+════════════════════════════════════════════ -->
+<div id="article-view">
+
+  <div class="article-topbar">
+    <button class="back-btn" onclick="closeArticle()">&#8592; Back to Library</button>
+    <div class="topbar-title" id="topbar-title"></div>
+    <div class="tab-switcher">
+      <button class="view-tab active" id="btn-prompt" onclick="switchView('prompt')">Prompt</button>
+      <button class="view-tab" id="btn-paste" onclick="switchView('paste')">Paste Result Here</button>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <!-- PROMPT VIEW -->
+    <div id="state-prompt" style="display:none;">
+      <div class="code-wrap">
+        <div class="code-toolbar">
+          <div class="code-toolbar-left">
+            <strong>Step 1 — Copy this prompt</strong>
+            <span>Open Claude.ai in a new tab, paste this prompt, and hit send</span>
+          </div>
+          <button class="copy-btn" id="copy-prompt-btn" onclick="copyPrompt()">Copy Prompt</button>
+        </div>
+        <div class="code-instruction" style="background:#e8f5e9;border-color:#a5d6a7;color:#1b5e20;">
+          <strong>How this works:</strong> Click "Copy Prompt" &rarr; open <a href="https://claude.ai" target="_blank" style="color:#1b5e20;font-weight:700;">claude.ai</a> in a new tab &rarr; paste &rarr; Claude writes the full article. Come back here, click "Paste Result Here", and paste Claude's response to get your formatted HTML and preview.
+        </div>
+        <div class="code-block">
+          <pre id="prompt-content"></pre>
+        </div>
       </div>
     </div>
-    <div class="filter-tabs" id="filter-tabs"></div>
-    <div class="grid" id="article-grid"></div>
-  </div>
-</div>
 
-<!-- PASTE VIEW -->
-<div id="paste-view">
-  <div class="paste-box">
-    <div class="paste-title" id="paste-article-title"></div>
-    <h2>Paste Claude's HTML Output</h2>
-    <p>Go to your Claude chat, copy the full code block from the article response, and paste it below. Then click "Render Article."</p>
-    <div id="paste-error" class="error-msg"></div>
-    <textarea id="paste-input" placeholder="Paste the full HTML code block here..."></textarea>
-    <div class="paste-actions">
-      <button class="btn-primary" onclick="renderPasted()">Render Article</button>
-      <button class="btn-ghost" onclick="goToLibrary()">&#8592; Back</button>
+    <!-- PASTE VIEW -->
+    <div id="state-paste" style="display:none;">
+      <div class="code-wrap">
+        <div class="code-toolbar">
+          <div class="code-toolbar-left">
+            <strong>Step 2 — Paste Claude's response</strong>
+            <span>Copy everything Claude wrote and paste it into the box below</span>
+          </div>
+          <button class="copy-btn" onclick="processResponse()">Generate Preview &amp; Code &rarr;</button>
+        </div>
+        <div class="code-instruction" style="background:#f0f5ff;border-color:#c5d5f5;color:#1B365D;">
+          <strong>Paste the full response</strong> from Claude.ai — including the meta description, all paragraphs, and the CTA block. Then click "Generate Preview &amp; Code" to get your formatted output.
+        </div>
+        <div style="padding:16px 20px;">
+          <textarea id="paste-area" placeholder="Paste Claude's full article response here..." style="width:100%;height:320px;padding:14px;border:1.5px solid #c5d5f5;border-radius:6px;font-family:'Lora',serif;font-size:13px;line-height:1.7;color:#333;outline:none;resize:vertical;"></textarea>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- ARTICLE VIEW -->
-<div id="article-view">
-  <div class="topbar">
-    <button class="back-btn" onclick="goToPaste()">&#8592; Back to Prompt</button>
-    <div class="topbar-title" id="topbar-title"></div>
-    <div class="view-tabs">
-      <button class="vtab active" id="btn-preview" onclick="switchTab('preview')">Preview</button>
-      <button class="vtab" id="btn-code" onclick="switchTab('code')">View HTML Code</button>
+    <!-- PREVIEW -->
+    <div id="state-preview" style="display:none;">
+      <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;">
+        <button class="copy-btn" onclick="switchView('prompt')" style="background:var(--muted);">&larr; Back to Prompt</button>
+        <button class="copy-btn" id="btn-show-code" onclick="switchView('code')">View HTML Code</button>
+      </div>
+      <div class="preview-wrap" id="preview-wrap-inner">
+        <div class="preview-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2.5"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <p>Image Placeholder</p>
+          <span>Paste an image URL on the card before generating to see it here</span>
+        </div>
+        <div class="meta-bar">
+          <div class="meta-bar-label">SEO Meta Description (copy into Rank Math)</div>
+          <div class="meta-bar-text" id="preview-meta"></div>
+        </div>
+        <div class="preview-content" id="preview-content"></div>
+      </div>
     </div>
-  </div>
-  <div class="meta-bar" id="meta-bar" style="display:none">
-    <div class="meta-bar-label">SEO Meta Description &mdash; Copy into Rank Math</div>
-    <div class="meta-bar-text" id="meta-bar-text"></div>
-    <button class="meta-copy-btn" id="meta-copy-btn" onclick="copyMeta()">Copy Meta Description</button>
-  </div>
-  <div id="state-preview"></div>
-  <div id="state-code">
-    <div class="code-toolbar">
-      <span>WordPress-ready HTML &mdash; copy and paste into your HTML block</span>
-      <button class="copy-btn" id="copy-btn" onclick="copyCode()">Copy All Code</button>
+
+    <!-- CODE -->
+    <div id="state-code" style="display:none;">
+      <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;">
+        <button class="copy-btn" onclick="switchView('preview')" style="background:var(--muted);">&larr; Back to Preview</button>
+      </div>
+      <div class="code-wrap">
+        <div class="code-toolbar">
+          <div class="code-toolbar-left">
+            <strong>WordPress-Ready HTML Code</strong>
+            <span>Paste into a WordPress HTML block or Elementor HTML widget</span>
+          </div>
+          <button class="copy-btn" id="copy-btn" onclick="copyCode()">Copy All Code</button>
+        </div>
+        <div class="code-instruction" id="code-instruction">
+          <strong>Before you paste:</strong> Copy the meta description into Rank Math. Then paste this code into a WordPress HTML block on your article page.
+        </div>
+        <div class="code-block">
+          <pre id="code-content"></pre>
+        </div>
+      </div>
     </div>
-    <div id="code-content"></div>
+
   </div>
 </div>
 
 <script>
-const ARTICLES=[
-  {cat:'Materials',title:'What Is Acrylic? Properties, Applications & Buying Guide',desc:'Clarity, scratch resistance, UV stability — everything buyers need to know.',status:'done'},
-  {cat:'Materials',title:'What Is Polycarbonate? Impact Resistance, Grades & Applications',desc:'The go-to for safety glazing and machine guards.',status:'done'},
-  {cat:'Materials',title:'What Is UHMW Polyethylene? The Self-Lubricating Industrial Workhorse',desc:'Lowest coefficient of friction, FDA compliant, nearly indestructible.',status:'done'},
-  {cat:'Materials',title:'What Is HDPE? Properties, Food Safety & Industrial Uses',desc:'The workhorse plastic for tanks, cutting boards, and marine applications.'},
-  {cat:'Materials',title:'What Is Nylon? Grades, Strength & Machining Guide',desc:'PA6 vs PA6/6, oil-filled vs glass-filled — a complete buyers guide.'},
-  {cat:'Materials',title:'What Is PEEK Plastic? High-Temperature Performance Explained',desc:'Why aerospace and medical engineers specify PEEK over everything else.'},
-  {cat:'Materials',title:'What Is Delrin (Acetal)? Precision Parts & Gear Applications',desc:'The machinists favorite — tight tolerances, low friction, zero moisture absorption.'},
-  {cat:'Materials',title:'What Is PTFE (Teflon)? Chemical Resistance & Low-Friction Applications',desc:'Non-stick, non-reactive, and rated for extreme temperatures.'},
-  {cat:'Materials',title:'What Is PVC Sheet? Properties, Grades & Industrial Uses',desc:'Rigid vs flexible, Type I vs Type II — how to specify PVC correctly.'},
-  {cat:'Materials',title:'What Is Phenolic (G-10 / Garolite)? Electrical & Structural Applications',desc:'The laminate that outperforms metal in electrical isolation applications.'},
-  {cat:'Materials',title:'What Is Ultem (PEI)? Aerospace-Grade Thermoplastic Explained',desc:'FAA-rated, transparent amber, and one of the strongest thermoplastics available.'},
-  {cat:'Materials',title:'What Is PETG? The Clear, Impact-Resistant Alternative to Acrylic',desc:'Better impact than acrylic, easier to form — where PETG fits in the spec.'},
-  {cat:'Materials',title:'What Is Polypropylene Sheet? Chemical Resistance & Fabrication Guide',desc:'Acid tanks, lab equipment, and food contact — where PP earns its place.'},
-  {cat:'Materials',title:'What Is ABS Plastic? Properties, Thermoforming & Applications',desc:'Lightweight, tough, and easy to fabricate — the engineers intro to ABS.'},
-  {cat:'Materials',title:'What Is Torlon (PAI)? The Highest-Performing Thermoplastic Explained',desc:'When PEEK isnt enough — Torlon for the most demanding applications.'},
-  {cat:'Materials',title:'What Is CPVC? How It Differs from PVC and Where to Use It',desc:'Higher temperature, higher pressure — CPVC for hot chemical environments.'},
-  {cat:'Comparisons',title:'Acrylic vs Polycarbonate: Which Should You Specify?',desc:'Head-to-head on clarity, impact, UV, scratch resistance, and cost.'},
-  {cat:'Comparisons',title:'UHMW vs HDPE: Whats the Difference and Which Do You Need?',desc:'Both are polyethylene — but one outperforms in nearly every wear application.'},
-  {cat:'Comparisons',title:'PEEK vs Delrin: Choosing the Right Engineering Plastic for Precision Parts',desc:'Temperature, chemical resistance, machinability — compared side by side.'},
-  {cat:'Comparisons',title:'Nylon vs UHMW: Which Is Better for Wear and Friction Applications?',desc:'Two of the most common wear materials — how to choose between them.'},
-  {cat:'Comparisons',title:'PVC vs Polypropylene: Best Choice for Chemical Tanks and Fittings',desc:'Both resist chemicals — the differences that determine which you need.'},
-  {cat:'Comparisons',title:'Acrylic vs Glass: Why Engineers Switch to Plastic Glazing',desc:'Weight, safety, cost, and optical clarity — an honest comparison.'},
-  {cat:'Comparisons',title:'PTFE vs UHMW: Low-Friction Plastics Compared',desc:'Both are self-lubricating — but they serve very different applications.'},
-  {cat:'Comparisons',title:'Polycarbonate vs Tempered Glass: Safety Glazing Face-Off',desc:'Impact ratings, weight, and cost — what actually matters for your application.'},
-  {cat:'Comparisons',title:'Cast Acrylic vs Extruded Acrylic: Which Grade Is Right for Your Project?',desc:'Same material, different manufacturing — heres when it matters.'},
-  {cat:'Capabilities',title:'What Is CNC Routing for Plastics? Tolerances, Materials & Lead Times',desc:'How CNC routing works for plastic sheet and what to expect from a qualified shop.'},
-  {cat:'Capabilities',title:'What Is Laser Cutting for Plastics? Best Materials and Edge Quality',desc:'Which plastics laser cut well, which dont, and what finish to expect.'},
-  {cat:'Capabilities',title:'What Is Thermoforming? How Plastic Sheet Gets Shaped to Complex Forms',desc:'Vacuum forming, pressure forming — an engineers guide to the process.'},
-  {cat:'Capabilities',title:'What Is Flame Polishing? How Acrylic Edges Get Crystal-Clear Clarity',desc:'The finishing technique that turns saw-cut edges into optical-quality surfaces.'},
-  {cat:'Capabilities',title:'What Is Plastic Welding? Techniques, Materials & Joint Strength',desc:'Hot gas, extrusion, ultrasonic — how plastics get permanently joined.'},
-  {cat:'Capabilities',title:'What Is Waterjet Cutting for Plastics? Precision Without Heat Distortion',desc:'No HAZ, no melting — waterjet for thick or heat-sensitive plastic materials.'},
-  {cat:'Capabilities',title:'What Is Solvent Bonding? How Acrylic and PVC Get Permanently Bonded',desc:'The chemistry behind solvent cementing and how to spec it correctly.'},
-  {cat:'Capabilities',title:'What Is Plastic Fabrication? From Raw Sheet to Finished Part',desc:'A buyers guide to what a full-service plastic fabricator actually does.'},
-  {cat:'Capabilities',title:'What Is Custom Plastic Extrusion? Profiles, Tolerances & Lead Times',desc:'When standard shapes wont do — how custom extrusion works end to end.'},
-  {cat:'Capabilities',title:'What Is Diamond Polishing for Plastics? Optical-Grade Edge Finishing',desc:'The highest-quality edge finish available for acrylic and polycarbonate.'},
-  {cat:'Industries',title:'Plastics for Aerospace Manufacturing: Materials, Certifications & Sourcing',desc:'AS9100D, traceability, and the materials that meet flight-program requirements.'},
-  {cat:'Industries',title:'Plastics for Food & Beverage Manufacturing: FDA, USDA & NSF Compliance',desc:'Which materials are compliant, how to specify them, and what to avoid.'},
-  {cat:'Industries',title:'Plastics for Defense Applications: MIL-SPEC Materials and Qualified Suppliers',desc:'What defense procurement requires from a plastic fabrication supplier.'},
-  {cat:'Industries',title:'Plastics for Marine Applications: Corrosion-Proof Materials for Harsh Environments',desc:'Dock fenders, hatches, portlights — the right plastics for saltwater exposure.'},
-  {cat:'Industries',title:'Plastics for Pharmaceutical Manufacturing: Cleanroom Materials & Compliance',desc:'USP Class VI, extractables, and the materials pharmaceutical engineers specify.'},
-  {cat:'Industries',title:'Plastics for Retail Displays: Clear, Durable, and Easy to Fabricate',desc:'Acrylic, polycarbonate, and PVC — the display designers material guide.'},
-  {cat:'Industries',title:'Plastics for Security and Ballistic Glazing Applications',desc:'Bullet-resistant ratings, material options, and sourcing considerations.'},
-  {cat:'Industries',title:'Plastics for OEM Manufacturing: How to Source Material and Fabricated Parts Together',desc:'Why OEM engineers source material and fabrication from a single qualified supplier.'},
-  {cat:'Industries',title:'Plastics for Mining & Material Handling: Abrasion-Resistant Liners and Wear Parts',desc:'Chute liners, truck beds, and conveyor wear strips — materials that last.'},
-  {cat:'Industries',title:'Plastics for Stage, Film & Television Production',desc:'Clear, colorful, formable — why fabricators and set designers rely on plastic.'},
-  {cat:'Buying Guides',title:'How to Buy Plastic Sheet: A Procurement Managers Complete Guide',desc:'Grades, tolerances, lead times, and what questions to ask your supplier.'},
-  {cat:'Buying Guides',title:'Cut-to-Size Plastic: How It Works and What to Specify',desc:'What information a supplier needs to cut your order right the first time.'},
-  {cat:'Buying Guides',title:'Plastic Sheet Thickness Guide: How to Choose the Right Gauge',desc:'Matching thickness to load, impact, and fabrication requirements.'},
-  {cat:'Buying Guides',title:'How to Read a Plastic Material Data Sheet: A Buyers Guide',desc:'Tensile strength, flexural modulus, HDT — what the numbers actually mean.'},
-  {cat:'Buying Guides',title:'Standard vs Custom Plastic Shapes: When to Stock and When to Fabricate',desc:'How to decide between ordering stock shapes and commissioning custom profiles.'},
-  {cat:'Buying Guides',title:'How to Specify Edge Finish for Plastic Sheet',desc:'Saw cut, machined, flame-polished, diamond-polished — when each is appropriate.'},
-  {cat:'Buying Guides',title:'How to Source Plastic for Aerospace and Defense Programs',desc:'Certifications, traceability, documentation — what qualified sourcing actually requires.'},
+// ════════════════════════════════════════════
+//  DATA
+// ════════════════════════════════════════════
+const CATS = [
+  { id:'all',      label:'All Articles', color:'#1B365D' },
+  { id:'mat',      label:'Materials',    color:'#2563EB' },
+  { id:'compare',  label:'Comparisons',  color:'#7C3AED' },
+  { id:'cap',      label:'Capabilities', color:'#0F766E' },
+  { id:'buy',      label:'Buying Guides',color:'#B45309' },
+  { id:'howto',    label:'How-To & Tech',color:'#0369A1' },
+  { id:'industry', label:'Industries',   color:'#065F46' },
+  { id:'faq',      label:'FAQ',          color:'#9D174D' },
+  { id:'company',  label:'Company',      color:'#374151' },
 ];
 
-let currentIdx=null,currentHTML='',currentMeta='',activeFilter='All';
-const doneSet=new Set(JSON.parse(localStorage.getItem('pc_done')||'[]'));
+const ARTICLES = [
+  // MATERIALS
+  { cat:'mat', title:'What Is Acrylic? Properties, Applications & Buying Guide', desc:'Clarity, scratch resistance, UV stability — everything buyers need to know about acrylic sheet, rod, and tube.', priority:'high' },
+  { cat:'mat', title:'What Is Polycarbonate? Impact Resistance, Grades & Applications', desc:'The go-to for safety glazing and machine guards. How it compares to glass and acrylic.', priority:'high' },
+  { cat:'mat', title:'What Is UHMW Polyethylene? The Self-Lubricating Industrial Workhorse', desc:'Lowest coefficient of friction of any plastic, FDA compliant, and nearly indestructible. Where and why to use it.', priority:'high' },
+  { cat:'mat', title:'What Is HDPE? Chemical Resistance, FDA Compliance & Common Uses', desc:'From cutting boards to outdoor structural applications — the case for HDPE.', priority:'high' },
+  { cat:'mat', title:'What Is Nylon? Grades, Properties & Machining Characteristics', desc:'Cast vs. extruded, oil-filled vs. glass-filled — a practical buyer\'s breakdown of nylon grades.', priority:'med' },
+  { cat:'mat', title:'What Is PEEK Plastic? High-Performance Engineering Properties & Applications', desc:'The gold standard of engineering thermoplastics. When and why to specify PEEK.', priority:'med' },
+  { cat:'mat', title:'What Is Delrin (Acetal)? Precision Machining & Low-Friction Applications', desc:'Tight-tolerance parts, gears, bushings — why Delrin outperforms nylon for dimensional stability.', priority:'med' },
+  { cat:'mat', title:'What Is PTFE (Teflon)? The Ultimate Chemical-Resistant Plastic', desc:'500°F service temp, virtually inert to all chemicals. Complete guide to PTFE properties and applications.', priority:'med' },
+  { cat:'mat', title:'What Is Phenolic? Electrical Insulation, Grades & Applications', desc:'G-10, Garolite, CE, LE — navigating phenolic laminate grades for electrical and structural uses.', priority:'med' },
+  { cat:'mat', title:'What Is PVC vs. CPVC? Which Is Right for Your Application?', desc:'Standard PVC vs. high-temperature CPVC — when the upgrade matters and when it doesn\'t.', priority:'med' },
+  { cat:'mat', title:'What Is Ultem (PEI)? High-Temperature & Aerospace-Grade Plastic', desc:'Extreme heat resistance, flame retardant, and biocompatible — Ultem\'s role in aerospace and medical.', priority:'med' },
+  { cat:'mat', title:'What Is ABS Plastic? Machinability, Impact Resistance & Uses', desc:'The do-it-all thermoplastic for fabricated enclosures, prototypes, and industrial parts.', priority:'low' },
+  { cat:'mat', title:'What Is Polypropylene? Chemical Resistance, Weldability & Uses', desc:'Lightweight, weldable, and resistant to a wide range of chemicals. PP vs. HDPE for corrosive environments.', priority:'low' },
+  { cat:'mat', title:'What Is G-10 / Garolite? Fiberglass Laminate for Electrical Insulation', desc:'High strength, low moisture absorption, and excellent dielectric properties — where G-10 fits.', priority:'low' },
+  { cat:'mat', title:'What Is Torlon? The Strongest Thermoplastic for Extreme Conditions', desc:'PAI resin, continuous use to 500°F, and compressive strength beyond PEEK. For the most demanding specs.', priority:'low' },
+  { cat:'mat', title:'What Is PETG? Clarity, Toughness & Easy Fabrication Combined', desc:'The approachable middle ground between acrylic and polycarbonate — PETG\'s role in fabrication.', priority:'low' },
+  { cat:'mat', title:'Plastic Adhesives & Cements: Weld-On, Acrifix & How to Choose', desc:'Solvent cements, structural adhesives, and reactive systems — which bonding agent works for which plastic.', priority:'med' },
+  { cat:'mat', title:'What Is Acrylic Prismatic Lighting Sheet? Diffusion, Lenses & LED Applications', desc:'Light-diffusing acrylic panels for LED fixtures and architectural lighting — grades, patterns, and use cases.', priority:'low' },
+  // COMPARISONS
+  { cat:'compare', title:'Acrylic vs. Polycarbonate: Which Should You Choose?', desc:'The most common question in plastic selection. Clarity, strength, cost, and use case breakdown.', priority:'high' },
+  { cat:'compare', title:'UHMW vs. Nylon: Which Wear-Resistant Plastic Is Right for You?', desc:'Both excel in wear applications — how to choose based on load, lubrication, and environment.', priority:'high' },
+  { cat:'compare', title:'Delrin vs. Nylon: Dimensional Stability vs. Flexibility', desc:'When to use Acetal and when to use Nylon — precision parts, moisture sensitivity, and machinability.', priority:'med' },
+  { cat:'compare', title:'PEEK vs. Ultem: High-Temperature Engineering Plastics Compared', desc:'Two elite thermoplastics side by side. Performance, cost, and where each wins.', priority:'med' },
+  { cat:'compare', title:'HDPE vs. Polypropylene: Which FDA-Compliant Plastic Is Best?', desc:'For food processing, chemical tanks, and outdoor use — the PP vs. HDPE decision guide.', priority:'med' },
+  { cat:'compare', title:'Acrylic vs. Glass: Clarity, Weight, Cost & Safety Compared', desc:'Why engineers and architects increasingly specify acrylic over glass — and where glass still wins.', priority:'high' },
+  { cat:'compare', title:'Thermoforming vs. Injection Molding: Which Process Is Right for Your Part?', desc:'Volume, tooling cost, lead time, and complexity — how to choose the right plastic manufacturing process.', priority:'med' },
+  { cat:'compare', title:'CNC Routing vs. Laser Cutting for Plastic: Which Is Better?', desc:'Cut quality, edge finish, material limitations — when to route and when to laser cut.', priority:'med' },
+  { cat:'compare', title:'Waterjet vs. Laser Cutting: Pros, Cons & Best Applications', desc:'Heat-affected zones, material thickness, and edge quality — the full comparison.', priority:'med' },
+  { cat:'compare', title:'Cast vs. Extruded Acrylic: What\'s the Difference?', desc:'Cell casting vs. continuous extrusion — why it matters for machining, bonding, and optical quality.', priority:'high' },
+  { cat:'compare', title:'Vacuum Forming vs. Thermoforming: What\'s the Difference?', desc:'Clarifying the terminology confusion and explaining how each process works.', priority:'low' },
+  { cat:'compare', title:'Polycarbonate Sheet vs. Multiwall Polycarbonate: Which Do You Need?', desc:'Solid sheet vs. twin-wall and triple-wall — skylights, machine guards, and glazing applications.', priority:'low' },
+  // CAPABILITIES
+  { cat:'cap', title:'CNC Routing for Plastic: What It Is, What We Can Make', desc:'Profiling, pocket cutting, contouring, and shaping — how CNC routing works and what it\'s best for.', priority:'high' },
+  { cat:'cap', title:'CNC Precision Cutting: Custom-Dimensioned Plastic Blanks & Slab Cutting', desc:'Sheet, slab, and plate cutting to exact dimensions — tolerances, materials, and what to expect.', priority:'high' },
+  { cat:'cap', title:'CNC Engraving for Plastic: Nameplates, Panels & Industrial Marking', desc:'From Navy vessel nameplates to instrument panels — CNC engraving process and applications.', priority:'med' },
+  { cat:'cap', title:'CNC Milling for Plastic Components: When to Mill vs. Route', desc:'3-axis milling for precision plastic parts — applications, tolerances, and material compatibility.', priority:'med' },
+  { cat:'cap', title:'CNC Turning for Plastic: Custom Rods, Bushings & Rotational Parts', desc:'Turned plastic parts in any material — shafts, bushings, spacers, and custom round stock.', priority:'med' },
+  { cat:'cap', title:'Laser Cutting & Waterjet Cutting Services: Plastic, Metal & Beyond', desc:'CO2 laser, fiber laser, and abrasive waterjet — which process for which material and application.', priority:'high' },
+  { cat:'cap', title:'Thermoforming Services: Heat Forming Plastic for Custom Shapes', desc:'How thermoforming works, what shapes are possible, and which materials thermoform best.', priority:'med' },
+  { cat:'cap', title:'Vacuum Forming Services: From Flat Sheet to 3D Shapes', desc:'Vacuum and heat forming for enclosures, covers, trays, and custom 3D plastic components.', priority:'med' },
+  { cat:'cap', title:'UV Flatbed Printing on Plastic: Direct-to-Substrate Printing Explained', desc:'Printing directly onto plastic, metal, glass, and rigid substrates — process, capabilities, and applications.', priority:'med' },
+  { cat:'cap', title:'Sandblasting for Plastic: Frosted Finishes, Matte Surfaces & Surface Prep', desc:'How sandblasting works on plastic, what finishes are achievable, and when to use it.', priority:'med' },
+  { cat:'cap', title:'Edge Finishing & Line Bending: Polishing, Flame Finishing & Acrylic Bending', desc:'Flame polishing vs. diamond polishing vs. regular polishing — and how line bending shapes acrylic.', priority:'high' },
+  { cat:'cap', title:'Plastic Welding, Bonding & Deburring Services', desc:'Hot gas welding, solvent cementing, structural adhesive bonding, and cryogenic deburring explained.', priority:'med' },
+  { cat:'cap', title:'Coatings & Surface Finishing for Plastic & Metal Parts', desc:'Chemical-resistant coatings, anti-static treatments, protective clear coats, and thermal annealing.', priority:'med' },
+  { cat:'cap', title:'CAD Design & Rapid Prototyping: From Concept to Working Plastic Part', desc:'How our design and prototyping service works — from drawing to fabricated prototype.', priority:'med' },
+  { cat:'cap', title:'Custom Plastic Extrusion Services', desc:'Custom profiles, shapes, and continuous cross-sections produced through plastic extrusion.', priority:'low' },
+  { cat:'cap', title:'Custom Plastic Molding: Injection, Compression & Rotational Molding', desc:'Full-range plastic molding for custom parts and production runs — which process fits your project.', priority:'med' },
+  { cat:'cap', title:'Injection Molding for Plastic Parts: Process, Materials & When to Use It', desc:'High-volume plastic part production — tooling, cycle times, and when injection molding makes sense.', priority:'low' },
+  // BUYING GUIDES
+  { cat:'buy', title:'How to Choose the Right Plastic for Your Application: A Complete Guide', desc:'The master decision framework — properties, environment, certifications, and budget all in one guide.', priority:'high' },
+  { cat:'buy', title:'FDA-Compliant Plastics: Which Materials Are Safe for Food Contact?', desc:'PTFE, HDPE, UHMW, Polycarbonate and more — what FDA compliance means and which grades qualify.', priority:'high' },
+  { cat:'buy', title:'High-Temperature Plastics Buyer\'s Guide: PEEK, Ultem, PTFE & More', desc:'Continuous service temperatures, mechanical properties, and cost comparison for extreme-heat applications.', priority:'high' },
+  { cat:'buy', title:'Chemical-Resistant Plastics: How to Match Material to Your Environment', desc:'Matching plastic material to specific chemicals — a practical compatibility matrix for buyers.', priority:'high' },
+  { cat:'buy', title:'Impact-Resistant Plastics: A Complete Buyer\'s Guide', desc:'Polycarbonate, ABS, UHMW — how to specify for impact, ballistic, and machine guard applications.', priority:'med' },
+  { cat:'buy', title:'UV-Resistant Plastics for Outdoor Applications', desc:'Acrylic, HDPE, and UV-stabilized grades — which plastics hold up outdoors and for how long.', priority:'med' },
+  { cat:'buy', title:'Electrically Insulating Plastics: Properties & Selection Guide', desc:'Phenolic, G-10, Ultem, PVC — dielectric strength, arc resistance, and application guide.', priority:'med' },
+  { cat:'buy', title:'Transparent Plastics Buyer\'s Guide: Acrylic, Polycarbonate & PETG', desc:'Light transmission, clarity, scratch resistance, and impact strength — choosing the right clear plastic.', priority:'high' },
+  { cat:'buy', title:'Engineering Plastics vs. Commodity Plastics: What\'s the Difference?', desc:'When to upgrade from HDPE or PVC to PEEK, Delrin, or Nylon — a cost-benefit framework.', priority:'med' },
+  { cat:'buy', title:'Cut-to-Size Plastic: How to Order, What to Specify & What to Expect', desc:'Dimensions, tolerances, materials, finishes — the complete ordering guide for cut-to-size plastic.', priority:'high' },
+  { cat:'buy', title:'Plastic Sheet, Rod & Tube: Which Form Factor Do You Need?', desc:'Sheets, rods, tubes, and custom shapes — matching the form factor to your fabrication process.', priority:'med' },
+  { cat:'buy', title:'MIL-SPEC and AS9100D: A Buyer\'s Guide to Aerospace-Grade Plastics', desc:'Compliance standards, certified materials, and what AS9100D certification means for your procurement.', priority:'med' },
+  // HOW-TO
+  { cat:'howto', title:'How to Cut Acrylic Sheet Without Cracking or Chipping', desc:'Scoring, circular saws, jigsaws, and CNC — tips for clean cuts and avoiding stress fractures.', priority:'high' },
+  { cat:'howto', title:'How to Polish Acrylic Edges: Flame, Diamond & Machine Polishing Compared', desc:'Step-by-step for each method — when to use each and what finish to expect.', priority:'high' },
+  { cat:'howto', title:'How to Bend Acrylic Sheet: Line Bending Basics & Strip Heater Tips', desc:'Heating temperatures, bending radii, and avoiding crazing — the practical guide to acrylic bending.', priority:'high' },
+  { cat:'howto', title:'How to Bond Acrylic: Solvent Cementing vs. Structural Adhesives', desc:'Weld-On 3 vs. 16 vs. 40 — which adhesive for which joint, and how to apply it correctly.', priority:'high' },
+  { cat:'howto', title:'How to Machine UHMW Polyethylene Without Chatter or Grabbing', desc:'Tool geometry, speeds, feeds, and fixturing strategies for machining this notoriously gummy material.', priority:'med' },
+  { cat:'howto', title:'How to Read a Plastic Material Data Sheet (TDS)', desc:'Property values, test standards, and what the numbers actually mean for your application.', priority:'med' },
+  { cat:'howto', title:'How to Calculate Plastic Sheet Weight for Shipping & Logistics', desc:'Density values for 17 plastic types, the weight formula, and how to avoid dimensional weight surprises.', priority:'med' },
+  { cat:'howto', title:'How to Clean and Maintain Acrylic Sheets Without Scratching', desc:'What to use, what to avoid, and how to restore clarity to scratched or hazed acrylic.', priority:'med' },
+  { cat:'howto', title:'How to Drill Plastic Without Cracking: Tips for Acrylic, PC & More', desc:'Bit geometry, speeds, backing materials, and lubrication for drilling clear and engineering plastics.', priority:'med' },
+  { cat:'howto', title:'How to Thermoform Plastic: A Process Overview for Engineers & Buyers', desc:'Molds, temperatures, draw ratios, and materials — what to know before specifying a thermoformed part.', priority:'med' },
+  { cat:'howto', title:'How to Weld Plastic: Types of Plastic Welding Explained', desc:'Hot gas, ultrasonic, vibration, extrusion welding — which method for which thermoplastic.', priority:'low' },
+  { cat:'howto', title:'How to Design Parts for CNC Plastic Machining: DFM Guidelines', desc:'Minimum wall thickness, undercuts, tolerances, and fixturing considerations for CNC plastic parts.', priority:'med' },
+  { cat:'howto', title:'How to Specify Tolerances for Fabricated Plastic Parts', desc:'Industry-standard tolerances for cut, machined, and formed plastic components.', priority:'low' },
+  { cat:'howto', title:'How to Prevent Stress Cracking in Acrylic and Polycarbonate', desc:'Environmental stress cracking (ESC) causes, chemical compatibility, and design strategies to prevent it.', priority:'low' },
+  // INDUSTRIES
+  { cat:'industry', title:'Plastics for the Defense Industry: MIL-SPEC Materials & AS9100D Manufacturing', desc:'Compliance requirements, impact-resistant enclosures, and certified materials for defense contractors.', priority:'high' },
+  { cat:'industry', title:'Aerospace Plastics: Lightweight, High-Performance Materials for Aviation', desc:'PEEK, Ultem, and polycarbonate in aerospace interiors, panels, and structural components.', priority:'high' },
+  { cat:'industry', title:'FDA-Compliant Plastics for Pharmaceutical Processing & Cleanrooms', desc:'Material selection, traceability, and certifications for pharma manufacturing environments.', priority:'high' },
+  { cat:'industry', title:'Food-Safe Plastics for Food & Beverage Manufacturing', desc:'UHMW cutting boards, HDPE conveyor guides, NSF materials — what food processors need to know.', priority:'high' },
+  { cat:'industry', title:'Marine Plastics: UV, Saltwater & Impact Resistance for Boats & Docks', desc:'Windshields, hatch covers, dock fenders, and underwater applications — materials that hold up offshore.', priority:'high' },
+  { cat:'industry', title:'Bullet-Resistant Glazing & Ballistic Plastics for Security Applications', desc:'UL 752 levels, polycarbonate configurations, and ballistic shield specifications.', priority:'med' },
+  { cat:'industry', title:'Plastics for Architectural Lighting: Diffusers, Lenses & LED Panels', desc:'Light transmission, diffusion grades, and optical plastics for architectural and commercial lighting.', priority:'med' },
+  { cat:'industry', title:'Machine Guards & Equipment Enclosures: Which Plastic Is Best?', desc:'Polycarbonate vs. acrylic for safety guards — impact requirements, visibility, and OSHA standards.', priority:'high' },
+  { cat:'industry', title:'Plastics for Retail Displays: POP Fixtures, Shelving & Signage', desc:'Acrylic, PVC, and polycarbonate in retail display fabrication — materials, finishes, and form factors.', priority:'med' },
+  { cat:'industry', title:'Plastics for Theatrical Set Design, Film & TV Production', desc:'Fire-retardant ratings, optical clarity, lightweight panels — materials for stage and screen.', priority:'low' },
+  { cat:'industry', title:'Trade Show Booth Materials: Plastics for Exhibitions & Activations', desc:'Lightweight, portable, and visually impactful plastic solutions for trade show displays and booths.', priority:'low' },
+  { cat:'industry', title:'Construction & Industrial Glazing: Polycarbonate & Acrylic for Buildings', desc:'Impact-rated glazing panels, skylight materials, and machine guard specifications for construction.', priority:'med' },
+  { cat:'industry', title:'Automotive Plastics: OEM Components, Light Covers & Interior Trim', desc:'Engineering plastics for vehicle applications — impact resistance, heat tolerance, and UV stability.', priority:'med' },
+  { cat:'industry', title:'Electrical Insulation Plastics for Power & Energy Systems', desc:'Phenolic, G-10, Ultem — switchgear, transformer components, and high-dielectric applications.', priority:'med' },
+  { cat:'industry', title:'Mining & Mineral Extraction: Wear-Resistant Plastic Liners & Components', desc:'UHMW liners, chute guides, and heavy-duty plastics engineered for abrasive mining environments.', priority:'low' },
+  { cat:'industry', title:'Plastics for OEM Manufacturers: Custom Fabrication at Scale', desc:'How Plastic-Craft supports OEM programs with consistent quality, certifications, and flexible volumes.', priority:'med' },
+  { cat:'industry', title:'Government & Military Procurement: Certified Plastics & Qualified Suppliers', desc:'ISO 9001:2015 and AS9100D — how Plastic-Craft serves government purchasing requirements.', priority:'med' },
+  { cat:'industry', title:'Educational Institutions: Safe, Durable Plastics for Schools & Labs', desc:'Display cases, lab equipment guards, and protective shields for educational environments.', priority:'low' },
+  // FAQ
+  { cat:'faq', title:'What Is the Strongest Plastic? Impact vs. Tensile vs. Compression Compared', desc:'No single answer — the right plastic depends on which type of strength you need.', priority:'high' },
+  { cat:'faq', title:'What Plastic Can Handle the Most Heat?', desc:'PTFE, PEEK, Ultem, CPVC — the temperature hierarchy of common engineering plastics.', priority:'high' },
+  { cat:'faq', title:'Does Polycarbonate Yellow Over Time?', desc:'UV degradation, glazing grades vs. standard, and how to prevent yellowing.', priority:'high' },
+  { cat:'faq', title:'What Is the Difference Between Cast and Extruded Acrylic?', desc:'Surface quality, machinability, bonding, and optical clarity — why the manufacturing method matters.', priority:'high' },
+  { cat:'faq', title:'How Long Does Acrylic Last Outdoors?', desc:'UV resistance, weathering data, and which grades are formulated for outdoor use.', priority:'med' },
+  { cat:'faq', title:'Can You Paint, Print, or Coat Plastic Sheets?', desc:'What surface prep is needed, which plastics accept paint, and what printing options are available.', priority:'med' },
+  { cat:'faq', title:'What Does FDA Compliant Mean for Plastic Materials?', desc:'Food contact regulations, which plastics qualify, and how to confirm compliance for your application.', priority:'high' },
+  { cat:'faq', title:'Which Plastics Cannot Be Bonded with Adhesive?', desc:'UHMW, PTFE, Delrin, and other low-surface-energy materials — and what to use instead.', priority:'med' },
+  { cat:'faq', title:'What Is the Difference Between Thermoforming and Vacuum Forming?', desc:'Clearing up the terminology confusion between these two closely related forming processes.', priority:'med' },
+  { cat:'faq', title:'Do You Have Minimum Order Quantities?', desc:'Short answer: no. Full answer: what we can accommodate and how to place orders of any size.', priority:'high' },
+  { cat:'faq', title:'How Long Does Custom Plastic Fabrication Take?', desc:'Lead times for cut-to-size, machined parts, and complex fabrication projects.', priority:'high' },
+  { cat:'faq', title:'Can You Ship Large-Format Plastic Sheets?', desc:'Sheet sizes, packaging methods, and carrier options for oversized plastic orders.', priority:'med' },
+  { cat:'faq', title:'What Is Your Return Policy for Custom Orders?', desc:'How we handle quality issues, discrepancies, and customer satisfaction on custom fabrication.', priority:'med' },
+  { cat:'faq', title:'Can I Get a Sample Before Ordering?', desc:'Sampling policy for materials, colors, and grades before committing to a production order.', priority:'med' },
+  { cat:'faq', title:'What Certifications Does Plastic-Craft Hold?', desc:'ISO 9001:2015 and AS9100D — what they mean, who they matter to, and how to reference them.', priority:'high' },
+  { cat:'faq', title:'How Do I Know Which Plastic Grade to Specify?', desc:'General purpose vs. specialty grades — when exact material grade matters and when it doesn\'t.', priority:'med' },
+  { cat:'faq', title:'Is Plastic Better Than Glass? When to Substitute Plastic for Glass', desc:'Safety, weight, cost, and fabrication advantages of plastic over glass across common applications.', priority:'med' },
+  { cat:'faq', title:'What Is CPVC and How Is It Different from PVC?', desc:'Temperature ratings, chemical resistance, and application differences between PVC and CPVC.', priority:'low' },
+  // COMPANY
+  { cat:'company', title:'About Plastic-Craft Products: 90+ Years of Expertise in Engineered Plastics', desc:'Founded in 1934, family-owned, and still operating from West Nyack, NY — our full story.', priority:'high' },
+  { cat:'company', title:'ISO 9001:2015 Certification: What It Means for Your Order', desc:'Quality management systems, process controls, and what our ISO certification guarantees buyers.', priority:'high' },
+  { cat:'company', title:'AS9100D Certification: Aerospace Quality Standards & What They Mean', desc:'Aerospace quality management — why AS9100D matters for defense, aerospace, and precision procurement.', priority:'high' },
+  { cat:'company', title:'Our Custom Fabrication Process: From Quote to Delivered Part', desc:'How a project moves from inquiry to quote to fabrication to delivery at Plastic-Craft.', priority:'high' },
+  { cat:'company', title:'Made in West Nyack, NY: Our Family-Owned Manufacturing Story', desc:'Single-location manufacturing, family ownership, and what that means for quality and accountability.', priority:'med' },
+  { cat:'company', title:'How to Request a Quote for Custom Plastic Parts', desc:'What information to include, how we respond, and what to expect from the quoting process.', priority:'high' },
+  { cat:'company', title:'Our Customers: Industries & Organizations We Serve', desc:'Defense contractors, aerospace OEMs, food processors, retailers — who trusts Plastic-Craft and why.', priority:'med' },
+  { cat:'company', title:'Quality Management at Plastic-Craft: Our Commitment to Consistent Results', desc:'How ISO 9001:2015 and AS9100D shape our processes, inspections, and supplier management.', priority:'med' },
+  { cat:'company', title:'Plastic-Craft vs. Big-Box Suppliers: Why Specialty Matters', desc:'The difference between a plastics specialist and a general industrial supplier — expertise, materials, and service.', priority:'med' },
+  { cat:'company', title:'Sustainability & Responsible Sourcing at Plastic-Craft', desc:'How we approach material sourcing, waste reduction, and environmental responsibility.', priority:'low' },
+];
 
-renderFilters();renderGrid();updateStats();
+// ════════════════════════════════════════════
+//  STATE
+// ════════════════════════════════════════════
+let activeFilter = 'all';
+let currentArticle = null;
+let currentImageUrl = '';
+let rawPastedText = '';
 
-function renderFilters(){
-  const cats=['All',...new Set(ARTICLES.map(a=>a.cat))];
-  document.getElementById('filter-tabs').innerHTML=cats.map(c=>
-    `<button class="ftab${c==='All'?' active':''}" onclick="setFilter('${c}')">${c}</button>`
-  ).join('');
+// ════════════════════════════════════════════
+//  LIBRARY RENDER
+// ════════════════════════════════════════════
+function countByFilter(id) {
+  return id === 'all' ? ARTICLES.length : ARTICLES.filter(a => a.cat === id).length;
 }
-function setFilter(cat){
-  activeFilter=cat;
-  document.querySelectorAll('.ftab').forEach(t=>t.classList.toggle('active',t.textContent===cat));
-  renderGrid();
-}
-function renderGrid(){
-  const q=document.getElementById('search-input').value.toLowerCase();
-  const filtered=ARTICLES.filter(a=>{
-    const matchCat=activeFilter==='All'||a.cat===activeFilter;
-    const matchQ=!q||a.title.toLowerCase().includes(q)||(a.desc||'').toLowerCase().includes(q);
-    return matchCat&&matchQ;
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+
+  document.getElementById('filter-tabs').innerHTML = CATS.map(c => {
+    const cnt = countByFilter(c.id);
+    if (!cnt && c.id !== 'all') return '';
+    return `<div class="tab${activeFilter===c.id?' active':''}" onclick="setFilter('${c.id}')">${c.label} <strong>${cnt}</strong></div>`;
+  }).join('');
+
+  const filtered = ARTICLES.filter(a => {
+    const matchCat = activeFilter === 'all' || a.cat === activeFilter;
+    const matchQ = !q || a.title.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q);
+    return matchCat && matchQ;
   });
-  const grid=document.getElementById('article-grid');
-  if(!filtered.length){grid.innerHTML='<div class="no-results">No articles found.</div>';return;}
-  grid.innerHTML=filtered.map(a=>{
-    const idx=ARTICLES.indexOf(a);
-    const isDone=doneSet.has(idx)||a.status==='done';
-    return `<div class="card">
-      <div class="card-cat">${a.cat}</div>
-      <div class="card-title">${a.title}</div>
-      <div class="card-desc">${a.desc||''}</div>
-      <div class="card-footer">
-        <span class="card-status ${isDone?'status-done':'status-todo'}">${isDone?'Done':'To Do'}</span>
-      </div>
-      <div style="display:flex;gap:8px;margin-top:10px;align-items:center;">
-        <input class="card-img-input" id="img-${idx}" type="text" placeholder="Image URL (optional)" style="flex:1;padding:5px 8px;border:1px solid rgba(0,0,0,0.1);border-radius:5px;font-size:10px;font-family:'Montserrat',sans-serif;outline:none;color:#666;">
-        <button class="paste-btn${isDone?' done':''}" onclick="openPaste(${idx})">${isDone?'Update Article':'Paste Article'}</button>
-      </div>
-    </div>`;
+
+  const byCat = CATS.filter(c => c.id !== 'all').map(c => ({...c, cnt: ARTICLES.filter(a => a.cat === c.id).length}));
+  document.getElementById('stats-row').innerHTML =
+    `<div class="stat-pill"><span>${ARTICLES.length}</span> Total Articles</div>` +
+    byCat.map(c => `<div class="stat-pill"><span>${c.cnt}</span> ${c.label}</div>`).join('');
+
+  document.getElementById('results-count').innerHTML =
+    `Showing <strong>${filtered.length}</strong> of ${ARTICLES.length} articles${q ? ` matching "<strong>${q}</strong>"` : ''}`;
+
+  if (!filtered.length) {
+    document.getElementById('output').innerHTML = '<div class="no-results">No articles match your search.</div>';
+    return;
+  }
+
+  const grouped = {};
+  filtered.forEach(a => { (grouped[a.cat] = grouped[a.cat] || []).push(a); });
+  const catOrder = CATS.filter(c => c.id !== 'all').map(c => c.id);
+
+  document.getElementById('output').innerHTML = catOrder.filter(id => grouped[id]).map(id => {
+    const cat = CATS.find(c => c.id === id);
+    return `
+      <div class="section-block">
+        <div class="section-heading">
+          <div class="cat-dot" style="background:${cat.color}"></div>
+          <h2>${cat.label}</h2>
+          <span class="section-count">${grouped[id].length}</span>
+        </div>
+        <div class="articles-grid">
+          ${grouped[id].map(a => {
+            const idx = ARTICLES.indexOf(a);
+            const pl = a.priority === 'high' ? 'High Priority' : a.priority === 'med' ? 'Medium Priority' : 'Lower Priority';
+            return `
+            <div class="article-card">
+              <div class="title">${a.title}</div>
+              <div class="desc">${a.desc}</div>
+              <div class="img-url-wrap">
+                <label>Image URL</label>
+                <input class="img-url-input" id="img-${idx}" type="text" placeholder="Paste WordPress image URL here (optional)" />
+              </div>
+              <div class="card-footer">
+                <span class="tag priority-${a.priority}">${pl}</span>
+                <button class="gen-btn" onclick="openArticle(${idx})">Get Prompt &#8594;</button>
+              </div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`;
   }).join('');
 }
-function updateStats(){
-  const done=ARTICLES.filter((a,i)=>doneSet.has(i)||a.status==='done').length;
-  document.getElementById('done-count').textContent=done;
-  document.getElementById('todo-count').textContent=ARTICLES.length-done;
-}
-function openPaste(idx){
-  const imgInput=document.getElementById("img-"+idx);
-  window._pendingImg=imgInput?imgInput.value.trim():"";
-  currentIdx=idx;
-  document.getElementById('paste-article-title').textContent=ARTICLES[idx].title;
-  document.getElementById('paste-input').value='';
-  document.getElementById('paste-error').style.display='none';
-  document.getElementById('library-view').style.display='none';
-  document.getElementById('paste-view').style.display='block';
-  document.getElementById('article-view').style.display='none';
-}
-function goToLibrary(){
-  document.getElementById('library-view').style.display='block';
-  document.getElementById('paste-view').style.display='none';
-  document.getElementById('article-view').style.display='none';
-  renderGrid();
-}
-function goToPaste(){
-  document.getElementById('article-view').style.display='none';
-  document.getElementById('paste-view').style.display='block';
-}
-function renderPasted(){
-  const raw=document.getElementById('paste-input').value.trim();
-  if(!raw){
-    showPasteError('Please paste the HTML from Claude first.');return;
-  }
-  // Extract meta — supports both comment formats
-  const metaMatch=raw.match(/<!--\s*SEO_META_DESCRIPTION:\s*([\s\S]*?)\s*-->/i)
-    ||raw.match(/<!--\s*SEO Meta Description[^:]*:\s*([\s\S]*?)\s*-->/i);
-  currentMeta=metaMatch?metaMatch[1].trim():'';
-  // Strip meta comment from display HTML
-  currentHTML=raw
-    .replace(/<!--\s*SEO_META_DESCRIPTION:[\s\S]*?-->/i,'')
-    .replace(/<!--\s*SEO Meta Description[\s\S]*?-->/i,'')
-    .trim();
 
-  if(!currentHTML){showPasteError('Could not parse HTML. Make sure you pasted the full code block from Claude.');return;}
+function setFilter(id) { activeFilter = id; render(); }
 
-  // Render
-  document.getElementById('state-preview').innerHTML=currentHTML;
-  document.getElementById('code-content').textContent=`<!-- SEO Meta Description (paste into Rank Math):\n${currentMeta}\n-->\n\n${currentHTML}`;
+// ════════════════════════════════════════════
+//  OPEN ARTICLE — generates prompt
+// ════════════════════════════════════════════
+function openArticle(idx) {
+  currentArticle = ARTICLES[idx];
+  rawPastedText = '';
+  const imgInput = document.getElementById('img-' + idx);
+  currentImageUrl = imgInput ? imgInput.value.trim() : '';
 
-  if(currentMeta){
-    document.getElementById('meta-bar-text').textContent=currentMeta;
-    document.getElementById('meta-bar').style.display='block';
-    document.getElementById('meta-copy-btn').textContent='Copy Meta Description';
-    document.getElementById('meta-copy-btn').classList.remove('copied');
+  document.getElementById('library-view').style.display = 'none';
+  document.getElementById('article-view').style.display = 'block';
+  document.getElementById('topbar-title').textContent = currentArticle.title;
+
+  buildPrompt();
+  showState('prompt');
+  setActiveTab('prompt');
+}
+
+function closeArticle() {
+  document.getElementById('article-view').style.display = 'none';
+  document.getElementById('library-view').style.display = 'block';
+  document.getElementById('paste-area').value = '';
+  window.scrollTo(0, 0);
+}
+
+// ════════════════════════════════════════════
+//  BUILD PROMPT
+// ════════════════════════════════════════════
+function buildPrompt() {
+  const a = currentArticle;
+  const imgLine = currentImageUrl
+    ? `Image URL to use: ${currentImageUrl}`
+    : `No image URL provided — use the placeholder YOUR-IMAGE-URL-HERE in the HTML output.`;
+
+  const prompt =
+`You are writing a complete, SEO-optimized article for plastic-craft.com.
+
+COMPANY CONTEXT:
+- Plastic-Craft Products | Founded 1934 | Family-owned
+- 744 West Nyack Road, West Nyack, NY 10994
+- Phone: (845) 358-3010 | Email: ecom@plastic-craft.com
+- Certifications: ISO 9001:2015 and AS9100D (Aerospace Quality Management)
+- B2B plastic fabrication and distribution — no minimum orders
+- Audience: engineers, procurement managers, purchasing specialists
+- Tone: professional, authoritative, technically accurate, accessible
+- NEVER use emojis. ALWAYS write about Plastic-Craft in third person ("Plastic-Craft offers..." not "we offer...").
+
+ARTICLE TO WRITE:
+Title: "${a.title}"
+Focus: ${a.desc}
+${imgLine}
+
+OUTPUT FORMAT — return this exact structure, nothing else:
+
+META DESCRIPTION:
+[Write a 150-160 character SEO meta description ending with a period]
+
+INTRO:
+[Write 2-3 engaging sentences that hook the reader and establish relevance]
+
+SECTION 1 — [Write a compelling H2 heading, no colons]:
+[Write 2-3 paragraphs. Use proper HTML list tags <ul><li> where helpful. No bullet characters.]
+
+SECTION 2 — [H2 heading]:
+[2-3 paragraphs]
+
+SECTION 3 — [H2 heading]:
+[2-3 paragraphs]
+
+SECTION 4 — [H2 heading]:
+[2-3 paragraphs — mention ISO 9001:2015 or AS9100D naturally here if relevant]
+
+SECTION 5 — [H2 heading] (optional but recommended):
+[2-3 paragraphs]
+
+CTA HEADING:
+[Short action-oriented headline, 8 words max]
+
+CTA BODY:
+[2-3 sentences inviting the reader to contact Plastic-Craft. Mention West Nyack, NY and either (845) 358-3010 or ecom@plastic-craft.com naturally.]
+
+REQUIREMENTS:
+- 700-900 words of body content total
+- No emojis anywhere
+- Third person only about Plastic-Craft
+- At least one mention of ISO 9001:2015 or AS9100D where genuinely relevant
+- HTML list tags only — no bullet characters`;
+
+  document.getElementById('prompt-content').textContent = prompt;
+}
+
+// ════════════════════════════════════════════
+//  PROCESS PASTED RESPONSE
+// ════════════════════════════════════════════
+function isFullHTML(raw) {
+  // Detect new full HTML format — starts with <!-- SEO_META_DESCRIPTION: or contains <figure and <h2
+  return /<!--\s*SEO[_\s]META[_\s]DESCRIPTION:/i.test(raw) || (raw.includes('<figure') && raw.includes('<h2>'));
+}
+
+function processResponse() {
+  const raw = document.getElementById('paste-area').value.trim();
+  if (!raw) { alert('Please paste Claude\'s response first.'); return; }
+  rawPastedText = raw;
+  if (isFullHTML(raw)) {
+    buildPreviewFromHTML(raw);
+    buildCodeFromHTML(raw);
   } else {
-    document.getElementById('meta-bar').style.display='none';
+    buildPreviewFromPaste(raw);
+    buildCodeFromPaste(raw);
+  }
+  showState('preview');
+  setActiveTab('paste');
+}
+
+function buildPreviewFromHTML(raw) {
+  const metaMatch = raw.match(/<!--\s*SEO[_\s]META[_\s]DESCRIPTION:\s*([\s\S]*?)\s*-->/i);
+  const meta = metaMatch ? metaMatch[1].trim() : '';
+  const html = raw.replace(/<!--\s*SEO[_\s]META[_\s]DESCRIPTION:[\s\S]*?-->/i, '').trim();
+
+  document.getElementById('preview-wrap-inner').innerHTML = `
+    <div class="meta-bar">
+      <div class="meta-bar-label">SEO Meta Description (copy into Rank Math)</div>
+      <div class="meta-bar-text">${meta || 'No meta description found — check your pasted response.'}</div>
+    </div>
+    <div class="preview-content" style="padding:32px 40px;">${html}</div>`;
+}
+
+function buildCodeFromHTML(raw) {
+  const metaMatch = raw.match(/<!--\s*SEO[_\s]META[_\s]DESCRIPTION:\s*([\s\S]*?)\s*-->/i);
+  const meta = metaMatch ? metaMatch[1].trim() : '[Not found]';
+  const html = raw.replace(/<!--\s*SEO[_\s]META[_\s]DESCRIPTION:[\s\S]*?-->/i, '').trim();
+  const title = currentArticle.title;
+
+  const code =
+`<!-- ================================================================
+  ARTICLE: ${title}
+  Website: plastic-craft.com | Plastic-Craft Products | West Nyack, NY
+  Certifications: ISO 9001:2015 | AS9100D
+
+  HOW TO USE:
+  1. Copy meta description into Rank Math
+  2. Paste code into a WordPress HTML block
+  3. Done
+
+  META DESCRIPTION (copy into Rank Math):
+  ${meta}
+================================================================ -->
+
+${html}`;
+
+  document.getElementById('code-content').textContent = code;
+
+  const banner = document.getElementById('code-instruction');
+  banner.style.cssText = 'margin:16px 20px 0;padding:12px 16px;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:6px;font-size:12px;color:#1b5e20;font-family:Montserrat,sans-serif;line-height:1.6;';
+  banner.innerHTML = '<strong>Ready to go.</strong> Copy the meta description into Rank Math, then paste this code into your WordPress HTML block.';
+}
+
+function buildPreviewFromPaste(raw) {
+  const meta = extractSection(raw, 'META DESCRIPTION:');
+  const intro = extractSection(raw, 'INTRO:');
+  const sections = extractSections(raw);
+  const ctaHeading = extractSection(raw, 'CTA HEADING:');
+  const ctaBody = extractSection(raw, 'CTA BODY:');
+
+  let imageBlock = currentImageUrl
+    ? `<div><img src="${currentImageUrl}" alt="${currentArticle.title}" style="width:100%;height:320px;object-fit:cover;display:block;" /></div>`
+    : `<div class="preview-img-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <p>No Image Provided</p>
+        <span>Paste an image URL on the card to see it here</span>
+      </div>`;
+
+  let content = `<h1>${currentArticle.title}</h1>`;
+  if (intro) content += `<p class="intro-p">${intro}</p>`;
+  sections.forEach(s => {
+    content += `<h2>${s.heading}</h2>`;
+    content += formatBody(s.body);
+  });
+  if (ctaHeading || ctaBody) {
+    content += `<div class="preview-cta"><h2>${ctaHeading || 'Ready to Get Started?'}</h2><p>${ctaBody || ''}</p><a href="/request-a-quote/">Request a Quote</a></div>`;
   }
 
-  document.getElementById('topbar-title').textContent=currentIdx!==null?ARTICLES[currentIdx].title:'Article Preview';
-  switchTab('preview');
-  document.getElementById('paste-view').style.display='none';
-  document.getElementById('article-view').style.display='block';
+  document.getElementById('preview-wrap-inner').innerHTML = `
+    ${imageBlock}
+    <div class="meta-bar">
+      <div class="meta-bar-label">SEO Meta Description (copy into Rank Math)</div>
+      <div class="meta-bar-text">${meta || 'No meta description found — check your pasted response.'}</div>
+    </div>
+    <div class="preview-content">${content}</div>`;
+}
 
-  // Mark done
-  if(currentIdx!==null){
-    doneSet.add(currentIdx);
-    localStorage.setItem('pc_done',JSON.stringify([...doneSet]));
-    updateStats();
+function buildCodeFromPaste(raw) {
+  const meta = extractSection(raw, 'META DESCRIPTION:');
+  const intro = extractSection(raw, 'INTRO:');
+  const sections = extractSections(raw);
+  const ctaHeading = extractSection(raw, 'CTA HEADING:');
+  const ctaBody = extractSection(raw, 'CTA BODY:');
+  const title = currentArticle.title;
+  const imgSrc = currentImageUrl || 'YOUR-IMAGE-URL-HERE';
+  const imgAlt = currentImageUrl ? title : 'YOUR-IMAGE-ALT-TEXT';
+
+  let sectionsHTML = '';
+  sections.forEach(s => {
+    sectionsHTML += `\n<h2>${s.heading}</h2>\n`;
+    sectionsHTML += formatBody(s.body) + '\n';
+  });
+
+  const imgNote = currentImageUrl ? `  Image URL baked in: ${currentImageUrl}` : `  IMAGE NEEDED: Replace YOUR-IMAGE-URL-HERE with your WordPress image URL.`;
+  const steps = currentImageUrl
+    ? `  1. Copy meta description into Rank Math\n  2. Paste code into a WordPress HTML block\n  3. Done — image is already built in`
+    : `  1. Upload image to WordPress Media Library\n  2. Replace YOUR-IMAGE-URL-HERE with your image URL\n  3. Copy meta description into Rank Math\n  4. Paste code into a WordPress HTML block`;
+
+  const code =
+`<!-- ================================================================
+  ARTICLE: ${title}
+  Website: plastic-craft.com | Plastic-Craft Products | West Nyack, NY
+  Certifications: ISO 9001:2015 | AS9100D
+  ${imgNote}
+
+  HOW TO USE:
+${steps}
+
+  META DESCRIPTION (copy into Rank Math):
+  ${meta || '[Not found — check pasted content]'}
+================================================================ -->
+
+<!-- Hero Image -->
+<figure style="margin:0 0 32px;padding:0;">
+  <img src="${imgSrc}" alt="${imgAlt}" style="width:100%;height:auto;border-radius:6px;display:block;" />
+</figure>
+
+<!-- Intro -->
+<p style="font-size:17px;line-height:1.8;border-left:4px solid #C8922A;padding-left:18px;margin:0 0 28px;color:#333333;">
+  ${intro || ''}
+</p>
+${sectionsHTML}
+<!-- CTA Block -->
+<div style="background:#1B365D;border-radius:8px;padding:36px 40px;margin-top:48px;">
+  <h2 style="color:#ffffff;margin:0 0 12px;font-size:22px;">${ctaHeading || 'Ready to Get Started?'}</h2>
+  <p style="color:rgba(255,255,255,0.88);line-height:1.75;margin:0 0 4px;">${ctaBody || ''}</p>
+  <a href="/request-a-quote/" style="display:inline-block;background:#C8922A;color:#ffffff;padding:13px 26px;border-radius:5px;text-decoration:none;font-weight:700;font-size:14px;margin-top:16px;font-family:Montserrat,sans-serif;">
+    Request a Quote
+  </a>
+</div>`;
+
+  document.getElementById('code-content').textContent = code;
+
+  const banner = document.getElementById('code-instruction');
+  if (currentImageUrl) {
+    banner.style.cssText = 'margin:16px 20px 0;padding:12px 16px;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:6px;font-size:12px;color:#1b5e20;font-family:Montserrat,sans-serif;line-height:1.6;';
+    banner.innerHTML = '<strong>Image already baked in.</strong> Just copy the meta description into Rank Math and paste this code into your WordPress HTML block.';
+  } else {
+    banner.style.cssText = 'margin:16px 20px 0;padding:12px 16px;background:#fff8e6;border:1px solid #ffe08a;border-radius:6px;font-size:12px;color:#7a5800;font-family:Montserrat,sans-serif;line-height:1.6;';
+    banner.innerHTML = '<strong>Before you paste:</strong> Replace <strong>YOUR-IMAGE-URL-HERE</strong> with your WordPress image URL. Copy the meta description into Rank Math.';
   }
 }
-function showPasteError(msg){
-  const el=document.getElementById('paste-error');
-  el.textContent=msg;el.style.display='block';
+
+// ════════════════════════════════════════════
+//  PARSING HELPERS
+// ════════════════════════════════════════════
+function extractSection(raw, label) {
+  const re = new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*([\\s\\S]*?)(?=\\n[A-Z ]+:|SECTION \\d|CTA |$)', 'i');
+  const m = raw.match(re);
+  return m ? m[1].trim() : '';
 }
-function switchTab(tab){
-  document.getElementById('btn-preview').classList.toggle('active',tab==='preview');
-  document.getElementById('btn-code').classList.toggle('active',tab==='code');
-  document.getElementById('state-preview').style.display=tab==='preview'?'block':'none';
-  document.getElementById('state-code').style.display=tab==='code'?'block':'none';
+
+function extractSections(raw) {
+  const sections = [];
+  const re = /SECTION \d+\s*[—–-]\s*(.+?):\s*([\s\S]*?)(?=SECTION \d+|CTA HEADING:|$)/gi;
+  let m;
+  while ((m = re.exec(raw)) !== null) {
+    sections.push({ heading: m[1].trim(), body: m[2].trim() });
+  }
+  return sections;
 }
-function copyCode(){
-  const code=document.getElementById('code-content').textContent;
-  navigator.clipboard.writeText(code).catch(()=>{const ta=document.createElement('textarea');ta.value=code;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);});
-  const btn=document.getElementById('copy-btn');btn.textContent='Copied!';btn.classList.add('copied');
-  setTimeout(()=>{btn.textContent='Copy All Code';btn.classList.remove('copied');},2500);
+
+function formatBody(body) {
+  let out = '';
+  const parts = body.split(/\n\n+/);
+  parts.forEach(p => {
+    p = p.trim();
+    if (!p) return;
+    const lower = p.toLowerCase();
+    if (lower.startsWith('<ul>') || lower.startsWith('<ol>') || lower.startsWith('<li>')) {
+      out += p + '\n';
+    } else {
+      out += `<p>${p}</p>\n`;
+    }
+  });
+  return out;
 }
-function copyMeta(){
-  navigator.clipboard.writeText(currentMeta).catch(()=>{const ta=document.createElement('textarea');ta.value=currentMeta;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);});
-  const btn=document.getElementById('meta-copy-btn');btn.textContent='Copied!';btn.classList.add('copied');
-  setTimeout(()=>{btn.textContent='Copy Meta Description';btn.classList.remove('copied');},2500);
+
+// ════════════════════════════════════════════
+//  VIEW SWITCHING
+// ════════════════════════════════════════════
+function showState(state) {
+  ['prompt', 'paste', 'preview', 'code'].forEach(s => {
+    const el = document.getElementById('state-' + s);
+    if (el) el.style.display = 'none';
+  });
+  const target = document.getElementById('state-' + state);
+  if (target) target.style.display = 'block';
 }
+
+function setActiveTab(tab) {
+  document.getElementById('btn-prompt').classList.toggle('active', tab === 'prompt');
+  document.getElementById('btn-paste').classList.toggle('active', tab === 'paste');
+}
+
+function switchView(view) {
+  if (view === 'prompt') { showState('prompt'); setActiveTab('prompt'); }
+  else if (view === 'paste') { showState('paste'); setActiveTab('paste'); }
+  else if (view === 'preview') { showState('preview'); setActiveTab('paste'); }
+  else if (view === 'code') { showState('code'); setActiveTab('paste'); }
+}
+
+// ════════════════════════════════════════════
+//  COPY HELPERS
+// ════════════════════════════════════════════
+function doCopy(text, btnId, label) {
+  navigator.clipboard.writeText(text).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+  });
+  const btn = document.getElementById(btnId);
+  if (!btn) return;
+  btn.textContent = 'Copied!'; btn.classList.add('copied');
+  setTimeout(() => { btn.textContent = label; btn.classList.remove('copied'); }, 2500);
+}
+
+function copyPrompt() { doCopy(document.getElementById('prompt-content').textContent, 'copy-prompt-btn', 'Copy Prompt'); }
+function copyCode()   { doCopy(document.getElementById('code-content').textContent,  'copy-btn',         'Copy All Code'); }
+
+// ════════════════════════════════════════════
+//  INIT
+// ════════════════════════════════════════════
+render();
 </script>
 </body>
 </html>
+
+// ════════════════════════════════════════════
+//  LIBRARY RENDER
+// ════════════════════════════════════════════
+function countByFilter(id) {
+  return id === 'all' ? ARTICLES.length : ARTICLES.filter(a => a.cat === id).length;
+}
+
+function render() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+
+  document.getElementById('filter-tabs').innerHTML = CATS.map(c => {
+    const cnt = countByFilter(c.id);
+    if (!cnt && c.id !== 'all') return '';
+    return `<div class="tab${activeFilter===c.id?' active':''}" onclick="setFilter('${c.id}')">${c.label} <strong>${cnt}</strong></div>`;
+  }).join('');
+
+  const filtered = ARTICLES.filter(a => {
+    const matchCat = activeFilter === 'all' || a.cat === activeFilter;
+    const matchQ = !q || a.title.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+
+  const byCat = CATS.filter(c => c.id !== 'all').map(c => ({...c, cnt: ARTICLES.filter(a => a.cat === c.id).length}));
+  document.getElementById('stats-row').innerHTML =
+    `<div class="stat-pill"><span>${ARTICLES.length}</span> Total Articles</div>` +
+    byCat.map(c => `<div class="stat-pill"><span>${c.cnt}</span> ${c.label}</div>`).join('');
+
+  document.getElementById('results-count').innerHTML =
+    `Showing <strong>${filtered.length}</strong> of ${ARTICLES.length} articles${q ? ` matching "<strong>${q}</strong>"` : ''}`;
+
+  if (!filtered.length) {
+    document.getElementById('output').innerHTML = '<div class="no-results">No articles match your search.</div>';
+    return;
+  }
+
+  const grouped = {};
+  filtered.forEach(a => { (grouped[a.cat] = grouped[a.cat] || []).push(a); });
+  const catOrder = CATS.filter(c => c.id !== 'all').map(c => c.id);
+
+  document.getElementById('output').innerHTML = catOrder.filter(id => grouped[id]).map(id => {
+    const cat = CATS.find(c => c.id === id);
+    return `
+      <div class="section-block">
+        <div class="section-heading">
+          <div class="cat-dot" style="background:${cat.color}"></div>
+          <h2>${cat.label}</h2>
+          <span class="section-count">${grouped[id].length}</span>
+        </div>
+        <div class="articles-grid">
+          ${grouped[id].map(a => {
+            const idx = ARTICLES.indexOf(a);
+            const pl = a.priority === 'high' ? 'High Priority' : a.priority === 'med' ? 'Medium Priority' : 'Lower Priority';
+            return `
+            <div class="article-card">
+              <div class="title">${a.title}</div>
+              <div class="desc">${a.desc}</div>
+              <div class="img-url-wrap">
+                <label>Image URL</label>
+                <input class="img-url-input" id="img-${idx}" type="text" placeholder="Paste WordPress image URL here (optional)" />
+              </div>
+              <div class="card-footer">
+                <span class="tag priority-${a.priority}">${pl}</span>
+                <button class="gen-btn" onclick="openArticle(${idx})">Write Article &#8594;</button>
+              </div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function setFilter(id) { activeFilter = id; render(); }
+
+// ════════════════════════════════════════════
+//  ARTICLE GENERATION
+// ════════════════════════════════════════════
+async function openArticle(idx) {
+  const apiKey = getApiKey();
+  if (!apiKey || !apiKey.startsWith('sk-ant-')) {
+    alert('Please paste your Anthropic API key at the top of the page before generating an article.');
+    return;
+  }
+
+  currentArticle = ARTICLES[idx];
+  generatedData = null;
+  currentView = 'preview';
+
+  // Grab image URL from the card input if provided
+  const imgInput = document.getElementById('img-' + idx);
+  currentImageUrl = imgInput ? imgInput.value.trim() : '';
+
+  document.getElementById('library-view').style.display = 'none';
+  document.getElementById('article-view').style.display = 'block';
+  document.getElementById('topbar-title').textContent = currentArticle.title;
+  document.getElementById('btn-preview').classList.add('active');
+  document.getElementById('btn-code').classList.remove('active');
+
+  showState('loading');
+  await generateArticle();
+}
+
+function closeArticle() {
+  document.getElementById('article-view').style.display = 'none';
+  document.getElementById('library-view').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+async function retryGenerate() {
+  showState('loading');
+  await generateArticle();
+}
+
+function getApiKey() {
+  return document.getElementById('api-key-input').value.trim();
+}
+
+function checkApiKey() {
+  const key = getApiKey();
+  const status = document.getElementById('api-key-status');
+  if (!key) { status.textContent = ''; status.className = ''; return; }
+  if (key.startsWith('sk-ant-')) {
+    status.textContent = 'Key looks good';
+    status.className = 'valid';
+  } else {
+    status.textContent = 'Key should start with sk-ant-';
+    status.className = 'invalid';
+  }
+}
+
+function toggleKeyVisibility() {
+  const input = document.getElementById('api-key-input');
+  const btn = document.getElementById('toggle-btn');
+  if (input.type === 'password') { input.type = 'text'; btn.textContent = 'Hide'; }
+  else { input.type = 'password'; btn.textContent = 'Show'; }
+}
+
+async function generateArticle() {
+  try {
+    const apiKey = getApiKey();
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true'
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1800,
+        system: `You are an expert B2B content writer for Plastic-Craft Products — a plastic fabrication and distribution company founded in 1934, ISO 9001:2015 and AS9100D certified, located at 744 West Nyack Road, West Nyack, NY 10994. You write SEO-optimized content for their website targeting engineers, procurement managers, and purchasing specialists across aerospace, defense, food processing, pharmaceutical, marine, and manufacturing industries. Tone: professional, authoritative, technically accurate, and accessible. No emojis anywhere in the output. Always refer to Plastic-Craft in the third person — "Plastic-Craft offers..." or "the team at Plastic-Craft..." — never first person plural.`,
+        messages: [{
+          role: 'user',
+          content: `Write a complete, SEO-optimized article for plastic-craft.com.
+
+Title: "${currentArticle.title}"
+Focus: ${currentArticle.desc}
+
+Return ONLY a valid JSON object. No markdown, no code fences, no extra text before or after. Structure:
+{
+  "metaDesc": "150-160 character SEO meta description. End with a period.",
+  "intro": "2-3 sentence engaging opening paragraph that hooks the reader and establishes the topic's relevance.",
+  "sections": [
+    {
+      "h2": "Section heading — specific and compelling, no colons",
+      "body": "2-3 paragraphs of content separated by double newlines. Use <ul><li>text</li></ul> HTML list syntax where a list genuinely helps. Do not use bullet characters — only proper HTML list tags."
+    }
+  ],
+  "cta_heading": "Short action-oriented heading, 8 words max",
+  "cta_body": "2-3 sentences inviting the reader to contact Plastic-Craft. Naturally mention West Nyack NY and either the phone (845) 358-3010 or email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cbaea8a4a68bbba7aab8bfa2a8e6a8b9aaadbfe5a8a4a6">[email&#160;protected]</a>."
+}
+
+Requirements: 4-5 sections. 700-900 total words of body content. No emojis. No bullet characters. Each section body is 2-3 paragraphs. Mention Plastic-Craft's certifications (ISO 9001:2015 and/or AS9100D) naturally in at least one section where it is relevant. Write in third person about Plastic-Craft.`
+        }]
+      })
+    });
+
+    const data = await response.json();
+    if (!data.content) throw new Error('No content returned');
+
+    const rawText = data.content.filter(b => b.type === 'text').map(b => b.text).join('');
+    const cleaned = rawText.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+    generatedData = JSON.parse(cleaned);
+
+    renderPreview();
+    renderCode();
+    showState('preview');
+    switchView('preview');
+
+  } catch (err) {
+    console.error('Generation error:', err);
+    showState('error');
+  }
+}
+
+function showState(state) {
+  ['loading', 'error', 'preview', 'code'].forEach(s => {
+    document.getElementById('state-' + s).style.display = 'none';
+  });
+  document.getElementById('state-' + state).style.display = 'block';
+}
+
+function switchView(view) {
+  currentView = view;
+  document.getElementById('btn-preview').classList.toggle('active', view === 'preview');
+  document.getElementById('btn-code').classList.toggle('active', view === 'code');
+  if (!generatedData) return;
+  showState(view);
+}
+
+// ════════════════════════════════════════════
+//  RENDER PREVIEW
+// ════════════════════════════════════════════
+function renderPreview() {
+  if (!generatedData) return;
+  const d = generatedData;
+  const title = currentArticle.title;
+
+  document.getElementById('preview-meta').textContent = d.metaDesc;
+
+  // Build image block — real image if URL provided, styled placeholder if not
+  let imageBlock = '';
+  if (currentImageUrl) {
+    imageBlock = `<div style="margin:0 0 0;"><img src="${currentImageUrl}" alt="${title}" style="width:100%;height:320px;object-fit:cover;display:block;" /></div>`;
+  } else {
+    imageBlock = `<div class="preview-img-placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="3" width="18" height="18" rx="2.5"/>
+        <circle cx="8.5" cy="8.5" r="1.5"/>
+        <path d="M21 15l-5-5L5 21"/>
+      </svg>
+      <p>No Image Provided</p>
+      <span>Paste an image URL on the card before generating to see it here</span>
+    </div>`;
+  }
+
+  // Replace the image placeholder div
+  document.querySelector('.preview-img-placeholder') && (document.querySelector('.preview-wrap').firstElementChild.outerHTML = imageBlock);
+
+  let html = `<h1>${title}</h1>`;
+  html += `<p class="intro-p">${d.intro}</p>`;
+
+  d.sections.forEach(s => {
+    html += `<h2>${s.h2}</h2>`;
+    const paras = s.body.split(/\n\n+/);
+    paras.forEach(p => {
+      p = p.trim();
+      if (!p) return;
+      if (p.toLowerCase().startsWith('<ul>') || p.toLowerCase().startsWith('<ol>')) {
+        html += p;
+      } else {
+        html += `<p>${p}</p>`;
+      }
+    });
+  });
+
+  html += `
+    <div class="preview-cta">
+      <h2>${d.cta_heading}</h2>
+      <p>${d.cta_body}</p>
+      <a href="/request-a-quote/">Request a Quote</a>
+    </div>`;
+
+  // Rebuild the preview wrap cleanly
+  document.querySelector('.preview-wrap').innerHTML = `
+    ${imageBlock}
+    <div class="meta-bar">
+      <div class="meta-bar-label">SEO Meta Description (copy into Rank Math)</div>
+      <div class="meta-bar-text" id="preview-meta">${d.metaDesc}</div>
+    </div>
+    <div class="preview-content">${html}</div>`;
+}
+
+// ════════════════════════════════════════════
+//  RENDER CODE
+// ════════════════════════════════════════════
+function renderCode() {
+  if (!generatedData) return;
+  const d = generatedData;
+  const title = currentArticle.title;
+
+  let sectionsHTML = '';
+  d.sections.forEach(s => {
+    sectionsHTML += `\n<h2>${s.h2}</h2>\n`;
+    const paras = s.body.split(/\n\n+/);
+    paras.forEach(p => {
+      p = p.trim();
+      if (!p) return;
+      if (p.toLowerCase().startsWith('<ul>') || p.toLowerCase().startsWith('<ol>')) {
+        sectionsHTML += `\n${p}\n`;
+      } else {
+        sectionsHTML += `\n<p>${p}</p>\n`;
+      }
+    });
+  });
+
+  const imgSrc   = currentImageUrl || 'YOUR-IMAGE-URL-HERE';
+  const imgAlt   = currentImageUrl ? title : 'YOUR-IMAGE-ALT-TEXT';
+  const imgNote  = currentImageUrl
+    ? `  Image URL baked in: ${currentImageUrl}`
+    : `  IMAGE NEEDED: Upload your image to WordPress Media Library,\n  copy the URL, and replace YOUR-IMAGE-URL-HERE below.`;
+  const howTo = currentImageUrl
+    ? `  1. Paste this entire block into a WordPress HTML block (or\n     Elementor HTML widget) on your article/blog page\n  2. Add the meta description below into Rank Math's\n     "Meta Description" field for this page\n  3. Done — your image is already built in.`
+    : `  1. Upload your image to WordPress Media Library\n  2. Copy the image URL and replace YOUR-IMAGE-URL-HERE below\n  3. Replace YOUR-IMAGE-ALT-TEXT with a short descriptive phrase\n  4. Paste this entire block into a WordPress HTML block (or\n     Elementor HTML widget) on your article/blog page\n  5. Add the meta description below into Rank Math's\n     "Meta Description" field for this page`;
+
+  const code =
+`<!-- ================================================================
+  ARTICLE: ${title}
+  Website: plastic-craft.com
+  Company: Plastic-Craft Products | West Nyack, NY
+  Certifications: ISO 9001:2015 | AS9100D
+  ${imgNote}
+
+  HOW TO USE:
+${howTo}
+
+  META DESCRIPTION (copy into Rank Math):
+  ${d.metaDesc}
+================================================================ -->
+
+<!-- Hero Image -->
+<figure style="margin:0 0 32px;padding:0;">
+  <img
+    src="${imgSrc}"
+    alt="${imgAlt}"
+    style="width:100%;height:auto;border-radius:6px;display:block;"
+  />
+</figure>
+
+<!-- Intro -->
+<p style="font-size:17px;line-height:1.8;border-left:4px solid #C8922A;padding-left:18px;margin:0 0 28px;color:#333333;">
+  ${d.intro}
+</p>
+${sectionsHTML}
+<!-- CTA Block -->
+<div style="background:#1B365D;border-radius:8px;padding:36px 40px;margin-top:48px;">
+  <h2 style="color:#ffffff;margin:0 0 12px;font-size:22px;">${d.cta_heading}</h2>
+  <p style="color:rgba(255,255,255,0.88);line-height:1.75;margin:0 0 4px;">${d.cta_body}</p>
+  <a
+    href="/request-a-quote/"
+    style="display:inline-block;background:#C8922A;color:#ffffff;padding:13px 26px;border-radius:5px;text-decoration:none;font-weight:700;font-size:14px;margin-top:16px;font-family:Montserrat,sans-serif;"
+  >
+    Request a Quote
+  </a>
+</div>`;
+
+  document.getElementById('code-content').textContent = code;
+
+  // Update the instruction banner
+  const banner = document.getElementById('code-instruction');
+  if (currentImageUrl) {
+    banner.style.background = '#e8f5e9';
+    banner.style.borderColor = '#a5d6a7';
+    banner.style.color = '#1b5e20';
+    banner.innerHTML = '<strong>Image already baked in.</strong> Your image URL is built into the code below — no placeholders to replace. Just copy the meta description into Rank Math, paste the code into your WordPress HTML block, and you\'re done.';
+  } else {
+    banner.style.background = '#fff8e6';
+    banner.style.borderColor = '#ffe08a';
+    banner.style.color = '#7a5800';
+    banner.innerHTML = '<strong>Before you paste:</strong> Upload your image to the WordPress Media Library, copy the image URL, and replace <strong>YOUR-IMAGE-URL-HERE</strong> in the code below. Also copy the meta description from the Preview tab into Rank Math.';
+  }
+}
+
+// ════════════════════════════════════════════
+//  COPY CODE
+// ════════════════════════════════════════════
+function copyCode() {
+  const code = document.getElementById('code-content').textContent;
+  navigator.clipboard.writeText(code).then(() => {
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy All Code';
+      btn.classList.remove('copied');
+    }, 2500);
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = code;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy All Code';
+      btn.classList.remove('copied');
+    }, 2500);
+  });
+}
+
+// ════════════════════════════════════════════
+//  INIT
+// ══════════════�
