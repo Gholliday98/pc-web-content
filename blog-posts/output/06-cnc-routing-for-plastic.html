@@ -1,0 +1,227 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">CNC Routing for Plastic: What It Is and What We Can Make</h1>
+        <p class="hero-subtitle fade-in">CNC routing is one of the most versatile plastic fabrication processes available — it converts flat sheet stock and solid bar into finished profiles, panels, housings, wear components, and precision parts without tooling cost or lead time of molding.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="CNC router cutting plastic sheet into custom profiles" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is CNC Routing for Plastic and How Does It Work?</h2>
+    </div>
+    <p>CNC routing is a subtractive machining process in which a computer-controlled spindle drives a rotating cutting tool along a programmed toolpath to remove material from a workpiece. The machine operates on three or more axes simultaneously, producing <strong>two-dimensional profiles, three-dimensional contoured surfaces, pockets of controlled depth, and complex multi-feature parts</strong> from flat sheet, plate, or solid bar stock.</p>
+    <p>Unlike laser cutting (thermal) or waterjet (hydraulic), CNC routing is a <strong>mechanical cold-cutting process</strong>. This means no heat-affected zone at cut edges, no risk of thermal stress, and no material restriction based on thermal decomposition — PVC, CPVC, and other materials that cannot be laser cut are routed without any safety concern.</p>
+    <div class="pullquote">
+      <p><em>The mechanical nature of CNC routing enables operations that neither laser nor waterjet can perform: pocketing to controlled depths, step profiles, engraving, three-dimensional surface contouring, and material removal from the face of a part rather than only through its thickness.</em></p>
+    </div>
+    <p>Plastic-Craft Products runs CNC routing on acrylic, polycarbonate, HDPE, UHMW, nylon, Delrin, PVC, CPVC, polypropylene, PEEK, phenolic, PTFE, Ultem, and Torlon — material range is a function of tooling selection and process parameters, not machine capability.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What CNC Routing Operations Can Be Performed on Plastic?</h2>
+    </div>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Profile Cutting (2D Contouring)</div>
+        <p>Cut parts from sheet stock to any two-dimensional shape — rectangles, circles, irregular profiles, complex curves, and nested parts from a single sheet.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Pocket Milling</div>
+        <p>Remove material from the face of a part to a controlled depth for recesses, slots, counterbores, gasket grooves, and alignment features.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Step &amp; Rabbet Profiles</div>
+        <p>Cut tongue-and-groove joints and interlocking edge features that allow panels to mate cleanly without fasteners.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">V-Grooving</div>
+        <p>Cut V-shaped grooves to allow folding, producing 3D enclosures from flat sheet without heat bending distortion.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Drilling &amp; Boring</div>
+        <p>Through-holes, blind holes, and counterbored holes with CNC-governed positioning accuracy across multi-hole patterns.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">3D Surface Contouring</div>
+        <p>Curved, sculpted, or ramped surfaces for aerodynamic profiles, ergonomic components, and architectural elements.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What Plastic Parts Are Best Suited to CNC Routing?</h2>
+    </div>
+    <p>CNC routing is the correct process for parts requiring custom 2D profiles from sheet stock, combined profiling and face operations in a single setup, features that laser or waterjet cannot produce, or materials that cannot be laser cut.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🏗️</div>
+        <div class="industry-label">Structural &amp; Enclosure Components</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Wear &amp; Bearing Components</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏪</div>
+        <div class="industry-label">Display &amp; Architectural</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🧪</div>
+        <div class="industry-label">Prototypes &amp; First Articles</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚡</div>
+        <div class="industry-label">Electrical Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔧</div>
+        <div class="industry-label">Jigs &amp; Fixtures</div>
+      </div>
+    </div>
+    <p><strong>Prototyping</strong> is a particularly strong use case — the process requires no tooling investment beyond standard cutting tools. A new design can go from CAD file to machined first article in hours or days, with no mold or tool cost. Plastic-Craft Products machines single-piece prototypes on the same equipment and to the same quality standard as production parts.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>What Tolerances and Edge Quality Does CNC Routing Achieve?</h2>
+    </div>
+    <p>CNC routing typically achieves positional tolerances of <strong>&plusmn;0.005 to &plusmn;0.010 inch</strong> on profiled dimensions. Soft, flexible plastics like UHMW and polypropylene are more challenging than rigid materials like acrylic, phenolic, or Delrin.</p>
+    <p>Edge finish is determined by tool type, sharpness, feed rate, and spindle speed. Sharp carbide tooling produces a smooth machined edge appropriate for structural applications, assembly, bonding, and most visible applications. For acrylic requiring optically polished edges, <strong>diamond polishing or flame polishing</strong> is performed in-house as a secondary operation.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">ISO 9001:2015</div>
+        <p>Documented quality management covering CNC routing and all in-house fabrication operations.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">AS9100D</div>
+        <p>Material certificate, machining records, and dimensional inspection all originate from a single AS9100D-certified supplier.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Provide to Get a CNC Routing Quote?</h2>
+    </div>
+    <p>The most efficient path to a quote is a <strong>DXF or DWG file</strong> for 2D parts, or a <strong>STEP or IGES file</strong> for 3D parts, along with a dimensioned drawing specifying critical tolerances, required edge finish, material and grade, quantity, and any secondary operations (drilling, tapping, polishing, engraving).</p>
+    <p>For simple cut-to-size parts, a dimensioned sketch or written specification is sufficient. For parts being replicated from a physical sample, Plastic-Craft Products can work from the sample directly.</p>
+    <p>Material selection and thickness should be confirmed before quoting whenever possible. Plastic-Craft Products can advise on material selection as part of the quoting process, drawing on <strong>90 years of application experience</strong>. Both single-piece prototypes and production quantities are quoted on the same no-minimum basis.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What file formats are accepted for CNC routing jobs?</h3>
+      <p>DXF and DWG for 2D profiles. STEP and IGES for 3D parts. PDF drawings with precise dimensions are acceptable for simple profiles. Plastic-Craft Products works from most common CAD formats.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can CNC routing produce polished acrylic edges in a single operation?</h3>
+      <p>CNC routing produces a smooth machined edge suitable for most applications, but not an optically polished edge in a single pass. Optical polishing requires a secondary flame or diamond polishing operation. Both are performed in-house at Plastic-Craft Products.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the maximum sheet size that can be CNC routed?</h3>
+      <p>Maximum size is governed by machine bed dimensions. Plastic-Craft Products handles standard full-sheet sizes. Larger parts can often be machined by repositioning or breaking into sections that are subsequently bonded.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can CNC routing be used on PTFE, PEEK, and other high-performance plastics?</h3>
+      <p>Yes. CNC routing is fully compatible with PTFE, PEEK, Ultem, Torlon, phenolic, and Delrin. These materials require specific tooling selection and fixturing approaches. Plastic-Craft Products machines all of them in-house.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I get plastic parts CNC routed?</h3>
+      <p>Plastic-Craft Products offers in-house CNC routing across their complete material inventory at their West Nyack, NY facility. No minimum orders. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Quote Your CNC Routed Plastic Part?</h3>
+    <p>Plastic-Craft Products runs in-house CNC routing across a complete inventory of engineering and commercial plastics — single-piece prototypes through production quantities with no minimum orders.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about CNC routing, material selection, or custom fabrication, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">CNC Routing</span>
+    <span class="tag">Plastic Fabrication</span>
+    <span class="tag">Profile Cutting</span>
+    <span class="tag">Pocketing</span>
+    <span class="tag">Prototyping</span>
+    <span class="tag">Acrylic</span>
+    <span class="tag">PEEK</span>
+    <span class="tag">Custom Parts</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

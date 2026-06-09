@@ -1,0 +1,198 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Material Guide</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Material Guide</div>
+        <h1 class="fade-in">What Is Acrylic Plastic? Properties, Uses, and Grades Explained</h1>
+        <p class="hero-subtitle fade-in">Acrylic combines the optical clarity of glass with the durability and versatility of modern plastics — 92% light transmission, 10–20x the impact resistance of glass, and half the weight. Here's everything you need to know.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Crystal clear acrylic plastic sheet showing exceptional optical clarity" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is Acrylic Plastic? The Basics</h2>
+    </div>
+    <p>Acrylic is a transparent thermoplastic polymer known by its chemical name, <strong>polymethyl methacrylate (PMMA)</strong>. As a thermoplastic, acrylic can be heated, shaped, and reformed multiple times without degrading — a property that makes it incredibly versatile for fabrication and manufacturing.</p>
+    <p>You might recognize acrylic by some of its popular brand names: <strong>Plexiglas&reg;, Lucite&reg;, Perspex&reg;, or Acrylite&reg;</strong>. These are all acrylic plastic, just manufactured by different companies. Think of it like Kleenex versus tissue — they're the same material, just with different brand names.</p>
+    <p>Acrylic was first developed in 1928 and commercialized in 1933 in Germany. During World War II, it found its first major application in aircraft canopies and gun turrets, where its combination of clarity, light weight, and shatter resistance proved invaluable. Today it's a multi-billion dollar global industry.</p>
+    <div class="pullquote">
+      <p><em>What sets acrylic apart from "regular plastics" like polyethylene or PVC? Crystal-clear optical properties, a harder surface that resists scratching, and superior dimensional stability. It can be polished to optical clarity and maintains its appearance for decades, even in outdoor environments.</em></p>
+    </div>
+    <p>At Plastic-Craft, we stock both cast and extruded acrylic in thicknesses ranging from 0.060&Prime; to 4&Prime;, with clear, colored, and specialty grades available for immediate shipment.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Key Properties of Acrylic</h2>
+    </div>
+    <p><strong>Optical Clarity:</strong> 92% light transmission rate — actually higher than glass (90%). Refractive index of 1.49 provides crystal-clear views without distortion. Maintains clarity for decades, even outdoors.</p>
+    <p><strong>Impact Resistance:</strong> 10 to 20 times more impact-resistant than standard glass. Tensile strength of approximately 10,000 psi. When it does break, it fractures into large, dull-edged pieces rather than dangerous shards.</p>
+    <p><strong>Weather Resistance:</strong> Excellent UV stability with 10 to 30 year outdoor lifespan depending on grade. Usable temperature range from -40&deg;F to 160&deg;F for continuous use. UV-stabilized grades offer even longer lifespans.</p>
+    <p><strong>Lightweight:</strong> Density of 1.19 g/cm&sup3; — approximately half the weight of glass (2.5 g/cm&sup3;). A 1/4&Prime; thick 4&prime;x8&prime; acrylic sheet weighs around 50 pounds versus 100 pounds for equivalent glass.</p>
+    <p><strong>Workability:</strong> Can be cut with standard woodworking tools, heat-bent at 290-320&deg;F, bonded with solvent cement through chemical welding, laser-cut, CNC routed, engraved, and polished to optical clarity.</p>
+    <p><strong>Chemical Resistance:</strong> Resists water, dilute acids, alkalis, salt solutions, and aliphatic hydrocarbons. Attacked by aromatic hydrocarbons, ketones (acetone), alcohols, and strong acids. Windex-type cleaners work fine, but acetone will dissolve it.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Common Acrylic Grades</h2>
+    </div>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Cast Acrylic (ASTM D4802 Grade MC)</div>
+        <p>Liquid monomer poured between glass plates and slowly polymerized. Superior optical clarity, tighter thickness tolerances (&plusmn;10%), harder surface, better chemical resistance. 15-30% more expensive. Excels in CNC machining, laser engraving, and precision applications.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Extruded Acrylic (ASTM D4802 Grade GP)</div>
+        <p>Pellets melted and formed through rollers in a continuous process. More economical, slightly wider tolerances (&plusmn;15-20%), softer surface. Better suited for thermoforming and budget-conscious applications where cast properties aren't necessary.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">UV-Stabilized Acrylic</div>
+        <p>Contains UV absorbers that block 98%+ of UV light. Lasts 20-30+ years outdoors versus 10-20 for standard grades. Critical for outdoor signage, architectural glazing, and protecting displayed items from UV damage.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Specialty Grades</div>
+        <p>Abrasion-resistant (10x more scratch-resistant), non-glare/anti-reflective, colored (transparent, translucent, opaque), mirror acrylic (shatter-resistant, 1/6 the weight of glass), and fluorescent (edge-lighting effects for LED signs).</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Popular Uses and Applications</h2>
+    </div>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🏪</div>
+        <div class="industry-label">Retail &amp; POP Displays</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏗️</div>
+        <div class="industry-label">Architectural &amp; Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🐠</div>
+        <div class="industry-label">Aquariums &amp; Marine</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏥</div>
+        <div class="industry-label">Medical &amp; Laboratory</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🛡️</div>
+        <div class="industry-label">Protective Barriers &amp; Safety</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">💡</div>
+        <div class="industry-label">Signage &amp; Graphics</div>
+      </div>
+    </div>
+    <p><strong>Retail and POP Displays:</strong> Display cases, product risers, cosmetic organizers, and menu boards — acrylic's crystal clarity showcases products effectively, and its lightweight nature makes it ideal for hanging displays.</p>
+    <p><strong>Architectural and Glazing:</strong> Windows, skylights, interior partitions, decorative wall panels, and stair railings. At half the weight of glass with superior shatter resistance, acrylic provides architects with design flexibility.</p>
+    <p><strong>Aquariums and Marine:</strong> Large viewing panels manufactured in monolithic pieces impossible with glass. Boat windshields, hatch covers, and marine instrument covers benefit from saltwater resistance and complex shape forming.</p>
+    <p><strong>Medical and Laboratory:</strong> Incubators, isolators, protective barriers, and equipment housings using FDA-compliant grades. Chemical resistance, sterilizability, and transparency make it ideal for observation-critical environments.</p>
+    <p><strong>Protective Barriers:</strong> Sneeze guards, food shields, machine guards, and hockey rink dasher boards — clear visibility with impact resistance far superior to glass.</p>
+    <p><strong>Signage and Graphics:</strong> Illuminated signs, letter sets, dimensional signage, and trade show graphics. Laser-cut, edge-lit, and formed into virtually any shape.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>Technical Specifications</h2>
+    </div>
+    <p><strong>ASTM Standards:</strong> Sheet specifications under ASTM D4802 (MC for cast, GP for extruded). Testing per ASTM D638 (tensile), ASTM D256 (impact), ASTM D648 (heat deflection).</p>
+    <p><strong>Dimensions:</strong> Thickness tolerances: Cast &plusmn;10% (up to 1/4&Prime;), &plusmn;5% (thicker); Extruded &plusmn;15-20%. Standard sheets 4&prime;x8&prime; up to 10&prime;x12&prime;. Thickness range 0.060&Prime; to 4&Prime;.</p>
+    <p><strong>Thermal:</strong> Glass transition 221&deg;F (105&deg;C). Heat deflection 203&deg;F at 264 psi. Forming range 290-320&deg;F. Thermal expansion 4-5x glass.</p>
+    <p><strong>Mechanical:</strong> Tensile strength 10,000-11,000 psi. Flexural strength 15,000-17,000 psi. Izod impact 0.4-0.5 ft-lb/in. Rockwell hardness M85-100.</p>
+    <p><strong>Certifications:</strong> FDA-compliant grades for indirect food contact. Some grades NSF-51 certified. UL 94 HB flammability rating. REACH and RoHS compliant. Plastic-Craft maintains material certifications and provides test reports on request.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2>Safety Note</h2>
+    </div>
+    <p>Freshly cut acrylic edges can be sharp — handle with care and wear gloves when necessary. Acrylic is combustible and rated HB (horizontal burn) under UL 94; it should not be used near open flames or high-heat sources. When handling large sheets, always provide adequate support to prevent flexing and potential cracking.</p>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Help Selecting the Right Acrylic Grade?</h3>
+    <p>Our material specialists at Plastic-Craft have over 90 years of experience helping customers choose the perfect plastic. Cast, extruded, UV-stabilized, and specialty grades — all available with no minimum order from our West Nyack, NY facility.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about acrylic grades, specifications, or custom fabrication, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Acrylic</span>
+    <span class="tag">PMMA</span>
+    <span class="tag">Plexiglas</span>
+    <span class="tag">Cast Acrylic</span>
+    <span class="tag">Extruded Acrylic</span>
+    <span class="tag">UV-Stabilized</span>
+    <span class="tag">Optical Clarity</span>
+    <span class="tag">Impact Resistance</span>
+    <span class="tag">Retail Display</span>
+    <span class="tag">Architectural Glazing</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

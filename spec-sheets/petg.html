@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plastic-Craft - PETG Spec Sheet</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: letter; margin: 0; }
+
+  body {
+    font-family: 'Open Sans', Arial, sans-serif; color: #2d2d2d;
+    background: #fff; width: 8.5in; height: 11in;
+    margin: 0 auto; position: relative; overflow: hidden;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #1a3a5c 0%, #2b6cb0 60%, #4a9bd9 100%);
+    color: #fff; padding: 22px 36px 18px 36px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    position: relative; overflow: hidden;
+  }
+  .header::after { content: ''; position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; background: rgba(255,255,255,0.03); border-radius: 50%; }
+  .header-left { display: flex; flex-direction: column; gap: 0; }
+  .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #fff; line-height: 1; }
+  .logo-text .dash { color: #7fb8e6; }
+  .material-name { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 48px; letter-spacing: 1px; line-height: 1.05; margin-top: 0; color: #fff; }
+  .material-subtitle { font-size: 13px; color: #a0c8e8; font-weight: 400; letter-spacing: 0.5px; margin-top: 2px; }
+  .header-right { text-align: right; font-size: 11.5px; line-height: 1.6; padding-top: 4px; }
+  .header-right .phone { font-weight: 700; font-size: 15px; }
+  .header-right a { color: #b8d8f0; text-decoration: none; }
+
+  .description-banner {
+    background: linear-gradient(135deg, #e8f0f8 0%, #f4f8fc 100%);
+    border-left: 4px solid #2b6cb0; padding: 12px 36px;
+    font-size: 11.5px; line-height: 1.6; color: #3a5a7c; font-style: italic;
+  }
+
+  .main-content { display: flex; padding: 0; height: calc(100% - 230px); }
+
+  .sidebar {
+    width: 175px; min-width: 175px;
+    background: linear-gradient(180deg, #1a3a5c 0%, #1e4470 100%);
+    color: #fff; padding: 18px 14px; display: flex; flex-direction: column; gap: 14px;
+  }
+  .sidebar-section h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 5px; color: #7fb8e6; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 4px; }
+  .sidebar-section p { font-size: 10.5px; line-height: 1.5; color: #c8ddf0; }
+  .sidebar-section .highlight { color: #90e090; font-weight: 700; font-size: 10px; margin-top: 6px; line-height: 1.4; }
+
+  .table-area { flex: 1; padding: 12px 18px 8px 18px; overflow: hidden; }
+  .table-area h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; color: #1a3a5c; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 9px; }
+  thead th { background: #2b6cb0; color: #fff; font-weight: 700; text-align: left; padding: 4px 5px; font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.5px; }
+  thead th:first-child { border-radius: 3px 0 0 0; }
+  thead th:last-child { border-radius: 0 3px 0 0; }
+  tbody tr:nth-child(even) { background: #f5f8fc; }
+  tbody tr:nth-child(odd) { background: #fff; }
+  tbody td { padding: 3px 5px; border-bottom: 1px solid #e8ecf2; vertical-align: middle; }
+  tbody td:first-child { font-weight: 600; color: #2d3e50; }
+  tbody td.test-method { color: #5a7a9a; font-family: 'Courier New', monospace; font-size: 8.5px; }
+  tbody td.value-cell { font-weight: 600; color: #1a3a5c; text-align: right; white-space: nowrap; }
+  tbody td.unit-cell { color: #6a8aaa; font-size: 8.5px; }
+  .section-row td { background: #dce6f0 !important; font-weight: 700 !important; color: #1a3a5c !important; font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.5px; padding: 3.5px 5px !important; border-bottom: 1.5px solid #2b6cb0 !important; }
+
+  .processing-notes { background: #f0f5fa; border: 1px solid #d0dde8; border-radius: 5px; padding: 8px 10px; margin-top: 8px; font-size: 9.5px; line-height: 1.45; }
+  .processing-notes strong { color: #1a3a5c; font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .processing-notes span { color: #4a6a8a; }
+  .chem-note { margin-top: 6px; font-size: 8.5px; color: #6a8aaa; line-height: 1.4; padding: 0 2px; }
+  .chem-note strong { color: #1a3a5c; text-transform: uppercase; font-size: 8.5px; letter-spacing: 0.3px; }
+
+  .footer { background: linear-gradient(135deg, #1a3a5c 0%, #2b6cb0 100%); color: #fff; padding: 10px 36px; display: flex; justify-content: space-between; align-items: center; position: absolute; bottom: 0; left: 0; right: 0; }
+  .footer-address { font-size: 10px; color: #b8d8f0; }
+  .footer-segments { display: flex; gap: 5px; align-items: center; }
+  .footer-segments .segment { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #fff; padding: 2px 8px; background: rgba(255,255,255,0.12); border-radius: 3px; }
+  .disclaimer { font-size: 7.5px; color: #8aa0b8; text-align: center; padding: 3px 36px 0 36px; position: absolute; bottom: 36px; left: 0; right: 0; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="logo-text">PLASTIC<span class="dash">-</span>CRAFT</div>
+      <div class="material-name">PETG</div>
+      <div class="material-subtitle">Polyethylene Terephthalate Glycol-Modified</div>
+    </div>
+    <div class="header-right">
+      <div class="phone">845-358-3010</div>
+      <div><a href="mailto:ecom@plastic-craft.com">ecom@plastic-craft.com</a></div>
+      <div style="margin-top:2px;"><a href="https://www.plastic-craft.com">www.plastic-craft.com</a></div>
+    </div>
+  </div>
+
+  <div class="description-banner">
+    A clear, tough, easily thermoformed copolyester that combines the optical clarity of acrylic
+    with impact resistance approaching polycarbonate &mdash; at a fraction of the cost.
+    FDA-compliant, easy to fabricate, and resistant to breakage during machining.
+  </div>
+
+  <div class="main-content">
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <h3>Stock Availability</h3>
+        <p>Plastic-Craft maintains extensive inventory across a wide range of standard and specialty sizes in sheets, rods, tubes, and custom profiles. Most orders ship from stock &mdash; contact us for immediate availability.</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Key Highlights</h3>
+        <p>
+          86% light transmission<br>
+          High impact resistance<br>
+          Excellent thermoformability<br>
+          FDA compliant<br>
+          No stress whitening on bend<br>
+          Easy to die-cut &amp; fabricate
+        </p>
+        <p class="highlight">&#10003; Best value clear plastic for food contact &amp; displays</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Common Applications</h3>
+        <p>
+          Point-of-purchase displays<br>
+          Food packaging &amp; trays<br>
+          Machine guards &amp; shields<br>
+          Face shields &amp; visors<br>
+          Thermoformed enclosures<br>
+          Medical packaging<br>
+          Signage &amp; graphics
+        </p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Grades Available</h3>
+        <p>
+          Clear (optical grade)<br>
+          Colors &amp; tints<br>
+          FDA-compliant<br>
+          Anti-fog<br>
+          ESD / anti-static<br>
+          Textured surface
+        </p>
+      </div>
+    </div>
+
+    <div class="table-area">
+      <h2>Material Properties &mdash; Typical Values</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:34%">Property</th>
+            <th style="width:14%">ASTM</th>
+            <th style="width:30%">Typical Value</th>
+            <th style="width:22%">Units</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="section-row"><td colspan="4">Physical / Optical</td></tr>
+          <tr><td>Specific Gravity</td><td class="test-method">D792</td><td class="value-cell">1.27</td><td class="unit-cell">&mdash;</td></tr>
+          <tr><td>Water Absorption, 24h</td><td class="test-method">D570</td><td class="value-cell">0.20</td><td class="unit-cell">%</td></tr>
+          <tr><td>Light Transmission</td><td class="test-method">D1003</td><td class="value-cell">86</td><td class="unit-cell">%</td></tr>
+          <tr><td>Haze</td><td class="test-method">D1003</td><td class="value-cell">&lt; 1</td><td class="unit-cell">%</td></tr>
+
+          <tr class="section-row"><td colspan="4">Mechanical</td></tr>
+          <tr><td>Tensile Strength, Ultimate</td><td class="test-method">D638</td><td class="value-cell">7,700</td><td class="unit-cell">psi (53 MPa)</td></tr>
+          <tr><td>Tensile Modulus</td><td class="test-method">D638</td><td class="value-cell">310,000</td><td class="unit-cell">psi (2,140 MPa)</td></tr>
+          <tr><td>Elongation at Break</td><td class="test-method">D638</td><td class="value-cell">120</td><td class="unit-cell">%</td></tr>
+          <tr><td>Flexural Strength</td><td class="test-method">D790</td><td class="value-cell">11,500</td><td class="unit-cell">psi (79 MPa)</td></tr>
+          <tr><td>Flexural Modulus</td><td class="test-method">D790</td><td class="value-cell">310,000</td><td class="unit-cell">psi (2,140 MPa)</td></tr>
+          <tr><td>Impact, Izod Notched</td><td class="test-method">D256</td><td class="value-cell">2.0</td><td class="unit-cell">ft&middot;lb/in (107 J/m)</td></tr>
+          <tr><td>Hardness, Rockwell</td><td class="test-method">D785</td><td class="value-cell">R115</td><td class="unit-cell">&mdash;</td></tr>
+
+          <tr class="section-row"><td colspan="4">Thermal</td></tr>
+          <tr><td>Heat Deflection @ 264 psi</td><td class="test-method">D648</td><td class="value-cell">150</td><td class="unit-cell">&deg;F (66&deg;C)</td></tr>
+          <tr><td>Heat Deflection @ 66 psi</td><td class="test-method">D648</td><td class="value-cell">170</td><td class="unit-cell">&deg;F (77&deg;C)</td></tr>
+          <tr><td>Max Continuous Service</td><td class="test-method">&mdash;</td><td class="value-cell">150</td><td class="unit-cell">&deg;F (66&deg;C)</td></tr>
+          <tr><td>CTE (Linear)</td><td class="test-method">D696</td><td class="value-cell">3.8 &times; 10&#8315;&sup5;</td><td class="unit-cell">in/in/&deg;F</td></tr>
+          <tr><td>Thermal Conductivity</td><td class="test-method">C177</td><td class="value-cell">1.4</td><td class="unit-cell">BTU&middot;in/hr&middot;ft&sup2;&middot;&deg;F</td></tr>
+
+          <tr class="section-row"><td colspan="4">Electrical</td></tr>
+          <tr><td>Volume Resistivity</td><td class="test-method">D257</td><td class="value-cell">&gt; 10<sup>16</sup></td><td class="unit-cell">ohm&middot;cm</td></tr>
+          <tr><td>Dielectric Strength</td><td class="test-method">D149</td><td class="value-cell">430</td><td class="unit-cell">V/mil (17 kV/mm)</td></tr>
+          <tr><td>Dielectric Constant, 1MHz</td><td class="test-method">D150</td><td class="value-cell">3.0</td><td class="unit-cell">&mdash;</td></tr>
+
+          <tr class="section-row"><td colspan="4">Flammability</td></tr>
+          <tr><td>UL Flammability Rating</td><td class="test-method">UL 94</td><td class="value-cell">HB</td><td class="unit-cell">&mdash;</td></tr>
+
+          <tr class="section-row"><td colspan="4">Durability</td></tr>
+          <tr><td>Abrasion Resistance (Taber)</td><td class="test-method">D1044</td><td class="value-cell">12</td><td class="unit-cell">mg/1000 cycles</td></tr>
+          <tr><td>Weathering / UV</td><td class="test-method">G154</td><td class="value-cell">Fair</td><td class="unit-cell">May yellow outdoors</td></tr>
+        </tbody>
+      </table>
+
+      <div class="processing-notes">
+        <strong>Processing / Fabrication Notes: </strong>
+        <span>
+          Excellent thermoformability at low temps (275&ndash;325&deg;F) &nbsp;|&nbsp;
+          Die-cuts cleanly without cracking &nbsp;|&nbsp;
+          Bondable with solvent cements &amp; adhesives &nbsp;|&nbsp;
+          No pre-drying needed for thermoforming &nbsp;|&nbsp;
+          Prints well with screen &amp; digital methods
+        </span>
+      </div>
+
+      <div class="chem-note">
+        <strong>Chemical Resistance: </strong>
+        Good &mdash; resistant to dilute acids, alcohols, aliphatic hydrocarbons, and most cleaners.
+        <strong>Avoid:</strong> ketones (MEK, acetone), esters, chlorinated solvents, and strong bases at elevated temperatures.
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    Typical values; not to be used as specifications. Actual values may vary by grade, manufacturer, and processing conditions. Contact Plastic-Craft for grade-specific data.
+  </div>
+
+  <div class="footer">
+    <div class="footer-address">744 W. Nyack Road, West Nyack, NY 10994</div>
+    <div class="footer-segments">
+      <span class="segment">Industrial</span>
+      <span class="segment">Medical</span>
+      <span class="segment">Retail</span>
+      <span class="segment">Construction</span>
+      <span class="segment">OEM</span>
+    </div>
+  </div>
+
+</body>
+</html>

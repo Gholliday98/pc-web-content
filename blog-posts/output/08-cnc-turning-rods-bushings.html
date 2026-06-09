@@ -1,0 +1,207 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">CNC Turning for Plastic: Custom Rods, Bushings, and Rotational Parts</h1>
+        <p class="hero-subtitle fade-in">Plastic rod and tube stock is the starting material — CNC turning is what transforms it into precision-dimensioned bushings, shafts, spacers, bearing components, and custom rotational parts that fit and function correctly.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="CNC lathe turning a precision plastic bushing from rod stock" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is CNC Turning for Plastic and What Does It Produce?</h2>
+    </div>
+    <p>CNC turning is a subtractive machining process in which a plastic rod or tube workpiece is held in a rotating chuck while a stationary cutting tool moves along programmed axes to produce a rotationally symmetric finished part. The CNC controller governs tool position, feed rate, and spindle speed with precision that manual lathe operations cannot consistently achieve — producing parts with <strong>tight diametral tolerances, accurate bore positioning, and repeatable dimensions</strong> across every piece in a production run.</p>
+    <p>Modern CNC turning centers combine turning with <strong>live tooling capability</strong>, allowing milling, drilling, cross-hole drilling, and thread cutting in the same setup without removing the part from the chuck. This reduces setups, eliminates cumulative positioning error, and shortens lead time for components requiring both turned and milled features.</p>
+    <p>Plastic-Craft Products turns nylon, Delrin, UHMW, HDPE, PEEK, Ultem, Torlon, PTFE, polycarbonate, phenolic, and acrylic — material and machining from a single source.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What Plastic Parts Are Most Commonly Produced by CNC Turning?</h2>
+    </div>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🔩</div>
+        <div class="industry-label">Bushings &amp; Sleeve Bearings</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">📏</div>
+        <div class="industry-label">Spacers &amp; Standoffs</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⭕</div>
+        <div class="industry-label">Wear Rings &amp; Seals</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔄</div>
+        <div class="industry-label">Rollers &amp; Pulleys</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚡</div>
+        <div class="industry-label">Electrical Insulators</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔧</div>
+        <div class="industry-label">Custom Threaded Components</div>
+      </div>
+    </div>
+    <p><strong>Bushings and sleeve bearings</strong> are the highest-volume category — nylon, Delrin, UHMW, and oil-filled nylon bushings for machinery, conveyor systems, and automated equipment where self-lubricating properties eliminate external lubrication.</p>
+    <p><strong>Spacers and standoffs</strong> in phenolic, PEEK, Ultem, or nylon for aerospace assemblies and electronics where exact stack height and parallelism must be maintained.</p>
+    <p><strong>Wear rings and seals</strong> in PTFE and UHMW for hydraulic and pneumatic cylinders. <strong>Custom threaded components</strong> in chemically resistant materials for fluid handling and semiconductor process equipment.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What Tolerances Does CNC Turning of Plastic Achieve?</h2>
+    </div>
+    <p>CNC turning achieves diametral tolerances of <strong>&plusmn;0.001 to &plusmn;0.003 inch</strong> on outside and bore diameters, with length tolerances typically in the &plusmn;0.005 inch range. For bushing applications where bore-to-shaft fit determines whether the assembly runs freely, drags, or binds, this tolerance control is essential.</p>
+    <div class="pullquote">
+      <p><em>Rigid, stable materials — Delrin, phenolic, PEEK, and glass-filled nylon — hold tight diametral tolerances predictably. Softer materials like UHMW and unfilled PTFE tend to spring back slightly after cutting and require specialized tooling geometry.</em></p>
+    </div>
+    <p><strong>Moisture-sensitive materials</strong> like nylon PA6 and PA6/6 absorb moisture after machining, changing their dimensions at equilibrium — a behavior that must be factored into bore specifications for close-tolerance bushing applications.</p>
+    <p><strong>Thermal expansion</strong> during machining is a practical concern, particularly for long, slender parts. Plastic-Craft Products manages this through appropriate cutting speeds, tooling selection, and part cooling.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>What Materials Are Available for CNC Turned Components?</h2>
+    </div>
+    <p>Plastic-Craft Products stocks rod and tube across their full engineering and specialty range. Because material and machining are sourced from the same facility, <strong>material traceability is maintained</strong> from original rod stock through finished turned part.</p>
+    <p><strong>Bearing/bushing applications:</strong> Oil-filled nylon (general machinery), UHMW (low-load conveyor), Delrin (precision dry-running), PEEK bearing grades (high-load/high-temperature).</p>
+    <p><strong>Electrical insulation:</strong> Phenolic, Ultem, and PEEK for machineability and dielectric performance.</p>
+    <p><strong>Chemical/semiconductor:</strong> PTFE, PVDF, and PEEK for chemical resistance in turned fittings, rings, and flow components.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">ISO 9001:2015</div>
+        <p>Material certificate, turning process records, and dimensional inspection data captured within a certified quality management system.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">AS9100D</div>
+        <p>Aerospace-grade certification covering all CNC turning operations — eliminates the need to qualify a separate machining supplier.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Provide When Ordering CNC Turned Parts?</h2>
+    </div>
+    <p>Minimum information: <strong>finished geometry with all critical dimensions and tolerances, material and grade, and quantity</strong>. For bushings, the critical dimensions are bore diameter/tolerance (shaft fit), outside diameter/tolerance (housing fit), length, and chamfer/radius requirements.</p>
+    <p>Drawings in DXF, DWG, STEP, or PDF are preferred. For parts with secondary milled features (keyways, flats, cross-drilled holes), a drawing is essential to specify feature positions relative to the turned axis.</p>
+    <p>Single-piece prototypes and production quantities are machined on the same equipment to the same quality standard, with <strong>no minimum order</strong>.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What plastic is best for turned bushings and bearings?</h3>
+      <p>Depends on load, speed, temperature, and lubrication. Oil-filled nylon is the most widely specified general-purpose bearing grade. UHMW for low-load/high-wear. Delrin for precision dry-running. PEEK bearing grades for high-load, elevated-temperature, or chemically aggressive environments.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What diametral tolerance does CNC turning hold?</h3>
+      <p>&plusmn;0.001 to &plusmn;0.003 inch on rigid engineering plastics like Delrin, phenolic, and PEEK. Softer materials hold slightly looser tolerances due to springback. Tighter tolerances achievable with secondary grinding.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can plastic bushings be turned with internal threads?</h3>
+      <p>Yes. Internal and external threads (UN, UNF, metric, pipe) can all be cut. Thread fit in plastic requires design consideration for thermal expansion — temperature changes affect engagement differently than in all-metal assemblies.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does nylon change dimensions after turning?</h3>
+      <p>Yes. Nylon absorbs moisture and grows dimensionally. For tight-tolerance bushing applications, dimensions should be specified at the expected in-service moisture equilibrium state, not the dry-machined condition. Plastic-Craft Products can advise on moisture conditioning.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I get CNC turned plastic parts?</h3>
+      <p>Plastic-Craft Products offers in-house CNC turning across their complete rod and tube inventory at West Nyack, NY. No minimum orders. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Order CNC Turned Plastic Parts?</h3>
+    <p>Plastic-Craft Products offers in-house CNC turning across a complete inventory of engineering and high-performance plastic rod and tube — bushings, spacers, shafts, rollers, and custom round parts with no minimum orders.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about CNC turning, bushing materials, or tolerances, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">CNC Turning</span>
+    <span class="tag">Bushings</span>
+    <span class="tag">Bearings</span>
+    <span class="tag">Spacers</span>
+    <span class="tag">Nylon</span>
+    <span class="tag">Delrin</span>
+    <span class="tag">PEEK</span>
+    <span class="tag">Custom Machining</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

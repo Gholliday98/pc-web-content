@@ -1,0 +1,68 @@
+Nylon Sheet, Rod, and Tube: Properties, Grades, and Engineering Applications
+
+Nylon is one of the most specified engineering plastics for machined components, and for good reason — it combines high strength, excellent wear resistance, and a self-lubricating surface that makes it a practical choice for gears, bushings, bearings, and structural parts across dozens of industries. The challenge for buyers and engineers is that nylon is not a single material. PA6, PA6/6, oil-filled, glass-filled, and cast grades each have meaningfully different properties, and choosing the wrong one leads to premature failure or unnecessary cost.
+
+What Is Nylon and What Is It Made Of?
+
+Nylon is the common name for a family of synthetic polyamide polymers, first developed in the 1930s and now among the most widely used engineering plastics in machined parts and structural components. The two grades used in plastic sheet, rod, and tube are PA6 (polyamide 6) and PA6/6 (polyamide 6,6), both of which offer high tensile strength, good fatigue resistance, and a natural lubricity that reduces friction in sliding and rotating applications without requiring external lubrication.
+
+PA6 is produced by ring-opening polymerization of caprolactam, while PA6/6 is produced by condensation of hexamethylenediamine and adipic acid. The molecular difference results in slightly different mechanical and thermal properties, though both grades are widely used in industrial machined components. PA6 is the more common choice for large-diameter rod and plate stock because it is more economical to produce in those forms. PA6/6 offers a modestly higher melting point and slightly better dimensional stability, making it preferred in higher-temperature applications.
+
+What Are the Key Properties of Nylon for Engineering Applications?
+
+Nylon's performance in machined components comes from a combination of mechanical, thermal, and surface properties that competing materials at a similar price point cannot easily replicate. The properties that most drive specification decisions are:
+
+Tensile and compressive strength: High tensile strength relative to weight, making nylon suitable for load-bearing structural components that would be too heavy in metal.
+
+Wear and abrasion resistance: Outperforms most unreinforced thermoplastics in sliding wear applications, with natural lubricity that reduces surface wear in gear and bushing applications.
+
+Temperature resistance: Continuous service up to approximately 185°F (85°C) for PA6 and 200°F (93°C) for PA6/6, with higher-rated specialty grades available.
+
+Chemical resistance: Resistant to oils, greases, fuels, and most aliphatic hydrocarbons. Less suitable for strong acids, alkalis, and polar solvents.
+
+Machinability: Machines cleanly with standard tooling and holds tight tolerances, making it one of the most practical engineering plastics for CNC turning, milling, and routing.
+
+Weight: Approximately one-seventh the weight of steel, making nylon components significantly lighter than metal alternatives in weight-sensitive assemblies.
+
+One property buyers must account for is moisture absorption. Nylon absorbs moisture from the environment, which causes dimensional growth and a reduction in stiffness. For precision assemblies with tight tolerances, dimensional changes due to moisture uptake must be factored into the design. Oil-filled and glass-filled grades absorb less moisture and offer improved dimensional stability compared to unfilled natural nylon.
+
+What Is the Difference Between Nylon Grades — PA6, PA6/6, Oil-Filled, and Glass-Filled?
+
+Selecting the right nylon grade is the most consequential specification decision for machined nylon components. Each grade serves a distinct set of application requirements, and substituting one for another can result in premature wear, dimensional instability, or thermal failure.
+
+PA6 (Nylon 6): The standard workhorse grade. Good balance of strength, machinability, and cost. Available in the largest range of sizes. The correct default specification for general machined parts, gears, bushings, and structural components where moisture exposure is manageable.
+
+PA6/6 (Nylon 6/6): Higher melting point, slightly better stiffness and creep resistance than PA6. The correct choice for elevated temperatures or higher sustained loads. Preferred for automotive and industrial components where thermal cycling is a factor.
+
+Oil-filled nylon (MoS2 or lubricant-filled): Contains internal lubricant dispersed throughout the material. Offers significantly lower friction and better wear performance in dry-running applications. The preferred choice for bearings, wear pads, and sliding components in automated equipment.
+
+Glass-filled nylon: Reinforced with glass fibers for substantially higher stiffness, tensile strength, and dimensional stability. Absorbs less moisture than unfilled grades. The correct specification for precision components where dimensional consistency under varying humidity is critical. More abrasive to tooling than unfilled grades.
+
+What Is Nylon Used For in Industrial and OEM Applications?
+
+Nylon's combination of strength, wear resistance, and machinability makes it one of the most commonly specified materials for machined components across industrial, OEM, and structural applications. It is particularly effective where metal components are over-specified in terms of weight, cost, or corrosion risk. Common uses include gears, sprockets, and cam followers in power transmission systems; bushings, bearings, and wear pads in automated machinery; structural brackets, standoffs, and housings in equipment assemblies; rollers and guides in material handling and conveyor systems; and valve seats, pump components, and fluid handling parts where chemical resistance to oils and fuels is needed.
+
+For aerospace and defense programs requiring documented material traceability and process control, Plastic-Craft Products holds ISO 9001:2015 and AS9100D certifications. These certifications cover the quality management processes that flight-critical and mission-critical component programs require — making them a qualified source for nylon components where a basic material certificate is not sufficient documentation.
+
+What Should You Specify When Ordering Nylon?
+
+A complete nylon specification prevents the most common ordering errors. Grade is the first decision — confirm whether the application requires standard PA6, higher-temperature PA6/6, self-lubricating oil-filled, or dimensionally stable glass-filled nylon before ordering. Form comes next: sheet for flat machined parts and panels, rod for turned components and bushings, and tube for hollow cylindrical parts where boring from solid rod would be wasteful.
+
+Buyers specifying nylon for precision components should also confirm moisture conditioning requirements. Freshly machined nylon may require moisture conditioning before final assembly to stabilize dimensions if the part will be used in a humid environment.
+
+Frequently Asked Questions
+
+What is the difference between PA6 and PA6/6 nylon?
+PA6 and PA6/6 are both polyamide nylons with similar properties, but PA6/6 has a higher melting point, slightly better stiffness, and improved creep resistance at elevated temperatures. PA6 is more economical and available in a wider range of stock sizes. For most general machined component applications PA6 is the correct choice; for higher-temperature or higher-load applications, PA6/6 is preferred.
+
+Does nylon absorb moisture and does it affect dimensions?
+Yes — nylon absorbs moisture from the environment, which causes dimensional growth and a reduction in stiffness. For precision assemblies this must be accounted for in the design. Oil-filled and glass-filled grades absorb significantly less moisture than unfilled natural nylon and offer better dimensional stability in variable humidity environments.
+
+What is oil-filled nylon used for?
+Oil-filled nylon contains internal lubricant dispersed throughout the material, which significantly reduces friction and improves wear performance in dry-running applications. It is the preferred specification for bearings, bushings, wear pads, and sliding components in automated equipment where external lubrication is impractical or undesirable.
+
+How does nylon compare to Delrin for machined parts?
+Nylon offers higher impact resistance and better fatigue performance under dynamic loading. Delrin offers better dimensional stability, lower moisture absorption, and a stiffer feel in thin sections. For gears and bearings under sustained load nylon is often preferred. For precision components where tight tolerances must be maintained in variable humidity, Delrin is typically the stronger choice.
+
+Where can I buy nylon sheet, rod, and tube?
+Plastic-Craft Products stocks PA6, PA6/6, oil-filled, and glass-filled nylon in sheet, rod, and tube at their facility in West Nyack, NY. Cut-to-size and machined-to-print orders are available with no minimum quantity.

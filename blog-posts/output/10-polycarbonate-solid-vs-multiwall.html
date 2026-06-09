@@ -1,0 +1,609 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0F2744;
+  --navy-mid: #1B3A5C;
+  --blue: #2D6A9F;
+  --accent: #4A9FD4;
+  --accent-lt: #D6EAF8;
+  --ink: #1A1A2E;
+  --muted: #5C6B7A;
+  --rule: #D4DCE6;
+  --bg: #F7F9FC;
+  --white: #FFFFFF;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  background: var(--navy);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topbar-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.topbar-sep { color: rgba(255,255,255,.25); }
+.topbar-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a4a7a 100%);
+  padding: 80px 40px 70px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 90% 50%, rgba(74,159,212,.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(45,106,159,.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+.hero-subtitle {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.65;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+.hero-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  letter-spacing: 1px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
+.hero-content-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+.hero-img-col {
+  flex: 0 0 260px;
+  width: 260px;
+}
+.hero-side-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+@media (max-width: 700px) {
+  .hero-content-row { flex-direction: column; }
+  .hero-img-col { flex: 0 0 auto; width: 100%; }
+  .hero-side-img { height: 220px; }
+}
+.cert-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 40px;
+}
+.cert-strip-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cert-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.article-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+.section { margin-bottom: 44px; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  min-width: 28px;
+}
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+p {
+  font-size: 16.5px;
+  color: #2a3442;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+p:last-child { margin-bottom: 0; }
+strong { color: var(--navy-mid); font-weight: 600; }
+em { font-style: italic; color: var(--muted); }
+hr.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 44px 0;
+}
+.pullquote {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-lt);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 28px 0;
+}
+.pullquote p {
+  font-style: italic;
+  color: var(--navy-mid);
+  font-size: 16px;
+  margin: 0;
+}
+.cert-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 580px) { .cert-cards { grid-template-columns: 1fr; } }
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--navy);
+  border-radius: 6px;
+  padding: 20px 22px;
+}
+.cert-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.cert-card p {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.65;
+}
+.industry-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 560px) { .industry-list { grid-template-columns: 1fr; } }
+.industry-item {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.industry-icon { font-size: 26px; margin-bottom: 8px; }
+.industry-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.faq-section { margin-top: 44px; }
+.faq-item { margin-bottom: 28px; }
+.faq-item h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 15.5px;
+  color: #2a3442;
+  line-height: 1.75;
+}
+.cta-block {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 12px;
+  padding: 44px 40px;
+  text-align: center;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(74,159,212,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 12px;
+  position: relative;
+}
+.cta-block p {
+  color: rgba(255,255,255,.72);
+  font-size: 15.5px;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  position: relative;
+}
+.cta-phone {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+.article-footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+.footer-rule { border: none; border-top: 1px solid var(--rule); margin-bottom: 20px; }
+.footer-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--blue);
+  background: var(--accent-lt);
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp .6s ease forwards;
+}
+.fade-in:nth-child(1) { animation-delay: .05s; }
+.fade-in:nth-child(2) { animation-delay: .15s; }
+.fade-in:nth-child(3) { animation-delay: .25s; }
+.fade-in:nth-child(4) { animation-delay: .35s; }
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  .hero { padding: 50px 24px 50px; }
+  .article-wrap { padding: 40px 24px 60px; }
+  .article-footer { padding: 0 24px 40px; }
+  .cert-strip { padding: 14px 24px; }
+  .topbar { padding: 10px 24px; }
+  .cta-block { padding: 36px 24px; }
+}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">Solid vs. Multiwall Polycarbonate Sheet: Which Do You Need?</h1>
+        <p class="hero-subtitle fade-in">Solid polycarbonate delivers impact resistance and optical clarity for safety glazing and machine guards — multiwall delivers thermal insulation and light weight for roofing, skylights, and greenhouse glazing. The correct specification depends on which properties govern your application.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Solid and multiwall polycarbonate sheet panels side by side showing structural difference" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is the Difference Between Solid and Multiwall Polycarbonate Sheet?</h2>
+    </div>
+    <p><strong>Solid polycarbonate sheet</strong> is a single continuous layer of uniform thickness — typically 0.093 inch to 0.500 inch or thicker for industrial applications. It is rigid and transparent with full mechanical properties throughout its entire cross-section. Solid sheet is the correct specification for machine guards, safety glazing, structural enclosures, and applications where the panel must resist impact, pressure, or sustained mechanical load.</p>
+    <p><strong>Multiwall polycarbonate</strong> is a hollow-structure sheet where two or more parallel face skins are separated and connected by internal ribs running the length of the panel, creating parallel air channels through the sheet cross-section. Twin-wall has two face skins and one set of channels; triple-wall has three skins and two sets. The result is a panel significantly lighter than solid sheet, with substantially better thermal insulation due to trapped air columns, and effective light transmission — but it is not a structural equivalent to solid sheet of the same nominal thickness.</p>
+    <p>Both forms are available in UV-protected grades suitable for outdoor installation, in clear and bronze/grey tinted variants for solar control, and in a range of panel widths and standard lengths. Both can be cut to custom dimensions with no minimum order.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>How Do Solid and Multiwall Polycarbonate Compare Across Key Specification Factors?</h2>
+    </div>
+    <p><strong>Impact resistance: Solid sheet wins.</strong> Solid polycarbonate is specified for machine guards, safety shields, and structural glazing where the panel may be struck and must not fracture. Multiwall panels offer good resistance to hail and incidental impact for roofing applications but are not equivalent to solid sheet for industrial safety use.</p>
+    <p><strong>Thermal insulation (R-value): Multiwall wins decisively.</strong> Twin-wall polycarbonate (6mm) delivers approximately R-1.5 to R-2; triple-wall provides approximately R-2.5 to R-3. Solid sheet of any practical thickness provides minimal insulation value.</p>
+    <p><strong>Weight: Multiwall wins.</strong> A 6mm twin-wall panel weighs approximately 0.14 lb/ft&sup2; compared to approximately 0.60 lb/ft&sup2; for a 3/16-inch solid sheet. For large-format roofing and skylight installations where dead load is a structural consideration, multiwall's weight advantage is practically significant.</p>
+    <p><strong>Optical clarity: Solid sheet wins.</strong> Solid polycarbonate transmits approximately 88% of visible light as a continuous clear layer. Multiwall panels transmit light effectively but the internal rib structure produces a diffused rather than optically clear view.</p>
+    <p><strong>Cost per square foot:</strong> Multiwall is typically less expensive than solid sheet at equivalent overall thickness. For large-format roofing and cladding applications, the cost advantage is meaningful at scale.</p>
+    <p><strong>Condensation management:</strong> Multiwall panels require sealed or vented end caps to prevent moisture infiltration into the internal channels. Solid sheet has no internal structure and no moisture management requirement.</p>
+    <div class="pullquote">
+      <p><em>Failure to properly seal multiwall panel ends results in internal condensation, algae growth, and loss of optical performance over time.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>When Should You Specify Solid Polycarbonate Sheet?</h2>
+    </div>
+    <p>Solid polycarbonate sheet is the correct specification for any application where <strong>impact resistance, structural integrity, or optical clarity</strong> are the governing requirements.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">&#9881;&#65039;</div>
+        <div class="industry-label">Machine Guards &amp; Safety Shields</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128737;&#65039;</div>
+        <div class="industry-label">Ballistic &amp; Riot Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128269;</div>
+        <div class="industry-label">Inspection Windows &amp; Viewing Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128296;</div>
+        <div class="industry-label">Precision Enclosures &amp; Cut Parts</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127757;</div>
+        <div class="industry-label">Cold-Formed Curved Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128300;</div>
+        <div class="industry-label">Aquarium &amp; Tank Walls</div>
+      </div>
+    </div>
+    <p>OSHA and machine safety standards for point-of-operation guarding specify impact-resistant materials that maintain their integrity when struck by ejected workpieces or contact from operators, and solid polycarbonate at appropriate thickness satisfies these requirements where acrylic would shatter. For ballistic glazing, riot shields, and bullet-resistant barrier applications, solid polycarbonate in appropriate laminated or monolithic thicknesses is the standard specification.</p>
+    <p>For any glazing application where unobstructed optical clarity is required — inspection windows, equipment viewing panels, aquarium or tank walls — solid sheet is the correct choice because multiwall's internal rib structure prevents clear through-vision.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>When Should You Specify Multiwall Polycarbonate?</h2>
+    </div>
+    <p>Multiwall polycarbonate is the correct specification for building envelope, roofing, and glazing applications where <strong>thermal insulation value, weight reduction, and large-format panel coverage</strong> are the primary drivers.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">&#127968;</div>
+        <div class="industry-label">Skylights &amp; Canopy Covers</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127793;</div>
+        <div class="industry-label">Greenhouse Roofing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#9728;&#65039;</div>
+        <div class="industry-label">Patio &amp; Carport Covers</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127970;</div>
+        <div class="industry-label">Translucent Wall Cladding</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127777;&#65039;</div>
+        <div class="industry-label">Thermal Building Envelopes</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127806;</div>
+        <div class="industry-label">Agricultural Growing Structures</div>
+      </div>
+    </div>
+    <p>For commercial greenhouse and agricultural growing structures, multiwall polycarbonate's thermal performance directly affects heating costs and growing season length. Triple-wall and multi-layer configurations provide progressively better insulation for heated facilities in cold climates, while bronze and solar-control tinted grades reduce solar gain in warm climates.</p>
+    <p>For regulated construction programs requiring material documentation, Plastic-Craft Products holds <strong>ISO 9001:2015</strong> certification covering material distribution and in-house fabrication. Both solid and multiwall polycarbonate are stocked with full material traceability.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Specify When Ordering Polycarbonate Sheet?</h2>
+    </div>
+    <p>For <strong>solid polycarbonate</strong>, the key specification variables are thickness, UV protection (always specify UV-coated for any outdoor application — uncoated polycarbonate yellows rapidly outdoors), tint (clear, bronze, grey, or opal), and finished panel dimensions. For machine guard applications, confirm that the specified thickness meets the applicable safety standard for the hazard level being guarded against.</p>
+    <p>For <strong>multiwall polycarbonate</strong>, specify the wall count (twin, triple, or multi-layer), overall panel thickness in millimeters (6mm, 8mm, 10mm, 16mm, and 25mm are standard), UV protection grade, tint, and panel dimensions including <strong>rib orientation relative to the panel length</strong>. Rib orientation matters for drainage: ribs must run in the drainage direction so that any moisture that enters the channels can exit through properly installed end caps rather than pooling inside the panel.</p>
+    <div class="pullquote">
+      <p><em>Rib orientation matters for drainage: ribs must run in the drainage direction so moisture can exit through end caps rather than pooling inside the panel.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is multiwall polycarbonate as strong as solid sheet?</h3>
+      <p>Multiwall polycarbonate is not equivalent to solid sheet in structural strength or impact resistance for industrial safety applications. Multiwall panels provide good resistance to hail, wind load, and incidental impact in roofing and glazing applications, but they are not the correct specification for machine guarding, ballistic applications, or structural enclosures. Always specify solid sheet for safety guard applications.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does multiwall polycarbonate need UV protection outdoors?</h3>
+      <p>Yes. Both solid and multiwall polycarbonate must be UV-protected for outdoor applications. Standard polycarbonate without UV coating yellows, becomes brittle, and loses impact resistance within a few years of outdoor exposure. All commercial multiwall panels are supplied with a co-extruded UV-protective layer on the weather-facing surface. Always confirm which surface faces outward during installation, as the UV layer is one-sided.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the thermal insulation value of twin-wall vs. triple-wall polycarbonate?</h3>
+      <p>Twin-wall polycarbonate (6mm) provides approximately R-1.5 to R-2 insulation value. Triple-wall panels (10mm) provide approximately R-2.5 to R-3. Thicker multi-layer configurations such as 16mm and 25mm panels achieve R-values in the R-3 to R-4 range. For comparison, single-pane glass provides approximately R-0.9.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can multiwall polycarbonate panels be cut to custom sizes?</h3>
+      <p>Yes. Multiwall polycarbonate can be cut to custom panel dimensions using standard circular saw, jigsaw, or CNC cutting equipment. Clean cuts require appropriate blade selection to avoid delamination of the face skins from the internal ribs at the cut edge. Plastic-Craft Products cuts both solid and multiwall polycarbonate to custom dimensions in-house with no minimum order quantity.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I buy solid and multiwall polycarbonate sheet?</h3>
+      <p>Plastic-Craft Products stocks both solid and multiwall polycarbonate in UV-protected grades and multiple configurations at their facility in West Nyack, NY. Cut-to-size orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application, panel dimensions, and thermal or structural requirements.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Solid or Multiwall Polycarbonate Sheet?</h3>
+    <p>Plastic-Craft Products stocks both solid and multiwall polycarbonate in UV-protected grades, multiple thicknesses, and tints — cut to exact panel dimensions with no minimum order and in-house fabrication available.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about polycarbonate sheet selection, thermal glazing, or machine guard specifications, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Polycarbonate</span>
+    <span class="tag">Multiwall</span>
+    <span class="tag">Machine Guards</span>
+    <span class="tag">Safety Glazing</span>
+    <span class="tag">Thermal Insulation</span>
+    <span class="tag">Greenhouse</span>
+    <span class="tag">Skylights</span>
+    <span class="tag">UV Protection</span>
+    <span class="tag">ISO 9001</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

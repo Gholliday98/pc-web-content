@@ -1,0 +1,178 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Custom Solutions</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Custom Solutions</div>
+        <h1 class="fade-in">Clear Acrylic Guitar Display Cases: Protect, Preserve, and Showcase</h1>
+        <p class="hero-subtitle fade-in">A guitar worth collecting deserves more than a closet. Custom acrylic display cases let you see every curve, every finish detail, and every inch of craftsmanship — while keeping dust, accidents, and UV damage at bay.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products &middot; West Nyack, NY</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Clear acrylic guitar display case showcasing an electric guitar" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Capabilities</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> Custom Fabrication</span>
+    <span class="badge"><span class="badge-dot"></span> No Minimum Order</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Why Acrylic for Guitar Display?</h2>
+    </div>
+    <p>Glass display cases are heavy, fragile, and — for anything larger than a jewelry box — a logistical headache. Acrylic changes the equation entirely.</p>
+    <p><strong>92% light transmission</strong> — clearer than glass, with none of the greenish tint visible in thick glass panels. Your guitar's finish, grain, and hardware are displayed with absolute color fidelity.</p>
+    <p><strong>10–20x more impact resistant than glass.</strong> An acrylic case won't shatter if bumped, knocked, or jostled during a move. For homes with kids, pets, or foot traffic near the display, this isn't optional — it's essential.</p>
+    <p><strong>Half the weight of glass.</strong> Wall-mounted displays become practical. Freestanding floor cases don't require reinforced shelving. Shipping and installation are dramatically simpler.</p>
+    <p><strong>UV protection.</strong> UV-stabilized acrylic blocks the ultraviolet light that fades finishes, yellows lacquer, and degrades vintage instruments over time. Your guitar looks the same in five years as it does today.</p>
+    <div class="pullquote">
+      <p><em>A well-made acrylic display case isn't just a box around a guitar. It's museum-grade protection with showroom-grade clarity — and it's built to the exact dimensions of your instrument.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What We Build</h2>
+    </div>
+    <p>Every guitar is different — body shape, headstock profile, overall length, depth with hardware. A standard display case forces compromises. A <strong>custom-fabricated acrylic case built to the specific dimensions of your instrument</strong> eliminates them.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🎸</div>
+        <div class="industry-label">Electric Guitar Cases</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🎵</div>
+        <div class="industry-label">Acoustic Guitar Cases</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🎻</div>
+        <div class="industry-label">Bass &amp; Specialty Instruments</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏆</div>
+        <div class="industry-label">Signed &amp; Memorabilia Guitars</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏠</div>
+        <div class="industry-label">Wall-Mount Displays</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏢</div>
+        <div class="industry-label">Freestanding Floor Cases</div>
+      </div>
+    </div>
+    <p>Plastic-Craft fabricates cases for <strong>Stratocasters, Les Pauls, Telecasters, SGs, Flying Vs, acoustics, basses, and everything in between</strong> — including oddball body shapes and vintage instruments where standard case dimensions don't exist.</p>
+    <p>Cases can be designed as <strong>full-enclosure boxes with removable lids</strong>, wall-mounted shadow-box style displays, or freestanding floor cases with integrated stands. Ventilation holes can be incorporated to prevent moisture buildup in sealed environments.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>The Fabrication Process</h2>
+    </div>
+    <p><strong>Material selection:</strong> Cases are fabricated from cast acrylic — chosen for its superior optical clarity, tighter thickness tolerances, and better resistance to crazing over time compared to extruded grades. UV-stabilized grades are specified for cases that will be exposed to sunlight or strong indoor lighting.</p>
+    <p><strong>Precision cutting:</strong> Panels are CNC-cut to exact dimensions. For cases with curved or contoured elements, thermoforming produces smooth, seamless bends without joints.</p>
+    <p><strong>Solvent welding:</strong> Panels are chemically bonded using Weld-On solvent cements, producing joints that are <strong>optically clear and structurally as strong as the panel material</strong>. No visible seams, no cloudy glue lines, no silicone.</p>
+    <p><strong>Polishing:</strong> All edges and joints are polished to optical clarity. The finished case should be visually invisible — the guitar is the star, not the enclosure.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Single-Piece &amp; Production</div>
+        <p>One custom case for a prized Les Paul, or twenty identical cases for a retail guitar shop — same quality, same process, no minimum order.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Full In-House Fabrication</div>
+        <p>CNC cutting, thermoforming, solvent welding, and optical polishing — all performed at our 33,000 sq ft West Nyack facility. No outsourced steps.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Who Orders Custom Guitar Cases?</h2>
+    </div>
+    <p><strong>Collectors</strong> protecting signed, vintage, or high-value instruments that deserve museum-quality display and preservation.</p>
+    <p><strong>Musicians</strong> who want their instruments visible and accessible at home or in a studio — displayed as art, not hidden in a closet.</p>
+    <p><strong>Retailers</strong> showcasing inventory in a way that invites customers to look while preventing handling damage — wall-mounted or countertop cases that sell themselves.</p>
+    <p><strong>Restaurants, bars, and entertainment venues</strong> displaying themed guitars or music memorabilia as part of their interior design.</p>
+    <p><strong>Corporate offices and lobbies</strong> using a displayed guitar as a conversation piece or branded decor element.</p>
+    <p><strong>Museums and galleries</strong> requiring archival-grade UV protection and dust exclusion for instrument collections.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>How to Order</h2>
+    </div>
+    <p>The easiest path to a quote is to provide the <strong>overall dimensions of the guitar</strong> (length, width at widest point, and depth including hardware), the <strong>display style</strong> you prefer (full enclosure, wall-mount, floor-standing), and any special requirements (UV protection, ventilation, engraved nameplate, LED-ready edge-lit panel).</p>
+    <p>If you're not sure about dimensions, send us a photo of the guitar with a tape measure or ruler in frame — we'll take it from there.</p>
+    <p>Located in <strong>West Nyack, NY</strong>, Plastic-Craft offers local pickup, crated shipping nationwide, and delivery coordination for the greater New York metro area.</p>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Showcase Your Guitar?</h3>
+    <p>Plastic-Craft fabricates custom clear acrylic display cases for any guitar — electric, acoustic, bass, or specialty. No minimum orders. Museum-grade clarity with real-world durability.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 certified custom plastic fabrication company based in West Nyack, NY. For custom display case quotes, visit our <a href="/custom-solutions/" style="color: var(--blue);">Display Case</a> page or contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Guitar Display</span>
+    <span class="tag">Acrylic Case</span>
+    <span class="tag">Custom Fabrication</span>
+    <span class="tag">UV Protection</span>
+    <span class="tag">Collectibles</span>
+    <span class="tag">Museum Quality</span>
+    <span class="tag">Solvent Welding</span>
+    <span class="tag">Retail Display</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

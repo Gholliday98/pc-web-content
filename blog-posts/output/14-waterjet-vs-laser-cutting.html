@@ -1,0 +1,585 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0F2744;
+  --navy-mid: #1B3A5C;
+  --blue: #2D6A9F;
+  --accent: #4A9FD4;
+  --accent-lt: #D6EAF8;
+  --ink: #1A1A2E;
+  --muted: #5C6B7A;
+  --rule: #D4DCE6;
+  --bg: #F7F9FC;
+  --white: #FFFFFF;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  background: var(--navy);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topbar-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.topbar-sep { color: rgba(255,255,255,.25); }
+.topbar-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a4a7a 100%);
+  padding: 80px 40px 70px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 90% 50%, rgba(74,159,212,.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(45,106,159,.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+.hero-subtitle {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.65;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+.hero-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  letter-spacing: 1px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
+.hero-content-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+.hero-img-col {
+  flex: 0 0 260px;
+  width: 260px;
+}
+.hero-side-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+@media (max-width: 700px) {
+  .hero-content-row { flex-direction: column; }
+  .hero-img-col { flex: 0 0 auto; width: 100%; }
+  .hero-side-img { height: 220px; }
+}
+.cert-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 40px;
+}
+.cert-strip-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cert-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.article-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+.section { margin-bottom: 44px; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  min-width: 28px;
+}
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+p {
+  font-size: 16.5px;
+  color: #2a3442;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+p:last-child { margin-bottom: 0; }
+strong { color: var(--navy-mid); font-weight: 600; }
+em { font-style: italic; color: var(--muted); }
+hr.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 44px 0;
+}
+.pullquote {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-lt);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 28px 0;
+}
+.pullquote p {
+  font-style: italic;
+  color: var(--navy-mid);
+  font-size: 16px;
+  margin: 0;
+}
+.cert-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 580px) { .cert-cards { grid-template-columns: 1fr; } }
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--navy);
+  border-radius: 6px;
+  padding: 20px 22px;
+}
+.cert-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.cert-card p {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.65;
+}
+.industry-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 560px) { .industry-list { grid-template-columns: 1fr; } }
+.industry-item {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.industry-icon { font-size: 26px; margin-bottom: 8px; }
+.industry-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.faq-section { margin-top: 44px; }
+.faq-item { margin-bottom: 28px; }
+.faq-item h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 15.5px;
+  color: #2a3442;
+  line-height: 1.75;
+}
+.cta-block {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 12px;
+  padding: 44px 40px;
+  text-align: center;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(74,159,212,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 12px;
+  position: relative;
+}
+.cta-block p {
+  color: rgba(255,255,255,.72);
+  font-size: 15.5px;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  position: relative;
+}
+.cta-phone {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+.article-footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+.footer-rule { border: none; border-top: 1px solid var(--rule); margin-bottom: 20px; }
+.footer-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--blue);
+  background: var(--accent-lt);
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp .6s ease forwards;
+}
+.fade-in:nth-child(1) { animation-delay: .05s; }
+.fade-in:nth-child(2) { animation-delay: .15s; }
+.fade-in:nth-child(3) { animation-delay: .25s; }
+.fade-in:nth-child(4) { animation-delay: .35s; }
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  .hero { padding: 50px 24px 50px; }
+  .article-wrap { padding: 40px 24px 60px; }
+  .article-footer { padding: 0 24px 40px; }
+  .cert-strip { padding: 14px 24px; }
+  .topbar { padding: 10px 24px; }
+  .cta-block { padding: 36px 24px; }
+}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">Waterjet vs. Laser Cutting for Plastic and Metal</h1>
+        <p class="hero-subtitle fade-in">Both are high-precision, CNC-driven processes capable of producing complex two-dimensional profiles from flat stock — but they achieve that result through fundamentally different mechanisms, and those differences determine which process is correct for a given material and application.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Waterjet cutting head precisely cutting thick plastic sheet material" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is the Difference Between Waterjet and Laser Cutting?</h2>
+    </div>
+    <p><strong>Waterjet cutting</strong> uses a high-pressure stream of water — typically at 40,000 to 90,000 PSI — directed through a small orifice to erode material along the cut path. For most industrial applications, an abrasive medium such as garnet is entrained in the water stream, producing an abrasive waterjet capable of cutting virtually any material including metals, composites, ceramics, glass, stone, and plastics of any thickness. The cutting action is purely mechanical and hydraulic: <strong>no heat is generated at the cut zone</strong>.</p>
+    <p><strong>Laser cutting</strong> uses a focused beam of high-intensity light — typically a CO2 laser for plastics and non-metals, or a fiber laser for metals — to vaporize or melt material along the cut path. The process is extremely precise and fast, with a very narrow kerf, and produces an exceptionally clean edge on materials that respond well to thermal cutting, particularly cast acrylic. The limitation is inherent to the process: the cutting action generates heat, creating a <strong>heat-affected zone (HAZ)</strong> at and near the cut edge.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Edge Quality and Heat-Affected Zone Compared</h2>
+    </div>
+    <p>The heat-affected zone is the most significant differentiator between waterjet and laser cutting for engineering applications. <strong>Waterjet produces no HAZ whatsoever</strong> — the cut is entirely cold, and the material properties at and adjacent to the cut edge are identical to the bulk material.</p>
+    <p>For <strong>acrylic</strong>, laser cutting's HAZ is actually beneficial: the material melts and resolidifies at the cut line, producing a flame-polished, optically clear edge that requires no secondary finishing. This is the one application where laser cutting produces an edge quality that waterjet cannot match.</p>
+    <p>For <strong>polycarbonate</strong>, the story reverses: laser cutting tends to produce a stress-crazed, frosted edge rather than a polished one, and the HAZ can introduce residual stress that compromises the edge's mechanical integrity. For polycarbonate, waterjet or CNC routing typically produces a superior result.</p>
+    <div class="pullquote">
+      <p><em>For engineering plastics where the cut edge will bear mechanical loads or be bonded to another part, the absence of any heat-affected zone makes waterjet the more conservative and reliable specification.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Thick Material and Difficult-to-Cut Plastics</h2>
+    </div>
+    <p>Waterjet cutting handles material thickness that is beyond the practical range of laser cutting without any meaningful degradation in edge quality. A waterjet can cut through <strong>6 inches of engineering plastic</strong>, composite laminate, or metal plate with the same process — only cutting speed changes with thickness, not edge quality or process viability.</p>
+    <p>Laser cutting becomes progressively less effective as material thickness increases. Beyond approximately 0.75 to 1 inch in most plastics, laser cutting speed drops sharply, edge quality degrades, and the HAZ deepens.</p>
+    <p><strong>PVC and CPVC cannot be laser cut under any circumstances</strong> because the thermal decomposition generates chlorine gas — a serious health and equipment hazard. Waterjet cuts PVC and CPVC cleanly, safely, and without any chemical hazard. Similarly, highly filled composite plastics, fiber-reinforced laminates, and carbon fiber composites are better suited to waterjet cutting.</p>
+    <p>Laser cutting's speed advantage is most pronounced in <strong>thin sheet work</strong> — typically under 0.5 inch — where it outpaces waterjet considerably in cutting rate. For thin acrylic signage, display components, and decorative panels where the flame-polished edge is the desired result, laser cutting is faster and produces the better finish.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Best Applications for Waterjet vs. Laser Cutting</h2>
+    </div>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Waterjet Cutting</div>
+        <p>Aerospace and defense programs, precision industrial components, thick plate, composites, PVC/CPVC, and any application where a heat-affected zone is unacceptable.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Laser Cutting</div>
+        <p>Commercial display fabrication, signage, architectural components, thin acrylic with flame-polished edges, and applications where cutting speed is the primary production driver.</p>
+      </div>
+    </div>
+    <p>Plastic-Craft Products holds <strong>ISO 9001:2015 and AS9100D</strong> quality management certifications covering fabrication operations including waterjet and laser cutting. For aerospace and defense programs, the AS9100D certification means the documentation chain extends through the cutting operation — not just the material sourcing.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">&#9992;&#65039;</div>
+        <div class="industry-label">Aerospace &amp; Defense</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127981;</div>
+        <div class="industry-label">Industrial Components</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128269;</div>
+        <div class="industry-label">Precision Cut Parts</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127916;</div>
+        <div class="industry-label">Display &amp; Signage</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127970;</div>
+        <div class="industry-label">Architectural Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128137;</div>
+        <div class="industry-label">Medical Components</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>When to Choose Waterjet vs. Laser for Plastic</h2>
+    </div>
+    <p><strong>Choose waterjet</strong> when: the material is PVC, CPVC, or any chlorine-containing plastic; the material thickness exceeds approximately 0.75 to 1 inch; the part is composite, filled, or laminate; the application requires no HAZ at the cut edge; or the part requires simultaneous cutting of plastic and metal in the same setup.</p>
+    <p><strong>Choose laser</strong> when: the material is cast or extruded acrylic in thin-to-medium sheet and an optically polished edge is required; intricate geometry with very tight internal radii or fine detail features is needed in thin sheet; cutting speed is a primary production cost driver; or the application is decorative, display, or signage work where the flame-polished edge is a design requirement.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does waterjet cutting leave a heat-affected zone?</h3>
+      <p>No. Waterjet cutting is a completely cold process — no heat is generated at the cut zone. The material properties at and adjacent to the cut edge are identical to the bulk material. This is the defining advantage for applications where heat-affected zones are unacceptable.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can waterjet cutting replace laser cutting for acrylic display parts?</h3>
+      <p>Waterjet produces a clean, precise edge on acrylic, but it does not produce the flame-polished, optically clear edge that CO2 laser cutting achieves. For display cases, awards, and optical components where a polished edge is required, laser cutting is preferred. For structural acrylic where edge clarity is not critical, waterjet is viable, particularly at greater thicknesses.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why can't PVC be laser cut?</h3>
+      <p>Laser cutting PVC causes thermal decomposition of the polymer, releasing chlorine gas — a toxic substance dangerous to operators and corrosive to laser optics and machine components. PVC must never be laser cut under any circumstances. Waterjet cutting is the safe and correct process for all PVC and CPVC materials.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which process is more accurate, waterjet or laser cutting?</h3>
+      <p>Both achieve high dimensional accuracy. Laser cutting produces a slightly narrower kerf (0.2 to 0.5mm) than waterjet (0.5 to 1.5mm), giving it a small advantage for very fine detail in thin sheet. Waterjet accuracy is unaffected by material thickness. For most precision plastic fabrication, both achieve tolerances within +/-0.005 to +/-0.010 inch.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I get waterjet or laser cut plastic parts?</h3>
+      <p>Plastic-Craft Products offers both waterjet and laser cutting in-house at their facility in West Nyack, NY, alongside CNC routing, thermoforming, and a complete range of plastic fabrication services. No minimum orders. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your material, dimensions, and process requirements.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Precision Waterjet or Laser Cut Plastic Parts?</h3>
+    <p>Plastic-Craft Products offers both waterjet and laser cutting in-house, alongside CNC routing and thermoforming — with no minimum orders and full ISO 9001 and AS9100D certified documentation.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about waterjet cutting, laser cutting, or precision plastic fabrication, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Waterjet Cutting</span>
+    <span class="tag">Laser Cutting</span>
+    <span class="tag">Precision Fabrication</span>
+    <span class="tag">Acrylic</span>
+    <span class="tag">Polycarbonate</span>
+    <span class="tag">PVC</span>
+    <span class="tag">Composites</span>
+    <span class="tag">Aerospace</span>
+    <span class="tag">ISO 9001</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

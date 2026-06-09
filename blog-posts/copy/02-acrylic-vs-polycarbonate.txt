@@ -1,0 +1,71 @@
+Acrylic vs Polycarbonate: Which Should You Choose?
+
+What Are the Core Differences Between Acrylic and Polycarbonate?
+
+Acrylic (PMMA) and polycarbonate (PC) are chemically distinct materials that happen to share the visual property of optical transparency. Acrylic is a rigid, relatively brittle thermoplastic with a hard surface and superior optical clarity — it transmits up to 92% of visible light, more than glass and more than polycarbonate. Polycarbonate is a tougher, more flexible thermoplastic that absorbs impact energy rather than fracturing, at the cost of a softer surface that scratches more easily and slightly lower light transmission of approximately 88%.
+
+The fundamental trade-off is hardness versus toughness. Acrylic is harder on the surface and more scratch-resistant, but it will crack or shatter under sudden impact. Polycarbonate is far more impact-resistant — roughly 30 times tougher than acrylic at equivalent thickness — but its softer surface is more susceptible to abrasion and scratching, which is why it is typically supplied with a scratch-resistant coating for surface-sensitive applications. These two properties drive most specification decisions between the two materials.
+
+Both materials are available in sheet, rod, and tube from Plastic-Craft Products, in a range of thicknesses, colors, and grades, with no minimum order quantity. Both can be CNC routed, cut, thermoformed, and fabricated in-house, and both are UV-stable in their appropriate grades for outdoor applications — though with an important caveat on polycarbonate covered below.
+
+How Do Acrylic and Polycarbonate Compare Across the Key Specification Factors?
+
+For engineers and procurement managers making a side-by-side evaluation, the relevant comparison points are:
+
+Optical clarity: Acrylic wins. Up to 92% light transmission vs. approximately 88% for polycarbonate. Acrylic edges can be flame- or diamond-polished to optical quality. Polycarbonate edges cannot.
+
+Impact resistance: Polycarbonate wins decisively. Approximately 30 times more impact-resistant than acrylic at equivalent thickness. Polycarbonate bends under impact; acrylic cracks or shatters.
+
+Surface hardness and scratch resistance: Acrylic wins. Harder surface that resists everyday scratching. Minor acrylic scratches can be polished out with Micro-Mesh. Polycarbonate scratches more easily and requires a factory-applied hard coat for surface-sensitive applications.
+
+UV stability: Acrylic wins for outdoor use. Acrylic is inherently UV-stable without additives and will not yellow outdoors. Standard uncoated polycarbonate yellows and degrades without a UV-protective coating — always specify UV-rated polycarbonate for outdoor applications.
+
+Temperature resistance: Polycarbonate wins. Service temperature up to approximately 240 degrees F (116 degrees C) vs. approximately 160 degrees F (71 degrees C) for acrylic. For elevated-temperature applications, polycarbonate is the correct specification.
+
+Chemical resistance: Acrylic has a slight edge for many industrial chemicals. Polycarbonate is susceptible to a wider range of solvents and alkalis. Both should be confirmed against the specific chemical environment before specifying.
+
+Cost: Acrylic is generally less expensive than polycarbonate at equivalent thickness. When polycarbonate's performance advantage is not required, acrylic delivers better value.
+
+Machinability: Both machine well. Acrylic produces crisper edges and can be polished. Polycarbonate machines with less chip risk and can be cold-bent more readily without cracking.
+
+When Should You Choose Acrylic over Polycarbonate?
+
+Acrylic is the correct specification when optical quality, surface hardness, long-term UV stability, and cost efficiency are the primary drivers — and when the application does not require high-energy impact resistance. The applications where acrylic consistently earns its specification include retail displays, point-of-purchase fixtures, illuminated signage, architectural glazing, aquarium panels, and decorative applications where the material will be seen and evaluated visually by end users. In these applications, acrylic's clarity advantage is perceptible, its scratch resistance keeps the surface looking new longer, and its UV stability ensures it will not yellow outdoors over a multi-year installation.
+
+Acrylic is also the correct specification for optical-quality edge work. Flame polishing and diamond polishing produce optically clear edges on acrylic that polycarbonate cannot replicate. For display cases, optical elements, and fabricated assemblies where edge appearance is part of the design, acrylic is the unambiguous choice. The ability to restore minor surface scratches using Micro-Mesh polishing kits is an additional practical advantage in applications where panels will be handled regularly.
+
+When Should You Choose Polycarbonate over Acrylic?
+
+Polycarbonate is the correct specification when impact resistance is the governing design requirement — when the material may be struck, when safety glazing standards apply, or when the consequence of a panel cracking creates a safety hazard. Machine guards, safety shields, ballistic glazing, riot barriers, aircraft windows, and bullet-resistant enclosures are all polycarbonate applications for a simple reason: acrylic's brittleness makes it unacceptable in any context where impact failure could injure people or compromise a safety system.
+
+Polycarbonate is also the correct specification for elevated-temperature applications where acrylic's lower service temperature is a limiting factor, and for applications requiring cold-bending of sheet without heating. For greenhouse glazing, curved enclosures, and architectural applications involving formed panels, polycarbonate's flexibility advantage can simplify fabrication significantly.
+
+For aerospace and defense programs where material documentation and traceability are mandatory, Plastic-Craft Products holds ISO 9001:2015 and AS9100D quality management certifications. Both acrylic and polycarbonate are stocked with full material traceability, making Plastic-Craft a qualified source for programs where a commercial packing slip is not sufficient documentation for the materials used in flight or mission-critical assemblies.
+
+What Is the Decision Framework for Choosing Between Acrylic and Polycarbonate?
+
+The simplest decision framework comes down to two questions asked in sequence. First: will this panel be struck with significant force, or does it need to meet an impact safety standard? If yes, specify polycarbonate. If no, continue to the second question. Second: does this application require maximum optical clarity, scratch resistance, UV stability without a coating, or optical-quality edge finishing? If yes, specify acrylic. If neither question produces a clear answer, acrylic is typically the more cost-effective default for transparent sheet applications where extreme impact resistance is not required.
+
+The exceptions worth noting are applications that combine requirements from both columns. A machine guard in a UV-exposed outdoor environment needs polycarbonate for impact resistance but must be specified in a UV-coated grade to prevent yellowing. A display case in a high-traffic retail environment might benefit from polycarbonate for impact resistance if breakage is a recurring problem, accepting the trade-off in surface hardness. When the application requirements do not clearly favor one material, both should be evaluated against the full list of specification factors rather than defaulting to cost or familiarity alone.
+
+Frequently Asked Questions
+
+Is polycarbonate always stronger than acrylic?
+
+In terms of impact resistance, yes — polycarbonate is approximately 30 times more impact-resistant than acrylic at equivalent thickness. However, acrylic is harder on the surface and more scratch-resistant. Strength depends on which property is being measured: polycarbonate wins on impact toughness, acrylic wins on surface hardness.
+
+Which is clearer, acrylic or polycarbonate?
+
+Acrylic is clearer. Acrylic transmits up to 92% of visible light compared to approximately 88% for polycarbonate. In most applications the difference is imperceptible, but for precision optical work, display applications where absolute clarity is the priority, or applications where edge polishing matters, acrylic is the superior choice.
+
+Does polycarbonate yellow outdoors?
+
+Uncoated polycarbonate will yellow and degrade under prolonged UV exposure. UV-stabilized grades with a co-extruded protective layer are available and must be specified for any outdoor application. Acrylic is inherently UV-stable without a coating and is typically the preferred specification for outdoor transparent glazing where yellowing resistance is required.
+
+Which is more expensive, acrylic or polycarbonate?
+
+Polycarbonate is generally more expensive than acrylic at equivalent thickness. When polycarbonate's impact performance advantage is genuinely required by the application, the cost premium is justified. When it is not, acrylic delivers comparable visual performance at lower cost and should be the default specification for transparent sheet applications.
+
+Where can I buy acrylic and polycarbonate sheet?
+
+Plastic-Craft Products stocks both acrylic and polycarbonate sheet, rod, and tube in a full range of grades, thicknesses, and sizes at their facility in West Nyack, NY. Cut-to-size orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application and confirm the right specification.

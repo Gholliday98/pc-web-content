@@ -1,0 +1,707 @@
+<!--
+  Plastic-Craft Products — Blog Post Template (v2)
+  Matches the design at plastic-craft.com/n/
+  Drop this entire block into an Elementor HTML widget or WP Custom HTML block.
+  Replace placeholder content between CONTENT START / CONTENT END comments.
+  All styles are self-contained — no theme dependencies.
+-->
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:wght@400;400italic&display=swap" rel="stylesheet">
+
+<style>
+  .pc-post {
+    --navy:        #1B365D;
+    --gold:        #C8922A;
+    --white:       #FFFFFF;
+    --light-gray:  #F5F5F5;
+    --dark-gray:   #333333;
+    --mid-gray:    #666666;
+    --border-gray: #E2E2E2;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body:    'Lora', serif;
+
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 24px 60px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--dark-gray);
+    background: var(--white);
+  }
+
+  /* — Breadcrumb — */
+  .pc-breadcrumb {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mid-gray);
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .pc-breadcrumb a {
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .pc-breadcrumb a:hover {
+    color: var(--gold);
+  }
+  .pc-breadcrumb .pc-sep {
+    margin: 0 8px;
+    color: var(--border-gray);
+  }
+
+  /* — Header block (title + image side by side) — */
+  .pc-header {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 36px;
+    align-items: center;
+    background: var(--light-gray);
+    border-radius: 8px;
+    padding: 36px 32px;
+    margin-bottom: 44px;
+  }
+  .pc-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .pc-header-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(27, 54, 93, 0.12);
+  }
+
+  /* — Clickable image upload zone — */
+  .pc-img-upload {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    border: 2px dashed var(--border-gray);
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    overflow: hidden;
+  }
+  .pc-img-upload:hover {
+    border-color: var(--gold);
+    background: #FDFAF4;
+  }
+  .pc-img-upload.pc-has-image {
+    border: none;
+    cursor: default;
+    box-shadow: 0 4px 16px rgba(27, 54, 93, 0.12);
+  }
+  .pc-img-upload input[type="file"] {
+    display: none;
+  }
+  .pc-img-upload .pc-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .pc-img-upload.pc-has-image .pc-upload-label {
+    display: none;
+  }
+  .pc-img-upload .pc-upload-label svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--border-gray);
+  }
+  .pc-img-upload:hover .pc-upload-label svg {
+    fill: var(--gold);
+  }
+  .pc-img-upload .pc-upload-label span {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--mid-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .pc-img-upload .pc-upload-label small {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--border-gray);
+  }
+  .pc-img-upload .pc-uploaded-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 6px;
+  }
+  .pc-img-upload.pc-has-image .pc-uploaded-img {
+    display: block;
+  }
+
+  @media (max-width: 680px) {
+    .pc-header {
+      grid-template-columns: 1fr;
+      padding: 28px 20px;
+      gap: 24px;
+    }
+    .pc-header-img,
+    .pc-img-upload {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+
+  /* — Category tag — */
+  .pc-category-tag {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+    background: var(--white);
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    align-self: flex-start;
+  }
+
+  /* — Title — */
+  .pc-post .pc-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(24px, 4vw, 36px);
+    color: var(--navy);
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+  }
+
+  /* — Subtitle / excerpt — */
+  .pc-excerpt {
+    font-size: 16px;
+    color: var(--mid-gray);
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+  }
+
+  /* — Meta line — */
+  .pc-post-meta {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mid-gray);
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
+  }
+
+  /* — Section heading with chevron icon and underline — */
+  .pc-post h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(20px, 3.5vw, 26px);
+    color: var(--navy);
+    margin: 52px 0 0 0;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--border-gray);
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pc-post h2::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+    border-right: 3px solid var(--navy);
+    border-bottom: 3px solid var(--navy);
+    transform: rotate(-45deg);
+    margin-top: -2px;
+  }
+
+  .pc-post h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: clamp(17px, 2.8vw, 22px);
+    color: var(--navy);
+    margin: 36px 0 12px 0;
+    line-height: 1.35;
+  }
+
+  .pc-post h4 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: clamp(15px, 2.2vw, 18px);
+    color: var(--navy);
+    margin: 28px 0 8px 0;
+    line-height: 1.4;
+  }
+
+  /* — Body elements — */
+  .pc-post p {
+    margin: 20px 0;
+  }
+  .pc-post a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+  }
+  .pc-post a:hover {
+    color: var(--gold);
+  }
+  .pc-post strong {
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .pc-post ul, .pc-post ol {
+    margin: 16px 0 24px 0;
+    padding-left: 24px;
+  }
+  .pc-post li {
+    margin-bottom: 8px;
+  }
+  .pc-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  /* — Callout / highlight box — */
+  .pc-callout {
+    background: var(--light-gray);
+    border-left: 4px solid var(--gold);
+    padding: 20px 24px;
+    margin: 32px 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .pc-callout p:last-child {
+    margin-bottom: 0;
+  }
+  .pc-callout p:first-child {
+    margin-top: 0;
+  }
+
+  /* — Spec / data table — */
+  .pc-table-wrap {
+    overflow-x: auto;
+    margin: 28px 0 36px 0;
+  }
+  .pc-post table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  .pc-post thead th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background: var(--navy);
+    padding: 12px 16px;
+    text-align: left;
+  }
+  .pc-post tbody td {
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--border-gray);
+  }
+  .pc-post tbody tr:nth-child(even) {
+    background: var(--light-gray);
+  }
+
+  /* — Three-column icon/badge row — */
+  .pc-badges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 36px 0;
+    text-align: center;
+  }
+  .pc-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 12px;
+    background: var(--light-gray);
+    border-radius: 6px;
+  }
+  .pc-badge-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy);
+    border-radius: 50%;
+  }
+  .pc-badge-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--white);
+  }
+  .pc-badge-label {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.35;
+  }
+  @media (max-width: 500px) {
+    .pc-badges {
+      grid-template-columns: 1fr;
+      max-width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* — Navy CTA banner — */
+  .pc-cta-banner {
+    background: var(--navy);
+    border-radius: 8px;
+    padding: 40px 32px;
+    text-align: center;
+    margin: 48px 0 36px 0;
+  }
+  .pc-cta-banner h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(20px, 3.5vw, 26px);
+    color: var(--white);
+    margin: 0 0 12px 0;
+  }
+  .pc-cta-banner p {
+    font-family: var(--font-body);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+  }
+  .pc-cta-banner .pc-phone {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 30px);
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+  }
+  .pc-cta-banner .pc-phone:hover {
+    color: var(--gold);
+  }
+
+  /* — Inline CTA button (secondary use) — */
+  .pc-cta-btn {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--white);
+    background: var(--gold);
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin: 20px 0;
+  }
+  .pc-cta-btn:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  /* — Blockquote — */
+  .pc-post blockquote {
+    font-style: italic;
+    color: var(--mid-gray);
+    border-left: 4px solid var(--navy);
+    margin: 32px 0;
+    padding: 16px 24px;
+  }
+  .pc-post blockquote p:last-child {
+    margin-bottom: 0;
+  }
+  .pc-post blockquote p:first-child {
+    margin-top: 0;
+  }
+
+  /* — Figure / image caption — */
+  .pc-post figure {
+    margin: 36px 0;
+  }
+  .pc-post figcaption {
+    font-size: 14px;
+    color: var(--mid-gray);
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* — Two-column layout — */
+  .pc-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 32px 0;
+  }
+  @media (max-width: 600px) {
+    .pc-columns {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  /* — Feature list with gold bullets — */
+  .pc-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 28px 0;
+  }
+  .pc-features li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+  }
+  .pc-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+  }
+</style>
+
+<article class="pc-post">
+
+  <!-- ====== CONTENT START ====== -->
+
+  <!-- Breadcrumb -->
+  <nav class="pc-breadcrumb">
+    <a href="https://plastic-craft.com">Plastic-Craft Products</a>
+    <span class="pc-sep">&#8250;</span>
+    <a href="https://plastic-craft.com/blog/">Industry Insights</a>
+    <span class="pc-sep">&#8250;</span>
+    <span>Post Title</span>
+  </nav>
+
+  <!-- Header block — title + image composed together -->
+  <div class="pc-header">
+    <div class="pc-header-text">
+      <span class="pc-category-tag">Category Name</span>
+      <h1 class="pc-title">Post Title Goes Here</h1>
+      <p class="pc-excerpt">A one- or two-sentence summary of the article that tells the reader exactly what they will learn and why it matters.</p>
+      <div class="pc-post-meta">
+        <span>March 16, 2026</span>
+        <span>|</span>
+        <span>Plastic-Craft Products</span>
+      </div>
+    </div>
+    <div class="pc-img-upload" style="aspect-ratio: 4 / 3;" onclick="this.querySelector('input').click()">
+      <input type="file" accept="image/*" onchange="pcHandleUpload(this)">
+      <label class="pc-upload-label">
+        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+        <span>Click to Upload Image</span>
+        <small>Or drag and drop your file here</small>
+      </label>
+      <img class="pc-uploaded-img" alt="Header image">
+    </div>
+  </div>
+
+  <!-- Section with chevron + underline heading -->
+  <h2>The Section Heading Goes Here</h2>
+
+  <p>Opening paragraph for this section. Write for engineers and procurement specialists — be specific, data-driven, and direct. Every section should deliver clear, useful information.</p>
+
+  <p>Continue with supporting detail. Keep paragraphs short and scannable. Break up long blocks with callouts, lists, or tables.</p>
+
+  <!-- Callout box -->
+  <div class="pc-callout">
+    <p><strong>Key Takeaway:</strong> Replace this with an important fact, specification, or summary point that readers should not miss.</p>
+  </div>
+
+  <h2>Another Section Heading</h2>
+
+  <p>More content here. Use any of the components below as building blocks.</p>
+
+  <!-- Gold bullet feature list -->
+  <ul class="pc-features">
+    <li>Feature or benefit point one</li>
+    <li>Feature or benefit point two</li>
+    <li>Feature or benefit point three</li>
+    <li>Feature or benefit point four</li>
+  </ul>
+
+  <h2>Data and Specifications</h2>
+
+  <p>When presenting technical data, use the table component for clarity.</p>
+
+  <!-- Data table -->
+  <div class="pc-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+          <th>Test Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tensile Strength</td>
+          <td>10,000 psi</td>
+          <td>ASTM D638</td>
+        </tr>
+        <tr>
+          <td>Heat Deflection</td>
+          <td>200&#176;F</td>
+          <td>ASTM D648</td>
+        </tr>
+        <tr>
+          <td>Light Transmission</td>
+          <td>92%</td>
+          <td>ASTM D1003</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Certifications and Credentials</h2>
+
+  <p>Use the badge row for certifications, key differentiators, or feature highlights.</p>
+
+  <!-- Three-column badge row -->
+  <div class="pc-badges">
+    <div class="pc-badge">
+      <div class="pc-badge-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      </div>
+      <span class="pc-badge-label">Certifications &amp; Quality</span>
+    </div>
+    <div class="pc-badge">
+      <div class="pc-badge-icon">
+        <svg viewBox="0 0 24 24"><path d="M19.35 10.04A7.49 7.49 0 0012 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 000 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+      </div>
+      <span class="pc-badge-label">Custom Manufacturing</span>
+    </div>
+    <div class="pc-badge">
+      <div class="pc-badge-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <span class="pc-badge-label">FDA-Compliant Materials</span>
+    </div>
+  </div>
+
+  <h2>More Detail Here</h2>
+
+  <p>Additional content with a two-column layout for side-by-side comparisons.</p>
+
+  <!-- Two-column layout -->
+  <div class="pc-columns">
+    <div>
+      <h4>Column One</h4>
+      <p>Content for the left column. Works well for comparing two materials, processes, or options side by side.</p>
+    </div>
+    <div>
+      <h4>Column Two</h4>
+      <p>Content for the right column. Stacks vertically on mobile automatically.</p>
+    </div>
+  </div>
+
+  <!-- Image with caption — click to upload -->
+  <figure>
+    <div class="pc-img-upload" style="aspect-ratio: 16 / 9;" onclick="this.querySelector('input').click()">
+      <input type="file" accept="image/*" onchange="pcHandleUpload(this)">
+      <label class="pc-upload-label">
+        <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+        <span>Click to Upload Image</span>
+        <small>Or drag and drop your file here</small>
+      </label>
+      <img class="pc-uploaded-img" alt="Article image">
+    </div>
+    <figcaption>Caption describing the image — keep it concise and informative.</figcaption>
+  </figure>
+
+  <!-- Blockquote -->
+  <blockquote>
+    <p>Use blockquotes sparingly for emphasis, customer testimonials, or standout statements.</p>
+  </blockquote>
+
+  <!-- Navy CTA banner -->
+  <div class="pc-cta-banner">
+    <h3>We're Always Open to the Conversation</h3>
+    <p>If you have questions about the specific materials in a Plastic-Craft product, the certifications behind our processes, or how we approach quality — we would rather answer your questions directly than let uncertainty fill the gap.</p>
+    <a href="tel:8453583010" class="pc-phone">(845) 358-3010</a>
+  </div>
+
+  <!-- ====== CONTENT END ====== -->
+
+</article>
+
+<script>
+  /* — Image upload handler — click or drag-and-drop — */
+  function pcHandleUpload(input) {
+    var file = input.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    var zone = input.closest('.pc-img-upload');
+    reader.onload = function(e) {
+      var img = zone.querySelector('.pc-uploaded-img');
+      img.src = e.target.result;
+      zone.classList.add('pc-has-image');
+    };
+    reader.readAsDataURL(file);
+  }
+
+  /* — Drag and drop support for all upload zones — */
+  document.querySelectorAll('.pc-img-upload').forEach(function(zone) {
+    zone.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      zone.style.borderColor = '#C8922A';
+      zone.style.background = '#FDFAF4';
+    });
+    zone.addEventListener('dragleave', function(e) {
+      e.preventDefault();
+      zone.style.borderColor = '';
+      zone.style.background = '';
+    });
+    zone.addEventListener('drop', function(e) {
+      e.preventDefault();
+      zone.style.borderColor = '';
+      zone.style.background = '';
+      var file = e.dataTransfer.files[0];
+      if (!file || !file.type.startsWith('image/')) return;
+      var reader = new FileReader();
+      reader.onload = function(ev) {
+        var img = zone.querySelector('.pc-uploaded-img');
+        img.src = ev.target.result;
+        zone.classList.add('pc-has-image');
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+</script>

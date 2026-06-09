@@ -1,0 +1,63 @@
+Acrylic vs Glass: Clarity, Weight, Cost, and Safety Compared
+
+Glass has been the default transparent material in construction, display, and equipment design for centuries — but the assumption that it is always the right choice is increasingly being challenged by acrylic in applications where weight, safety, fabrication flexibility, and cost all factor into the specification. Understanding where acrylic outperforms glass, and where glass still holds the advantage, is essential for anyone making transparent material decisions in engineering, architecture, or industrial design. This guide provides the direct comparison.
+
+How Do Acrylic and Glass Compare Across the Key Specification Factors?
+
+The comparison between acrylic and glass is not simply a question of which is better — it is a question of which is better for a specific set of application requirements. Each material leads in a distinct set of performance categories, and the correct specification depends on which properties govern the application.
+
+Optical clarity: Acrylic wins. Cast acrylic transmits up to 92% of visible light — more than standard plate glass at approximately 90%. Acrylic also lacks the greenish tint visible in the edge of thick glass, making it superior for color-neutral optical applications.
+
+Impact resistance: Acrylic wins decisively. Acrylic is approximately 10 times more impact-resistant than glass at equivalent thickness. When broken it cracks into large blunt pieces rather than dangerous shards, dramatically reducing injury risk in safety-sensitive applications.
+
+Weight: Acrylic wins. Acrylic weighs approximately half as much as glass at equivalent thickness (~1.19 g/cm3 vs. ~2.5 g/cm3). This reduces structural load requirements, simplifies installation, and enables larger panel sizes without the handling challenges glass imposes.
+
+UV stability: Acrylic wins for outdoor use. Acrylic is inherently UV-stable and will not yellow outdoors. Acrylic also blocks most UV transmission naturally, protecting UV-sensitive contents behind the panel.
+
+Surface hardness and scratch resistance: Glass wins. Glass is significantly harder than acrylic and far more resistant to surface scratching. In high-traffic applications involving repeated cleaning, glass maintains its optical clarity longer than uncoated acrylic.
+
+Fabrication flexibility: Acrylic wins significantly. Acrylic can be cut, drilled, routed, thermoformed, bonded, and flame-polished using standard shop equipment. Custom shapes, curved forms, and complex cutouts are far more practical in acrylic than glass.
+
+Thermal expansion: Glass wins. Glass has a very low coefficient of thermal expansion, making it preferred in assemblies exposed to significant temperature cycling where dimensional stability is critical.
+
+Cost at standard sizes: Acrylic is generally competitive with or less expensive than glass when fabrication costs are included. For custom shapes and sizes, acrylic is nearly always less expensive to produce due to lower fabrication complexity.
+
+Where Does Acrylic Outperform Glass in Real-World Applications?
+
+The applications where acrylic has displaced glass share a common set of governing requirements: safety in impact scenarios, weight reduction, fabrication flexibility, or large-format transparency where glass becomes structurally and logistically impractical. In aquariums and zoo enclosures, acrylic's impact resistance and ability to be fabricated into curved, seamless panels of enormous size make it the only practical material at the scale these installations require. In aircraft, acrylic and polycarbonate have replaced glass in windows and canopies because their impact resistance and weight savings are non-negotiable at altitude.
+
+In retail display and museum case work, acrylic is specified because it is lighter, safer for staff handling large panels, and can be fabricated to precise custom dimensions without the breakage risk and cost of equivalent glass work. In marine applications, acrylic portlights, hatches, and windshields are preferred over glass for their impact resistance in rough conditions and their significant weight savings. In medical and laboratory equipment, acrylic enclosures are specified for cleanability, chemical resistance, and repairability — scratched acrylic can be polished; scratched glass must be replaced.
+
+Where Does Glass Still Outperform Acrylic?
+
+Glass retains its specification advantage in applications where surface hardness, long-term scratch resistance, dimensional stability under temperature cycling, or resistance to specific solvents and cleaning chemicals is the governing requirement. In commercial building facades, storefronts, and interior glazing that will be cleaned thousands of times over decades with commercial glass cleaners, glass outlasts acrylic on surface quality without any maintenance beyond normal cleaning. Acrylic cleaned with ammonia-based glass cleaners will craze and cloud over time — a common field failure when maintenance staff use the same cleaning protocol they use for glass.
+
+Glass also maintains its advantage in applications involving sustained high temperatures, where acrylic's service temperature limitation of approximately 160 degrees F (71 degrees C) would cause softening or deformation. Oven doors, high-temperature sight glasses, and industrial furnace windows require materials that handle thermal loads exceeding acrylic's capability. For precision optical instruments, glass remains preferred because of its dimensional stability and ability to be polished to optical flatness tolerances that acrylic cannot consistently achieve in production.
+
+What Are the Practical Considerations for Switching from Glass to Acrylic?
+
+For engineers and procurement managers evaluating a glass-to-acrylic transition, three practical considerations govern the decision beyond the property comparison. First, cleaning protocol: acrylic must never be cleaned with ammonia-based products or abrasive materials. IPA solutions, mild soap and water, or acrylic-specific cleaners are required. If the installation will be cleaned by general maintenance staff using standard glass cleaning products, either the cleaning protocol must change or the material specification must account for this. Second, thermal expansion: acrylic expands and contracts more than glass, and panel retention systems must accommodate this movement with appropriate clearances to prevent buckling or stress fracture at fastener points.
+
+Third, for applications in aerospace, defense, or regulated facilities where material documentation is a procurement requirement, Plastic-Craft Products holds ISO 9001:2015 and AS9100D certifications. Cast and extruded acrylic are both available with full material traceability, making Plastic-Craft a qualified source for programs where the material specification requires certified documentation — not just a packing slip. For large-format or custom-shaped acrylic panels replacing glass in facility or vehicle applications, Plastic-Craft Products offers in-house CNC routing, thermoforming, and edge finishing to deliver finished panels ready for installation.
+
+Frequently Asked Questions
+
+Is acrylic clearer than glass?
+
+Yes — cast acrylic transmits up to 92% of visible light compared to approximately 90% for standard plate glass, and lacks the greenish tint visible in thick glass edges. For color-neutral optical applications, acrylic's clarity advantage over standard glass is measurable. Specialty optical glass grades can exceed acrylic's performance, but standard plate glass does not.
+
+Can acrylic be cleaned with Windex or glass cleaner?
+
+No. Ammonia-based glass cleaners like Windex will cause acrylic to craze, cloud, and develop micro-cracks over time. Acrylic should be cleaned with diluted IPA solutions, mild soap and water, or cleaners specifically formulated for acrylic. This is the most common maintenance error when glass is replaced with acrylic in existing installations.
+
+Is acrylic as strong as glass?
+
+Acrylic is approximately 10 times more impact-resistant than glass at equivalent thickness. However, glass has higher surface hardness and compressive strength. For impact scenarios, acrylic is stronger. For scratch resistance and rigidity, glass is stronger. The correct specification depends on which failure mode the application needs to resist.
+
+How much lighter is acrylic than glass?
+
+Acrylic weighs approximately half as much as glass at equivalent thickness. The density of acrylic is approximately 1.19 g/cm3 compared to approximately 2.5 g/cm3 for glass. For large panels, overhead installations, and applications where structural load and handling safety are concerns, this weight difference is practically significant.
+
+Where can I buy acrylic sheet as a glass replacement?
+
+Plastic-Craft Products stocks cast and extruded acrylic sheet in a full range of thicknesses and sizes at their facility in West Nyack, NY. Custom panel sizes are cut to order with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your panel dimensions and application requirements.

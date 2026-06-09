@@ -1,0 +1,65 @@
+Solid and Multiwall Polycarbonate Sheet Comparison
+
+What Is the Difference Between Solid and Multiwall Polycarbonate Sheet?
+
+Solid polycarbonate sheet is a single continuous layer of uniform thickness—typically 0.093 inch to 0.500 inch or thicker for industrial applications. It is rigid and transparent with full mechanical properties throughout its entire cross-section. Solid sheet is the correct specification for machine guards, safety glazing, structural enclosures, and applications where the panel must resist impact, pressure, or sustained mechanical load.
+
+Multiwall polycarbonate is a hollow-structure sheet where two or more parallel face skins are separated and connected by internal ribs running the length of the panel, creating parallel air channels through the sheet cross-section. Twin-wall has two face skins and one set of channels; triple-wall has three skins and two sets. The result is a panel significantly lighter than solid sheet, with substantially better thermal insulation due to trapped air columns, and effective light transmission—but it is not a structural equivalent to solid sheet of the same nominal thickness.
+
+Both forms are available in UV-protected grades suitable for outdoor installation, in clear and bronze/grey tinted variants for solar control, and in a range of panel widths and standard lengths. Both can be cut to custom dimensions with no minimum order.
+
+How Do Solid and Multiwall Polycarbonate Compare Across the Key Specification Factors?
+
+Impact resistance: Solid sheet wins. Solid polycarbonate is specified for machine guards, safety shields, and structural glazing where the panel may be struck and must not fracture. Multiwall panels offer good resistance to hail and incidental impact for roofing applications but are not equivalent to solid sheet for industrial safety use.
+
+Thermal insulation (R-value): Multiwall wins decisively. Twin-wall polycarbonate (6mm) delivers approximately R-1.5 to R-2; triple-wall provides approximately R-2.5 to R-3. Solid sheet of any practical thickness provides minimal insulation value. For skylights, greenhouse glazing, and thermally active building envelope applications, multiwall is the correct specification.
+
+Weight: Multiwall wins. A 6mm twin-wall panel weighs approximately 0.14 lb/ft² compared to approximately 0.60 lb/ft² for a 3/16-inch solid sheet. For large-format roofing, canopy, and skylight installations where dead load is a structural consideration, multiwall's weight advantage is practically significant.
+
+Optical clarity: Solid sheet wins. Solid polycarbonate transmits approximately 88% of visible light as a continuous clear layer. Multiwall panels transmit light effectively but the internal rib structure produces a diffused rather than optically clear view, making solid sheet the correct specification for machine guard windows, display applications, and any use where clear unobstructed vision through the panel is required.
+
+Cost per square foot: Multiwall is typically less expensive than solid sheet at equivalent overall thickness. For large-format roofing and cladding applications where multiwall's structural properties are sufficient, the cost advantage is meaningful at scale.
+
+Condensation management: Multiwall panels require sealed or vented end caps to prevent moisture infiltration into the internal channels. Solid sheet has no internal structure and no moisture management requirement. Failure to properly seal multiwall panel ends results in internal condensation, algae growth, and loss of optical performance over time.
+
+When Should You Specify Solid Polycarbonate Sheet?
+
+Solid polycarbonate sheet is the correct specification for any application where impact resistance, structural integrity, or optical clarity are the governing requirements. Machine guards and safety shields are the most common industrial application: OSHA and machine safety standards for point-of-operation guarding specify impact-resistant materials that maintain their integrity when struck by ejected workpieces or contact from operators, and solid polycarbonate at appropriate thickness satisfies these requirements where acrylic would shatter. For ballistic glazing, riot shields, and bullet-resistant barrier applications, solid polycarbonate in appropriate laminated or monolithic thicknesses is the standard specification.
+
+For any glazing application where unobstructed optical clarity is required—inspection windows, equipment viewing panels, aquarium or tank walls—solid sheet is the correct choice because multiwall's internal rib structure prevents clear through-vision. For cold-forming applications where polycarbonate is bent to radius without heating, solid sheet is the appropriate material. For all precision-machined polycarbonate components—cut parts, drilled panels, precision enclosures—solid sheet is the starting material.
+
+When Should You Specify Multiwall Polycarbonate?
+
+Multiwall polycarbonate is the correct specification for building envelope, roofing, and glazing applications where thermal insulation value, weight reduction, and large-format panel coverage are the primary drivers. Skylights, greenhouse roofing, carport and canopy covers, patio covers, and translucent wall cladding are all applications where multiwall polycarbonate delivers performance that solid sheet cannot provide at practical cost and weight. The combination of light transmission (typically 80–83% for clear twin-wall), thermal insulation, UV protection, and low weight per square foot makes multiwall polycarbonate the standard material for these building applications worldwide.
+
+For commercial greenhouse and agricultural growing structures, multiwall polycarbonate's thermal performance directly affects heating costs and growing season length. Triple-wall and multi-layer configurations provide progressively better insulation for heated facilities in cold climates, while bronze and solar-control tinted grades reduce solar gain in warm climates or applications where overheating is a concern. The choice of wall count and tint is driven by the specific thermal and daylighting requirements of the building program.
+
+For regulated construction programs requiring material documentation, Plastic-Craft Products holds ISO 9001:2015 certification covering material distribution and in-house fabrication. Both solid and multiwall polycarbonate are stocked with full material traceability, making Plastic-Craft a qualified source for projects where certified material documentation is a project requirement rather than merely a convenience.
+
+What Should You Specify When Ordering Polycarbonate Sheet?
+
+For solid polycarbonate, the key specification variables are thickness, UV protection (always specify UV-coated for any outdoor application—uncoated polycarbonate yellows rapidly outdoors), tint (clear, bronze, grey, or opal), and finished panel dimensions. For machine guard applications, confirm that the specified thickness meets the applicable safety standard for the hazard level being guarded against. ANSI B11 and ISO 14120 guarding standards reference impact energy levels that correlate to minimum polycarbonate thickness requirements.
+
+For multiwall polycarbonate, specify the wall count (twin, triple, or multi-layer), overall panel thickness in millimeters (6mm, 8mm, 10mm, 16mm, and 25mm are standard), UV protection grade, tint, and panel dimensions including rib orientation relative to the panel length. Rib orientation matters for drainage: ribs must run in the drainage direction so that any moisture that enters the channels can exit through properly installed end caps rather than pooling inside the panel. Plastic-Craft Products can advise on the correct multiwall specification for specific roofing or glazing applications, and cuts both solid and multiwall polycarbonate to exact dimensions in-house with no minimum order.
+
+Frequently Asked Questions
+
+Is multiwall polycarbonate as strong as solid sheet?
+
+Multiwall polycarbonate is not equivalent to solid sheet in structural strength or impact resistance for industrial safety applications. Multiwall panels provide good resistance to hail, wind load, and incidental impact in roofing and glazing applications for which they are designed, but they are not the correct specification for machine guarding, ballistic applications, or structural enclosures requiring the full impact performance of solid polycarbonate. Always specify solid sheet for safety guard applications.
+
+Does multiwall polycarbonate need UV protection outdoors?
+
+Yes. Both solid and multiwall polycarbonate must be UV-protected for outdoor applications. Standard polycarbonate without UV coating yellows, becomes brittle, and loses impact resistance within a few years of outdoor exposure. All commercial multiwall polycarbonate panels are supplied with a co-extruded UV-protective layer on the weather-facing surface. Always confirm which surface faces outward during installation, as the UV layer is one-sided.
+
+What is the thermal insulation value of twin-wall vs. triple-wall polycarbonate?
+
+Twin-wall polycarbonate (6mm) provides approximately R-1.5 to R-2 insulation value. Triple-wall panels (10mm) provide approximately R-2.5 to R-3. Thicker multi-layer configurations such as 16mm and 25mm panels achieve R-values in the R-3 to R-4 range. For comparison, single-pane glass provides approximately R-0.9, and standard solid polycarbonate sheet provides roughly similar or slightly lower thermal performance to single-pane glass.
+
+Can multiwall polycarbonate panels be cut to custom sizes?
+
+Yes. Multiwall polycarbonate can be cut to custom panel dimensions using standard circular saw, jigsaw, or CNC cutting equipment. Clean cuts require appropriate blade selection to avoid delamination of the face skins from the internal ribs at the cut edge. Plastic-Craft Products cuts both solid and multiwall polycarbonate to custom dimensions in-house with no minimum order quantity.
+
+Where can I buy solid and multiwall polycarbonate sheet?
+
+Plastic-Craft Products stocks both solid and multiwall polycarbonate in UV-protected grades and multiple configurations at their facility in West Nyack, NY. Cut-to-size orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application, panel dimensions, and thermal or structural requirements.

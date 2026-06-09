@@ -1,0 +1,204 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">CNC Engraving for Plastic Nameplates, Panels, and Industrial Marking</h1>
+        <p class="hero-subtitle fade-in">Printed labels peel. Painted markings wear. For nameplates and control panels that must remain legible through years of harsh service, CNC engraving into laminated plastic stock is the specification that holds.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="CNC engraved plastic nameplate with contrasting text on laminated stock" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is CNC Engraving for Plastic and How Does the Process Work?</h2>
+    </div>
+    <p>CNC engraving is a subtractive machining process in which a rotating engraving cutter or diamond drag tool removes material from the surface of a plastic workpiece along a programmed toolpath, cutting text, symbols, borders, and graphics to a controlled depth. For industrial nameplates and panel marking, the most common substrate is <strong>laminated engraving plastic</strong> — a two-layer or three-layer sheet material consisting of a core layer and one or more cap layers in contrasting colors. When the cutter removes the cap layer, the contrasting core color is revealed, producing text and graphics that are inherently durable because the marking is in the material itself.</p>
+    <div class="pullquote">
+      <p><em>The same programming that produces a single prototype nameplate produces 500 identical production pieces without any additional setup cost.</em></p>
+    </div>
+    <p>The CNC controller executes the toolpath from a digital file with positional accuracy that ensures letter spacing, line alignment, and feature placement are consistent across every piece in a production run. Unlike mechanical pantograph engraving, CNC engraving is programmed digitally, making design changes, new part numbers, and one-off custom pieces as straightforward as any other CNC operation.</p>
+    <p>In addition to laminated engraving stock, CNC engraving at Plastic-Craft Products is performed on solid engineering plastics for part marking, surface texturing, depth-controlled pocketing for inlaid labels, and decorative or functional surface patterns. Acrylic, polycarbonate, phenolic, HDPE, nylon, Delrin, and most other thermoplastics and thermosets can be engraved to controlled depths.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What Materials Are Used for CNC Engraved Nameplates and Panels?</h2>
+    </div>
+    <p><strong>Laminated engraving plastic</strong> is the standard substrate for CNC engraved nameplates, control panel legends, and identification signs. It is produced in a wide range of color combinations — common combinations include black-on-white, white-on-black, red-on-white, and gold-on-black. Matte, satin, and gloss surface finishes are available depending on the application's requirements.</p>
+    <p>For <strong>military and government applications</strong> requiring compliance with MIL-SPEC marking standards, laminated phenolic engraving stock is available and is the historically specified substrate for Navy vessel nameplates, equipment placards, and panel legends. Phenolic engraving stock is dimensionally stable, resistant to solvents and cleaning agents, and does not creep or deform in harsh service environments — properties that matter over the multi-decade service life of naval and defense equipment.</p>
+    <p>For applications requiring engraved marking on engineering plastic parts rather than dedicated nameplate stock, CNC engraving is performed directly on the substrate material being marked. The engraving depth and cutter geometry are selected to produce legible, permanent marks without compromising the structural integrity of the part.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What Industries and Applications Use CNC Engraved Plastic Components?</h2>
+    </div>
+    <p>CNC engraved plastic nameplates and panels are specified in any industry where <strong>permanent, legible identification must survive the service environment</strong> of the equipment it is attached to.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">⚓</div>
+        <div class="industry-label">Military &amp; Naval Nameplates</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Instrument &amp; Control Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏭</div>
+        <div class="industry-label">Equipment &amp; Facility ID</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">✈️</div>
+        <div class="industry-label">Aerospace Interior Marking</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏥</div>
+        <div class="industry-label">Medical &amp; Lab Equipment</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏆</div>
+        <div class="industry-label">Trophy &amp; Award Items</div>
+      </div>
+    </div>
+    <p>Military and naval nameplates are often specified in phenolic engraving stock to meet MIL-SPEC durability requirements for long service life in salt air, humidity, and solvent cleaning environments. Aerospace interior marking uses Ultem and phenolic substrates for flame-rated applications requiring FAR flammability compliance.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Quality and Documentation Standards for Military and Aerospace Components</h2>
+    </div>
+    <p>Military nameplates and aerospace panel markings are not commodity engraving work — they are <strong>program-documentation items</strong> that must be produced to specification, traceable to the program they support, and supplied with the quality records that regulated programs require.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">ISO 9001:2015</div>
+        <p>Documented quality management system with full traceability from raw material to finished part for every engraving job.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">AS9100D</div>
+        <p>Aerospace-grade quality management covering CNC engraving and all in-house fabrication operations — required by prime contractors and government programs at every supply chain tier.</p>
+      </div>
+    </div>
+    <p>For programs requiring first-article inspection, dimensional records, material certifications, or certificate of conformance documentation, Plastic-Craft Products provides this documentation as part of the standard quality deliverables. Buyers placing orders for military, aerospace, or regulated industrial programs should communicate their documentation requirements at the time of quoting.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Provide When Ordering CNC Engraved Plastic Parts?</h2>
+    </div>
+    <p>The most efficient way to place a CNC engraving order is to provide a <strong>digital layout file and a dimensioned drawing</strong>. For nameplates and panels, the layout file should specify the text content, font, letter size, spacing, and any logos or symbols. The drawing should specify blank dimensions, mounting hole pattern and tolerances, material and color specification, and surface finish requirements.</p>
+    <p>For military and aerospace programs where a drawing exists, supplying the drawing is the authoritative specification — verbal or email descriptions alone are insufficient for regulated program work.</p>
+    <p>For buyers who need to develop a nameplate or panel layout from scratch, Plastic-Craft Products can produce <strong>layout proofs</strong> from customer-supplied content before committing to production, eliminating the risk of discovering a layout problem after the first production article. Single-piece prototypes and production quantities are quoted on the same no-minimum basis.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What plastic is used for military and Navy nameplates?</h3>
+      <p>Military and naval nameplates are most commonly produced in phenolic engraving laminate, which provides the dimensional stability, solvent resistance, and long-term durability required. Standard thermoplastic laminates work for less demanding applications without severe environmental exposure.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How durable is CNC engraved plastic compared to printed labels?</h3>
+      <p>Engraved text in laminated plastic substantially outlasts surface-applied labels because the marking is in the material itself — it cannot peel, fade from UV exposure, or be wiped off by solvents.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can CNC engraving be filled with color after engraving?</h3>
+      <p>Yes. Engraved recesses in solid plastic can be filled with paint or epoxy to create contrasting colors unavailable in standard laminated stock.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What file formats are accepted for CNC engraving artwork?</h3>
+      <p>Vector files (AI, EPS, DXF, SVG) are preferred because they scale without resolution loss. PDF files created from vector artwork are acceptable. For text-only nameplates, a dimensioned drawing works. Raster images require vector conversion.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I get CNC engraved plastic nameplates and panels?</h3>
+      <p>Plastic-Craft Products produces CNC engraved nameplates, instrument panels, and industrial identification at their facility in West Nyack, NY, with no minimum orders and ISO/AS9100D certifications. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Order CNC Engraved Nameplates or Panels?</h3>
+    <p>Plastic-Craft Products produces CNC engraved nameplates, control panels, and industrial marking in laminated plastic and phenolic stock — no minimum orders and MIL-SPEC capable.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about CNC engraving, nameplate specifications, or military/aerospace documentation requirements, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">CNC Engraving</span>
+    <span class="tag">Nameplates</span>
+    <span class="tag">Control Panels</span>
+    <span class="tag">MIL-SPEC</span>
+    <span class="tag">Phenolic</span>
+    <span class="tag">Military</span>
+    <span class="tag">Aerospace</span>
+    <span class="tag">Industrial Marking</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

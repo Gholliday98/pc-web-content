@@ -1,0 +1,210 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">CNC Routing vs. Laser Cutting for Plastic: Which Is Better?</h1>
+        <p class="hero-subtitle fade-in">Both processes produce precise two-dimensional plastic parts from sheet stock. The answer depends on the material, the required edge finish, the part geometry, and what happens to the edge after cutting.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="CNC router and laser cutter producing plastic parts" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Are CNC Routing and Laser Cutting and How Do They Differ?</h2>
+    </div>
+    <p><strong>CNC routing</strong> is a subtractive mechanical process — a rotating cutting tool physically contacts the plastic and shears away material. It can cut virtually any thermoplastic in any thickness, and can perform operations laser cutting cannot: pocketing, profiling at varying depths, drilling, and three-dimensional surface contouring.</p>
+    <p><strong>Laser cutting</strong> uses a focused beam of high-intensity light (typically CO2 at 10.6-micron wavelength) to vaporize or melt material along the cut line. The kerf is extremely narrow (0.2–0.5mm), the process is contactless, and for acrylic it produces a flame-polished edge requiring no secondary finishing.</p>
+    <div class="pullquote">
+      <p><em>Neither process is universally superior. Each has a set of applications where it delivers significantly better results than the other.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>How Do CNC Routing and Laser Cutting Compare?</h2>
+    </div>
+    <p><strong>Edge finish on acrylic: Laser wins.</strong> CO2 laser cutting produces a flame-polished, optically clear edge that routing cannot achieve without significant secondary polishing.</p>
+    <p><strong>Material range: Routing wins.</strong> Routing processes virtually any thermoplastic regardless of thickness, including materials laser cutting handles poorly or cannot cut at all — polycarbonate, PVC, UHMW, nylon, and most engineering plastics.</p>
+    <p><strong>Polycarbonate edge quality: Routing wins.</strong> Laser cutting polycarbonate produces a frosted, stress-crazed edge. Routing followed by hand polishing produces better results.</p>
+    <p><strong>Fine detail and tight internal radii: Laser wins.</strong> The narrow kerf produces sharp internal corners and fine detail that a router bit's diameter physically prevents.</p>
+    <p><strong>Thick material: Routing wins.</strong> Beyond approximately 1 inch, laser speed drops dramatically and edge quality degrades. Routing handles any practical thickness with consistent quality.</p>
+    <p><strong>Heat-affected zone: Routing wins.</strong> Laser cutting introduces a HAZ that can cause stress or microcracking. Routing is a cold-cutting process with no HAZ.</p>
+    <p><strong>PVC and chlorinated plastics: Routing wins.</strong> Laser cutting PVC generates chlorine gas — a serious health hazard. PVC must never be laser cut.</p>
+    <p><strong>3D operations: Routing wins exclusively.</strong> Laser is a through-cut process only. Pocketing, controlled-depth engraving, and 3D contouring require routing.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>When Is Laser Cutting the Right Choice?</h2>
+    </div>
+    <p>Laser cutting earns its specification in <strong>acrylic fabrication</strong> above almost everything else. When display cases, optical components, lighting diffusers, awards, or architectural details require edges that are visually clear and polished without secondary finishing, CO2 laser cutting of acrylic is the process of choice.</p>
+    <p>Laser cutting is also correct when <strong>intricate geometry</strong> is required in thin acrylic or PETG sheet — fine lettering, tight nested profiles, small-radius internal corners, or detailed decorative patterns that a router bit's minimum diameter would distort or prevent.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🏪</div>
+        <div class="industry-label">Display Cases &amp; Awards</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">💡</div>
+        <div class="industry-label">Illuminated Signage</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🎨</div>
+        <div class="industry-label">Decorative Acrylic Panels</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>When Is CNC Routing the Right Choice?</h2>
+    </div>
+    <p>CNC routing is correct for the <strong>majority of engineering plastic fabrication</strong>: any material that cannot be laser cut safely (PVC, CPVC, filled plastics), any thickness above approximately 1 inch, any geometry requiring depth-controlled operations, and any material where a heat-affected zone would compromise performance.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Structural Components &amp; Wear Parts</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🧪</div>
+        <div class="industry-label">Chemical Tanks &amp; Enclosures</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">✈️</div>
+        <div class="industry-label">Aerospace &amp; Defense Fabrication</div>
+      </div>
+    </div>
+    <p>Routing also holds the advantage when the edge finish requirement does not demand optical clarity — a routed edge that will be installed inside an assembly, painted, or bonded does not benefit from laser cutting's acrylic edge advantage.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">ISO 9001:2015</div>
+        <p>Documented quality management covering all CNC fabrication operations.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">AS9100D</div>
+        <p>Aerospace-grade quality documentation chain from supplier to finished part for regulated programs.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Specify When Ordering Cut Plastic Parts?</h2>
+    </div>
+    <p>Include <strong>material type and grade, sheet thickness, finished dimensions and tolerances, quantity, and required edge finish</strong>. If edge clarity is important (display/optical applications in acrylic), specify optically polished edges — this directs to laser cutting for acrylic or mechanical polishing for other transparent materials.</p>
+    <p>If the part will be bonded, painted, or installed hidden, a standard machined edge is sufficient and CNC routing is the appropriate process for most materials.</p>
+    <p>Plastic-Craft Products offers both processes in-house across their complete material inventory — from standard acrylic to UHMW, nylon, Delrin, PEEK, phenolic, PVC, and polypropylene. No minimum order, single-piece prototypes through full production runs.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does laser cutting produce a polished edge on acrylic but not polycarbonate?</h3>
+      <p>Different polymer chemistries. Acrylic melts cleanly and resolidifies with a smooth, optically clear surface. Polycarbonate is susceptible to thermal stress and produces a frosted, stress-crazed edge. For polycarbonate, CNC routing followed by mechanical polishing produces better results.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can PVC be laser cut?</h3>
+      <p>No. Laser cutting PVC generates chlorine gas — toxic to operators and corrosive to laser optics. PVC must never be laser cut. CNC routing is the only safe process. Any shop offering to laser cut PVC should be disqualified on safety grounds.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the maximum thickness laser cutting can handle for plastics?</h3>
+      <p>Practical maximum for good edge quality is approximately 0.75 to 1.0 inch in acrylic, with speed decreasing sharply beyond that. For thicker material, CNC routing delivers faster cycle times and more consistent edge quality.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does CNC routing leave a rough edge on acrylic?</h3>
+      <p>A properly programmed router with sharp tooling produces a smooth machined edge suitable for most applications. For optically clear edges, flame polishing or diamond polishing can be applied as a secondary operation. Plastic-Craft Products performs both in-house.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I get plastic parts CNC routed or precision cut?</h3>
+      <p>Plastic-Craft Products offers in-house CNC routing and precision cutting at their West Nyack, NY facility. No minimum orders. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Precision-Cut Plastic Parts?</h3>
+    <p>Plastic-Craft Products offers in-house CNC routing and precision cutting across a complete inventory of engineering and commercial plastics — the right process for every material, no minimum orders.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about CNC routing vs laser cutting, edge finish, or material selection, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">CNC Routing</span>
+    <span class="tag">Laser Cutting</span>
+    <span class="tag">Acrylic</span>
+    <span class="tag">Polycarbonate</span>
+    <span class="tag">PVC</span>
+    <span class="tag">Edge Finish</span>
+    <span class="tag">Custom Fabrication</span>
+    <span class="tag">Aerospace</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plastic-Craft - HDPE Cutting Board &amp; Food-Safe Polyethylene Spec Sheet</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page { size: letter; margin: 0; }
+
+  body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #2d2d2d; background: #fff;
+    width: 8.5in; height: 11in;
+    margin: 0 auto; position: relative; overflow: hidden;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #1a3a5c 0%, #2b6cb0 60%, #4a9bd9 100%);
+    color: #fff; padding: 22px 36px 18px 36px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    position: relative; overflow: hidden;
+  }
+  .header::after { content: ''; position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; background: rgba(255,255,255,0.03); border-radius: 50%; }
+  .header-left { display: flex; flex-direction: column; gap: 0; }
+  .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #fff; line-height: 1; }
+  .logo-text .dash { color: #7fb8e6; }
+  .material-name { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: 1px; line-height: 1.05; margin-top: 0; color: #fff; }
+  .material-subtitle { font-size: 13px; color: #a0c8e8; font-weight: 400; letter-spacing: 0.5px; margin-top: 2px; }
+  .header-right { text-align: right; font-size: 11.5px; line-height: 1.6; padding-top: 4px; }
+  .header-right .phone { font-weight: 700; font-size: 15px; }
+  .header-right a { color: #b8d8f0; text-decoration: none; }
+
+  .description-banner {
+    background: linear-gradient(135deg, #e8f0f8 0%, #f4f8fc 100%);
+    border-left: 4px solid #2b6cb0; padding: 12px 36px; font-size: 11.5px;
+    line-height: 1.6; color: #3a5a7c; font-style: italic;
+  }
+
+  .main-content { display: flex; padding: 0; height: calc(100% - 230px); }
+
+  .sidebar {
+    width: 185px; min-width: 185px;
+    background: linear-gradient(180deg, #1a3a5c 0%, #1e4470 100%);
+    color: #fff; padding: 16px 14px;
+    display: flex; flex-direction: column; gap: 11px;
+  }
+  .sidebar-section h3 {
+    font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 9.5px;
+    text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px; color: #7fb8e6;
+    border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 3px;
+  }
+  .sidebar-section p { font-size: 10px; line-height: 1.45; color: #c8ddf0; }
+  .sidebar-section .highlight { color: #90e090; font-weight: 700; font-size: 9.5px; margin-top: 5px; line-height: 1.4; }
+
+  .fda-badge {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+    border: 1px solid #4caf50; border-radius: 5px;
+    padding: 8px 10px; text-align: center;
+  }
+  .fda-badge .badge-title {
+    font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 11px;
+    color: #fff; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;
+  }
+  .fda-badge .badge-list {
+    font-size: 9px; color: #c8e6c9; line-height: 1.5; text-align: left;
+  }
+  .fda-badge .badge-list .cert {
+    display: flex; align-items: flex-start; gap: 4px; margin-bottom: 2px;
+  }
+  .fda-badge .badge-list .check { color: #69f0ae; font-weight: 700; font-size: 10px; }
+
+  .table-area { flex: 1; padding: 10px 16px 6px 16px; overflow: hidden; }
+  .table-area h2 {
+    font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px; color: #1a3a5c;
+    text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 8.5px; }
+  thead th {
+    background: #2b6cb0; color: #fff; font-weight: 700;
+    text-align: left; padding: 3.5px 5px; font-size: 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  thead th:first-child { border-radius: 3px 0 0 0; } thead th:last-child { border-radius: 0 3px 0 0; }
+  tbody tr:nth-child(even) { background: #f5f8fc; } tbody tr:nth-child(odd) { background: #fff; }
+  tbody td { padding: 2.5px 5px; border-bottom: 1px solid #e8ecf2; vertical-align: middle; }
+  tbody td:first-child { font-weight: 600; color: #2d3e50; }
+  tbody td.test-method { color: #5a7a9a; font-family: 'Courier New', monospace; font-size: 8px; }
+  tbody td.value-cell { font-weight: 600; color: #1a3a5c; text-align: right; white-space: nowrap; }
+  tbody td.unit-cell { color: #6a8aaa; font-size: 8px; }
+  .section-row td { background: #dce6f0 !important; font-weight: 700 !important; color: #1a3a5c !important; font-size: 8px; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 5px !important; border-bottom: 1.5px solid #2b6cb0 !important; }
+
+  .food-safety-box {
+    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    border: 1px solid #a5d6a7; border-left: 4px solid #2e7d32;
+    border-radius: 5px; padding: 7px 10px; margin-top: 6px;
+    font-size: 9px; line-height: 1.45;
+  }
+  .food-safety-box strong { color: #1b5e20; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .food-safety-box span { color: #33691e; }
+
+  .processing-notes {
+    background: #f0f5fa; border: 1px solid #d0dde8;
+    border-radius: 5px; padding: 6px 10px; margin-top: 5px;
+    font-size: 9px; line-height: 1.4;
+  }
+  .processing-notes strong { color: #1a3a5c; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .processing-notes span { color: #4a6a8a; }
+
+  .chem-note { margin-top: 4px; font-size: 8px; color: #6a8aaa; line-height: 1.35; padding: 0 2px; }
+  .chem-note strong { color: #1a3a5c; text-transform: uppercase; font-size: 8px; letter-spacing: 0.3px; }
+
+  .footer {
+    background: linear-gradient(135deg, #1a3a5c 0%, #2b6cb0 100%);
+    color: #fff; padding: 10px 36px;
+    display: flex; justify-content: space-between; align-items: center;
+    position: absolute; bottom: 0; left: 0; right: 0;
+  }
+  .footer-address { font-size: 10px; color: #b8d8f0; }
+  .footer-segments { display: flex; gap: 5px; align-items: center; }
+  .footer-segments .segment { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #fff; padding: 2px 8px; background: rgba(255,255,255,0.12); border-radius: 3px; }
+  .disclaimer { font-size: 7.5px; color: #8aa0b8; text-align: center; padding: 3px 36px 0 36px; position: absolute; bottom: 36px; left: 0; right: 0; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="logo-text">PLASTIC<span class="dash">-</span>CRAFT</div>
+      <div class="material-name">HDPE</div>
+      <div class="material-subtitle">High Density Polyethylene &mdash; Food-Safe &amp; Cutting Board Grade</div>
+    </div>
+    <div class="header-right">
+      <div class="phone">845-358-3010</div>
+      <div><a href="mailto:ecom@plastic-craft.com">ecom@plastic-craft.com</a></div>
+      <div style="margin-top:2px;"><a href="https://www.plastic-craft.com">www.plastic-craft.com</a></div>
+    </div>
+  </div>
+
+  <div class="description-banner">
+    The industry-standard material for commercial cutting boards and food contact surfaces. Plastic-Craft HDPE
+    is manufactured from FDA-compliant virgin resin and meets USDA, NSF, NSF/ANSI 2, and 3-A Dairy standards.
+    Non-porous, knife-friendly, dishwasher-safe, and resurfaceable &mdash; engineered for a lifetime of safe food preparation.
+  </div>
+
+  <div class="main-content">
+
+    <div class="sidebar">
+      <!-- FDA COMPLIANCE BADGE -->
+      <div class="fda-badge">
+        <div class="badge-title">Food Safety Certified</div>
+        <div class="badge-list">
+          <div class="cert"><span class="check">&#10003;</span> FDA 21 CFR 177.1520 &mdash; food contact approved</div>
+          <div class="cert"><span class="check">&#10003;</span> USDA accepted for meat &amp; poultry facilities</div>
+          <div class="cert"><span class="check">&#10003;</span> NSF / ANSI 2 &mdash; food equipment standard</div>
+          <div class="cert"><span class="check">&#10003;</span> NSF 51 &mdash; food equipment materials</div>
+          <div class="cert"><span class="check">&#10003;</span> 3-A Dairy Sanitary Standards</div>
+          <div class="cert"><span class="check">&#10003;</span> Canadian CFIA / Health Canada</div>
+          <div class="cert"><span class="check">&#10003;</span> EU Regulation 10/2011 (food plastics)</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Why HDPE Cutting Boards?</h3>
+        <p>
+          Non-porous &mdash; won&rsquo;t harbor bacteria<br>
+          Knife-friendly &mdash; won&rsquo;t dull blades<br>
+          Resurfaceable &amp; reversible<br>
+          Dishwasher &amp; sanitizer safe<br>
+          Won&rsquo;t warp, crack, or split<br>
+          Odor &amp; stain resistant<br>
+          No BPA, phthalates, or toxins<br>
+          Color-coded HACCP compliance
+        </p>
+        <p class="highlight">&#10003; The #1 material specified by health departments for commercial kitchens</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Colors for HACCP</h3>
+        <p>
+          <span style="color:#ef5350;">&#9632;</span> Red &mdash; Raw red meat<br>
+          <span style="color:#42a5f5;">&#9632;</span> Blue &mdash; Raw fish / seafood<br>
+          <span style="color:#ffee58; text-shadow: 0 0 1px #333;">&#9632;</span> Yellow &mdash; Raw poultry<br>
+          <span style="color:#66bb6a;">&#9632;</span> Green &mdash; Fruits &amp; vegetables<br>
+          <span style="color:#8d6e63;">&#9632;</span> Brown &mdash; Cooked meats<br>
+          <span style="color:#eeeeee; text-shadow: 0 0 1px #333;">&#9632;</span> White &mdash; Dairy / bakery
+        </p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Available Forms</h3>
+        <p>
+          Cutting board sheets (all colors)<br>
+          Custom cut-to-size boards<br>
+          Natural &amp; black sheets/rods<br>
+          Marine Board (UV-stab.)<br>
+          Tubes &amp; custom profiles
+        </p>
+      </div>
+    </div>
+
+    <div class="table-area">
+      <h2>Material Properties &mdash; Typical Values</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:34%">Property</th>
+            <th style="width:14%">ASTM</th>
+            <th style="width:30%">Typical Value</th>
+            <th style="width:22%">Units</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="section-row"><td colspan="4">Physical</td></tr>
+          <tr><td>Specific Gravity</td><td class="test-method">D792</td><td class="value-cell">0.95 &ndash; 0.96</td><td class="unit-cell">&mdash;</td></tr>
+          <tr><td>Water Absorption, 24h</td><td class="test-method">D570</td><td class="value-cell">&lt; 0.01</td><td class="unit-cell">%</td></tr>
+
+          <tr class="section-row"><td colspan="4">Mechanical</td></tr>
+          <tr><td>Tensile Strength, Ultimate</td><td class="test-method">D638</td><td class="value-cell">4,000</td><td class="unit-cell">psi (28 MPa)</td></tr>
+          <tr><td>Tensile Modulus</td><td class="test-method">D638</td><td class="value-cell">200,000</td><td class="unit-cell">psi (1,380 MPa)</td></tr>
+          <tr><td>Elongation at Break</td><td class="test-method">D638</td><td class="value-cell">500</td><td class="unit-cell">%</td></tr>
+          <tr><td>Flexural Modulus</td><td class="test-method">D790</td><td class="value-cell">200,000</td><td class="unit-cell">psi (1,380 MPa)</td></tr>
+          <tr><td>Compressive Strength (10%)</td><td class="test-method">D695</td><td class="value-cell">3,500</td><td class="unit-cell">psi (24 MPa)</td></tr>
+          <tr><td>Impact, Izod Notched</td><td class="test-method">D256</td><td class="value-cell">1.5</td><td class="unit-cell">ft&middot;lb/in (80 J/m)</td></tr>
+          <tr><td>Hardness, Shore D</td><td class="test-method">D2240</td><td class="value-cell">65 &ndash; 70</td><td class="unit-cell">&mdash;</td></tr>
+          <tr><td>Hardness, Rockwell</td><td class="test-method">D785</td><td class="value-cell">R65</td><td class="unit-cell">&mdash;</td></tr>
+
+          <tr class="section-row"><td colspan="4">Friction / Wear</td></tr>
+          <tr><td>Coefficient of Friction (Dynamic)</td><td class="test-method">D1894</td><td class="value-cell">0.20</td><td class="unit-cell">vs. steel</td></tr>
+          <tr><td>Coefficient of Friction (Static)</td><td class="test-method">D1894</td><td class="value-cell">0.25</td><td class="unit-cell">vs. steel</td></tr>
+          <tr><td>Wear Factor K</td><td class="test-method">D3702</td><td class="value-cell">65 &times; 10&#8315;&sup1;&#8304;</td><td class="unit-cell">in&sup3;&middot;min/ft&middot;lb&middot;hr</td></tr>
+
+          <tr class="section-row"><td colspan="4">Thermal</td></tr>
+          <tr><td>Heat Deflection @ 264 psi</td><td class="test-method">D648</td><td class="value-cell">150</td><td class="unit-cell">&deg;F (66&deg;C)</td></tr>
+          <tr><td>Melting Point</td><td class="test-method">D3418</td><td class="value-cell">266</td><td class="unit-cell">&deg;F (130&deg;C)</td></tr>
+          <tr><td>Max Continuous Service</td><td class="test-method">&mdash;</td><td class="value-cell">180</td><td class="unit-cell">&deg;F (82&deg;C)</td></tr>
+          <tr><td>CTE (Linear)</td><td class="test-method">D696</td><td class="value-cell">7.0 &times; 10&#8315;&sup5;</td><td class="unit-cell">in/in/&deg;F</td></tr>
+          <tr><td>Thermal Conductivity</td><td class="test-method">C177</td><td class="value-cell">3.0</td><td class="unit-cell">BTU&middot;in/hr&middot;ft&sup2;&middot;&deg;F</td></tr>
+
+          <tr class="section-row"><td colspan="4">Electrical</td></tr>
+          <tr><td>Volume Resistivity</td><td class="test-method">D257</td><td class="value-cell">&gt; 10<sup>16</sup></td><td class="unit-cell">ohm&middot;cm</td></tr>
+          <tr><td>Dielectric Strength</td><td class="test-method">D149</td><td class="value-cell">500</td><td class="unit-cell">V/mil (20 kV/mm)</td></tr>
+          <tr><td>Dielectric Constant, 1MHz</td><td class="test-method">D150</td><td class="value-cell">2.3</td><td class="unit-cell">&mdash;</td></tr>
+
+          <tr class="section-row"><td colspan="4">Flammability</td></tr>
+          <tr><td>UL Flammability Rating</td><td class="test-method">UL 94</td><td class="value-cell">HB</td><td class="unit-cell">&mdash;</td></tr>
+        </tbody>
+      </table>
+
+      <!-- FOOD SAFETY BOX -->
+      <div class="food-safety-box">
+        <strong>FDA &amp; Food Safety Compliance: </strong>
+        <span>
+          Our HDPE cutting board stock is manufactured exclusively from virgin FDA 21 CFR 177.1520 compliant resin &mdash;
+          no recycled content, no fillers, no additives that could leach into food.
+          The non-porous, closed-cell surface prevents bacterial harborage and is approved for direct food contact by the FDA, USDA, and NSF.
+          Boards withstand commercial dishwashers (up to 180&deg;F) and all standard sanitizing agents including bleach, quaternary ammonium, and peracetic acid.
+          Can be resurfaced (sanded) multiple times to restore a like-new cutting surface, extending service life and reducing replacement costs.
+        </span>
+      </div>
+
+      <!-- PROCESSING NOTES -->
+      <div class="processing-notes">
+        <strong>Fabrication Notes: </strong>
+        <span>
+          Excellent machinability &mdash; cut, rout, drill with standard tooling &nbsp;|&nbsp;
+          Weldable by hot plate &amp; hot gas &nbsp;|&nbsp;
+          Not bondable with adhesives &mdash; use mechanical fasteners &nbsp;|&nbsp;
+          Thermoformable &nbsp;|&nbsp;
+          Lightweight (floats in water)
+        </span>
+      </div>
+
+      <div class="chem-note">
+        <strong>Chemical Resistance: </strong>
+        Excellent resistance to acids, bases, alcohols, sanitizers, and food-grade cleaning agents.
+        <strong>Avoid:</strong> strong oxidizing acids and aromatic/chlorinated solvents at elevated temperatures.
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    Typical values; not to be used as specifications. All cutting board grades manufactured from 100% virgin FDA-compliant resin. Contact Plastic-Craft for certificates of compliance.
+  </div>
+
+  <div class="footer">
+    <div class="footer-address">744 W. Nyack Road, West Nyack, NY 10994</div>
+    <div class="footer-segments">
+      <span class="segment">Food Service</span>
+      <span class="segment">Industrial</span>
+      <span class="segment">Medical</span>
+      <span class="segment">Retail</span>
+      <span class="segment">OEM</span>
+    </div>
+  </div>
+
+</body>
+</html>

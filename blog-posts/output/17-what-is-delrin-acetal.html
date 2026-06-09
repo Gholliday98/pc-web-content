@@ -1,0 +1,195 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Material Guide</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Material Guide</div>
+        <h1 class="fade-in">What Is Delrin (Acetal)? Precision Machining and Low-Friction Applications</h1>
+        <p class="hero-subtitle fade-in">Among engineers who machine precision plastic components, Delrin has a reputation that is hard to argue with. It holds tighter tolerances than nylon, absorbs virtually no moisture, and machines with exceptional consistency.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Precision machined Delrin acetal components including gears and bushings" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is Delrin and How Does It Differ from Generic Acetal?</h2>
+    </div>
+    <p>Delrin is DuPont's trade name for <strong>homopolymer acetal</strong>, a highly crystalline thermoplastic formally known as polyoxymethylene (POM). It is one of two primary acetal grades — the other being <strong>copolymer acetal</strong> (Celcon or Acetron GP). Homopolymer Delrin offers higher mechanical strength, better fatigue resistance, and a harder surface, making it the preferred grade for demanding machined components.</p>
+    <div class="pullquote">
+      <p><em>Delrin absorbs less than 0.25% moisture and maintains its dimensions with exceptional consistency across varying temperature and humidity conditions. For precision assemblies where tolerances are measured in thousandths of an inch, this property alone often determines the material specification.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What Are the Key Properties of Delrin?</h2>
+    </div>
+    <p><strong>Dimensional stability:</strong> Less than 0.25% moisture absorption — negligible dimensional change in varying humidity. The defining property where nylon would be unreliable.</p>
+    <p><strong>Surface hardness:</strong> Harder than nylon or UHMW, producing better wear performance in sliding and rotating contact applications.</p>
+    <p><strong>Low friction:</strong> Natural lubricity reduces friction in gear, cam, and bushing applications without requiring external lubrication.</p>
+    <p><strong>Stiffness and creep resistance:</strong> Higher flexural modulus than nylon with excellent resistance to creep under sustained load.</p>
+    <p><strong>Machinability:</strong> Machines exceptionally cleanly — sharp edges, fine surface finishes, consistent tolerances across production runs.</p>
+    <p><strong>Chemical resistance:</strong> Resistant to fuels, oils, solvents, and most neutral chemicals. Less resistant to strong acids and oxidizing agents.</p>
+    <p><strong>Temperature range:</strong> Continuous service to approximately 220&deg;F (104&deg;C).</p>
+    <p>One consideration: Delrin has a relatively high coefficient of thermal expansion compared to metals. For assemblies combining Delrin with metal components in temperature-cycling environments, design tolerances should accommodate differential expansion.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What Is Delrin Used For?</h2>
+    </div>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Gears &amp; Sprockets</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔩</div>
+        <div class="industry-label">Bushings &amp; Bearings</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">💧</div>
+        <div class="industry-label">Valve Components &amp; Fluid Handling</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔄</div>
+        <div class="industry-label">Rollers &amp; Guides</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">📐</div>
+        <div class="industry-label">Structural Brackets &amp; Spacers</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏥</div>
+        <div class="industry-label">Medical Device Components</div>
+      </div>
+    </div>
+    <p><strong>Gears and sprockets:</strong> Delrin's stiffness, surface hardness, and low friction make it the standard specification for precision gears in office equipment, medical devices, and industrial machinery.</p>
+    <p><strong>Bushings and bearings:</strong> Dimensionally stable under load and in variable humidity — maintains fit and function where nylon bushings would loosen or tighten with moisture uptake.</p>
+    <p><strong>Valve components:</strong> Valve seats, pump impellers, and manifold components where chemical resistance to fuels/oils, dimensional precision, and low friction are all required.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>How Does Delrin Compare to Nylon?</h2>
+    </div>
+    <p>The decision almost always comes down to <strong>dimensional stability and moisture sensitivity</strong>. Nylon absorbs up to 8% moisture by weight in some grades compared to less than 0.25% for Delrin — causing measurable dimensional growth and reduced stiffness in humid environments.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Choose Delrin When:</div>
+        <p>Tight tolerances must be maintained regardless of humidity. Dimensional stability and consistent fit are the primary requirements. Creep resistance under sustained load is needed.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Choose Nylon When:</div>
+        <p>Better impact resistance is needed. Parts must flex without fracturing. Oil-filled nylon is required for extended dry-running friction wear life.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the difference between Delrin and acetal?</h3>
+      <p>Delrin is DuPont's trade name for homopolymer acetal (POM). Acetal is the broader category including copolymer grades (Celcon, Acetron GP). Homopolymer Delrin offers higher strength, better fatigue resistance, and a harder surface than copolymer acetal.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why does Delrin hold tighter tolerances than nylon?</h3>
+      <p>Delrin absorbs less than 0.25% moisture, so its dimensions remain stable in varying humidity. Nylon absorbs much more and grows dimensionally — making it unreliable for tight-tolerance assemblies across changing conditions.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is Delrin suitable for food contact applications?</h3>
+      <p>Natural (white) Delrin meets FDA requirements for incidental food contact in many applications. It is not NSF-certified for all food processing uses. For full NSF or USDA compliance, HDPE or UHMW are typically more straightforward specifications.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can Delrin be used in outdoor or wet environments?</h3>
+      <p>Delrin performs well in wet environments due to low moisture absorption. It has moderate UV resistance and will degrade slowly under prolonged direct sunlight without stabilization. For outdoor structural applications, black UV-stabilized HDPE is often more practical.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I buy Delrin rod, sheet, and tube?</h3>
+      <p>Plastic-Craft Products stocks Delrin in rod, sheet, and tube at their West Nyack, NY facility. Cut-to-size and machined-to-print with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Order Delrin Rod, Sheet, or Tube?</h3>
+    <p>Plastic-Craft Products stocks Delrin acetal in a full range of sizes — cut to exact dimensions or machined to print with no minimum orders and ISO/AS9100D certified quality.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about Delrin, acetal grades, or precision machining, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Delrin</span>
+    <span class="tag">Acetal</span>
+    <span class="tag">POM</span>
+    <span class="tag">Precision Machining</span>
+    <span class="tag">Gears</span>
+    <span class="tag">Bushings</span>
+    <span class="tag">Dimensional Stability</span>
+    <span class="tag">Low Friction</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

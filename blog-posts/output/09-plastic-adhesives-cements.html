@@ -1,0 +1,572 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0F2744;
+  --navy-mid: #1B3A5C;
+  --blue: #2D6A9F;
+  --accent: #4A9FD4;
+  --accent-lt: #D6EAF8;
+  --ink: #1A1A2E;
+  --muted: #5C6B7A;
+  --rule: #D4DCE6;
+  --bg: #F7F9FC;
+  --white: #FFFFFF;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  background: var(--navy);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topbar-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.topbar-sep { color: rgba(255,255,255,.25); }
+.topbar-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a4a7a 100%);
+  padding: 80px 40px 70px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 90% 50%, rgba(74,159,212,.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(45,106,159,.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+.hero-subtitle {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.65;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+.hero-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  letter-spacing: 1px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
+.hero-content-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+.hero-img-col {
+  flex: 0 0 260px;
+  width: 260px;
+}
+.hero-side-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+@media (max-width: 700px) {
+  .hero-content-row { flex-direction: column; }
+  .hero-img-col { flex: 0 0 auto; width: 100%; }
+  .hero-side-img { height: 220px; }
+}
+.cert-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 40px;
+}
+.cert-strip-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cert-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.article-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+.section { margin-bottom: 44px; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  min-width: 28px;
+}
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+p {
+  font-size: 16.5px;
+  color: #2a3442;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+p:last-child { margin-bottom: 0; }
+strong { color: var(--navy-mid); font-weight: 600; }
+em { font-style: italic; color: var(--muted); }
+hr.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 44px 0;
+}
+.pullquote {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-lt);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 28px 0;
+}
+.pullquote p {
+  font-style: italic;
+  color: var(--navy-mid);
+  font-size: 16px;
+  margin: 0;
+}
+.cert-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 580px) { .cert-cards { grid-template-columns: 1fr; } }
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--navy);
+  border-radius: 6px;
+  padding: 20px 22px;
+}
+.cert-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.cert-card p {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.65;
+}
+.industry-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 560px) { .industry-list { grid-template-columns: 1fr; } }
+.industry-item {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.industry-icon { font-size: 26px; margin-bottom: 8px; }
+.industry-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.faq-section { margin-top: 44px; }
+.faq-item { margin-bottom: 28px; }
+.faq-item h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 15.5px;
+  color: #2a3442;
+  line-height: 1.75;
+}
+.cta-block {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 12px;
+  padding: 44px 40px;
+  text-align: center;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(74,159,212,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 12px;
+  position: relative;
+}
+.cta-block p {
+  color: rgba(255,255,255,.72);
+  font-size: 15.5px;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  position: relative;
+}
+.cta-phone {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+.article-footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+.footer-rule { border: none; border-top: 1px solid var(--rule); margin-bottom: 20px; }
+.footer-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--blue);
+  background: var(--accent-lt);
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp .6s ease forwards;
+}
+.fade-in:nth-child(1) { animation-delay: .05s; }
+.fade-in:nth-child(2) { animation-delay: .15s; }
+.fade-in:nth-child(3) { animation-delay: .25s; }
+.fade-in:nth-child(4) { animation-delay: .35s; }
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  .hero { padding: 50px 24px 50px; }
+  .article-wrap { padding: 40px 24px 60px; }
+  .article-footer { padding: 0 24px 40px; }
+  .cert-strip { padding: 14px 24px; }
+  .topbar { padding: 10px 24px; }
+  .cta-block { padding: 36px 24px; }
+}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">Plastic Adhesives and Cements: A Complete Guide</h1>
+        <p class="hero-subtitle fade-in">The most important conceptual distinction in plastic bonding is the difference between solvent cementing and adhesive bonding — fundamentally different processes that produce different joint characteristics for different materials and applications.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Solvent cement being applied to an acrylic joint in a plastic fabrication shop" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is the Difference Between Solvent Cement and Structural Adhesive?</h2>
+    </div>
+    <p><strong>Solvent cement</strong> does not bond two surfaces together in the conventional sense. It dissolves the surfaces of both plastic parts at the joint interface, allowing the polymer chains to intermingle. When the solvent evaporates, the two parts have effectively fused into a single continuous piece of plastic — a true molecular bond with joint strength that can approach or match the strength of the base material itself.</p>
+    <p>Solvent cementing only works on <strong>amorphous thermoplastics</strong> that are soluble in the specific solvent system being used. Acrylic, PVC, ABS, polycarbonate, and PETG are all candidates for solvent cementing with compatible products. Semi-crystalline plastics like polyethylene, polypropylene, nylon, and PTFE cannot be solvent-cemented because they are not soluble in practical solvent systems.</p>
+    <p><strong>Structural adhesives</strong>, by contrast, are mechanical bonding systems that cure to form a solid adhesive layer between two surfaces. They work on a much broader range of materials — including many plastics that cannot be solvent-cemented — and are the correct approach when bonding dissimilar materials, when the plastic is semi-crystalline, or when the joint design requires gap-filling capability that solvent cements cannot provide. Epoxies, methacrylate adhesives, and cyanoacrylates are the most commonly used structural adhesive types in plastic fabrication.</p>
+    <div class="pullquote">
+      <p><em>Solvent cement creates a true molecular bond by fusing two plastic surfaces into one continuous piece — structural adhesive creates a mechanical bond with a cured adhesive layer between them.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Weld-On and Acrifix Product Lines: When Is Each Used?</h2>
+    </div>
+    <p><strong>Weld-On</strong> (IPS Corporation) and <strong>Acrifix</strong> (Evonik) are the two primary solvent cement product lines stocked at Plastic-Craft Products, each formulated for specific plastic substrates and bonding requirements.</p>
+    <p>The Weld-On line covers solvent cements for acrylic, PVC, ABS, and polycarbonate across a range of viscosities and working times. <strong>Weld-On 3 and Weld-On 4</strong> are thin, water-like cements for acrylic-to-acrylic bonding — applied by capillary action to closely fitted joints and cured in seconds to minutes. <strong>Weld-On 16</strong> is a thicker, paste-consistency cement for acrylic joints with small gaps or where a longer working time is needed. <strong>Weld-On 40</strong> is a two-part methylene chloride-free system for structural acrylic bonds where maximum clarity and joint strength are both required. For PVC bonding, <strong>Weld-On 705</strong> and compatible products provide the appropriate chemistry for both Type I and Type II PVC sheet and pipe applications.</p>
+    <p>The <strong>Acrifix line</strong> from Evonik is specifically engineered for acrylic bonding and is particularly well-suited to display fabrication, optical assemblies, and applications where joint clarity is the primary requirement. <strong>Acrifix 1S 0116</strong> is a thin solvent cement for precision acrylic-to-acrylic bonds in close-fitting joints. <strong>Acrifix 2R 0190</strong> is a two-component reactive adhesive that cures to a bond with high optical clarity and good UV stability — the preferred system for display cases, optical components, and fabricated acrylic assemblies where the joint must be visually invisible.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Which Bonding System Is Right for Which Plastic?</h2>
+    </div>
+    <p>Matching the bonding system to the specific plastic is the most consequential step in any bonding specification. The compatibility matrix below covers the most common combinations encountered in fabrication:</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Acrylic</div>
+        <p>Solvent cement is the standard approach. Weld-On 3, 4, or 16 for most applications; Acrifix 1S 0116 or 2R 0190 for optical-quality bonds. Two-part reactive systems for structural or gap-filling bonds.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">PVC &amp; CPVC</div>
+        <p>Solvent cement using the correct formulation for the specific material. Using PVC cement on CPVC will not produce a reliable bond. Weld-On 705 for PVC sheet and fabricated assemblies.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Polycarbonate</div>
+        <p>Methylene chloride-based cements can cause stress crazing. Methylene chloride-free formulations or structural adhesives are the safer specification for polycarbonate bonding.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">ABS</div>
+        <p>Solvent cement bonds readily. Standard acetone-based or MEK-based cements produce strong, reliable bonds for ABS-to-ABS applications in fabricated enclosures and structural components.</p>
+      </div>
+    </div>
+    <p><strong>Polyethylene, polypropylene, PTFE, nylon:</strong> Cannot be solvent-cemented. Structural adhesives or hot gas welding are required. Welding is often the more reliable joining method for polyolefin fabrications.</p>
+    <p><strong>Dissimilar plastics:</strong> Cannot be solvent-cemented. Structural adhesives with appropriate surface preparation are required for bonding two different plastic types to each other.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Best Practices for Solvent Cement Application</h2>
+    </div>
+    <p>Even the correct solvent cement will produce a poor result if applied incorrectly. <strong>Joint preparation is the most critical variable</strong> — the mating surfaces must be flat, clean, and free of oil, dust, and machining debris. Sanded or machined surfaces bond better than saw-cut surfaces because they provide more intimate contact between the parts.</p>
+    <p>Thin solvent cements like Weld-On 3 or Acrifix 1S 0116 are applied by <strong>capillary action</strong>: assemble the parts first, hold them in contact under light pressure, and touch the applicator to the joint line. Surface tension draws the cement into the joint, wetting both surfaces simultaneously. This technique requires closely fitted joints — gaps larger than a few thousandths of an inch will prevent the cement from wicking fully.</p>
+    <p>Curing time before handling and before applying load are <strong>separate specifications</strong>. Most thin solvent cements allow handling in minutes but require 24 to 72 hours before the joint can be subjected to stress.</p>
+    <div class="pullquote">
+      <p><em>Most thin solvent cements allow handling in minutes but require 24 to 72 hours of cure time before the joint can be subjected to mechanical stress, thermal cycling, or chemical exposure.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Order When Sourcing Plastic Adhesives?</h2>
+    </div>
+    <p>When ordering plastic adhesives and cements, buyers should specify the <strong>plastic substrate</strong> being bonded, the <strong>joint configuration</strong> (butt joint, lap joint, capillary-filled close joint, or gap-filling application), the required <strong>working time</strong>, and any performance requirements for the finished joint — optical clarity, UV resistance, chemical resistance, or structural load rating.</p>
+    <p>For fabrication projects that involve both material and bonding, Plastic-Craft Products stocks Weld-On and Acrifix adhesives and cements alongside the full range of plastic sheet, rod, and tube they are designed to bond. <strong>Ordering both from a single source</strong> eliminates the compatibility uncertainty that arises when purchasing adhesives from a different distributor than the plastic, and ensures that the bonding agent is matched to the specific grade and surface condition of the material being assembled.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the difference between Weld-On 3 and Weld-On 4?</h3>
+      <p>Both are thin, water-like solvent cements for acrylic-to-acrylic bonding applied by capillary action. Weld-On 3 has a slightly faster evaporation rate and shorter working time, making it preferred for production bonding. Weld-On 4 has a slightly slower evaporation rate and longer open time, giving the assembler more time to align parts before the cement begins to set. Both produce equivalent bond quality on closely fitted acrylic joints.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can you use acrylic cement on polycarbonate?</h3>
+      <p>No. Acrylic solvent cements are not compatible with polycarbonate and may cause stress crazing or surface damage. Polycarbonate requires its own compatible solvent cement formulation, and methylene chloride-based cements should be avoided due to stress-craze risk. Methylene chloride-free formulations or structural adhesives are the safer specification.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why won't solvent cement work on HDPE or polypropylene?</h3>
+      <p>Solvent cementing requires that the solvent dissolve the plastic surface to create a molecular bond. Semi-crystalline plastics like polyethylene and polypropylene are not soluble in practical solvent systems at room temperature, so the solvent cannot penetrate the surface. Hot gas welding, extrusion welding, or specialized structural adhesives are the correct joining methods for these materials.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How long does acrylic solvent cement take to cure fully?</h3>
+      <p>Thin solvent cements like Weld-On 3 and Acrifix 1S 0116 allow handling in minutes, but full joint strength and solvent evaporation require 24 to 72 hours depending on joint thickness, temperature, and ventilation. Joints should not be subjected to significant mechanical stress, thermal cycling, or chemical exposure until the full cure time has elapsed.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I buy Weld-On and Acrifix products?</h3>
+      <p>Plastic-Craft Products stocks Weld-On and Acrifix adhesives and cements at their facility in West Nyack, NY, alongside the plastic sheet, rod, and tube they are designed to bond. No minimum order quantities. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your specific bonding application and confirm the correct product.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need the Right Adhesive for Your Plastic Bonding Application?</h3>
+    <p>Plastic-Craft Products stocks Weld-On and Acrifix solvent cements and adhesives alongside the full range of plastic sheet, rod, and tube they are designed to bond — with no minimum order and expert guidance on product selection.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about plastic adhesives, solvent cements, or bonding specifications, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Plastic Adhesives</span>
+    <span class="tag">Solvent Cement</span>
+    <span class="tag">Weld-On</span>
+    <span class="tag">Acrifix</span>
+    <span class="tag">Acrylic Bonding</span>
+    <span class="tag">PVC Cement</span>
+    <span class="tag">Polycarbonate</span>
+    <span class="tag">Custom Fabrication</span>
+    <span class="tag">ISO 9001</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

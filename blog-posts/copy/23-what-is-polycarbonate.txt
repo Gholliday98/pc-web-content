@@ -1,0 +1,83 @@
+Polycarbonate Sheet: Complete Guide
+
+What Is Polycarbonate and What Is It Made Of?
+
+Polycarbonate is a high-performance thermoplastic produced from bisphenol A (BPA) and phosgene through a polycondensation reaction, resulting in a tough, transparent polymer with an exceptional strength-to-weight ratio. It is sold under trade names including Lexan, Makrolon, and Tuffak, all of which share the same core material characteristics. Unlike many engineering plastics, polycarbonate does not need to be reinforced to achieve its structural properties — its impact resistance is inherent to the base polymer itself.
+
+Polycarbonate is available in solid sheet, multiwall (hollow) sheet, rod, and tube. Solid sheet is used where both transparency and structural load-bearing are required. Multiwall sheet — featuring hollow channels running through the panel — is used for glazing, greenhouse panels, and architectural roofing where thermal insulation and light diffusion matter as much as strength.
+
+How Strong Is Polycarbonate Compared to Glass and Acrylic?
+
+Polycarbonate is approximately 250 times more impact-resistant than glass and roughly 30 times stronger than acrylic, making it the highest-impact-resistance transparent sheet material available in standard commercial forms. This is not a marginal difference — polycarbonate can be struck repeatedly with significant force without shattering, which is why it is specified for ballistic-grade glazing, police riot shields, and protective equipment.
+
+The trade-off compared to acrylic is surface hardness. Acrylic has a harder surface than polycarbonate and is significantly more scratch-resistant. Uncoated polycarbonate scratches relatively easily, which is why it is commonly supplied with a UV-resistant, scratch-resistant coating on one or both surfaces. For applications where scratch resistance is critical alongside impact resistance, specifying a coated grade is essential.
+
+In terms of optical clarity, polycarbonate transmits approximately 88% of visible light compared to acrylic's 92%. For most glazing and guarding applications this difference is imperceptible, but for precision optical or display work where maximum clarity is critical, acrylic remains the stronger choice.
+
+What Are the Key Properties of Polycarbonate Sheet?
+
+Polycarbonate's performance profile makes it uniquely suited to demanding safety and structural applications. The properties that matter most for engineering and procurement decisions are:
+
+- Impact resistance: Up to 250 times stronger than glass at equivalent thickness — the highest impact resistance of any standard transparent sheet material.
+
+- Temperature range: Performs from -40°F to over 240°F, maintaining structural integrity across a wider range than most competing thermoplastics.
+
+- Flame resistance: Inherently flame-retardant and self-extinguishing, meeting UL 94 V-2 in standard grades and V-0 in specialty grades.
+
+- Light transmission: Approximately 88% in clear solid sheet — suitable for guarding, glazing, and safety applications.
+
+- UV stability: Available with co-extruded UV-protective layers. Uncoated polycarbonate will yellow outdoors — always specify UV-rated grades for exterior use.
+
+- Machinability: Drills, saws, and CNC routes cleanly. Can be thermoformed, cold-bent, and bonded with compatible adhesives and solvent cements.
+
+- Weight: Roughly half the weight of glass at equivalent thickness, significantly reducing installation loads in glazing and guarding applications.
+
+One consideration buyers should plan for: polycarbonate is susceptible to certain chemicals, including strong alkalis, aromatic hydrocarbons, and many ketones and esters. For applications involving chemical exposure, confirming compatibility before specifying polycarbonate is essential.
+
+What Is Polycarbonate Sheet Used For?
+
+Polycarbonate is specified wherever a transparent material needs to survive impact, elevated temperature, or both. Its application range spans industries in ways that few other materials can match.
+
+- Machine guards and safety shields: The most common industrial application — provides clear visibility into equipment while protecting operators from projectiles, heat, and mechanical hazards.
+
+- Safety glazing: Doors, windows, skylights, and partitions in high-traffic or high-risk environments where glass breakage is a safety concern.
+
+- Ballistic and security glazing: Laminated or thick-gauge polycarbonate used in bullet-resistant windows, teller windows, and security enclosures.
+
+- Aerospace and defense: Canopies, windows, and instrument covers where optical clarity, light weight, and impact performance are simultaneously required.
+
+- Greenhouse and architectural roofing: Multiwall polycarbonate panels provide thermal insulation and diffused light transmission for agricultural and architectural applications.
+
+- Medical and laboratory equipment: Sterilizable enclosures, equipment housings, and protective covers requiring impact resistance and optical clarity.
+
+For defense and aerospace customers, Plastic-Craft Products holds ISO 9001:2015 and AS9100D quality management certifications. AS9100D governs the full documentation, traceability, and process control requirements that flight-critical and mission-critical programs demand — making Plastic-Craft a qualified supplier where standard commercial material sourcing is not sufficient.
+
+What Should You Specify When Ordering Polycarbonate?
+
+A precise specification prevents the most common ordering errors with polycarbonate. The first decision is sheet type: solid or multiwall. Solid sheet is correct for guarding, glazing, and structural applications. Multiwall is appropriate for architectural panels and greenhouse roofing where thermal performance and light diffusion matter more than structural load-bearing.
+
+Surface coating is the second critical specification. Standard polycarbonate yellows and degrades under UV exposure. For any outdoor application, a UV-stabilized grade with a co-extruded protective layer is required. For applications where surface durability matters, a hard-coated grade significantly extends service life. Buyers should also confirm thickness against impact requirements — polycarbonate's performance scales with thickness in ways that are highly application-dependent.
+
+For fabricated parts, Plastic-Craft Products offers CNC routing, laser cutting, thermoforming, line bending, and bonding in-house. Sourcing both material and fabrication from a single ISO-certified supplier reduces lead time, simplifies quality documentation, and ensures the fabrication process is matched to the specific grade being used.
+
+Frequently Asked Questions
+
+Is polycarbonate stronger than acrylic?
+
+Yes — polycarbonate is significantly stronger than acrylic in terms of impact resistance, approximately 30 times more resistant at equivalent thickness. However, acrylic is harder on the surface, more scratch-resistant, and optically clearer. The right choice depends on whether impact resistance or surface quality is the primary requirement.
+
+Does polycarbonate yellow in sunlight?
+
+Uncoated polycarbonate will yellow and degrade under prolonged UV exposure. UV-stabilized grades with a co-extruded protective surface layer are available and strongly recommended for any outdoor application. Always specify a UV-rated grade when the material will be exposed to direct sunlight.
+
+Can polycarbonate be used as bullet-resistant glazing?
+
+Yes. Thick-gauge and laminated polycarbonate is widely used in ballistic and bullet-resistant glazing applications, including security windows, teller windows, and protective enclosures. The specific thickness and construction required depends on the ballistic rating needed for the application.
+
+What is the difference between solid and multiwall polycarbonate?
+
+Solid polycarbonate sheet is a continuous panel used for machine guards, safety glazing, and structural applications. Multiwall polycarbonate has hollow channels running through the panel, reducing weight and adding thermal insulation — used for architectural glazing and greenhouse roofing where light diffusion and thermal performance are priorities over maximum structural strength.
+
+Where can I buy polycarbonate sheet?
+
+Plastic-Craft Products stocks solid and multiwall polycarbonate sheet in multiple grades, thicknesses, and sizes at their facility in West Nyack, NY. Custom cut-to-size orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your project.

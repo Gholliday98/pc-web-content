@@ -1,0 +1,59 @@
+Phenolic Laminate: Complete Grade Guide
+
+What Is Phenolic Laminate and How Is It Made?
+
+Phenolic laminate is a thermoset composite created by impregnating layers of reinforcing substrate—woven glass fabric, paper, or canvas—with thermosetting resin, typically phenol-formaldehyde or epoxy, then curing under heat and pressure. The result combines mechanical strength from reinforcing fibers with chemical and electrical properties of the resin matrix. Unlike thermoplastics, phenolic laminates are thermoset materials that do not melt or soften when reheated and maintain structural integrity to their service temperature limits.
+
+The reinforcement type and resin system determine grade designation and performance characteristics. Different reinforcements produce significantly different mechanical, electrical, and moisture resistance properties. The NEMA grade system standardizes these combinations for electrical and industrial applications.
+
+Key Phenolic Grades and Applications
+
+G-10 / Garolite G-10 (NEMA Grade G-10): Woven fiberglass with epoxy resin offering excellent electrical insulation, low moisture absorption, and high mechanical strength. Standard for PCB substrates and electrical components in wet environments.
+
+G-11 (NEMA Grade G-11): Similar to G-10 but with higher-temperature epoxy. Retains flexural strength at elevated temperatures where G-10 softens. Specified for motor windings and transformer insulation.
+
+CE (NEMA Grade CE): Cotton canvas reinforcement with phenolic resin. Lower electrical performance but superior machinability and impact resistance. Used for bushings, gears, jigs, and structural components.
+
+LE (NEMA Grade LE): Linen fabric reinforcement with phenolic resin. Finer weave than CE produces smoother surface finish and better dimensional consistency. Preferred for precision bushings and bearing components.
+
+XX / XXX (NEMA Grades XX and XXX): Paper reinforcement with phenolic resin. Lower mechanical strength but excellent machinability and moderate electrical insulation for electrical panels and terminal boards in dry indoor environments.
+
+Key Properties
+
+Phenolic laminates excel where thermoplastics lack sufficient rigidity, thermal stability, or electrical reliability. High dielectric strength and volume resistivity make them effective electrical insulators across a range of voltages and frequencies. Glass-reinforced grades maintain properties after moisture exposure, while paper and fabric grades suit dry environments.
+
+These materials demonstrate dimensional stability under load and temperature, resisting creep under sustained compressive or flexural stress. Continuous service temperatures range from approximately 250°F (120°C) for standard phenolic grades to over 300°F (150°C) for glass-epoxy grades like G-10 and G-11.
+
+Machinability varies significantly by grade. Canvas and linen grades machine freely, while glass-reinforced grades require carbide tooling. All produce fine particulate dust requiring respiratory protection during machining.
+
+Applications
+
+Phenolic laminates serve in electrical switchgear and panels, motor and transformer insulation, PCB substrates, structural and tooling components, bushings and wear components, and defense and aerospace insulation where thermal cycling and electrical isolation are simultaneously required.
+
+Specification Guidelines
+
+Grade selection is the primary specification decision. G-10 suits applications requiring both electrical insulation and moisture resistance. CE or LE is appropriate when machinability and impact resistance take priority. XX or XXX paper grades work for low-cost, low-stress electrical applications in dry indoor environments.
+
+For machined components, specify finished dimensions with tolerances, required surface finish, and any NEMA grade certification. Phenolic rod accommodates turned components like bushings and spacers in various diameters. Sheet comes in standard and custom thicknesses for cut, routed, or drilled components.
+
+Frequently Asked Questions
+
+What is the difference between G-10 and Garolite?
+
+Garolite is a trade name by Laird Performance Materials. Garolite G-10 refers to the same NEMA G-10 grade—woven fiberglass with epoxy resin—as any other G-10 product. Material properties follow the NEMA standard, not the brand name.
+
+What is the difference between G-10 and FR-4?
+
+G-10 and FR-4 are both woven fiberglass epoxy laminates with nearly identical properties. FR-4 includes a flame-retardant additive meeting UL 94 V-0 requirements, while standard G-10 does not. They're generally interchangeable except where UL flammability rating is required.
+
+Is phenolic laminate safe to machine?
+
+Phenolic laminate isn't electrically hazardous to machine, but dust produced is a respiratory and skin irritant, particularly from glass-reinforced grades. Machining requires appropriate respiratory protection, dust collection, and skin protection.
+
+Can phenolic laminate be used outdoors?
+
+Glass-reinforced grades like G-10 perform well in wet environments due to low moisture absorption, but phenolic laminates aren't recommended for prolonged direct UV exposure without protective coatings. Paper and canvas grades absorb moisture and shouldn't be used outdoors.
+
+Where can I buy phenolic sheet, rod, and tube?
+
+Plastic-Craft Products stocks G-10, CE, LE, and other phenolic grades in sheet, rod, and tube at their West Nyack, NY facility. Cut-to-size and machined-to-print orders are available with no minimum quantity.

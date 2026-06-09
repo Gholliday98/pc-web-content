@@ -1,0 +1,174 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Custom Solutions</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Marine Fabrication</div>
+        <h1 class="fade-in">Catamaran Boat Windows: Custom Acrylic and Polycarbonate Glazing Built for the Sea</h1>
+        <p class="hero-subtitle fade-in">Catamaran windows face a unique engineering challenge — complex hull geometry, constant saltwater exposure, UV bombardment, and structural loads that shift with every wave. Standard windows don't fit. Custom-fabricated plastic glazing does.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products &middot; West Nyack, NY</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Custom acrylic windows installed on a catamaran boat hull" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Capabilities</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> Custom Marine Glazing</span>
+    <span class="badge"><span class="badge-dot"></span> No Minimum Order</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Why Catamaran Windows Demand Custom Fabrication</h2>
+    </div>
+    <p>Catamarans aren't monohulls. Their <strong>twin-hull design creates compound curves, non-standard angles, and window openings</strong> that vary not just between manufacturers but between model years of the same boat. Off-the-shelf marine windows rarely fit — and even when they approximate the right dimensions, the seal, flush, and finish compromise the vessel's aesthetics and watertight integrity.</p>
+    <p>Custom-fabricated windows solve every one of these problems. Each panel is cut, formed, and finished to the <strong>exact geometry of the window opening</strong> — whether that's a flat salon window, a curved helm enclosure panel, or a complex hatch with compound curvature.</p>
+    <div class="pullquote">
+      <p><em>A catamaran is as much about visual design as it is about sailing performance. Windows that fit poorly, fog prematurely, or yellow in sunlight undermine both the vessel's appearance and its value.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Material Selection: Acrylic vs. Polycarbonate for Marine Use</h2>
+    </div>
+    <p>Both acrylic and polycarbonate are proven marine glazing materials — but they serve different roles on a catamaran.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Acrylic (Cast)</div>
+        <p>The standard for salon windows, portlights, and any application where optical clarity and UV resistance are the priorities. 92% light transmission. Inherently UV-stable — won't yellow outdoors. Lighter than glass. Can be flame-polished to optical edge quality. Scratches can be polished out. The correct specification for most catamaran glazing.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Polycarbonate</div>
+        <p>The choice when impact resistance overrides all other factors. 250x stronger than glass. Used for helm enclosure panels, windshields in high-spray zones, and any location where a wave strike or flying debris could damage acrylic. Must be specified with UV coating for outdoor marine use — uncoated polycarbonate will yellow.</p>
+      </div>
+    </div>
+    <p>For many catamarans, the answer is <strong>both</strong> — acrylic for the salon and cabin windows where clarity and aesthetics matter most, polycarbonate for the helm and forward-facing panels where impact performance is non-negotiable.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What the Marine Environment Demands</h2>
+    </div>
+    <p>Marine glazing isn't residential glazing. The ocean tests materials in ways that land-based applications never do:</p>
+    <p><strong>Saltwater exposure:</strong> Continuous salt spray and occasional submersion. Both acrylic and polycarbonate resist saltwater corrosion — but hardware, fasteners, and sealing systems must also be specified for marine use.</p>
+    <p><strong>UV bombardment:</strong> Hours of direct tropical sunlight reflecting off water surfaces. UV-stabilized acrylic handles this natively. Polycarbonate requires a co-extruded UV layer — always specify UV-coated grades for marine applications.</p>
+    <p><strong>Thermal cycling:</strong> Deck temperatures can exceed 140&deg;F in tropical sun, then drop rapidly in rain or at night. Glazing must accommodate thermal expansion without buckling, cracking, or losing its seal.</p>
+    <p><strong>Flexural loading:</strong> Wave impacts, wind pressure, and structural flex in the hulls all apply dynamic loads to window panels. Glazing thickness must be calculated against the span, the expected wave energy, and the mounting system's ability to distribute load.</p>
+    <p><strong>Vibration:</strong> Engine vibration, rigging loads, and hull flex create continuous low-amplitude vibration that can fatigue poorly mounted glazing over time. Proper bedding compound and mounting detail prevent long-term failure.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>What Plastic-Craft Fabricates for Catamarans</h2>
+    </div>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🪟</div>
+        <div class="industry-label">Salon &amp; Cabin Windows</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚓</div>
+        <div class="industry-label">Helm Enclosure Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🚢</div>
+        <div class="industry-label">Portlights &amp; Hatches</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🌊</div>
+        <div class="industry-label">Windshields</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔧</div>
+        <div class="industry-label">Replacement Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">📐</div>
+        <div class="industry-label">Custom Profiles &amp; Curves</div>
+      </div>
+    </div>
+    <p>Fabrication capabilities include <strong>CNC precision cutting</strong> to exact panel dimensions from templates or drawings, <strong>thermoforming</strong> for curved panels that match hull geometry, <strong>edge polishing</strong> for exposed-edge installations, and <strong>drilling</strong> for fastener patterns with proper edge clearances for thermal expansion.</p>
+    <p>For builders and refit yards, Plastic-Craft can work from <strong>CAD files, physical templates, or sample panels</strong> from the original installation. For owners replacing damaged or yellowed windows, we can replicate the original panel from measurements or a template taken from the boat.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>Working with Builders, Yards, and Owners</h2>
+    </div>
+    <p>Plastic-Craft serves three distinct catamaran markets:</p>
+    <p><strong>OEM builders:</strong> Production window sets fabricated to drawing for new-build catamarans. Consistent quality, lot-to-lot dimensional repeatability, and the documentation that a professional build program requires.</p>
+    <p><strong>Refit and repair yards:</strong> Replacement panels for damaged, crazed, or yellowed windows. Matched to the original dimensions from templates or measurements. Fast turnaround to keep refit schedules on track.</p>
+    <p><strong>Private owners:</strong> Individual replacement windows, upgrade panels (switching from polycarbonate to acrylic for better clarity, or from standard to UV-stabilized grades), and custom additions for modified layouts.</p>
+    <p>Located in <strong>West Nyack, NY</strong> — accessible to the Northeast boatbuilding and refit corridor — with nationwide shipping for yards and owners elsewhere.</p>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Custom Catamaran Windows?</h3>
+    <p>Plastic-Craft fabricates custom acrylic and polycarbonate marine glazing — precision-cut, thermoformed, and polished to fit your exact hull geometry. No minimum orders. From templates, drawings, or samples.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100:2016 certified custom plastic fabrication company based in West Nyack, NY. For marine glazing quotes, material selection, or catamaran window replacement, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Catamaran</span>
+    <span class="tag">Boat Windows</span>
+    <span class="tag">Marine Glazing</span>
+    <span class="tag">Acrylic</span>
+    <span class="tag">Polycarbonate</span>
+    <span class="tag">UV-Stabilized</span>
+    <span class="tag">Custom Fabrication</span>
+    <span class="tag">Thermoforming</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

@@ -1,0 +1,70 @@
+UHMW vs Nylon for Wear Applications
+
+UHMW (ultra-high molecular weight polyethylene) and nylon (polyamide) are the two most commonly specified plastics for wear, sliding, and friction-reduction applications. Both offer self-lubricating surfaces, good impact resistance, and wear performance that exceeds most metals in sliding contact applications at significantly lower weights than metal alternatives.
+
+Key Performance Comparisons
+
+Abrasion Resistance in Sliding Wear
+UHMW wins. UHMW's extremely high molecular weight produces superior wear life over nylon under equivalent conditions in applications involving bulk material sliding across surfaces.
+
+Compressive Load Capacity
+Nylon wins. UHMW will deform and cold-flow under concentrated point loads, while nylon holds its shape and maintains tolerances in precision bearing applications.
+
+Coefficient of Friction
+UHMW wins. It has the lowest coefficient of friction of any plastic and requires no external lubrication in most sliding applications. Oil-filled nylon narrows the gap but does not close it entirely.
+
+Moisture Sensitivity
+UHMW wins. It absorbs essentially no moisture and remains unaffected by wet environments. Nylon absorbs moisture and grows dimensionally, affecting precision fit applications.
+
+Temperature Resistance
+Nylon wins. Standard grades handle continuous service to approximately 185–200°F with better stiffness retention at elevated temperatures than UHMW.
+
+Machinability
+Nylon wins for precision. It holds tighter tolerances and produces cleaner edges than UHMW, which deflects under cutting forces.
+
+FDA and Food Contact Compliance
+UHMW wins. Natural virgin UHMW meets FDA, USDA, and NSF requirements for direct food contact without additives.
+
+Cost
+UHMW is typically less expensive than nylon at equivalent dimensions.
+
+When to Choose UHMW
+
+UHMW is the correct specification for surface wear resistance in sliding, abrading, or bulk-material-contact environments where dimensional precision under compressive load is not critical. Ideal applications include chute and hopper liners, conveyor wear strips, truck bed liners, and dock fenders.
+
+UHMW's immunity to moisture makes it the unambiguous choice over nylon in any wet, submerged, or high-humidity wear application.
+
+When to Choose Nylon
+
+Nylon is appropriate when the wear application involves meaningful structural loads, precision tolerances, or elevated temperature cycling. Gears, precision bushings, bearing components, sprockets, and structural wear pads are where nylon's superior stiffness and compressive strength justify the specification.
+
+Oil-filled nylon narrows the friction gap with UHMW and is recommended when both low friction and structural performance are required in dry-running applications.
+
+Decision Framework
+
+The correct material is determined by three sequential questions:
+
+1. Is surface abrasion from bulk material or continuous sliding the primary wear mechanism? If yes, specify UHMW unless structural load factors override this.
+
+2. Does the component carry meaningful compressive loads, require tight tolerances, or need to maintain geometry under sustained stress? If yes, specify nylon or oil-filled nylon.
+
+3. Will the component operate in a wet or humid environment? If yes and structural loads are not primary, UHMW's moisture immunity tips the balance in its favor.
+
+The most common specification error is using nylon where UHMW would last significantly longer in a high-abrasion, low-load application.
+
+Frequently Asked Questions
+
+Which is more abrasion-resistant?
+UHMW is more abrasion-resistant in sliding and bulk-material-contact wear applications. Oil-filled nylon narrows the gap in rotating applications, but in high-abrasion environments UHMW is stronger.
+
+Can UHMW be used for gears and bushings?
+No. UHMW's softness causes cold-flow and dimensional creep under sustained compressive load. Nylon or oil-filled nylon is required for precision machined components that must maintain tolerances.
+
+Does nylon absorb water?
+Yes. Nylon absorbs moisture, causing dimensional growth and reduced stiffness. In precision assemblies and wet applications, UHMW's moisture immunity provides significant advantage.
+
+Is oil-filled nylon better than UHMW for bearings?
+For precision bearing applications under meaningful compressive loads, oil-filled nylon combines low friction with load-bearing capacity. For low-load, high-wear applications like conveyor strips, UHMW remains superior.
+
+Where can I buy UHMW and nylon?
+Plastic-Craft Products stocks UHMW and nylon in sheet, rod, and tube across a range of grades and sizes at their West Nyack, NY facility. Cut-to-size orders available with no minimum quantity.

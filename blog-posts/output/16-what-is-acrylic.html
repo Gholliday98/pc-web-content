@@ -1,0 +1,204 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Material Guide</div>
+        <h1 class="fade-in">What Is Acrylic? Properties, Applications, and Buying Guide</h1>
+        <p class="hero-subtitle fade-in">Acrylic is one of the most widely specified transparent materials in engineering and manufacturing — known for 92% light transmission, inherent UV resistance, and impact strength that outperforms glass by a factor of ten.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Clear acrylic sheet showing optical clarity and transparency" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is Acrylic Made Of?</h2>
+    </div>
+    <p>Acrylic is a transparent thermoplastic formally known as <strong>polymethyl methacrylate (PMMA)</strong>, produced by polymerizing methyl methacrylate monomer into a rigid, lightweight solid. It transmits up to <strong>92% of visible light</strong> — more than standard plate glass — and is sold under trade names including Plexiglas, Lucite, and Acrylite. Despite different brand names, the underlying material and performance characteristics are consistent.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What Is the Difference Between Cast and Extruded Acrylic?</h2>
+    </div>
+    <p>Cast and extruded are the two primary manufacturing grades, and choosing correctly between them affects optical quality, tolerances, and cost.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Cast Acrylic</div>
+        <p>Made by curing liquid monomer between glass plates. Denser molecular structure, tighter thickness tolerances, superior optical clarity. Standard for display work, optical applications, and precision assemblies.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Extruded Acrylic</div>
+        <p>Produced at higher throughput by pushing molten polymer through a die. Slightly softer, more economical, bonds well with solvent cements. Practical for thermoforming and cost-driven production runs.</p>
+      </div>
+    </div>
+    <p>Both grades are stocked at Plastic-Craft Products in a wide range of thicknesses, colors, and sheet sizes with no minimum order requirement.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What Are the Key Properties of Acrylic Sheet?</h2>
+    </div>
+    <p><strong>Optical clarity:</strong> Up to 92% light transmission with excellent color neutrality across the visible spectrum.</p>
+    <p><strong>UV stability:</strong> Inherently UV-resistant without additives; will not yellow, haze, or become brittle under prolonged outdoor exposure.</p>
+    <p><strong>Impact resistance:</strong> Approximately 10 times more impact-resistant than glass at equivalent thickness, making it a safer and lighter glazing alternative.</p>
+    <p><strong>Scratch resistance:</strong> Surface hardness significantly outperforms polycarbonate. Minor surface damage can often be restored with Micro-Mesh abrasive polishing.</p>
+    <p><strong>Machinability:</strong> Saws, drills, routes, engraves, and laser cuts cleanly. Edges can be flame- or diamond-polished to optical clarity.</p>
+    <p><strong>Chemical resistance:</strong> Resists dilute acids, alkalis, and most inorganic chemicals. Susceptible to aromatic solvents and ketones.</p>
+    <div class="pullquote">
+      <p><em>One specification detail to account for: acrylic has a higher thermal expansion coefficient than metal. Assemblies exposed to temperature cycling should include tolerances that allow for dimensional movement at fastener holes and bonded joints to prevent stress cracking.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>What Is Acrylic Sheet Used For?</h2>
+    </div>
+    <p>Acrylic is specified across a broad range of industries because its combination of transparency, weatherability, and fabrication flexibility addresses applications where glass is too heavy or fragile, and polycarbonate lacks the surface quality.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🏪</div>
+        <div class="industry-label">Retail Displays &amp; POP Fixtures</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">💡</div>
+        <div class="industry-label">Signage &amp; Architectural Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔬</div>
+        <div class="industry-label">Pharmaceutical &amp; Laboratory</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Industrial OEM</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚓</div>
+        <div class="industry-label">Marine &amp; Transportation</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🎬</div>
+        <div class="industry-label">Stage, Film &amp; Television</div>
+      </div>
+    </div>
+    <p>For defense and aerospace programs, Plastic-Craft Products operates under <strong>ISO 9001:2015 and AS9100D certifications</strong> — the aerospace quality standard governing full traceability and process documentation for mission-critical components.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Specify When Ordering Acrylic?</h2>
+    </div>
+    <p>A complete specification prevents rework and schedule delays. Confirm: <strong>grade</strong> (cast or extruded), <strong>thickness</strong> with required tolerance, <strong>color and light transmission</strong> level, and <strong>edge finish</strong> — saw cut, machined, flame-polished, or diamond-polished.</p>
+    <p>For bonded assemblies, Weld-On and Acrifix solvent cements are stocked in-house. Plastic-Craft Products also offers CNC routing, laser cutting, thermoforming, line bending, and a full range of secondary fabrication — material and finished parts sourced from a single ISO-certified supplier.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is acrylic stronger than glass?</h3>
+      <p>Yes. Acrylic is approximately 10 times more impact-resistant than glass at the same thickness. It is also significantly lighter, making it the preferred alternative for glazing, guards, and enclosures where safety and weight are both factors.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does acrylic turn yellow over time?</h3>
+      <p>No — acrylic is inherently UV-stable and will not yellow or become brittle with outdoor exposure. This distinguishes it from many other clear plastics, including some grades of polycarbonate, which can yellow without UV coatings.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the difference between acrylic and polycarbonate?</h3>
+      <p>Acrylic offers superior optical clarity, better UV stability, and higher surface hardness. Polycarbonate offers greater impact resistance and is more flexible. For display, signage, and outdoor glazing, acrylic is typically the better choice. For extreme impact resistance, polycarbonate is preferred.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can acrylic be cut to custom sizes?</h3>
+      <p>Yes. Plastic-Craft Products cuts acrylic sheet, rod, and tube to exact customer dimensions in-house. There are no minimum order quantities, making it practical for both prototype and full production orders.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I buy acrylic sheet?</h3>
+      <p>Plastic-Craft Products stocks cast and extruded acrylic sheet, rod, and tube at their facility in West Nyack, NY. Call (845) 358-3010, email ecom@plastic-craft.com, or request a quote online.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Order Acrylic Sheet, Rod, or Tube?</h3>
+    <p>Plastic-Craft Products stocks cast and extruded acrylic in dozens of grades, colors, and thicknesses — cut to your exact dimensions with no minimum orders and in-house fabrication.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about acrylic grades, specifications, or custom fabrication, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Acrylic</span>
+    <span class="tag">PMMA</span>
+    <span class="tag">Plexiglas</span>
+    <span class="tag">Cast Acrylic</span>
+    <span class="tag">UV Stability</span>
+    <span class="tag">Optical Clarity</span>
+    <span class="tag">Display</span>
+    <span class="tag">Custom Fabrication</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

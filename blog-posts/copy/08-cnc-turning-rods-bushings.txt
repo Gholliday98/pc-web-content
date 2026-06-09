@@ -1,0 +1,69 @@
+CNC Turning for Plastic Rods, Bushings, Spacers, and Rotational Parts
+
+What Is CNC Turning for Plastic and What Does It Produce?
+
+CNC turning is a subtractive machining process in which a plastic rod or tube workpiece is held in a rotating chuck while a stationary cutting tool moves along programmed axes to remove material and produce a rotationally symmetric finished part. The turning center's CNC controller governs the tool position, feed rate, and spindle speed with precision that manual lathe operations cannot consistently achieve, producing parts with tight diametral tolerances, accurate bore positioning, and repeatable dimensions across every piece in a production run. For plastic components with round cross-sections and features centered on a common axis — bushings, shafts, spacers, sleeve bearings, pulley hubs, rollers, and standoffs — CNC turning is the primary production process.
+
+Modern CNC turning centers combine turning with live tooling capability, allowing milling, drilling, cross-hole drilling, and thread cutting to be performed in the same setup without removing the part from the chuck. This combination reduces the number of setups required for complex parts, eliminates the cumulative positioning error that accumulates when a part is moved between machines, and shortens lead time for components that require both turned and milled features. For plastic bushings with keyways, shafts with flats, and spacers with cross-drilled ports, this single-setup capability is particularly valuable for maintaining the positional accuracy of secondary features relative to the primary turned axis.
+
+Plastic-Craft Products turns a comprehensive range of engineering and high-performance plastics from rod and tube stock, including nylon, Delrin (acetal), UHMW, HDPE, PEEK, Ultem, Torlon, PTFE, polycarbonate, phenolic, and acrylic. The broad material range means the correct material for any bearing, wear, insulating, or structural application can be turned to the required geometry without requiring the buyer to source material and machining separately.
+
+What Plastic Parts Are Most Commonly Produced by CNC Turning?
+
+CNC turning of plastic is specified across a wide range of industries and application types, unified by the common requirement for precise cylindrical geometry in a material that is lighter, corrosion-resistant, self-lubricating, or electrically insulating compared to the metal alternative. The plastic turned parts most commonly produced at Plastic-Craft Products include:
+
+Bushings and sleeve bearings: The highest-volume category for turned plastic parts. Nylon, Delrin, UHMW, and oil-filled nylon bushings for shafts in machinery, conveyor systems, and automated equipment where self-lubricating properties eliminate external lubrication requirements and reduce maintenance intervals.
+
+Spacers and standoffs: Precision-length cylindrical spacers in phenolic, PEEK, Ultem, or nylon for aerospace assemblies, electronic component mounting, and structural applications where exact stack height and parallelism between mating surfaces must be maintained.
+
+Wear rings and seals: PTFE and UHMW wear rings, piston guides, and seal components for hydraulic and pneumatic cylinders and pump housings where chemical resistance and low friction are simultaneously required.
+
+Rollers and pulleys: Plastic rollers in UHMW, nylon, or Delrin for conveyor systems, cable routing, and web handling equipment where the roller material must not contaminate the product, must be non-sparking, or must provide specific traction and wear characteristics.
+
+Electrical insulating components: Turned phenolic, PEEK, and Ultem insulators, standoffs, and feed-through components for electrical assemblies where precise dimensional control of the dielectric gap is a functional requirement.
+
+Custom threaded components: Internally and externally threaded plastic fittings, plugs, and connectors in chemically resistant materials for fluid handling, semiconductor process equipment, and laboratory applications where metal threading would introduce corrosion or contamination risk.
+
+What Tolerances Does CNC Turning of Plastic Achieve?
+
+CNC turning of engineering plastics achieves diametral tolerances of ±0.001 to ±0.003 inch on outside and bore diameters under controlled conditions, with length tolerances typically in the ±0.005 inch range depending on part length and material. For bushing applications where the bore-to-shaft fit determines whether the assembly runs freely, drags, or binds, this level of tolerance control is essential and is the primary reason CNC turning is specified over hand-turning or approximate machining. Plastic-Craft Products' turning operations hold these tolerances consistently across production quantities, not just on first-article parts.
+
+Material behavior is the most significant variable affecting achievable tolerance in turned plastic parts. Rigid, stable materials — Delrin, phenolic, PEEK, and glass-filled nylon — hold tight diametral tolerances predictably and machine to excellent surface finishes with standard carbide tooling. Softer materials — UHMW, unfilled PTFE, and soft elastomeric grades — tend to spring back slightly after the cutting edge passes and require specialized tooling geometry and cutting parameters to achieve consistent finished dimensions. Moisture-sensitive materials like nylon PA6 and PA6/6 absorb moisture after machining, which changes their dimensions at equilibrium — a behavior that must be factored into bore specifications for close-tolerance bushing applications.
+
+Thermal expansion during machining is a practical concern for tight-tolerance turning of any plastic, particularly for long, slender parts where temperature gradients from cutting heat can introduce taper along the part length. Plastic-Craft Products manages this through appropriate cutting speeds, tooling selection, and part cooling, producing turned parts that meet their dimensional specifications at ambient temperature rather than at elevated machining temperatures.
+
+What Materials Are Available for CNC Turned Plastic Components?
+
+Plastic-Craft Products stocks plastic rod and tube across their full engineering and specialty material range, providing the starting stock for CNC turning in virtually any thermoplastic or thermoset that is commercially available in rod form. Because material and machining are sourced from the same facility, material traceability is maintained from the original rod stock through the finished turned part — a requirement for aerospace, defense, and regulated medical programs that must document the material origin of every component in their assemblies.
+
+For bearing and bushing applications, the most commonly specified turned materials are oil-filled nylon for general machinery bearings, UHMW for low-load conveyor and wear applications, Delrin for precision dry-running components, and PEEK bearing grades for high-load or elevated-temperature environments. For electrical insulating applications, phenolic, Ultem, and PEEK offer the combination of machineability and dielectric performance that the application requires. For chemical process and semiconductor applications, PTFE, PVDF, and PEEK provide the chemical resistance needed in turned fittings, rings, and flow components.
+
+For aerospace and defense programs requiring AS9100D-certified machining with full material documentation, Plastic-Craft Products holds both ISO 9001:2015 and AS9100D quality management system certifications covering all CNC turning operations. This means the material certificate, turning process records, and dimensional inspection data for every turned part are captured within a certified quality management system. For programs where this documentation chain is a supply chain requirement, sourcing from Plastic-Craft Products eliminates the need to qualify a separate machining supplier for the turning scope.
+
+What Should You Provide When Ordering CNC Turned Plastic Parts?
+
+The minimum information required to quote a CNC turned plastic part is the finished geometry with all critical dimensions and tolerances, the material and grade specification, and the quantity required. For bushings and bearings, the critical dimensions are the bore diameter and tolerance (which governs shaft fit), the outside diameter and tolerance (which governs housing fit), the length, and any chamfer or radius requirements on the ends. For spacers, the critical dimensions are the outside diameter, bore diameter, and length, all with their respective tolerance requirements.
+
+Drawings in DXF, DWG, STEP, or PDF format are preferred, but a dimensioned sketch or written specification with all critical dimensions and tolerances is sufficient for straightforward turned parts. For parts with secondary milled features such as keyways, flats, cross-drilled holes, or slots, a drawing is essential to correctly specify the position of these features relative to the primary turned axis. Plastic-Craft Products machines single-piece prototypes on the same CNC turning equipment as production quantities, with no minimum order, allowing first-article evaluation before committing to a full production run.
+
+Frequently Asked Questions
+
+What plastic is best for turned bushings and bearings?
+
+The correct material for a turned bushing depends on the load, speed, temperature, and lubrication conditions of the application. Oil-filled nylon is the most widely specified general-purpose bearing grade — self-lubricating, dimensionally stable in dry service, and machines to tight tolerances. UHMW is preferred for low-load, high-wear conveyor and sliding applications. Delrin provides excellent dimensional stability for precision dry-running components. PEEK bearing grades are specified for high-load, elevated-temperature, or chemically aggressive environments where nylon and Delrin would be unsuitable.
+
+What diametral tolerance does CNC turning of plastic hold?
+
+CNC turning of rigid engineering plastics like Delrin, phenolic, and PEEK typically achieves diametral tolerances of ±0.001 to ±0.003 inch on outside diameters and bores under controlled conditions. Softer materials like UHMW and PTFE hold slightly looser tolerances due to material springback after cutting. Tighter tolerances are achievable on appropriate materials with secondary grinding operations when required.
+
+Can plastic bushings be turned with internal threads?
+
+Yes. Internal and external threads can be cut in turned plastic parts using CNC turning operations. Common thread forms including UN, UNF, metric, and pipe threads are all achievable in appropriate plastic materials. Thread fit in plastic requires careful design consideration because plastics have higher coefficients of thermal expansion than metals, and temperature changes affect thread engagement differently than in all-metal assemblies.
+
+Does nylon change dimensions after turning?
+
+Yes. Nylon absorbs moisture from the environment after machining, which causes dimensional growth. The amount of growth depends on the nylon grade, starting moisture content, and ambient humidity. For tight-tolerance bushing applications in nylon, bore and outside diameter dimensions should be specified at the expected in-service moisture equilibrium state, not at the dry-machined condition. Plastic-Craft Products can advise on moisture conditioning considerations for nylon bushing applications.
+
+Where can I get CNC turned plastic bushings and custom round parts?
+
+Plastic-Craft Products offers in-house CNC turning across their complete plastic rod and tube inventory at their facility in West Nyack, NY. No minimum orders for prototype or production quantities. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your part geometry, material, tolerances, and quantity requirements.

@@ -1,0 +1,592 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0F2744;
+  --navy-mid: #1B3A5C;
+  --blue: #2D6A9F;
+  --accent: #4A9FD4;
+  --accent-lt: #D6EAF8;
+  --ink: #1A1A2E;
+  --muted: #5C6B7A;
+  --rule: #D4DCE6;
+  --bg: #F7F9FC;
+  --white: #FFFFFF;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.topbar {
+  background: var(--navy);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topbar-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.topbar-sep { color: rgba(255,255,255,.25); }
+.topbar-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a4a7a 100%);
+  padding: 80px 40px 70px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 90% 50%, rgba(74,159,212,.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(45,106,159,.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent);
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+.hero-subtitle {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.65;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+.hero-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+  letter-spacing: 1px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.hero-meta span { display: flex; align-items: center; gap: 6px; }
+.hero-content-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+.hero-img-col {
+  flex: 0 0 260px;
+  width: 260px;
+}
+.hero-side-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+@media (max-width: 700px) {
+  .hero-content-row { flex-direction: column; }
+  .hero-img-col { flex: 0 0 auto; width: 100%; }
+  .hero-side-img { height: 220px; }
+}
+.cert-strip {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 40px;
+}
+.cert-strip-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.cert-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.article-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+.section { margin-bottom: 44px; }
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  min-width: 28px;
+}
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(18px, 2.5vw, 22px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+p {
+  font-size: 16.5px;
+  color: #2a3442;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+p:last-child { margin-bottom: 0; }
+strong { color: var(--navy-mid); font-weight: 600; }
+em { font-style: italic; color: var(--muted); }
+hr.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 44px 0;
+}
+.pullquote {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-lt);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  margin: 28px 0;
+}
+.pullquote p {
+  font-style: italic;
+  color: var(--navy-mid);
+  font-size: 16px;
+  margin: 0;
+}
+.cert-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 580px) { .cert-cards { grid-template-columns: 1fr; } }
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--navy);
+  border-radius: 6px;
+  padding: 20px 22px;
+}
+.cert-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.cert-card p {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.65;
+}
+.industry-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+@media (max-width: 560px) { .industry-list { grid-template-columns: 1fr; } }
+.industry-item {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.industry-icon { font-size: 26px; margin-bottom: 8px; }
+.industry-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+.faq-section { margin-top: 44px; }
+.faq-item { margin-bottom: 28px; }
+.faq-item h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 15.5px;
+  color: #2a3442;
+  line-height: 1.75;
+}
+.cta-block {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 12px;
+  padding: 44px 40px;
+  text-align: center;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(74,159,212,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 12px;
+  position: relative;
+}
+.cta-block p {
+  color: rgba(255,255,255,.72);
+  font-size: 15.5px;
+  max-width: 520px;
+  margin: 0 auto 28px;
+  position: relative;
+}
+.cta-phone {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+.article-footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+.footer-rule { border: none; border-top: 1px solid var(--rule); margin-bottom: 20px; }
+.footer-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--blue);
+  background: var(--accent-lt);
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp .6s ease forwards;
+}
+.fade-in:nth-child(1) { animation-delay: .05s; }
+.fade-in:nth-child(2) { animation-delay: .15s; }
+.fade-in:nth-child(3) { animation-delay: .25s; }
+.fade-in:nth-child(4) { animation-delay: .35s; }
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  .hero { padding: 50px 24px 50px; }
+  .article-wrap { padding: 40px 24px 60px; }
+  .article-footer { padding: 0 24px 40px; }
+  .cert-strip { padding: 14px 24px; }
+  .topbar { padding: 10px 24px; }
+  .cta-block { padding: 36px 24px; }
+}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">Acrylic Prismatic Lighting Sheet: A Complete Guide</h1>
+        <p class="hero-subtitle fade-in">Acrylic prismatic lighting sheet transmits a high percentage of light while distributing it evenly — making it the standard material for commercial troffer lenses, panel light diffusers, and luminaire covers in office, retail, and institutional settings.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Acrylic prismatic lighting sheet panel showing textured diffusion pattern" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is Acrylic Prismatic Lighting Sheet and How Does It Work?</h2>
+    </div>
+    <p>Acrylic prismatic lighting sheet is a specialized acrylic panel with a <strong>textured surface pattern that controls light transmission and distribution</strong>. Unlike clear acrylic, which offers high clarity without diffusion, or white acrylic, which diffuses light but blocks significant portions, prismatic sheet transmits a high percentage of the light while distributing it evenly.</p>
+    <p>The optical effect comes from an embossed pattern — typically repeating small pyramidal or lens-shaped elements — that refracts light passing through. This redirects rays that would create bright spots, spreading them across the fixture's exit. The result is <strong>uniform illumination from edge to edge</strong>, regardless of light source spacing or distribution.</p>
+    <div class="pullquote">
+      <p><em>Prismatic sheet refracts and redistributes light to eliminate hotspots, delivering uniform illumination from edge to edge — making it the standard for commercial troffer lenses and panel light diffusers.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Types of Lighting Acrylic and When Each Is Specified</h2>
+    </div>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">Prismatic Sheet (Standard Pattern)</div>
+        <p>The most widely used commercial lighting panel, transmitting approximately 85-92% of incident light with effective diffusion. Standard replacement for 2x2 and 2x4 fluorescent and LED troffer fixtures.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Frosted / Matte Diffusion Sheet</div>
+        <p>One or both surfaces satin-finished to scatter light without directional refraction. Softer, more uniform output with reduced glare. Specified where appearance matters more than maximum transmission.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">White Diffusion Sheet</div>
+        <p>Opaque or translucent white acrylic that diffuses through material transmission, producing completely even illumination at reduced light transmission (typically 40-60%). For backlit signage and lamp concealment.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">Specialty Lens Patterns</div>
+        <p>Custom patterns including micro-prismatic, cross-prismatic, and parabolic lens arrays for specific photometric requirements in high-bay and architectural lighting applications.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>How Does Prismatic Acrylic Perform with LED Light Sources?</h2>
+    </div>
+    <p>The shift from fluorescent tubes to LEDs has changed diffusion panel demands. Fluorescent tubes produce continuous light lines, while <strong>LED arrays generate discrete point sources</strong> that are smaller and more intense, creating higher contrast and making hotspot diffusion more challenging.</p>
+    <p>Standard prismatic sheet performs well with LEDs when the LED array is properly designed with appropriate spacing and the panel is positioned at the correct distance from the source. <strong>Micro-prismatic sheet</strong> — with a finer pattern pitch — is often preferred for LED panel lights because its smaller element size provides more effective point-source blending at closer source-to-panel distances.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Applications for Acrylic Prismatic Lighting Sheet</h2>
+    </div>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">&#127970;</div>
+        <div class="industry-label">Commercial Troffer Replacement Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128161;</div>
+        <div class="industry-label">LED Panel Light Diffusers</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127917;</div>
+        <div class="industry-label">Backlit Signage &amp; Menu Boards</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127961;&#65039;</div>
+        <div class="industry-label">Architectural Cove &amp; Feature Lighting</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#127793;</div>
+        <div class="industry-label">Greenhouse &amp; Grow-Light Applications</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">&#128736;&#65039;</div>
+        <div class="industry-label">Custom Luminaire Manufacturing</div>
+      </div>
+    </div>
+    <p><strong>Commercial troffer replacement panels</strong> are the highest-volume application — replacing 2x2 and 2x4 ceiling troffers in offices, schools, hospitals, and retail stores. LED panel light diffusers in edge-lit and direct-lit configurations use diffusion sheet for uniform, glare-free illumination.</p>
+    <p>OEM luminaire manufacturers specify prismatic sheet as fixture components requiring <strong>consistent optical performance and dimensional accuracy</strong> across production runs.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Specify When Ordering Lighting Sheet Acrylic?</h2>
+    </div>
+    <p>The most important decisions are <strong>pattern type, thickness, and finished panel dimensions</strong>. Pattern type determines optical performance and must match fixture and light source requirements. Thickness is typically 0.100 inch (approximately 2.5mm) for standard troffer panels, though it may vary based on structural needs.</p>
+    <p>For replacement panels, <strong>measure the existing panel carefully before ordering</strong> — nominal fixture sizes do not always correspond to actual panel dimensions, and variations of a quarter inch or more are common between manufacturers.</p>
+    <div class="pullquote">
+      <p><em>Nominal fixture sizes do not always correspond to actual panel dimensions — variations of a quarter inch or more are common between manufacturers. Always measure the existing panel before ordering.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the standard thickness for troffer replacement panels?</h3>
+      <p>The most common thickness for standard 2x2 and 2x4 troffer replacement lenses is 0.100 inch (approximately 2.5mm). Some fixtures use thinner 0.080 inch or thicker 0.125 inch panels depending on manufacturer and fixture age.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the difference between prismatic and frosted acrylic for lighting?</h3>
+      <p>Prismatic sheet uses a structured surface pattern to refract light, achieving high transmission (typically 85-92%) with effective hotspot diffusion. Frosted sheet uses a matte finish to scatter light, producing softer appearance but slightly lower transmission. Prismatic is preferred for efficiency-critical applications; frosted where softer appearance is the design priority.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can prismatic sheet be cut to custom sizes?</h3>
+      <p>Yes, prismatic and diffusion lighting sheet can be cut to any custom panel dimension with no minimum order requirements.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is prismatic acrylic UV-stable for outdoor lighting applications?</h3>
+      <p>Standard acrylic is inherently UV-stable and will not yellow or become brittle under outdoor UV exposure — a significant advantage over polystyrene lighting sheet, which yellows rapidly outdoors.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I buy acrylic prismatic lighting sheet?</h3>
+      <p>Plastic-Craft Products stocks acrylic prismatic and diffusion lighting sheet in standard and specialty patterns at their West Nyack, NY facility, offering cut-to-size orders with no minimum order requirements. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Prismatic or Diffusion Lighting Sheet?</h3>
+    <p>Plastic-Craft Products stocks acrylic prismatic and diffusion lighting sheet in standard and specialty patterns — cut to exact panel dimensions with no minimum order requirements.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about prismatic lighting sheet, diffusion panels, or custom-cut lighting acrylic, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Prismatic Sheet</span>
+    <span class="tag">Lighting Acrylic</span>
+    <span class="tag">Troffer Panels</span>
+    <span class="tag">LED Diffusers</span>
+    <span class="tag">Light Diffusion</span>
+    <span class="tag">Commercial Lighting</span>
+    <span class="tag">Backlit Signage</span>
+    <span class="tag">UV Stable</span>
+    <span class="tag">Custom Cut</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

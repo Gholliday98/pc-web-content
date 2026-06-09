@@ -1,0 +1,73 @@
+PEEK Plastic: Complete Guide
+
+When an application pushes past the limits of nylon, Delrin, or even PTFE—in temperature, chemical exposure, load, or all three simultaneously—engineers reach for PEEK. Polyether ether ketone is widely regarded as the gold standard of engineering thermoplastics, offering a combination of heat resistance, mechanical strength, chemical inertness, and dimensional stability that no other unfilled polymer can match at a comparable weight. This guide covers what PEEK is, when it is genuinely the right specification, and how to source it correctly.
+
+What Is PEEK Plastic and What Makes It Different?
+
+PEEK stands for polyether ether ketone, a semi-crystalline aromatic thermoplastic produced by nucleophilic aromatic substitution polymerization. It belongs to the polyaryletherketone (PAEK) family and was first commercialized in the early 1980s. The material's distinctive performance comes from its aromatic backbone structure, which gives it exceptional thermal stability, resistance to a broad spectrum of chemicals, and mechanical properties that are retained at temperatures where most other engineering plastics have long since softened or degraded.
+
+PEEK is available in several forms for machined components and structural applications: unfilled natural PEEK (tan/beige), carbon-fiber-filled PEEK for enhanced stiffness and thermal conductivity, glass-fiber-filled PEEK for improved dimensional stability under load, and bearing-grade PEEK filled with PTFE and graphite for reduced friction in dry-running applications. Plastic-Craft Products stocks PEEK rod, sheet, and tube in unfilled and filled grades, cut to exact customer dimensions with no minimum order requirement.
+
+What Are the Key Properties of PEEK That Justify Its Cost?
+
+PEEK commands a significant price premium over standard engineering plastics, and it earns that premium through a performance profile that no lower-cost material can replicate. For engineers and procurement managers evaluating whether PEEK is the correct specification, the relevant properties are:
+
+Continuous service temperature: Performs continuously at up to 480°F (250°C)—far beyond the limits of nylon, Delrin, or polycarbonate.
+
+Chemical resistance: Resistant to virtually all organic and inorganic chemicals including concentrated acids, alkalis, hydrocarbons, and steam. Few plastics match PEEK's breadth of chemical inertness.
+
+Mechanical strength: High tensile strength, excellent fatigue resistance, and outstanding creep resistance under sustained load—all retained at elevated temperatures.
+
+Dimensional stability: Very low moisture absorption (less than 0.5%), resulting in exceptional dimensional stability across varying humidity and temperature environments—critical for precision components.
+
+Radiation resistance: Withstands high levels of gamma and X-ray radiation without significant degradation—a key property for medical, nuclear, and semiconductor applications.
+
+Flame resistance: Inherently flame-retardant with a limiting oxygen index (LOI) of 35%, self-extinguishing without additives and suitable for aerospace fire safety requirements.
+
+Machinability: Machines to tight tolerances with standard carbide tooling, producing smooth surface finishes suitable for sealing surfaces, bearing interfaces, and precision instrument components.
+
+PEEK's one notable limitation is cost—it is significantly more expensive than nylon, Delrin, or UHMW. The correct engineering decision is to specify PEEK only when the application genuinely requires its specific combination of high-temperature performance, chemical resistance, and dimensional stability. When one or two of those requirements can be met by a lower-cost material, the premium is not justified.
+
+What Industries and Applications Specify PEEK?
+
+PEEK is specified in applications where the combination of thermal, chemical, and mechanical demands simultaneously exceeds what any other thermoplastic can deliver. Its application range is narrower than general-purpose engineering plastics precisely because its cost limits its use to situations where the performance is genuinely required.
+
+Aerospace and defense: Brackets, seals, bushings, and structural components where weight reduction, flame resistance, and performance at temperature extremes are simultaneously required.
+
+Medical and surgical devices: Implantable components, surgical instrument handles, and sterilizable housings where biocompatibility, radiation resistance, and autoclave sterilization compatibility are required.
+
+Semiconductor and electronics: Wafer handling components, test sockets, and precision instrument parts in environments involving aggressive chemical cleaning and extreme cleanliness requirements.
+
+Oil and gas: Valve seats, pump components, and downhole equipment parts that must survive exposure to aggressive hydrocarbons, high pressures, and elevated temperatures simultaneously.
+
+Industrial processing: Pump impellers, compressor valve components, and heat exchanger parts in chemical processing environments where steam, concentrated acids, and sustained high temperatures are present.
+
+For aerospace and defense procurement programs, Plastic-Craft Products holds ISO 9001:2015 and AS9100D quality management certifications. AS9100D governs traceability, documentation, and process control for flight-critical components—making Plastic-Craft a qualified supplier for PEEK parts in programs where a standard commercial certificate of conformance is not sufficient.
+
+What Should You Specify When Ordering PEEK?
+
+The first specification decision for PEEK is grade. Unfilled natural PEEK is the correct choice for most medical, semiconductor, and general high-temperature applications where chemical resistance and dimensional stability are the primary requirements. Carbon-fiber-filled PEEK adds stiffness and thermal conductivity but reduces impact resistance—it is the correct choice for structural components under high sustained loads at elevated temperatures. Glass-fiber-filled PEEK improves dimensional stability and compressive strength. Bearing-grade PEEK filled with PTFE and graphite significantly reduces friction and is specified for dry-running bearing and seal applications.
+
+For machined components, buyers should provide finished dimensions and tolerances, surface finish requirements, and whether the part will be subject to sterilization cycles, radiation exposure, or specific chemical environments. PEEK machines well but is a premium material—precise specifications reduce waste and ensure the final part meets the application's actual requirements. Plastic-Craft Products offers in-house CNC turning, milling, and precision cutting, and can advise on grade selection for specific application conditions. Sourcing both material and machining from a single qualified supplier streamlines documentation and reduces lead time on high-value components.
+
+Frequently Asked Questions
+
+What temperature can PEEK withstand?
+
+PEEK has a continuous service temperature of up to 480°F (250°C), making it one of the highest-rated engineering thermoplastics available. It maintains its mechanical properties and dimensional stability at temperatures where nylon, Delrin, polycarbonate, and most other engineering plastics have already softened or failed.
+
+Is PEEK biocompatible and safe for medical applications?
+
+Yes. Unfilled PEEK is biocompatible and is widely used in implantable medical devices, surgical instruments, and sterilizable components. It withstands autoclave sterilization, gamma radiation, and EtO sterilization without significant degradation. Medical-grade PEEK stock must be sourced from certified suppliers with documented traceability.
+
+How does PEEK compare to Ultem (PEI)?
+
+Both PEEK and Ultem are high-performance thermoplastics rated for elevated temperatures, but PEEK offers superior chemical resistance, higher continuous service temperature, and better fatigue performance. Ultem is somewhat less expensive and offers better transparency in thin sections. For the most demanding chemical and thermal environments PEEK is the stronger specification; for applications where cost is a significant factor and chemical exposure is moderate, Ultem may be sufficient.
+
+What are the different PEEK grades and when should each be used?
+
+Unfilled PEEK is the standard choice for most applications. Carbon-fiber-filled PEEK adds stiffness and thermal conductivity for high-load structural parts. Glass-fiber-filled PEEK improves dimensional stability and compressive strength. Bearing-grade PEEK contains PTFE and graphite for reduced friction in dry-running applications. The correct grade depends on the specific combination of load, temperature, friction, and chemical exposure in the application.
+
+Where can I buy PEEK rod, sheet, and tube?
+
+Plastic-Craft Products stocks unfilled and filled PEEK in rod, sheet, and tube at their facility in West Nyack, NY. Cut-to-size and machined-to-print orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application requirements.

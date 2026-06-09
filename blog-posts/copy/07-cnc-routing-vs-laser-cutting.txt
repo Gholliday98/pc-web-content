@@ -1,0 +1,69 @@
+CNC Routing vs Laser Cutting for Plastic
+
+Both CNC routing and laser cutting produce precise two-dimensional plastic parts from sheet stock, and both are standard capabilities in professional plastic fabrication shops. The choice between them depends on the material, required edge finish, part geometry, and what happens to the edge after cutting.
+
+What Are CNC Routing and Laser Cutting and How Do They Differ?
+
+CNC routing is a subtractive mechanical process in which a rotating cutting tool removes material along a programmed toolpath. The cutter physically contacts the plastic and shears away material, leaving a machined edge whose quality is determined by tool geometry, feed rate, spindle speed, and depth of cut. CNC routing can cut virtually any thermoplastic in any thickness within the machine's working envelope, and can also perform operations that laser cutting cannot: pocketing, profiling at varying depths, drilling, and three-dimensional surface contouring.
+
+Laser cutting uses a focused beam of high-intensity light to vaporize or melt material along the cut line. For most plastics, CO2 lasers in the 10.6-micron wavelength are used, as this wavelength is efficiently absorbed by most thermoplastics. The kerf is extremely narrow—typically 0.2 to 0.5mm—and the process is contactless, meaning there is no cutting force applied to the part. Laser cutting produces very fine detail and tight tolerances on thin sheet, and for optically clear materials like acrylic, it produces a flame-polished edge that requires no secondary finishing for display and optical applications.
+
+Neither process is universally superior. Each has a set of applications where it delivers significantly better results than the other.
+
+How Do CNC Routing and Laser Cutting Compare Across the Key Decision Factors?
+
+Edge finish on acrylic: Laser cutting wins decisively. CO2 laser cutting of acrylic produces a flame-polished, optically clear edge that cannot be achieved by routing without significant secondary polishing. For display cases, optical components, and any acrylic part where edge clarity is part of the design, laser cutting is the correct process.
+
+Material range: CNC routing wins. CNC routing processes virtually any thermoplastic regardless of thickness, including materials that laser cutting handles poorly or cannot cut at all. Polycarbonate, PVC, polyethylene, polypropylene, UHMW, nylon, and most engineering plastics are all candidates for routing.
+
+Polycarbonate edge quality: CNC routing wins. Laser cutting polycarbonate produces a frosted, stress-crazed edge rather than a clear polished edge. For polycarbonate parts requiring good edge appearance, CNC routing followed by hand polishing produces better results than laser cutting.
+
+Fine detail and tight internal radii: Laser cutting wins. The narrow laser kerf produces sharp internal corners and fine detail features that a router bit's diameter physically prevents. For intricate cutouts, fine text, and closely nested features, laser cutting achieves detail resolution that routing cannot match.
+
+Thick material capability: CNC routing wins. Laser cutting becomes progressively less effective as material thickness increases—beyond approximately 1 inch, laser cutting speed drops dramatically and edge quality degrades. CNC routing handles thick sheet, rod, and plate with consistent quality at any practical thickness.
+
+Heat-affected zone: CNC routing wins for heat-sensitive materials. Laser cutting introduces a heat-affected zone at the cut edge, which can cause stress, discoloration, or microcracking in some materials. CNC routing is a cold-cutting process with no heat-affected zone when feeds, speeds, and cooling are properly managed.
+
+Hazardous material considerations: CNC routing wins for PVC and chlorinated plastics. Laser cutting PVC generates chlorine gas—a serious health and safety hazard that also damages laser optics. PVC must never be laser cut; CNC routing is the correct process for all PVC and CPVC fabrication.
+
+3D operations and depth control: CNC routing wins exclusively. Laser cutting is a through-cut process. Pocketing, engraving at controlled depth, step profiles, and any three-dimensional surface work require CNC routing.
+
+When Is Laser Cutting the Right Choice for Plastic?
+
+Laser cutting earns its specification in acrylic fabrication above almost everything else. When a display case, optical component, lighting diffuser, award, or architectural detail requires edges that are visually clear and polished without secondary finishing, CO2 laser cutting of acrylic is the process of choice. The flame-polished edge that laser cutting produces on cast and extruded acrylic is optically smooth in a way that a machined and hand-polished edge approximates but does not fully replicate, and it is achieved in a single operation with no secondary labor.
+
+Laser cutting is also the correct process when intricate geometry is required in thin acrylic or PETG sheet—fine lettering, tight nested profiles, small-radius internal corners, or detailed decorative patterns that a router bit's minimum diameter would distort or prevent entirely. For applications like illuminated signage, etched panels, and custom-cut display components where dimensional precision and edge quality both matter in thin sheet, laser cutting delivers results that CNC routing cannot match at the same cost and speed.
+
+When Is CNC Routing the Right Choice for Plastic?
+
+CNC routing is the correct process for the majority of engineering plastic fabrication work: any material that cannot be laser cut safely (PVC, CPVC, filled plastics), any thickness above approximately 1 inch, any geometry requiring depth-controlled operations, and any material where the laser's heat-affected zone would compromise part performance or introduce residual stress. For structural components, wear parts, enclosures, tanks, and precision machined elements in nylon, UHMW, HDPE, polycarbonate, polypropylene, Delrin, or phenolic, CNC routing is the baseline process.
+
+CNC routing also holds the advantage when the edge finish requirement does not demand optical clarity. A routed edge on HDPE, polypropylene, or nylon that will be installed inside an assembly, painted, or bonded to another surface does not benefit from laser cutting's edge quality advantage on acrylic. For aerospace and defense fabrication programs where documented process control is a contractual requirement, ISO 9001:2015 and AS9100D certifications covering CNC fabrication operations provide the quality documentation chain that regulated programs require from supplier to finished part.
+
+What Should You Specify When Ordering Cut Plastic Parts?
+
+For buyers ordering custom-cut plastic parts, the specification should include material type and grade, sheet thickness, finished part dimensions and tolerances, quantity, and the required edge finish. If edge clarity is important—as it typically is for display and optical applications in acrylic—specify that the edge must be optically polished, which will direct the fabricator to laser cutting for acrylic or to a mechanical polishing secondary operation for other transparent materials. If the part will be bonded, painted, or installed in a hidden location, a standard machined edge is sufficient and CNC routing is the appropriate process for most materials.
+
+Plastic-Craft Products offers in-house CNC routing and precision cutting across their complete material inventory, from standard acrylic and polycarbonate to engineering plastics including UHMW, nylon, Delrin, PEEK, phenolic, PVC, and polypropylene. Both raw cut-to-size sheet and fully fabricated finished parts are available with no minimum order, allowing single-piece prototypes and full production runs to be sourced from the same qualified supplier. For programs requiring material traceability and process documentation, the ISO 9001:2015 quality management system covers all fabrication operations performed at the West Nyack facility.
+
+Frequently Asked Questions
+
+Why does laser cutting produce a polished edge on acrylic but not polycarbonate?
+
+Acrylic and polycarbonate respond differently to CO2 laser energy because of their different polymer chemistries. Acrylic melts cleanly and resolidifies with a smooth, optically clear surface at the cut line. Polycarbonate is more susceptible to thermal stress and tends to produce a frosted, stress-crazed edge when laser cut. For polycarbonate requiring a good edge appearance, CNC routing followed by mechanical polishing produces better results.
+
+Can PVC be laser cut?
+
+No. Laser cutting PVC generates chlorine gas, which is toxic to operators and corrosive to laser optics. PVC must never be laser cut under any circumstances. CNC routing is the correct and only safe process for cutting PVC and CPVC sheet, tube, and plate. Any fabrication shop offering to laser cut PVC should be disqualified from the work on safety grounds.
+
+What is the maximum thickness laser cutting can handle effectively for plastics?
+
+Laser cutting becomes progressively less effective as plastic thickness increases. For most CO2 laser systems cutting acrylic, practical maximum thickness for good edge quality is approximately 0.75 to 1.0 inch, with cutting speed decreasing sharply beyond that. For thicker material, CNC routing delivers faster cycle times and more consistent edge quality regardless of thickness.
+
+Does CNC routing leave a rough edge on acrylic?
+
+A properly programmed CNC router with sharp tooling and correct feeds and speeds produces a smooth machined edge on acrylic that is fully functional for most applications. For optically clear edges, the machined surface can be flame-polished or diamond-polished in a secondary operation to achieve optical clarity. Laser cutting achieves the same result in a single pass on thin-to-medium sheet, which is why it is the preferred process when edge clarity is the primary requirement.
+
+Where can I get plastic parts CNC routed or precision cut?
+
+Plastic-Craft Products offers in-house CNC routing and precision cutting across their full plastic inventory at their facility in West Nyack, NY. No minimum orders for cut-to-size or fabricated parts. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your material, dimensions, and edge finish requirements.

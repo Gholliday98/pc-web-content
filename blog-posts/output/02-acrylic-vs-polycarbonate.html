@@ -1,0 +1,308 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #0F2744; --navy-mid: #1B3A5C; --blue: #2D6A9F; --accent: #4A9FD4;
+  --accent-lt: #D6EAF8; --ink: #1A1A2E; --muted: #5C6B7A; --rule: #D4DCE6;
+  --bg: #F7F9FC; --white: #FFFFFF;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}
+.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}
+.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}
+.topbar-sep{color:rgba(255,255,255,.25)}
+.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}
+.hero-inner{max-width:760px;margin:0 auto;position:relative}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}
+.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}
+.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}
+.hero-meta span{display:flex;align-items:center;gap:6px}
+.hero-content-row{display:flex;align-items:center;gap:40px}
+.hero-text{flex:1;min-width:0}
+.hero-img-col{flex:0 0 260px;width:260px}
+.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}
+@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}
+.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}
+.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}
+.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}
+.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}
+.section{margin-bottom:44px}
+.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}
+p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}
+p:last-child{margin-bottom:0}
+strong{color:var(--navy-mid);font-weight:600}
+em{font-style:italic;color:var(--muted)}
+hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}
+.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}
+.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}
+.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}
+.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}
+.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}
+.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}
+.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+@media(max-width:560px){.industry-list{grid-template-columns:1fr}}
+.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}
+.industry-icon{font-size:26px;margin-bottom:8px}
+.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}
+.faq-section{margin-top:44px}
+.faq-item{margin-bottom:28px}
+.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}
+.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}
+.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}
+.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}
+.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}
+.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}
+.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}
+.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}
+.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}
+.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}
+.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">Acrylic vs. Polycarbonate: Which Should You Choose?</h1>
+        <p class="hero-subtitle fade-in">The fundamental trade-off is hardness versus toughness. Understanding where each material leads — and where it doesn't — is the foundation of a correct specification.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="Acrylic and polycarbonate sheet samples side by side" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Are the Core Differences Between Acrylic and Polycarbonate?</h2>
+    </div>
+    <p>Acrylic (PMMA) and polycarbonate (PC) are chemically distinct materials that happen to share the visual property of optical transparency. Acrylic is a rigid, relatively brittle thermoplastic with a hard surface and superior optical clarity — it transmits up to <strong>92% of visible light</strong>, more than glass and more than polycarbonate. Polycarbonate is a tougher, more flexible thermoplastic that absorbs impact energy rather than fracturing, at the cost of a softer surface that scratches more easily and slightly lower light transmission of approximately 88%.</p>
+    <div class="pullquote">
+      <p><em>The fundamental trade-off is hardness versus toughness. Acrylic is harder on the surface and more scratch-resistant, but it will crack or shatter under sudden impact. Polycarbonate is roughly 30 times tougher than acrylic — but its softer surface is more susceptible to abrasion and scratching.</em></p>
+    </div>
+    <p>Both materials are available in sheet, rod, and tube from Plastic-Craft Products, in a range of thicknesses, colors, and grades, with no minimum order quantity. Both can be CNC routed, cut, thermoformed, and fabricated in-house, and both are UV-stable in their appropriate grades for outdoor applications.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>How Do Acrylic and Polycarbonate Compare Across the Key Specification Factors?</h2>
+    </div>
+    <p><strong>Optical clarity: Acrylic wins.</strong> Up to 92% light transmission vs. approximately 88% for polycarbonate. Acrylic edges can be flame- or diamond-polished to optical quality. Polycarbonate edges cannot.</p>
+    <p><strong>Impact resistance: Polycarbonate wins decisively.</strong> Approximately 30 times more impact-resistant than acrylic at equivalent thickness. Polycarbonate bends under impact; acrylic cracks or shatters.</p>
+    <p><strong>Surface hardness and scratch resistance: Acrylic wins.</strong> Harder surface that resists everyday scratching. Minor acrylic scratches can be polished out with Micro-Mesh. Polycarbonate scratches more easily and requires a factory-applied hard coat for surface-sensitive applications.</p>
+    <p><strong>UV stability: Acrylic wins for outdoor use.</strong> Acrylic is inherently UV-stable without additives and will not yellow outdoors. Standard uncoated polycarbonate yellows and degrades without a UV-protective coating — always specify UV-rated polycarbonate for outdoor applications.</p>
+    <p><strong>Temperature resistance: Polycarbonate wins.</strong> Service temperature up to approximately 240 degrees F (116 degrees C) vs. approximately 160 degrees F (71 degrees C) for acrylic.</p>
+    <p><strong>Chemical resistance:</strong> Acrylic has a slight edge for many industrial chemicals. Polycarbonate is susceptible to a wider range of solvents and alkalis. Both should be confirmed against the specific chemical environment before specifying.</p>
+    <p><strong>Cost:</strong> Acrylic is generally less expensive than polycarbonate at equivalent thickness. When polycarbonate's performance advantage is not required, acrylic delivers better value.</p>
+    <p><strong>Machinability:</strong> Both machine well. Acrylic produces crisper edges and can be polished. Polycarbonate machines with less chip risk and can be cold-bent more readily without cracking.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>When Should You Choose Acrylic over Polycarbonate?</h2>
+    </div>
+    <p>Acrylic is the correct specification when <strong>optical quality, surface hardness, long-term UV stability, and cost efficiency</strong> are the primary drivers — and when the application does not require high-energy impact resistance.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">🏪</div>
+        <div class="industry-label">Retail Displays &amp; POP Fixtures</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">💡</div>
+        <div class="industry-label">Illuminated Signage</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🏗️</div>
+        <div class="industry-label">Architectural Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🐠</div>
+        <div class="industry-label">Aquarium Panels</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🎨</div>
+        <div class="industry-label">Decorative Applications</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔍</div>
+        <div class="industry-label">Optical Edge Work</div>
+      </div>
+    </div>
+    <p>Acrylic is also the correct specification for optical-quality edge work. Flame polishing and diamond polishing produce optically clear edges on acrylic that polycarbonate cannot replicate. The ability to restore minor surface scratches using Micro-Mesh polishing kits is an additional practical advantage in applications where panels will be handled regularly.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>When Should You Choose Polycarbonate over Acrylic?</h2>
+    </div>
+    <p>Polycarbonate is the correct specification when <strong>impact resistance is the governing design requirement</strong> — when the material may be struck, when safety glazing standards apply, or when the consequence of a panel cracking creates a safety hazard.</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Machine Guards &amp; Safety Shields</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🛡️</div>
+        <div class="industry-label">Ballistic &amp; Riot Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">✈️</div>
+        <div class="industry-label">Aircraft Windows</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🌡️</div>
+        <div class="industry-label">High-Temperature Applications</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🌿</div>
+        <div class="industry-label">Greenhouse Glazing</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">📐</div>
+        <div class="industry-label">Cold-Bent Enclosures</div>
+      </div>
+    </div>
+    <p>Polycarbonate is also the correct specification for elevated-temperature applications where acrylic's lower service temperature is a limiting factor, and for applications requiring cold-bending of sheet without heating. For greenhouse glazing, curved enclosures, and architectural applications involving formed panels, polycarbonate's flexibility advantage can simplify fabrication significantly.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">ISO 9001:2015</div>
+        <p>International quality management standard with full material traceability for every order.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">AS9100D</div>
+        <p>Aerospace-grade quality management for aviation, space, and defense programs requiring certified documentation.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>The Decision Framework</h2>
+    </div>
+    <p>The simplest decision framework comes down to <strong>two questions asked in sequence</strong>:</p>
+    <p><strong>First:</strong> Will this panel be struck with significant force, or does it need to meet an impact safety standard? If yes, specify polycarbonate.</p>
+    <p><strong>Second:</strong> Does this application require maximum optical clarity, scratch resistance, UV stability without a coating, or optical-quality edge finishing? If yes, specify acrylic.</p>
+    <div class="pullquote">
+      <p><em>If neither question produces a clear answer, acrylic is typically the more cost-effective default for transparent sheet applications where extreme impact resistance is not required.</em></p>
+    </div>
+    <p>The exceptions worth noting are applications that combine requirements from both columns. A machine guard in a UV-exposed outdoor environment needs polycarbonate for impact resistance but must be specified in a UV-coated grade to prevent yellowing. When the application requirements do not clearly favor one material, both should be evaluated against the full list of specification factors rather than defaulting to cost or familiarity alone.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is polycarbonate always stronger than acrylic?</h3>
+      <p>In terms of impact resistance, yes — polycarbonate is approximately 30 times more impact-resistant than acrylic at equivalent thickness. However, acrylic is harder on the surface and more scratch-resistant. Strength depends on which property is being measured: polycarbonate wins on impact toughness, acrylic wins on surface hardness.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which is clearer, acrylic or polycarbonate?</h3>
+      <p>Acrylic is clearer. Acrylic transmits up to 92% of visible light compared to approximately 88% for polycarbonate. In most applications the difference is imperceptible, but for precision optical work, display applications where absolute clarity is the priority, or applications where edge polishing matters, acrylic is the superior choice.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does polycarbonate yellow outdoors?</h3>
+      <p>Uncoated polycarbonate will yellow and degrade under prolonged UV exposure. UV-stabilized grades with a co-extruded protective layer are available and must be specified for any outdoor application. Acrylic is inherently UV-stable without a coating and is typically the preferred specification for outdoor transparent glazing where yellowing resistance is required.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which is more expensive, acrylic or polycarbonate?</h3>
+      <p>Polycarbonate is generally more expensive than acrylic at equivalent thickness. When polycarbonate's impact performance advantage is genuinely required by the application, the cost premium is justified. When it is not, acrylic delivers comparable visual performance at lower cost and should be the default specification.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I buy acrylic and polycarbonate sheet?</h3>
+      <p>Plastic-Craft Products stocks both acrylic and polycarbonate sheet, rod, and tube in a full range of grades, thicknesses, and sizes at their facility in West Nyack, NY. Cut-to-size orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application and confirm the right specification.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Need Help Choosing Between Acrylic and Polycarbonate?</h3>
+    <p>Plastic-Craft Products stocks both materials in a full range of grades, thicknesses, and sizes — with in-house fabrication and 90 years of application experience to help you specify the right material the first time.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about acrylic vs polycarbonate, material specifications, or custom fabrication, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">Acrylic</span>
+    <span class="tag">Polycarbonate</span>
+    <span class="tag">Impact Resistance</span>
+    <span class="tag">Optical Clarity</span>
+    <span class="tag">UV Stability</span>
+    <span class="tag">Machine Guards</span>
+    <span class="tag">Safety Glazing</span>
+    <span class="tag">Custom Fabrication</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

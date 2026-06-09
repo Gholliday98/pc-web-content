@@ -1,0 +1,77 @@
+PTFE (Teflon): Complete Guide to Properties and Applications
+
+What Is PTFE and What Makes It Chemically Inert?
+
+PTFE stands for polytetrafluoroethylene, a fluoropolymer discovered accidentally by DuPont chemist Roy Plunkett in 1938 and commercialized as Teflon. The material's extraordinary chemical inertness stems from its molecular structure: the carbon-fluorine bonds in PTFE are among the strongest in organic chemistry and fluorine atoms form a protective layer around the carbon backbone that resists nearly all reactive chemicals.
+
+PTFE resists concentrated acids, alkalis, organic solvents, and oxidizing agents that would attack other plastics, metals, or elastomers. The only known substances affecting PTFE under normal conditions are molten alkali metals and certain fluorinating agents. Plastic-Craft Products stocks PTFE in rod, sheet, and tube with no minimum order quantity.
+
+What Are the Key Properties of PTFE Sheet and Rod?
+
+Chemical Resistance: PTFE is resistant to virtually all industrial chemicals, solvents, acids, and alkalis across the full pH range—unmatched by other standard engineering plastics.
+
+Temperature Range: Continuous service from -328°F to +500°F maintains flexibility even at cryogenic temperatures, offering the widest operating temperature range of any standard engineering thermoplastic.
+
+Coefficient of Friction: The lowest of any solid material at approximately 0.05 to 0.10 static, making PTFE the standard for bearing surfaces and low-friction liners.
+
+Non-Stick Surface: Nothing bonds to PTFE under normal conditions—both its most famous property and a genuine challenge when bonding or sealing PTFE components.
+
+Electrical Insulation: Exceptional dielectric properties across a wide frequency range make PTFE the preferred material for high-frequency and microwave applications.
+
+Biocompatibility: Non-toxic, non-reactive, and approved for implantable medical devices and food contact applications requiring chemical purity.
+
+Flame Resistance: Non-flammable and self-extinguishing—PTFE will not sustain combustion under normal atmospheric conditions.
+
+PTFE's limitations are equally important. It has low stiffness and compressive strength relative to other engineering plastics, poor creep resistance under sustained load, and cannot be melt-processed like standard thermoplastics. It is also more expensive than nylon, Delrin, or UHMW. PTFE is correctly specified only when its unique combination of properties is genuinely required.
+
+What Is PTFE Used For in Industrial and Precision Applications?
+
+PTFE is specified wherever extreme chemical resistance, high-temperature performance, and non-stick surface properties simultaneously exceed what any other plastic can deliver.
+
+Chemical Processing Equipment: Valve seats, pump liners, gaskets, seals, and pipe liners in environments involving concentrated acids, caustics, and solvents that attack other plastics and most metals.
+
+Semiconductor Manufacturing: Wafer carriers, wet bench components, chemical distribution liners, and process equipment parts where ultra-high purity and resistance to aggressive chemicals are mandatory.
+
+Electrical and Microwave Insulation: Cable insulation, circuit board substrates, and high-frequency antenna components where stable dielectric properties are required across temperature and frequency ranges.
+
+Slide Bearings and Wear Pads: Structural slide bearings in bridges and buildings, conveyor wear pads, and low-friction liners where zero lubrication and extreme durability are both required.
+
+Medical and Pharmaceutical: Implantable device components, surgical instrument liners, and pharmaceutical process equipment where biocompatibility and chemical purity are required.
+
+Food Processing: Non-stick liners, conveyor components, and processing surfaces where FDA compliance and resistance to cleaning chemicals are simultaneously required.
+
+For aerospace and defense programs requiring documented traceability, Plastic-Craft Products holds ISO 9001:2015 and AS9100D certifications, providing material documentation and quality chain that flight-critical programs require.
+
+What PTFE Grades Are Available and When Should Each Be Specified?
+
+Unfilled virgin PTFE is the standard specification for most chemical resistance and electrical insulation applications. It offers the full breadth of PTFE's chemical and thermal properties but has relatively low mechanical strength and poor creep resistance under sustained load.
+
+Glass-Filled PTFE: Significantly improves compressive strength and creep resistance while retaining most chemical resistance—with the exception of hydrofluoric acid and strong alkalis, which attack glass fibers.
+
+Carbon-Filled PTFE: Improves stiffness, thermal conductivity, and wear resistance, making it the preferred specification for bearing and wear pad applications.
+
+Bronze-Filled PTFE: Used in high-load, high-speed bearing applications where the thermal conductivity of the bronze filler helps dissipate friction heat.
+
+When specifying filled PTFE grades, confirming chemical compatibility of both the PTFE matrix and the filler material for the specific environment is essential.
+
+Frequently Asked Questions
+
+Is PTFE the same as Teflon?
+
+Yes. Teflon is Chemours' (formerly DuPont's) trade name for polytetrafluoroethylene. PTFE is the generic chemical name for the same material. Both refer to the same fluoropolymer with identical chemical resistance, temperature rating, and non-stick properties. Other trade names include Fluon and Polyflon.
+
+What chemicals is PTFE not resistant to?
+
+PTFE resists virtually all industrial chemicals. The known exceptions under normal conditions are molten alkali metals (sodium, potassium), elemental fluorine at high temperatures, and certain fluorinating agents such as chlorine trifluoride and oxygen difluoride. For almost all other chemical environments, PTFE is the correct specification when no other material will suffice.
+
+Can PTFE be bonded or welded?
+
+Standard adhesives will not bond to PTFE due to its non-stick surface. Bonding requires either mechanical fastening, surface etching with sodium naphthalene solution, or specialized PTFE-compatible adhesive systems. PTFE can be joined by compression fitting, PTFE-lined flanges, or threaded connections in most process applications.
+
+How does PTFE compare to UHMW for low-friction applications?
+
+PTFE has a lower coefficient of friction than UHMW and is the correct specification when chemical resistance or high-temperature performance is also required. UHMW offers significantly better abrasion resistance and compressive strength at a much lower cost, making it the preferred choice for wear pads, chute liners, and conveyor components where chemical exposure is limited and temperature is moderate.
+
+Where can I buy PTFE rod, sheet, and tube?
+
+Plastic-Craft Products stocks virgin and filled PTFE in rod, sheet, and tube at their facility in West Nyack, NY. Cut-to-size orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application requirements.

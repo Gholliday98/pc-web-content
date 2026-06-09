@@ -1,0 +1,77 @@
+PETG: The Practical Middle Ground Between Acrylic and Polycarbonate
+
+What Is PETG and How Does It Differ from Standard PET?
+
+PETG stands for glycol-modified polyethylene terephthalate, a thermoplastic created by modifying standard PET resin with a co-monomer during polymerization. The addition of cyclohexanedimethanol (CHDM) disrupts the polymer's crystallization, producing an amorphous material instead of the semi-crystalline PET used in packaging.
+
+This structural change produces optical clarity, improved impact resistance, and significantly lower forming temperatures compared to standard PET. The result is a material visually similar to acrylic in transparency but meaningfully tougher in impact resistance and more forgiving in fabrication. PETG does not shatter like acrylic under impact and thermoforms at lower temperatures than polycarbonate.
+
+What Are the Key Properties of PETG Sheet?
+
+PETG positions itself as a practical middle ground with these relevant properties:
+
+- Optical clarity: Transmits approximately 90% of visible light in clear grades, suitable for display, glazing, and inspection windows.
+
+- Impact resistance: Significantly tougher than acrylic—the material bends and deforms before fracturing, making it safer without polycarbonate's cost premium.
+
+- Thermoformability: Forms at lower temperatures and over a wider window than acrylic or polycarbonate, producing lower internal stress in formed parts.
+
+- Chemical resistance: Resistant to many dilute acids, alkalis, and aqueous solutions. Better resistance to certain alcohols and cleaning agents than acrylic, though less resistant to aromatic solvents and ketones.
+
+- Machinability: Machines cleanly with standard tooling and produces good surface finishes. Less prone to chipping than acrylic and generates less heat than polycarbonate.
+
+- Bondability: Bonds well with compatible solvent cements and adhesives and can be heat-welded, useful for enclosures where acrylic's bonding requirements complicate production.
+
+- FDA compliance: Meets FDA requirements for food contact in many applications.
+
+Primary limitations compared to acrylic include lower surface hardness—scratching more easily with edges that cannot be flame-polished to optical clarity—and lower UV stability. For outdoor applications, UV-stabilized grades or protective coatings are necessary.
+
+How Does PETG Compare to Acrylic and Polycarbonate?
+
+Acrylic leads on optical clarity (92% light transmission versus 90% for PETG), surface hardness, and scratch resistance. Acrylic edges can be polished to optical quality, which PETG cannot match. For display work and signage where maximum clarity matters, acrylic remains stronger.
+
+Polycarbonate leads substantially on impact resistance—roughly 30 times tougher than acrylic and significantly stronger than PETG in high-energy impact scenarios. For machine guards and safety glazing, polycarbonate is the correct specification.
+
+PETG sits between them: better impact resistance than acrylic without polycarbonate's full cost premium, better surface quality than polycarbonate, and easier to fabricate than both. For applications where appearance and moderate impact resistance are both required and budget efficiency matters, PETG is frequently the practical answer.
+
+What Is PETG Used For in Fabrication and Industrial Applications?
+
+PETG's combination of clarity, toughness, and ease of fabrication makes it practical across retail, medical, food service, and industrial applications. Common uses include:
+
+- Retail and point-of-purchase displays: Clear enclosures and product cases where optical clarity is important and impact resistance reduces breakage during handling.
+
+- Thermoformed enclosures and covers: PETG's wide thermoforming window and low forming temperature make it preferred for vacuum-formed enclosures and equipment covers requiring complex shapes.
+
+- Food service and food contact applications: Sneeze guards, food display cases, and processing equipment covers where FDA compliance, clarity, and ease of cleaning are all required.
+
+- Medical device packaging and equipment covers: Instrument trays and housings where clarity, chemical resistance to hospital cleaning agents, and moderate impact resistance are relevant.
+
+- Prototyping and custom fabrication: PETG's ease of machining, bonding, and forming makes it practical for prototype enclosures and short-run production parts where development speed matters.
+
+What Should You Specify When Ordering PETG?
+
+PETG sheet is available in clear, white, black, and colored grades. Clear PETG is standard for display and optical applications. Colored and opaque grades work for enclosures and signage where appearance rather than transparency is primary.
+
+Thickness selection should be based on structural requirements. PETG at equivalent thickness to acrylic deflects more under load due to its lower flexural modulus, so thickness may need to be increased for equivalent rigidity. For fabricated parts, specify finished dimensions, thermoforming requirements, and edge finish. PETG edges can be routed, sawed, and machined to clean finishes but do not flame-polish to optical clarity like acrylic.
+
+Frequently Asked Questions
+
+Is PETG clearer than acrylic?
+
+No—acrylic transmits up to 92% of visible light compared to approximately 90% for PETG, and acrylic has a harder surface that polishes to better optical clarity. PETG offers comparable clarity for most practical display applications while providing better impact resistance than acrylic.
+
+How does PETG compare to polycarbonate for impact resistance?
+
+Polycarbonate is significantly more impact-resistant than PETG—roughly 30 times tougher than acrylic and considerably stronger in high-energy impact scenarios. For machine guards and safety glazing, polycarbonate is correct. PETG suits moderate impact requirements where polycarbonate's full performance and cost are unjustified.
+
+Is PETG safe for food contact?
+
+Yes—PETG meets FDA requirements for food contact in many applications and is widely used in food service displays, sneeze guards, and processing equipment covers. Always confirm compliance for the specific application and cleaning chemicals involved.
+
+Can PETG be used outdoors?
+
+Standard PETG has limited UV stability and yellows and becomes brittle over time under prolonged direct sunlight. For outdoor applications requiring optical clarity, acrylic is typically better due to inherent UV resistance. UV-stabilized PETG grades are available but not as widely stocked.
+
+Where can I buy PETG sheet?
+
+Plastic-Craft Products stocks PETG sheet in clear and colored grades across various thicknesses. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss application requirements.

@@ -1,0 +1,65 @@
+Delrin Acetal: Complete Guide to Properties and Applications
+
+What Is Delrin and How Does It Differ from Generic Acetal?
+
+Delrin is DuPont's trade name for homopolymer acetal, a highly crystalline thermoplastic formally known as polyoxymethylene (POM). It is one of two primary acetal grades used in machined plastic components — the other being copolymer acetal (often sold as Celcon or Acetron GP). While both are based on the same polyoxymethylene chemistry, homopolymer Delrin offers higher mechanical strength, better fatigue resistance, and a harder surface, making it the preferred grade for demanding machined components. Copolymer acetal trades some of that performance for better chemical resistance and easier processing, and is more commonly used in injection-molded parts.
+
+Acetal in general — and Delrin in particular — is prized above nearly all other engineering thermoplastics for one defining characteristic: dimensional stability. Unlike nylon, which absorbs moisture and grows dimensionally in humid environments, Delrin absorbs less than 0.25% moisture and maintains its dimensions with exceptional consistency across varying temperature and humidity conditions. For precision assemblies where tolerances are measured in thousandths of an inch, this property alone often determines the material specification.
+
+What Are the Key Properties of Delrin for Machined Components?
+
+Delrin's adoption across precision machining applications comes from a combination of physical and mechanical properties:
+
+Dimensional stability: Less than 0.25% moisture absorption results in negligible dimensional change in varying humidity environments, making it reliable where nylon would fail.
+
+Surface hardness: Harder than nylon or UHMW, producing better wear performance in sliding and rotating contact applications where surface integrity must be maintained over extended service life.
+
+Low friction: Natural lubricity reduces friction against metal and plastic surfaces in gear, cam, and bushing applications without requiring external lubrication in most service conditions.
+
+Stiffness and creep resistance: Higher flexural modulus than nylon with excellent resistance to creep under sustained load, making Delrin reliable in structural applications where nylon would deform over time.
+
+Machinability: Machines exceptionally cleanly with standard tooling, producing sharp edges, fine surface finishes, and consistent tolerances that repeat across production runs.
+
+Chemical resistance: Resistant to fuels, oils, solvents, and most neutral chemicals. Less resistant to strong acids and oxidizing agents.
+
+Temperature range: Continuous service up to approximately 220°F (104°C), with good performance retention across a broad range of operating temperatures.
+
+One property buyers should account for: Delrin has a relatively high coefficient of thermal expansion compared to metals. For assemblies combining Delrin with metal components experiencing significant temperature cycling, design tolerances should accommodate differential expansion to prevent binding or stress cracking.
+
+What Is Delrin Used For in Precision and Industrial Applications?
+
+Delrin's combination of dimensional stability, hardness, and machinability makes it the default specification for precision plastic components across multiple industries:
+
+Gears and sprockets: Delrin's stiffness, surface hardness, and low friction make it the standard plastic specification for precision gears in office equipment, medical devices, and industrial machinery.
+
+Bushings and bearings: Dimensionally stable under load and in variable humidity, Delrin bushings maintain their fit and function where nylon bushings would loosen or tighten with moisture uptake.
+
+Valve components and fluid handling: Valve seats, pump impellers, and manifold components where chemical resistance to fuels and oils, dimensional precision, and low friction are all required.
+
+Rollers and guides: Conveyor rollers, guide rails, and feed mechanisms in automated equipment where consistent surface hardness and dimensional stability across the service life are required.
+
+Structural brackets and spacers: Lightweight structural components in assemblies where nylon's moisture-related dimensional variation would compromise fit or alignment.
+
+Medical device components: Non-implantable instrument components and equipment housings where dimensional consistency and cleanability are required across repeated sterilization cycles.
+
+For defense and aerospace programs requiring material traceability and documented process control, suppliers holding ISO 9001:2015 and AS9100D certifications provide the documentation chain that standard commercial suppliers cannot deliver.
+
+How Does Delrin Compare to Nylon for Precision Machined Parts?
+
+Delrin and nylon are frequently evaluated side by side, with the decision almost always coming down to dimensional stability and moisture sensitivity. Nylon absorbs significantly more moisture than Delrin — up to 8% by weight in some grades compared to less than 0.25% for Delrin — which causes measurable dimensional growth and a reduction in stiffness in humid environments. For applications where a part must maintain a precise fit over its service life regardless of ambient conditions, Delrin is the correct specification.
+
+Nylon has advantages of its own. It offers better impact resistance than Delrin, greater flexibility in thin sections, and superior fatigue performance under repeated dynamic loading — which is why nylon remains the preferred choice for shock-absorbing components, flexible clips, and parts that must flex without fracturing. Oil-filled nylon also outperforms standard Delrin in dry-running friction applications where extended wear life is the primary requirement.
+
+Frequently Asked Questions
+
+What is the difference between Delrin and acetal?
+Delrin is DuPont's trade name for homopolymer acetal (POM). Acetal is the broader material category, which also includes copolymer acetal grades sold under names like Celcon and Acetron GP. Homopolymer Delrin offers higher strength, better fatigue resistance, and a harder surface than copolymer acetal, making it the preferred specification for demanding machined components.
+
+Why does Delrin hold tighter tolerances than nylon?
+Delrin absorbs less than 0.25% moisture, which means its dimensions remain stable in varying humidity conditions. Nylon absorbs significantly more moisture and grows dimensionally as it does so — a property that makes it unreliable for tight-tolerance assemblies where fit must be maintained across changing environmental conditions.
+
+Is Delrin suitable for food contact applications?
+Natural (white) Delrin meets FDA requirements for incidental food contact in many applications. However, it is not NSF-certified for all food processing uses, and compliance depends on the specific application and regulatory context. For food processing equipment requiring full NSF or USDA compliance, HDPE or UHMW are typically more straightforward specifications.
+
+Can Delrin be used in outdoor or wet environments?
+Delrin performs well in wet environments due to its low moisture absorption, maintaining its dimensions and mechanical properties where nylon would swell and soften. It has moderate UV resistance and will degrade slowly under prolonged direct sunlight without UV stabilization. For outdoor structural applications, black UV-stabilized HDPE is often a more practical and economical choice.

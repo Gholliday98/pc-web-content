@@ -1,0 +1,56 @@
+Waterjet vs Laser Cutting for Plastic and Metal
+
+Waterjet cutting and laser cutting are both high-precision, CNC-driven processes capable of producing complex two-dimensional profiles from flat stock — but they achieve that result through fundamentally different mechanisms, and those differences translate directly into which process is correct for a given material and application.
+
+What Is the Difference Between Waterjet Cutting and Laser Cutting?
+
+Waterjet cutting uses a high-pressure stream of water — typically at 40,000 to 90,000 PSI — directed through a small orifice to erode material along the cut path. For most industrial applications, an abrasive medium such as garnet is entrained in the water stream, producing an abrasive waterjet capable of cutting virtually any material including metals, composites, ceramics, glass, stone, and plastics of any thickness. The cutting action is purely mechanical and hydraulic: no heat is generated at the cut zone, which is the defining characteristic that separates waterjet from all thermal cutting processes.
+
+Laser cutting uses a focused beam of high-intensity light — typically a CO2 laser for plastics and non-metals, or a fiber laser for metals — to vaporize or melt material along the cut path. The process is extremely precise and fast, with a very narrow kerf, and produces an exceptionally clean edge on materials that respond well to thermal cutting, particularly cast acrylic. The limitation is inherent to the process: the cutting action generates heat, and that heat creates a heat-affected zone (HAZ) at and near the cut edge. The extent and consequence of the HAZ depends on the material being cut.
+
+How Do Waterjet and Laser Cutting Compare on Edge Quality and Heat-Affected Zone?
+
+The heat-affected zone is the most significant differentiator between waterjet and laser cutting for engineering applications. Waterjet produces no HAZ whatsoever — the cut is entirely cold, and the material properties at and adjacent to the cut edge are identical to the bulk material. Laser cutting generates a HAZ whose depth and severity depend on the material's thermal properties, the laser power settings, and cutting speed. For many applications the HAZ is cosmetically and functionally acceptable; for others it is a disqualifying factor.
+
+For acrylic, laser cutting's HAZ is actually beneficial: the material melts and resolidifies at the cut line, producing a flame-polished, optically clear edge that requires no secondary finishing. This is the one application where laser cutting produces an edge quality that waterjet cannot match. For polycarbonate, the story reverses: laser cutting tends to produce a stress-crazed, frosted edge rather than a polished one, and the HAZ can introduce residual stress that compromises the edge's mechanical integrity. For polycarbonate, waterjet or CNC routing typically produces a superior result.
+
+For engineering plastics where the cut edge will bear mechanical loads or be bonded to another part — UHMW wear pads, nylon machine components, PEEK bearing elements, phenolic insulating plates — the absence of any HAZ makes waterjet the more conservative and reliable specification. The mechanically eroded waterjet edge has no altered material properties, no residual thermal stress, and no risk of microcracking from the cutting process itself.
+
+Which Process Handles Thick Material and Difficult-to-Cut Plastics Better?
+
+Waterjet cutting handles material thickness that is beyond the practical range of laser cutting without any meaningful degradation in edge quality. A waterjet can cut through 6 inches of engineering plastic, composite laminate, or metal plate with the same process — only cutting speed changes with thickness, not edge quality or process viability. Laser cutting, by contrast, becomes progressively less effective as material thickness increases. Beyond approximately 0.75 to 1 inch in most plastics, laser cutting speed drops sharply, edge quality degrades, and the HAZ deepens. For thick plastic plate, waterjet is the correct process.
+
+Waterjet also handles materials that laser cutting either cannot cut safely or cannot cut at all. PVC and CPVC cannot be laser cut under any circumstances because the thermal decomposition generates chlorine gas — a serious health and equipment hazard. Waterjet cuts PVC and CPVC cleanly, safely, and without any chemical hazard. Similarly, highly filled composite plastics, fiber-reinforced laminates, and carbon fiber composites are better suited to waterjet cutting because the laser's interaction with different filler materials produces inconsistent results and potentially hazardous particulates.
+
+Laser cutting's speed advantage is most pronounced in thin sheet work — typically under 0.5 inch — where it outpaces waterjet considerably in cutting rate. For thin acrylic signage, display components, and decorative panels where the flame-polished edge is the desired result, laser cutting is faster and produces the better finish. For thick structural plastic, dissimilar composite materials, and any material where a HAZ is unacceptable, waterjet is the process of choice.
+
+What Are the Best Applications for Waterjet vs. Laser Cutting in Precision Programs?
+
+Waterjet cutting is the correct specification for aerospace, defense, and precision industrial programs where material integrity at the cut edge is a documented requirement. Because waterjet introduces no thermal alteration to the base material, it satisfies material property requirements that laser cutting cannot when those requirements extend to the cut surface. For flight-critical composite structures, precision machined plastic components in regulated programs, and any part where post-cut material testing or dimensional inspection will assess the cut surface, waterjet's cold-cutting characteristic is a specification requirement, not merely a preference.
+
+Plastic-Craft Products holds ISO 9001:2015 and AS9100D quality management certifications covering fabrication operations including waterjet and laser cutting. For aerospace and defense programs where process documentation, material traceability, and certified quality records are procurement requirements, the AS9100D certification means the documentation chain extends through the cutting operation — not just the material sourcing. This matters when a program specification requires that all operations performed on a part be conducted under an approved quality management system.
+
+Laser cutting earns its specification in commercial display fabrication, signage, architectural components, and any acrylic application where the flame-polished edge is the design requirement and cutting speed matters for production economics. For retail display cases, illuminated sign faces, decorative acrylic panels, and award fabrication, laser cutting produces the correct result efficiently and at competitive cost. The choice between the two processes is ultimately driven by the material, the edge quality requirement, the thickness, and whether a HAZ at the cut edge is acceptable for the specific application.
+
+When Should You Choose Waterjet Over Laser Cutting for Plastic?
+
+Waterjet cutting is the correct process when any of the following conditions apply: the material is PVC, CPVC, or any other chlorine-containing plastic that cannot be laser cut safely; the material thickness exceeds approximately 0.75 to 1 inch; the part is made from a composite, filled plastic, or laminate where the laser's interaction with different constituents would be inconsistent; the application requires no heat-affected zone at the cut edge for mechanical or materials-qualification reasons; or the part requires the simultaneous cutting of both plastic and metal components in the same setup.
+
+Laser cutting is the correct process when: the material is cast or extruded acrylic in thin-to-medium sheet and an optically polished edge is required in a single operation; intricate geometry with very tight internal radii or fine detail features is needed in thin sheet; cutting speed is a primary production cost driver and the material is acrylic or PETG in standard thicknesses; or the application is decorative, display, or signage work where the flame-polished edge is a design requirement rather than a secondary finishing step.
+
+Frequently Asked Questions
+
+Does waterjet cutting leave a heat-affected zone?
+No. Waterjet cutting is a completely cold process — no heat is generated at the cut zone. The mechanical and hydraulic erosion action of the high-pressure water and abrasive stream removes material without any thermal input, meaning the material properties at and adjacent to the cut edge are identical to the bulk material. This is the defining advantage of waterjet cutting for applications where heat-affected zones are unacceptable.
+
+Can waterjet cutting replace laser cutting for acrylic display parts?
+Waterjet cutting produces a clean, precise edge on acrylic, but it does not produce the flame-polished, optically clear edge that CO2 laser cutting achieves. For display cases, awards, and optical components where a polished edge is the design requirement, laser cutting is the preferred process. For structural acrylic components where edge clarity is not critical, waterjet is a viable alternative, particularly at greater thicknesses where laser performance degrades.
+
+Why can't PVC be laser cut?
+Laser cutting PVC causes thermal decomposition of the polyvinyl chloride polymer, releasing chlorine gas — a toxic substance that is dangerous to operators and also highly corrosive to the laser's optics and machine components. PVC must never be laser cut under any circumstances. Waterjet cutting is the safe and correct process for all PVC, CPVC, and other chlorine-containing plastics.
+
+Which process is more accurate, waterjet or laser cutting?
+Both processes achieve high dimensional accuracy under controlled conditions. Laser cutting typically produces a slightly narrower kerf (0.2–0.5mm) than waterjet (0.5–1.5mm), giving it a small advantage for very fine detail in thin sheet. Waterjet accuracy is unaffected by material thickness, whereas laser accuracy can degrade in thick material due to beam divergence. For most precision plastic fabrication work, both processes achieve tolerances well within ±0.005 to ±0.010 inch.
+
+Where can I get waterjet or laser cut plastic parts?
+Plastic-Craft Products offers both waterjet and laser cutting in-house at their facility in West Nyack, NY, alongside CNC routing, thermoforming, and a complete range of plastic fabrication services. No minimum orders for cut-to-size or custom fabricated parts. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your material, dimensions, and process requirements.

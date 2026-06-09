@@ -1,0 +1,71 @@
+Ultem (PEI) Material Guide
+
+What Is Ultem and What Is Polyetherimide?
+
+Ultem is SABIC's trade name for polyetherimide, an amorphous thermoplastic produced from imide and ether monomers through a condensation polymerization process. Its amorphous molecular structure gives it excellent dimensional stability, optical clarity in thin sections, and consistent performance across its operating range without the directional property variation that can complicate machining semi-crystalline materials. The material is naturally amber-transparent in its unfilled form, though it is also available in opaque grades and filled variants.
+
+The most common Ultem grades used in machined components and structural sheet are Ultem 1000 (unfilled, general purpose) and Ultem 2300 (30% glass-fiber-filled for enhanced stiffness and strength). Ultem 1010 is a food-contact and medical-grade formulation certified for repeated steam autoclave sterilization — a critical distinction from standard Ultem 1000, which is not rated for the same sterilization protocols. Plastic-Craft Products stocks Ultem rod, sheet, and tube with no minimum order quantity.
+
+What Are the Key Properties of Ultem PEI?
+
+Ultem's adoption in aerospace, medical, and high-temperature industrial applications is driven by a property profile that positions it between standard engineering plastics and premium materials like PEEK — with performance closer to PEEK in several critical areas but at a more accessible price point. The properties that most influence specification decisions are:
+
+- Continuous service temperature: Ultem 1000 is rated for continuous service up to 340°F (170°C), with short-term performance well above that threshold — significantly higher than nylon, Delrin, or polycarbonate.
+
+- Flame resistance: Meets UL 94 V-0 flammability requirements without flame-retardant additives — critical for aerospace interior components where FAR 25.853 compliance is mandatory.
+
+- Low smoke and toxicity: Produces very low smoke and toxic gas in combustion, meeting OSU heat release requirements and other regulatory standards for aircraft cabin materials.
+
+- Mechanical strength: High tensile and flexural strength with good impact resistance, maintained at elevated temperatures where most other thermoplastics would have lost significant stiffness.
+
+- Dimensional stability: Very low moisture absorption and excellent creep resistance, producing consistent dimensional performance in precision components across varying humidity and temperature conditions.
+
+- Biocompatibility: Ultem 1010 is certified biocompatible and rated for repeated steam autoclave sterilization, suitable for surgical instrument components and medical device housings.
+
+- Electrical insulation: Excellent dielectric properties across a wide temperature and frequency range, making Ultem a reliable insulating substrate in high-temperature electrical applications.
+
+The primary trade-off compared to PEEK is chemical resistance. While Ultem resists many organic solvents and dilute acids, it is susceptible to certain halogenated solvents and strong bases, and its chemical resistance profile is narrower than PEEK's near-universal inertness. For applications where both extreme thermal performance and broad chemical resistance are simultaneously required, PEEK remains the stronger specification. For applications where Ultem's thermal and flame performance is sufficient and chemical exposure is moderate, Ultem delivers equivalent value at a lower cost.
+
+What Industries and Applications Specify Ultem?
+
+Ultem's specific combination of high-temperature performance, inherent flame retardance, low smoke emission, and biocompatibility defines the application categories where it is the correct specification. It is not a general-purpose engineering plastic — it earns its cost premium in environments where one or more of those properties is non-negotiable.
+
+- Aerospace interiors: Structural brackets, ducts, housings, and interior panels in commercial and military aircraft where FAR 25.853 flame, smoke, and toxicity compliance is required.
+
+- Medical sterilization equipment: Instrument trays, surgical tool handles, and device housings that must withstand repeated steam autoclave cycles at 270°F (132°C) without degradation. Ultem 1010 is the grade specified for these applications.
+
+- Electrical and electronics: High-temperature connectors, relay housings, coil bobbins, and PCB substrates where dimensional stability and electrical performance must be maintained at elevated temperatures.
+
+- Industrial high-temperature applications: Pump and valve components, heat shields, manifolds, and process equipment parts where sustained elevated temperatures exceed the capabilities of nylon, Delrin, or polycarbonate.
+
+- Defense and military equipment: Structural components in military vehicles and aircraft where flame performance, high-temperature stability, and dimensional consistency under thermal cycling are simultaneously required.
+
+For aerospace and defense customers, Plastic-Craft Products holds both ISO 9001:2015 and AS9100D quality management certifications. AS9100D governs the traceability, documentation, and process control requirements that flight-critical component programs demand — making Plastic-Craft a qualified source for Ultem components in programs where the full certification documentation chain is a procurement requirement.
+
+What Should You Specify When Ordering Ultem?
+
+Grade selection is the first specification decision. Ultem 1000 is the correct choice for most high-temperature structural, electrical, and industrial applications. Ultem 1010 is required for medical and food-contact applications involving steam sterilization — Ultem 1000 should not be substituted for 1010 in autoclave applications. Ultem 2300 (30% glass-filled) is the correct specification when additional stiffness and dimensional stability under high sustained loads are required, at the cost of some impact resistance and increased tooling wear during machining.
+
+For machined components, buyers should provide finished dimensions, tolerances, and surface finish requirements. Ultem machines well with carbide tooling and sharp cutting edges but generates heat during machining that must be managed to prevent localized thermal effects on tight-tolerance features. Plastic-Craft Products offers in-house CNC turning, milling, and precision cutting, and can advise on grade selection for specific application requirements. Sourcing both material and machining from a single ISO-certified supplier simplifies quality documentation and reduces lead time, particularly in aerospace and medical programs where traceability requirements extend through every step of the supply chain.
+
+Frequently Asked Questions
+
+What is the difference between Ultem 1000 and Ultem 1010?
+
+Ultem 1000 is the standard unfilled general-purpose grade, suitable for most high-temperature structural and electrical applications. Ultem 1010 is a medical and food-contact grade certified for biocompatibility and rated for repeated steam autoclave sterilization at 270°F (132°C). For any application involving autoclave sterilization or direct food or body contact, Ultem 1010 is the required specification — Ultem 1000 is not a substitute.
+
+How does Ultem compare to PEEK?
+
+PEEK offers a higher continuous service temperature (480°F vs. 340°F), broader chemical resistance, and better fatigue performance under repeated dynamic loading. Ultem offers better inherent flame retardance, lower smoke and toxicity in combustion, transparency in thin sections, and a lower cost. For aerospace interior applications where flame performance is the primary driver, Ultem is often the preferred choice. For oil and gas or chemical processing applications where chemical resistance and extreme temperature are both required, PEEK is typically the stronger specification.
+
+Is Ultem FAA-approved for aircraft interiors?
+
+Ultem meets FAR 25.853 flammability requirements for aircraft interior materials by virtue of its inherent UL 94 V-0 flame rating and low heat release, smoke density, and toxic gas generation. It is widely used in commercial and military aircraft interiors for structural brackets, ducts, and housings. Specific program qualification depends on the component design and testing required by the applicable airworthiness authority.
+
+Can Ultem be sterilized by autoclave?
+
+Ultem 1010 is rated for repeated steam autoclave sterilization and is widely used in medical instrument trays and surgical device components. Standard Ultem 1000 can withstand limited autoclave exposure but is not rated for repeated sterilization cycles. Always specify Ultem 1010 for any application requiring autoclave sterilization compatibility.
+
+Where can I buy Ultem rod, sheet, and tube?
+
+Plastic-Craft Products stocks Ultem in rod, sheet, and tube at their facility in West Nyack, NY. Cut-to-size and machined-to-print orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application requirements.

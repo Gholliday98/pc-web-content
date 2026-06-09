@@ -1,0 +1,206 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#0F2744;--navy-mid:#1B3A5C;--blue:#2D6A9F;--accent:#4A9FD4;--accent-lt:#D6EAF8;--ink:#1A1A2E;--muted:#5C6B7A;--rule:#D4DCE6;--bg:#F7F9FC;--white:#FFFFFF}html{scroll-behavior:smooth}body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}.topbar{background:var(--navy);padding:10px 40px;display:flex;align-items:center;gap:10px}.topbar-logo{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase}.topbar-sep{color:rgba(255,255,255,.25)}.topbar-label{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a4a7a 100%);padding:80px 40px 70px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(74,159,212,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(45,106,159,.15) 0%,transparent 60%);pointer-events:none}.hero-inner{max-width:760px;margin:0 auto;position:relative}.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}.hero-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--accent)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4.5vw,44px);font-weight:700;line-height:1.2;color:var(--white);margin-bottom:20px;max-width:680px}.hero-subtitle{font-family:'Source Serif 4',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.72);line-height:1.65;max-width:620px;margin-bottom:28px}.hero-meta{font-family:'DM Sans',sans-serif;font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;display:flex;gap:18px;flex-wrap:wrap}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-content-row{display:flex;align-items:center;gap:40px}.hero-text{flex:1;min-width:0}.hero-img-col{flex:0 0 260px;width:260px}.hero-side-img{width:100%;height:300px;object-fit:cover;object-position:center 40%;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.35)}@media(max-width:700px){.hero-content-row{flex-direction:column}.hero-img-col{flex:0 0 auto;width:100%}.hero-side-img{height:220px}}.cert-strip{background:var(--white);border-bottom:1px solid var(--rule);padding:14px 40px}.cert-strip-inner{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.cert-label{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-right:4px}.badge{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:5px 12px;border-radius:4px;letter-spacing:0.5px}.badge-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}.article-wrap{max-width:760px;margin:0 auto;padding:60px 40px 80px}.section{margin-bottom:44px}.section-header{display:flex;align-items:center;gap:14px;margin-bottom:16px}.section-num{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:1.5px;min-width:28px}h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.3}p{font-size:16.5px;color:#2a3442;margin-bottom:16px;line-height:1.8}p:last-child{margin-bottom:0}strong{color:var(--navy-mid);font-weight:600}em{font-style:italic;color:var(--muted)}hr.section-rule{border:none;border-top:1px solid var(--rule);margin:44px 0}.pullquote{border-left:3px solid var(--accent);background:var(--accent-lt);padding:20px 24px;border-radius:0 8px 8px 0;margin:28px 0}.pullquote p{font-style:italic;color:var(--navy-mid);font-size:16px;margin:0}.cert-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}@media(max-width:580px){.cert-cards{grid-template-columns:1fr}}.cert-card{background:var(--white);border:1px solid var(--rule);border-top:3px solid var(--navy);border-radius:6px;padding:20px 22px}.cert-card-title{font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:8px;letter-spacing:0.3px}.cert-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.65}.industry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}@media(max-width:560px){.industry-list{grid-template-columns:1fr}}.industry-item{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:18px 16px;text-align:center}.industry-icon{font-size:26px;margin-bottom:8px}.industry-label{font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;color:var(--navy);line-height:1.3}.faq-section{margin-top:44px}.faq-item{margin-bottom:28px}.faq-item h3{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px}.faq-item p{font-size:15.5px;color:#2a3442;line-height:1.75}.cta-block{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:12px;padding:44px 40px;text-align:center;margin-top:52px;position:relative;overflow:hidden}.cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 80% 50%,rgba(74,159,212,.15) 0%,transparent 70%);pointer-events:none}.cta-block h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--white);margin-bottom:12px;position:relative}.cta-block p{color:rgba(255,255,255,.72);font-size:15.5px;max-width:520px;margin:0 auto 28px;position:relative}.cta-phone{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:#ffffff;letter-spacing:1.5px;position:relative}.article-footer{max-width:760px;margin:0 auto;padding:0 40px 60px}.footer-rule{border:none;border-top:1px solid var(--rule);margin-bottom:20px}.footer-text{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;color:var(--blue);background:var(--accent-lt);padding:4px 10px;border-radius:20px;letter-spacing:0.3px}.fade-in{opacity:0;transform:translateY(18px);animation:fadeUp .6s ease forwards}.fade-in:nth-child(1){animation-delay:.05s}.fade-in:nth-child(2){animation-delay:.15s}.fade-in:nth-child(3){animation-delay:.25s}.fade-in:nth-child(4){animation-delay:.35s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@media(max-width:600px){.hero{padding:50px 24px 50px}.article-wrap{padding:40px 24px 60px}.article-footer{padding:0 24px 40px}.cert-strip{padding:14px 24px}.topbar{padding:10px 24px}.cta-block{padding:36px 24px}}
+</style>
+
+<div class="topbar">
+  <span class="topbar-logo">Plastic-Craft Products</span>
+  <span class="topbar-sep">|</span>
+  <span class="topbar-label">Industry Insights</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-row">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-in">Industry Insights</div>
+        <h1 class="fade-in">CNC Precision Cutting: Custom-Dimensioned Plastic Blanks and Slab Cutting</h1>
+        <p class="hero-subtitle fade-in">Engineering applications rarely need standard sheet sizes — they need specific dimensions that can go straight into machining, assembly, or installation without additional cutting at the customer's facility.</p>
+        <div class="hero-meta fade-in">
+          <span>Published March 2026</span>
+          <span>&middot;</span>
+          <span>Plastic-Craft Products</span>
+        </div>
+      </div>
+      <div class="hero-img-col fade-in">
+        <img src="" alt="CNC precision-cut plastic blanks stacked on a work surface" class="hero-side-img" id="pc-hero-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cert-strip">
+  <div class="cert-strip-inner">
+    <span class="cert-label">Certified</span>
+    <span class="badge"><span class="badge-dot"></span> ISO 9001:2015</span>
+    <span class="badge"><span class="badge-dot"></span> AS9100:2016</span>
+    <span class="badge"><span class="badge-dot"></span> FDA-Compliant Food &amp; Medical</span>
+  </div>
+</div>
+
+<main class="article-wrap">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>What Is CNC Precision Cutting and How Does It Differ from Standard Sheet Cutting?</h2>
+    </div>
+    <p>Standard sheet cutting with a panel saw or manual shear produces cuts with tolerances in the <strong>&plusmn;0.030 to &plusmn;0.060 inch range</strong>. For bulk sheet splitting and approximate-size blanks, this is adequate. For precision-dimensioned blanks that will feed into CNC machining operations, install into close-fitting frames, or be measured against a drawing with tight dimensional requirements, standard cutting tolerances are not sufficient.</p>
+    <p>CNC precision cutting uses a computer-controlled cutting system — typically a CNC saw, CNC router, or CNC waterjet — to execute cuts along programmed coordinates with dimensional accuracy in the <strong>&plusmn;0.005 to &plusmn;0.015 inch range</strong>. The result is cut blanks with consistent squareness, parallel opposing faces, and dimensions governed by the machine's positional resolution rather than the operator's manual alignment.</p>
+    <div class="pullquote">
+      <p><em>CNC precision-cut blanks arrive ready for the next operation — whether that is machining, laminating, installing, or inspecting against a drawing — without requiring a squaring or re-cutting step at the receiving end.</em></p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>What Materials Can Be Precision Cut to Custom Dimensions?</h2>
+    </div>
+    <p>Plastic-Craft Products precision cuts the full range of thermoplastic sheet, plate, and slab stock carried in their inventory:</p>
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="industry-icon">💎</div>
+        <div class="industry-label">Acrylic (Cast &amp; Extruded)</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🛡️</div>
+        <div class="industry-label">Polycarbonate (Solid &amp; Multiwall)</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🔩</div>
+        <div class="industry-label">HDPE &amp; UHMW</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚙️</div>
+        <div class="industry-label">Nylon, Delrin &amp; PEEK</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">🧪</div>
+        <div class="industry-label">PVC &amp; CPVC</div>
+      </div>
+      <div class="industry-item">
+        <div class="industry-icon">⚡</div>
+        <div class="industry-label">Phenolic (G-10, CE, LE)</div>
+      </div>
+    </div>
+    <p><strong>High-performance materials</strong> including PTFE, Ultem, and Torlon are cut to near-net blank size to reduce material waste and machine time — especially important for expensive specialty materials where minimizing scrap has direct cost consequences.</p>
+    <p>PVC cannot be laser cut; CNC saw and router cutting produce clean, accurate edges without chemical hazards.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>What Tolerances Does CNC Precision Cutting Hold?</h2>
+    </div>
+    <p>CNC precision cutting typically achieves <strong>&plusmn;0.005 to &plusmn;0.015 inch</strong> on cut dimensions under standard conditions. Squareness tolerances are typically within 0.010 inch per foot of cut length.</p>
+    <p>Several factors affect achievable tolerance. <strong>Material stiffness</strong> is primary: rigid materials like cast acrylic, phenolic, and Delrin hold tighter tolerances than softer materials like UHMW, polypropylene, and HDPE. <strong>Material thickness</strong> also matters — thin sheet is more susceptible to deflection and vibration during cutting than thick plate.</p>
+    <p>For buyers whose downstream processes require confirmed dimensional accuracy, Plastic-Craft Products can perform <strong>first-article dimensional inspection</strong> on cut blanks and provide a measurement record with the shipment.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Benefits of Ordering Precision-Cut Blanks vs. Full Sheets</h2>
+    </div>
+    <p>The operational case for ordering precision-cut blanks is strongest in three scenarios:</p>
+    <p><strong>First: No in-house cutting capability.</strong> Many metal machine shops, electronics manufacturers, and assembly operations don't have the saws, fixtures, and blade selection experience needed to cut plastic accurately. Receiving precision-cut blanks eliminates the cutting step entirely.</p>
+    <p><strong>Second: Material efficiency.</strong> For high-value materials like PEEK, Torlon, and Ultem, buying a full sheet and cutting in-house results in offcuts that may never be used. Ordering blanks cut to near-net dimensions eliminates waste.</p>
+    <p><strong>Third: Documented quality.</strong> Plastic-Craft Products holds ISO 9001:2015 and AS9100D certifications covering all cutting operations. For aerospace and defense programs where material traceability must be maintained from raw stock through each processing step, ordering from an AS9100D-certified source means the documentation chain is unbroken.</p>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card-title">ISO 9001:2015</div>
+        <p>Full material traceability and documented cutting operations for every job.</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card-title">AS9100D</div>
+        <p>Aerospace-grade quality management covering all cutting and material handling — unbroken documentation chain from raw stock to cut blank.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>What Should You Specify When Ordering Precision-Cut Blanks?</h2>
+    </div>
+    <p>A complete specification includes: material type and grade, sheet thickness, finished blank dimensions with required tolerances if tighter than standard, quantity, and any special requirements such as edge finish, surface protection masking, or dimensional inspection records.</p>
+    <p>If the blank is an intermediate step before further machining, providing the <strong>finished part drawing</strong> alongside the blank specification allows Plastic-Craft Products to confirm adequate material for all machining operations with appropriate allowance for clamping and finish cuts.</p>
+    <p>For recurring orders, establishing a <strong>blanket order or standing program</strong> allows material to be stocked at the correct cut size and released against production schedules without requiring a new quote for every order. No minimum order applies to any individual release.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <div class="faq-section">
+    <div class="section-header">
+      <span class="section-num">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <h3>What tolerance does CNC precision plastic cutting hold?</h3>
+      <p>&plusmn;0.005 to &plusmn;0.015 inch under standard conditions, depending on material, thickness, and cut length. Tighter tolerances are achievable and must be specified at quoting. Soft materials hold slightly looser tolerances than rigid materials.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is there a minimum order quantity for custom-cut plastic blanks?</h3>
+      <p>No. Plastic-Craft Products cuts to customer-specified dimensions with no minimum order. Single-piece prototype blanks and full production quantities are quoted on the same basis.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can thick plastic plate and slab be cut to custom dimensions?</h3>
+      <p>Yes. Thick plate and slab stock in HDPE, UHMW, nylon, Delrin, phenolic, and PEEK can all be cut to custom dimensions. For thicknesses exceeding standard saw or router capability, waterjet cutting handles any practical plastic thickness while maintaining dimensional accuracy.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can Plastic-Craft provide dimensional inspection records with cut blanks?</h3>
+      <p>Yes. First-article dimensional inspection and measurement records can be provided with shipments for programs that require incoming inspection documentation. ISO 9001:2015 and AS9100D certifications cover all cutting operations.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where can I get plastic sheet and slab cut to custom dimensions?</h3>
+      <p>Plastic-Craft Products cuts their full inventory to customer-specified dimensions at their facility in West Nyack, NY. No minimum orders. Call (845) 358-3010 or email ecom@plastic-craft.com.</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>Ready to Order Precision-Cut Plastic Blanks?</h3>
+    <p>Plastic-Craft Products cuts their complete plastic and engineering material inventory to exact customer dimensions — no minimum orders, tight tolerances, and ISO/AS9100D certified quality.</p>
+    <p class="cta-phone">(845) 358-3010</p>
+  </div>
+
+</main>
+
+<footer class="article-footer">
+  <hr class="footer-rule">
+  <p class="footer-text">Plastic-Craft Products is an ISO 9001:2015 and AS9100D certified custom plastic fabrication company based in West Nyack, NY. For questions about precision cutting, custom blanks, or material specifications, contact us at ecom@plastic-craft.com.</p>
+  <div class="tags">
+    <span class="tag">CNC Cutting</span>
+    <span class="tag">Precision Blanks</span>
+    <span class="tag">Slab Cutting</span>
+    <span class="tag">Waterjet</span>
+    <span class="tag">Acrylic</span>
+    <span class="tag">PEEK</span>
+    <span class="tag">Phenolic</span>
+    <span class="tag">Custom Fabrication</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var fi = document.querySelector('.post-thumbnail img, .elementor-widget-image img[class*="wp-image"]');
+  var hero = document.getElementById('pc-hero-img');
+  if (fi && hero && !hero.src) {
+    hero.src = fi.src;
+    hero.alt = fi.alt || '';
+  }
+})();
+</script>

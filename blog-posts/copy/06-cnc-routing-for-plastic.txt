@@ -1,0 +1,71 @@
+CNC Routing for Plastic: What It Is and What We Can Make
+
+What Is CNC Routing for Plastic and How Does It Work?
+
+CNC routing is a subtractive machining process in which a computer-controlled spindle drives a rotating cutting tool — typically a carbide end mill, spiral upcut bit, or specialized profile cutter — along a programmed toolpath to remove material from a workpiece. The machine operates on three or more axes simultaneously, allowing it to produce two-dimensional profiles, three-dimensional contoured surfaces, pockets of controlled depth, and complex multi-feature parts from flat sheet, plate, or solid bar stock. The CNC controller executes the toolpath precisely and repeatably, producing identical parts across a production run with dimensional consistency that manual routing cannot achieve.
+
+Unlike laser cutting, which vaporizes material thermally, or waterjet, which erodes material hydraulically, CNC routing is a mechanical cold-cutting process when feeds, speeds, and tool selection are properly matched to the material. This means no heat-affected zone at cut edges, no risk of thermal stress in the material adjacent to the cut, and no material restriction based on thermal decomposition — PVC, CPVC, and other materials that cannot be laser cut are routed without any safety concern. The mechanical nature of the process also enables operations that neither laser nor waterjet can perform: pocketing to controlled depths, step profiles, engraving, three-dimensional surface contouring, and material removal from the face of a part rather than only through its thickness.
+
+Plastic-Craft Products runs CNC routing on a full range of thermoplastics and thermosets including acrylic, polycarbonate, HDPE, UHMW, nylon, Delrin, PVC, CPVC, polypropylene, PEEK, phenolic, and high-performance materials including PTFE, Ultem, and Torlon. The same machine that profiles acrylic display components also machines precision PEEK bearing housings and UHMW conveyor wear pads — material range is a function of tooling selection and process parameters, not machine capability.
+
+What CNC Routing Operations Can Be Performed on Plastic?
+
+CNC routing encompasses a broader set of operations than many buyers realize when they first encounter the process. The full operational range available at Plastic-Craft Products for plastic sheet, plate, and bar stock includes:
+
+Profile cutting (2D contouring): Following a programmed outline to cut parts from sheet stock to any two-dimensional shape — rectangles, circles, irregular profiles, complex curves, and nested parts from a single sheet. The fundamental operation and the most common use case for custom cut-to-shape plastic parts.
+
+Pocket milling: Removing material from the face of a part to a controlled depth, creating recesses, slots, counterbores, and cavities without cutting through the full material thickness. Used for component mounting recesses, gasket grooves, weight reduction pockets, and assembly alignment features.
+
+Step and rabbet profiles: Cutting stepped edge profiles, tongue-and-groove joints, and interlocking edge features that allow plastic panels or components to mate and assemble cleanly without fasteners or adhesive for the primary joint.
+
+V-grooving: Cutting V-shaped grooves to a controlled depth that allows the part to be folded along the groove line after routing. Used extensively in acrylic and HDPE to produce three-dimensional fabricated enclosures and boxes from flat sheet stock without the thermal distortion risk of heat bending.
+
+Drilling and boring: Producing holes of controlled diameter and depth, including through-holes, blind holes, and counterbored holes for fasteners. Positioning accuracy is governed by the CNC controller, eliminating cumulative positioning error across multi-hole patterns.
+
+Engraving and surface texturing: Cutting text, logos, part numbers, or surface patterns into the face of plastic panels at controlled depth. Used for instrument panels, identification plates, display components, and any application where permanent surface marking is required.
+
+Three-dimensional surface contouring: Producing curved, sculpted, or ramped surfaces by coordinating movement across multiple axes simultaneously. Used for custom formed shapes, aerodynamic profiles, ergonomic components, and architectural elements that cannot be produced by flat profile cutting alone.
+
+What Plastic Parts Are Best Suited to CNC Routing?
+
+CNC routing is the correct fabrication process for plastic parts that require custom two-dimensional profiles from sheet stock, any combination of profiling and face operations in a single setup, features that laser cutting or waterjet cannot produce, or materials that cannot be laser cut. The applications that most commonly call for CNC routing at Plastic-Craft Products span a wide range of industries and part types, united by the common requirement for precision, repeatability, and material versatility.
+
+Structural and enclosure components — equipment panels, electrical enclosure faces, instrument panels, machine frames fabricated from thick sheet — are a primary application area. These parts typically require clean perimeter profiles, precise hole patterns for fasteners and hardware, and often pocket features for component mounting. Wear and bearing components — UHMW chute liners, nylon bearing pads, HDPE slide wear strips — require accurate profile cutting to fit their retaining systems and often include bolt holes or slots that must align precisely with mounting hardware. Display and architectural components — acrylic panel systems, sign substrates, decorative elements — require the clean routed edge finish that is appropriate for visible surfaces.
+
+Prototype and first-article parts are a particularly strong use case for CNC routing because the process requires no tooling investment beyond standard cutting tools. A new part design can go from CAD file to machined first article in hours or days, with no mold or tool cost to absorb before the design is validated. Plastic-Craft Products can machine single-piece prototypes on the same equipment and to the same quality standard as production parts, eliminating the typical distinction between prototype and production supply.
+
+What Tolerances and Edge Quality Does CNC Routing Achieve?
+
+CNC routing of plastic typically achieves positional tolerances of ±0.005 to ±0.010 inch on profiled dimensions under controlled conditions, with tighter tolerances achievable on shorter features and more controlled materials. Soft, flexible plastics like UHMW and polypropylene are more challenging to hold to tight tolerances than rigid materials like acrylic, phenolic, or Delrin because they deflect under cutting forces. For precision-tolerance work in soft engineering plastics, tooling selection, fixturing design, and cutting parameters must all be optimized to achieve the specified tolerance band consistently.
+
+Edge finish from CNC routing is determined by the tool type, tool sharpness, feed rate, and spindle speed combination. A correctly programmed router with sharp carbide tooling produces a smooth machined edge on most plastics that is appropriate for structural applications, assembly, bonding, and most visible applications. For acrylic applications requiring optically polished edges, the routed edge can be followed by diamond polishing or flame polishing as a secondary operation. Plastic-Craft Products performs both operations in-house, allowing optically polished acrylic edges to be delivered as a complete finished part rather than requiring the customer to source the polishing step separately.
+
+For aerospace, defense, and regulated industrial programs requiring full quality documentation and process traceability, Plastic-Craft Products holds ISO 9001:2015 and AS9100D certifications covering CNC routing and all other in-house fabrication operations. This means the material certificate, machining records, and dimensional inspection documentation for a CNC-routed part all originate from a single AS9100D-certified supplier — simplifying the documentation burden for programs where every operation in the supply chain must be covered by an approved quality management system.
+
+What Should You Provide to Get a CNC Routing Quote?
+
+The most efficient path to a CNC routing quote is a DXF or DWG file for two-dimensional profiled parts, or a STEP or IGES file for three-dimensional parts, along with a dimensioned drawing specifying critical tolerances, required edge finish, material and grade, quantity, and any secondary operations required (drilling, tapping, polishing, engraving). For simple cut-to-size parts with no critical tolerances, a dimensioned sketch or written specification is sufficient. For parts being replicated from a physical sample, Plastic-Craft Products can work from the sample directly and produce a matching part from appropriate sheet or bar stock.
+
+Material selection and thickness should be confirmed before quoting whenever possible — the correct material for the application significantly affects both the machining approach and the per-part cost. Plastic-Craft Products can advise on material selection as part of the quoting process for buyers who have not yet finalized their specification, drawing on 90 years of application experience across engineering plastics, structural sheet materials, and high-performance specialty grades. Both single-piece prototypes and production quantities are quoted on the same no-minimum basis, with no artificial volume floor that excludes smaller programs.
+
+Frequently Asked Questions
+
+What file formats are accepted for CNC routing jobs?
+
+DXF and DWG files are the standard formats for two-dimensional CNC routing profiles. STEP and IGES files are preferred for three-dimensional parts. PDF drawings with precise dimensions are acceptable for simple profiles. Plastic-Craft Products can work from most common CAD output formats and can advise on the best format for a specific part type when the job is quoted.
+
+Can CNC routing produce polished acrylic edges in a single operation?
+
+CNC routing produces a smooth machined edge on acrylic suitable for most applications, but not an optically polished edge in a single pass. Optical edge polishing requires a secondary flame polishing or diamond polishing operation after routing. Plastic-Craft Products performs both polishing operations in-house, so optically polished acrylic parts can be delivered as a single completed scope without the buyer needing to source polishing separately.
+
+What is the maximum sheet size that can be CNC routed?
+
+Maximum sheet size is governed by the machine bed dimensions. Plastic-Craft Products handles standard full-sheet sizes in most common plastic materials. Parts larger than the standard bed can often be machined by repositioning, or by breaking the part into sections that are subsequently bonded or fastened. Contact Plastic-Craft Products directly for specific size requirements outside standard sheet dimensions.
+
+Can CNC routing be used on PTFE, PEEK, and other high-performance plastics?
+
+Yes. CNC routing is fully compatible with high-performance engineering plastics including PTFE, PEEK, Ultem, Torlon, phenolic, and Delrin. These materials machine differently from commodity plastics and require specific tooling selection, feeds and speeds, and fixturing approaches for consistent results. Plastic-Craft Products machines all of these materials in-house as part of their standard fabrication capability.
+
+Where can I get plastic parts CNC routed?
+
+Plastic-Craft Products offers in-house CNC routing across their complete plastic material inventory at their facility in West Nyack, NY. No minimum orders for prototypes or production quantities. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your part geometry, material, and required tolerances.

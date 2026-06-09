@@ -1,0 +1,73 @@
+Torlon PAI: Complete Technical Guide
+
+There are applications where PEEK is not the answer — where the sustained loads, temperatures, or chemical environments involved exceed what even the gold standard of engineering thermoplastics can reliably deliver. For those applications, engineers reach for Torlon. Polyamide-imide (PAI) resin, sold under the Torlon trade name by Solvay, holds the title of highest-performing melt-processable thermoplastic available in machined stock form, with continuous service to 500°F and compressive strength that outperforms PEEK by a measurable margin.
+
+What Is Torlon and What Is Polyamide-Imide?
+
+Torlon is Solvay's trade name for polyamide-imide, a high-performance thermoplastic produced by reacting trimellitic anhydride with aromatic diamines to form a polymer backbone that incorporates both amide and imide linkages. This hybrid structure is what gives Torlon its exceptional performance — the imide groups contribute thermal stability and chemical resistance, while the amide linkages contribute toughness and processability that pure polyimides lack. Unlike PTFE-based polyimides such as Vespel, which must be compression-molded and cannot be melt-processed, Torlon can be injection-molded and extruded into rod, sheet, and tube stock suitable for CNC machining.
+
+Torlon requires a post-cure process after machining to fully develop its mechanical and thermal properties. Parts machined from Torlon stock must be thermally cured in a controlled oven cycle — typically ramped slowly to approximately 500°F and held for an extended period — before final dimensions are achieved and full property values are realized. This post-cure step is not optional; skipping it results in parts that have not reached their rated performance levels and may not meet dimensional specifications after the curing that occurs in service.
+
+What Are the Key Properties of Torlon That Exceed PEEK?
+
+Torlon occupies the performance tier above PEEK in the engineering thermoplastic hierarchy, and the properties where it surpasses PEEK are precisely the ones that define the most demanding applications.
+
+Continuous service temperature: Torlon 4301 (unfilled) is rated for continuous service up to 500°F (260°C) — matching PTFE's upper limit and exceeding PEEK's 480°F rating in sustained applications.
+
+Compressive strength: Significantly higher than PEEK, making it the correct specification for bearing and wear components under extreme sustained compressive loads where PEEK would deform over time.
+
+Flexural and tensile strength: Among the highest of any unreinforced thermoplastic — maintained at elevated temperatures where most engineering plastics, including PEEK, experience meaningful reduction in mechanical properties.
+
+Creep resistance: Exceptional resistance to creep under sustained load at elevated temperatures — the defining requirement for precision bearing and seal components in aircraft engines, turbines, and high-temperature industrial machinery.
+
+Chemical resistance: Resistant to most fuels, hydraulic fluids, lubricants, and high-temperature process chemicals, with a profile that is broader than PEEK's in many categories relevant to aerospace and industrial applications.
+
+Wear resistance: Torlon bearing grades (4435 and 4540) contain internal lubricants and reinforcing fillers that produce wear performance superior to bearing-grade PEEK in high-load, high-temperature sliding applications.
+
+Dimensional stability: Very low moisture absorption and excellent dimensional consistency after post-cure, producing precision components that maintain tolerances under the combined thermal and mechanical loading of service conditions.
+
+Torlon's cost is substantially higher than PEEK. The correct engineering decision is to specify Torlon only when the application genuinely requires its specific combination of extreme-temperature performance, compressive strength, and creep resistance under sustained load — properties that no lower-cost material in the thermoplastic family can deliver.
+
+What Industries and Applications Specify Torlon?
+
+Torlon is reserved for the subset of applications where extreme temperature, extreme compressive load, and long service life under both simultaneously are the governing design constraints.
+
+Aerospace engine components: Bearing cages, seal rings, valve seats, and wear pads in jet engines and auxiliary power units where continuous operating temperatures exceed PEEK's reliable range.
+
+Oil and gas downhole equipment: Bearing components, valve seats, and instrumentation housings in downhole drilling tools where high temperature, high pressure, and aggressive hydrocarbon chemistry eliminate most other thermoplastic candidates.
+
+Semiconductor processing equipment: Wafer handling components, process chamber rings, and precision fixtures in high-temperature semiconductor fabrication environments where dimensional stability and chemical resistance must both be maintained.
+
+Industrial compressors and turbines: Piston rings, vanes, thrust washers, and bearing components in high-speed rotating equipment where temperature, speed, and load exceed the capability of standard bearing-grade PEEK.
+
+Military and defense systems: Structural components and bearing elements in weapon systems, ground vehicle drivetrains, and military aircraft where the performance envelope is defined by the most demanding operating scenario.
+
+For aerospace and defense procurement programs with full documentation requirements, Plastic-Craft Products holds ISO 9001:2015 and AS9100D quality management certifications. AS9100D specifically addresses the traceability, process control, and documentation standards that flight-critical component procurement demands.
+
+What Should You Specify When Ordering Torlon?
+
+Grade selection is the first specification decision. Torlon 4301 is the standard unfilled grade for most structural and chemical resistance applications. Torlon 4203 is glass and carbon fiber reinforced for maximum stiffness and compressive strength. Torlon 4435 contains graphite and PTFE for reduced friction in sliding and rotating contact applications. Torlon 4540 is carbon fiber and graphite filled, providing the highest wear resistance in high-PV bearing applications. Confirming which grade is appropriate for the specific load, temperature, speed, and chemical environment is essential before ordering.
+
+Post-cure is the most critical processing step for Torlon and the most commonly overlooked by buyers sourcing Torlon parts for the first time. Parts machined from Torlon stock must undergo a controlled thermal cure cycle before final tolerances are meaningful and full mechanical property values are achieved. For precision components with tight dimensional tolerances, the post-cure cycle and any final grinding or finishing after curing must be planned into the manufacturing sequence.
+
+Frequently Asked Questions
+
+Is Torlon stronger than PEEK?
+
+Yes — Torlon exhibits higher compressive strength, better creep resistance under sustained load at elevated temperatures, and a continuous service temperature that matches or exceeds PEEK. PEEK offers a broader chemical resistance profile and is more widely available in filled grades, making it the preferred choice for most high-performance applications. Torlon is specified when the application genuinely exceeds what PEEK can reliably deliver.
+
+Why does Torlon require post-cure after machining?
+
+Torlon stock is supplied in a partially cured state to allow machining. Full mechanical and thermal properties are only achieved after a controlled thermal post-cure cycle that completes the imidization of the polymer. Without post-cure, machined parts will not meet the material's rated property values and will continue to cure — and change dimensions — in service. Post-cure is a mandatory processing step, not an optional finishing operation.
+
+What temperature can Torlon continuously withstand?
+
+Torlon 4301 (unfilled) has a continuous service temperature of 500°F (260°C), making it one of the highest-rated melt-processable thermoplastics available in machined stock form. This rating assumes fully post-cured parts operating under appropriate load conditions for the specific grade specified.
+
+What are the different Torlon grades and when should each be used?
+
+Torlon 4301 is the standard unfilled structural grade. Torlon 4203 is glass and carbon fiber reinforced for maximum stiffness. Torlon 4435 contains graphite and PTFE for low-friction sliding applications. Torlon 4540 is carbon fiber and graphite filled for the highest wear resistance in high-PV bearing applications. Grade selection depends on the specific combination of load, speed, temperature, and chemical environment.
+
+Where can I buy Torlon rod and sheet?
+
+Plastic-Craft Products stocks Torlon rod and sheet in standard and bearing grades at their facility in West Nyack, NY. Cut-to-size and machined-to-print orders are available with no minimum quantity. Call (845) 358-3010 or email ecom@plastic-craft.com to discuss your application requirements and post-cure needs.

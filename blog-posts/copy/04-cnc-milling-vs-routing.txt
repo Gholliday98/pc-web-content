@@ -1,0 +1,69 @@
+CNC Milling for Plastic Components
+
+What Is the Difference Between CNC Milling and CNC Routing for Plastic?
+
+CNC milling and CNC routing both use multi-axis, computer-controlled machines with rotating cutters to shape plastic workpieces, and the distinction between them is frequently misunderstood even by buyers who source machined parts regularly. The practical difference comes down to machine rigidity, spindle design, and the resulting precision each process achieves. CNC milling machines are built with heavy, rigid frame structures and precision ground spindle assemblies designed to minimize deflection under cutting loads — properties that allow them to achieve tight dimensional tolerances, fine surface finishes, and accurate multi-feature part geometries consistently across a production run.
+
+CNC routers are designed for higher-speed processing of sheet stock, with lighter gantry structures optimized for covering large table areas quickly rather than holding the tight positional accuracy under load that a milling machine maintains. For large-format sheet profiling, panel cutting, and operations where tolerances in the ±0.005 to ±0.015 inch range are acceptable, a router is the correct and more economical process. For precision parts requiring tolerances in the ±0.001 to ±0.005 inch range, complex multi-feature geometries machined from bar or plate stock, or fine surface finish requirements on functional mating surfaces, CNC milling is the correct specification.
+
+The distinction also relates to workpiece type. CNC routing is the standard process for flat sheet-derived parts — panels, profiles, cut shapes. CNC milling is the correct process for solid plastic components machined from rod, bar, or plate stock — housings, manifolds, brackets, bearing components, spacers, and precision structural elements that start as a solid block and are machined to their finished geometry. Plastic-Craft Products operates both capabilities in-house, selecting the appropriate process based on the part geometry and tolerance requirements.
+
+What Types of Plastic Parts Are Best Suited to CNC Milling?
+
+CNC milling is the correct process for plastic parts where dimensional precision, tight tolerances on multiple interrelated features, or functional surface quality on mating faces are governing requirements. The part types that most consistently call for milling over routing share the common characteristic that they are three-dimensional solid components rather than flat sheet-derived profiles:
+
+Bearing housings and structural brackets: Components with precision bored holes, tight-tolerance clearance fits for bearing ODs, and multiple datum-referenced features that must relate to each other within close tolerances across the full part geometry.
+
+Fluid and pneumatic manifolds: Plastic manifolds in nylon, Delrin, PEEK, or PTFE with precision-drilled and bored porting, sealed face surfaces, and tapped fittings where leak-free assembly depends on surface flatness and bore position accuracy.
+
+Precision spacers and standoffs: Machined spacers in PEEK, Ultem, or phenolic for aerospace and electronics assemblies where stack height tolerances and flatness of seating surfaces must be maintained within thousandths of an inch.
+
+Wear components with close-fit bores: Nylon, UHMW, and Delrin bushings, wear plates, and bearing components where the functional fit with a mating shaft or housing requires bore tolerances that a router cannot reliably achieve in thick material.
+
+Prototype and first-article parts for tooled production: Engineering models and functional prototypes where the machined part must validate the design before injection or compression molding tooling is committed, requiring that the machined part meet the same dimensional requirements as the production intent design.
+
+Electrical insulating components: Precision phenolic, G-10, and PEEK insulating blocks, bus bar supports, and terminal housings for electrical assemblies where dielectric performance depends on dimensional accuracy and surface integrity at the machined interfaces.
+
+What Tolerances Does CNC Milling of Plastic Achieve?
+
+CNC milling of engineering plastics typically achieves positional tolerances of ±0.001 to ±0.005 inch on features machined in a single setup, with surface finish values in the 32 to 125 Ra microinch range depending on finish pass parameters and the material being machined. These tolerances are sufficient for most precision plastic component applications including bearing fits, manifold porting, and close-clearance assembly interfaces. For applications requiring tighter tolerances or finer surface finishes, secondary grinding or lapping operations can be applied after milling on appropriate materials.
+
+Material behavior is the primary variable affecting achievable tolerance in plastic milling. Rigid, dimensionally stable materials like Delrin, phenolic, PEEK, and cast nylon machine predictably and hold tight tolerances well. Softer, more flexible materials like UHMW, polypropylene, and unfilled PTFE deflect under cutting forces and tend toward looser achievable tolerances without specialized fixturing and tooling strategies. Moisture-absorbing materials like nylon require awareness of the dimensional change that occurs between dry and equilibrium moisture content states, particularly for parts with bore-to-shaft fits that will be installed in humid environments.
+
+Thermal expansion is a consideration for tight-tolerance plastic milling that does not apply to metal machining to the same degree. Plastics have significantly higher coefficients of thermal expansion than metals, and heat generated during machining — if not managed by proper cutting parameters, tool sharpness, and occasional air or mist cooling — can cause the workpiece to expand during cutting, affecting dimensional accuracy on the finished part. Plastic-Craft Products manages these material-specific variables through tooling selection and process parameter control appropriate to each material being machined.
+
+What Materials Are Compatible with CNC Milling and Which Require Special Handling?
+
+All thermoplastics and thermosets available in rod, bar, and plate stock can be CNC milled, but each material group has specific machining characteristics that influence tooling selection, cutting parameters, and achievable surface quality. Rigid engineering plastics — Delrin, nylon, PEEK, phenolic, Ultem, and Torlon — machine with the greatest predictability and produce the best surface finishes and tightest tolerances. These materials respond well to standard carbide end mills and produce clean chips that evacuate from the cutting zone effectively.
+
+High-performance fluoropolymers including PTFE are soft, slippery, and prone to deflection and smearing under cutting loads. Achieving accurate dimensions in PTFE requires sharp tooling, light cuts, and careful fixturing to prevent the workpiece from moving during machining. Glass-filled and carbon-filled grades of PEEK, nylon, and other engineering plastics are significantly more abrasive than unfilled grades and require carbide or diamond-coated tooling to maintain tool life across a production run.
+
+For aerospace and defense programs where all material processing must be documented and traceable, Plastic-Craft Products holds ISO 9001:2015 and AS9100D certifications covering CNC milling operations. The quality management system captures material certificates, process records, and inspection data for every production job, providing the complete documentation package that flight-critical and mission-critical programs require. Sourcing both the material and the machining from a single AS9100D-certified facility eliminates a documentation gap that can otherwise require significant administrative effort to close across two separate suppliers.
+
+What Should You Provide When Requesting a CNC Milling Quote for Plastic?
+
+A complete CNC milling quote requires a dimensioned drawing or 3D CAD model (STEP or IGES), material and grade specification, tolerance callouts on critical features, required surface finish on functional faces, and quantity. For parts with multiple tight-tolerance features, identifying which features are functional — meaning they directly affect fit, form, or function with mating components — versus which are reference dimensions allows the machinist to allocate process capability appropriately and avoid unnecessary precision cost on non-critical features.
+
+For programs where the same part will eventually transition from CNC milling to injection or compression molding at higher volumes, providing that context at the time of quoting allows Plastic-Craft Products to advise on features that may require design for manufacturability adjustments for the molded process, and to produce the milled prototypes in a way that validates the design intent. Plastic-Craft Products machines single-piece prototypes and production quantities on the same equipment to the same quality standard, with no minimum order on any job.
+
+Frequently Asked Questions
+
+When should I specify CNC milling instead of CNC routing for a plastic part?
+
+Choose milling when requiring tolerances tighter than ±0.005 inch, when the component is a solid three-dimensional structure machined from rod or plate rather than flat sheet, or when the part has multiple precision features needing close relationship across the complete geometry. CNC routing is the correct and more economical process for sheet-profiled parts with standard tolerances in the ±0.005 to ±0.015 inch range.
+
+What tolerance can CNC milling hold in engineering plastics?
+
+CNC milling of rigid engineering plastics like Delrin, PEEK, nylon, and phenolic typically achieves positional tolerances of ±0.001 to ±0.005 inch in a single setup. Softer, more flexible materials like UHMW and PTFE hold looser tolerances due to workpiece deflection under cutting forces. Tighter tolerances are achievable with secondary operations on appropriate materials when required by the application.
+
+Can CNC milling be used for PEEK, Torlon, and other high-performance plastics?
+
+Yes. CNC milling is fully compatible with PEEK, Torlon, Ultem, Delrin, phenolic, and all other engineering and high-performance thermoplastics. Filled grades such as glass-filled PEEK and carbon-filled nylon require carbide or diamond-coated tooling to manage abrasive wear. Plastic-Craft Products machines all of these materials in-house as part of their standard precision machining capability.
+
+Does CNC milling plastic require coolant?
+
+Most engineering plastics are machined dry or with air blast cooling rather than flood coolant, because many plastics absorb moisture and flood coolant can swell dimensionally sensitive parts or contaminate materials like PTFE. Compressed air cooling is used to clear chips and manage heat at the cut zone. For materials with specific coolant compatibility, appropriate cutting fluid can be applied when required by the application.
+
+Where can I get precision CNC milled plastic parts?
+
+Plastic-Craft Products offers in-house CNC milling across their complete plastic material inventory at their facility in West Nyack, NY, with no minimum orders for prototype or production quantities.

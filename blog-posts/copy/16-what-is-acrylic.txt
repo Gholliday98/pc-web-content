@@ -1,0 +1,68 @@
+Acrylic Sheet: Properties, Grades, and Applications
+
+What Is Acrylic Made Of?
+
+Acrylic is a transparent thermoplastic formally known as polymethyl methacrylate (PMMA), produced by polymerizing methyl methacrylate monomer into a rigid, lightweight solid. It transmits up to 92% of visible light — more than standard plate glass — and is sold under trade names including Plexiglas, Lucite, and Acrylite. Despite different brand names, the underlying material and performance characteristics are consistent.
+
+What Is the Difference Between Cast and Extruded Acrylic?
+
+Cast and extruded are the two primary manufacturing grades of acrylic, and choosing correctly between them affects optical quality, tolerances, and cost.
+
+Cast acrylic: Made by curing liquid monomer between glass plates. Offers denser molecular structure, tighter thickness tolerances, and superior optical clarity. It's the standard choice for display work, optical applications, and precision assemblies.
+
+Extruded acrylic: Produced at higher throughput by pushing molten polymer through a die. It's slightly softer, more economical, and bonds well with solvent cements. This makes it practical for thermoforming and cost-driven production runs.
+
+What Are the Key Properties of Acrylic Sheet?
+
+Optical clarity: Up to 92% light transmission with excellent color neutrality across the visible spectrum.
+
+UV stability: Inherently UV-resistant without additives; will not yellow, haze, or become brittle under prolonged outdoor exposure.
+
+Impact resistance: Approximately 10 times more impact-resistant than glass at equivalent thickness, making it a safer and lighter glazing alternative.
+
+Scratch resistance: Surface hardness significantly outperforms polycarbonate. Minor surface damage can often be restored with Micro-Mesh abrasive polishing.
+
+Machinability: Saws, drills, routes, engraves, and laser cuts cleanly with correct tooling. Edges can be flame- or diamond-polished to optical clarity.
+
+Chemical resistance: Resists dilute acids, alkalis, and most inorganic chemicals. It's susceptible to aromatic solvents and ketones — specify accordingly for chemical exposure environments.
+
+One specification detail to account for: acrylic has a higher thermal expansion coefficient than metal. Assemblies exposed to temperature cycling should include tolerances that allow for dimensional movement at fastener holes and bonded joints to prevent stress cracking.
+
+What Is Acrylic Sheet Used For?
+
+Acrylic is specified across a broad range of industries because its combination of transparency, weatherability, and fabrication flexibility addresses applications where glass is too heavy or fragile, and polycarbonate lacks the surface quality.
+
+Retail displays and POP fixtures: Display cases, risers, literature holders, and custom merchandising units.
+
+Signage and architectural glazing: Illuminated sign faces, canopies, decorative panels, and exterior applications requiring long-term UV stability.
+
+Pharmaceutical and laboratory: Cleanroom enclosures, glovebox windows, and safety shields where optical clarity and chemical resistance are required.
+
+Industrial OEM: Machine guards, equipment windows, and custom housings where impact resistance and formability matter.
+
+Marine and transportation: Windshields, portlights, and hatches on commercial and recreational vessels.
+
+Stage, film, and television: Set design, prop fabrication, and scenic elements where workability and visual impact are both priorities.
+
+For defense and aerospace programs, acrylic suppliers may operate under ISO 9001:2015 and AS9100D certifications — the aerospace quality standard that governs full traceability and process documentation for mission-critical components.
+
+What Should You Specify When Ordering Acrylic?
+
+A complete specification prevents rework and schedule delays. Buyers should confirm grade (cast or extruded), thickness with required tolerance, color and light transmission level, and edge finish — saw cut, machined, flame-polished, or diamond-polished. For bonded assemblies, solvent cements like Weld-On and Acrifix are commonly available. Secondary fabrication services including CNC routing, laser cutting, thermoforming, and line bending allow material and finished parts to be sourced from a single supplier, reducing lead time and consolidating quality accountability.
+
+Frequently Asked Questions
+
+Is acrylic stronger than glass?
+Yes. Acrylic is approximately 10 times more impact-resistant than glass at the same thickness. It is also significantly lighter, making it the preferred alternative for glazing, guards, and enclosures where safety and weight are both factors.
+
+Does acrylic turn yellow over time?
+No — acrylic is inherently UV-stable and resists yellowing or brittleness with outdoor exposure. This distinguishes it from many other clear plastics, including some grades of polycarbonate, which can yellow without UV coatings.
+
+What is the difference between acrylic and polycarbonate?
+Acrylic offers superior optical clarity, better UV stability, and higher surface hardness. Polycarbonate offers greater impact resistance and is more flexible. For display, signage, and outdoor glazing, acrylic is typically the better choice. For applications requiring extreme impact resistance, polycarbonate is preferred.
+
+Can acrylic be cut to custom sizes?
+Yes. Acrylic sheet, rod, and tube can be cut to exact customer dimensions. There are no minimum order quantities, making it practical for both prototype and full production orders.
+
+Where can I buy acrylic sheet?
+Acrylic sheet, rod, and tube are available through suppliers that stock cast and extruded grades at their facilities. Orders can be placed by phone, email, or by requesting quotes online.
